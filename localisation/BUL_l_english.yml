@@ -283,6 +283,8 @@ BUL_GATHERING_STORM_DESC:0 "After Tsar Boris brought down Kimon Georgiev's milit
  BUL_new_page_in_technological_research_desc:0 "With the Prosperity Plan underway, we must also add scientific coordination to industrial coordination in order to enable unprecedented technological change."
  BUL_military_rearmament_plans:0 "Military Rearmament Plan"
  BUL_military_rearmament_plans_desc:0 "\"Pitiful state\" is not enough to describe the condition in which the Bulgarian army finds itself. A large-scale modernization plan for the army will be put in place in order to bring it into line with the standards of the major powers."
+ BUL_defensive_plans:0 "Draw Defensive Plans"
+ BUL_defensive_plans_desc:0 "Our army cannot always be on the offensive, sometimes it must stop advancing and entrench itself, if we allocate more funds to building fortlines we will be able to sustain and cover our army better."
  BUL_reform_the_army:0 "Reform The Army"
  BUL_reform_the_army_desc:0 "The army must be our priority in our reform project. A modernization of its structure and general staff will allow a first improvement of conditions, in addition to preparing for its future expansion."
  BUL_innovation_warfare:0 "Innovation Warfare"
