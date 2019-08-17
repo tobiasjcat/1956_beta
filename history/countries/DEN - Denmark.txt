@@ -20,11 +20,11 @@ set_technology = {
 	camo = 1
 	gw_armored_car = 1
 	steel_production_1 = 1
-	
+
 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	gw_artillery = 1
@@ -87,10 +87,10 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = ABC_establish_a_general_staff
-	 
+
 	complete_national_focus = ABC_motorization_effort
 	complete_national_focus = GEN_Aviation_Effort
 	complete_national_focus = GEN_Naval_Effort
@@ -98,7 +98,7 @@ if = {
 	complete_national_focus = GEN_Industrial_Start
 	complete_national_focus = GEN_Expand_Infra
 	complete_national_focus = GEN_Military_Buildup
-	
+
 	oob = "DEN_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -107,13 +107,13 @@ if = {
 			set_naval_oob = "DEN_1939_naval_legacy"
 		}
 	}
-	
+
 	set_technology = {
 
 		# Extended Technologies
 		etax_doctrine = 1
 		camo = 1
-	
+
 		early_bomber = 1
 		gw_artillery = 1
 		interwar_artillery = 1
@@ -173,9 +173,15 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 97
+	democratic = 92
 	fascism = 1
 	communism = 2
+	neutrality = 5
+}
+
+add_ideas = {
+  neutrality_idea
+	DEN_unemployment
 }
 
 1939.1.1 = {
@@ -219,7 +225,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Aksel Larsen"
 	desc = "POLITICS_AKSEL_LARSEN_DESC"
-	picture = "gfx/leaders/DEN/r56_portrait_DEN_Aksel_Larsen.dds"
+	picture = "gfx/leaders/DEN/r56_portrait_DEN_Aksel_Larsen.tga"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -228,11 +234,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter Rochegune Munch"
-	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Christian X"
+	desc = "POLITICS_CHRISTIAN_X_DESC"
+	picture = "gfx/leaders/DEN/r56_portrait_DEN_christian_x.tga"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -241,7 +247,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Wilhelm Wain Prior"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	portrait_path = "gfx/leaders/DEN/r56_portrait_DEN_wilhelm_wain_prior.dds"
 	traits = { trickster }
 	skill = 3
 	attack_skill = 2
@@ -251,11 +257,8 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "Hans Rolsted"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {
-		artillerist caring_leader
-		
-	}
+	portrait_path = "gfx/leaders/DEN/r56_portrait_DEN_hans_rolsted.dds"
+	traits = { artillerist caring_leader }
 	skill = 2
 	attack_skill = 2
 	defense_skill = 1
@@ -265,10 +268,8 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Erik Leschly"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = {
-		cavalry_officer
-	}
+	portrait_path = "gfx/leaders/DEN/r56_portrait_DEN_erik_leschly.dds"
+	traits = {cavalry_officer}
 	skill = 2
 	attack_skill = 1
 	defense_skill = 2
@@ -277,7 +278,7 @@ create_corps_commander = {
 }
 create_navy_leader = {
 	name = "Hjalmar Rechnitzer"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	portrait_path = "gfx/leaders/DEN/r56_portrait_hjalmar_rechnitzer.dds"
 	traits = { blockade_runner }
 	skill = 2
 	attack_skill = 1
@@ -317,7 +318,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Herluf Trolle Class"				
+		name = "Herluf Trolle Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = DEN_CA_HISTORICAL
 		parent_version = 0
@@ -336,7 +337,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Niels Iuel Class"				
+		name = "Niels Iuel Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = DEN_CA_HISTORICAL
 		parent_version = 0
@@ -365,7 +366,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-			name = "Havmanden Class"				
+			name = "Havmanden Class"
 			type = ship_hull_submarine_1
 			name_group = DEN_DD_HISTORICAL
 			parent_version = 0
