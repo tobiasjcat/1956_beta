@@ -1231,6 +1231,10 @@ spriteTypes = {
 		name = "GFX_goal_DEN_flag_fortress"
 		texturefile = "gfx/interface/goals/den/r56_goal_DEN_flag_fortress.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_DEN_danish_automobiles"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_danish_automobiles.dds"
+	}
 
 
 ###------> DNZ <><> <><> <><> <><> <><>

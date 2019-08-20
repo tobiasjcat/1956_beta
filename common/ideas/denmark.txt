@@ -13,9 +13,40 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-       production_speed_buildings_factor = -0.2
+        production_speed_buildings_factor = -0.2
 			}
 		}
+
+		DEN_unemployment_2 = {
+
+			allowed = {
+				original_tag = DEN
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+
+			modifier = {
+        production_speed_buildings_factor = -0.1
+			}
+		}
+
+		DEN_unemployment_3= {
+
+			allowed = {
+				original_tag = DEN
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+
+			modifier = {
+        production_speed_buildings_factor = -0.05
+			}
+		}
+
 		DEN_christian_x = {
 
 		allowed = {
@@ -39,6 +70,33 @@ ideas = {
 			modifier = {
        stability = 0.1
 			 neutrality_acceptance = 40
+			}
+		}
+
+		DEN_connect_all_islands = {
+
+		allowed = {
+			NOT = {
+				OR= {
+					has_government = communism
+					}
+				}
+			}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+		    army_speed_factor = 0.1
+				land_reinforce_rate = 0.05
+				production_speed_infrastructure_factor = 0.05
 			}
 		}
 	}

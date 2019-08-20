@@ -182,6 +182,7 @@ set_popularities = {
 add_ideas = {
   neutrality_idea
 	DEN_unemployment
+	DEN_christian_x
 }
 
 1939.1.1 = {
@@ -207,7 +208,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = socialism
 	traits = {
-		#
+	  staunning_eller_kaos
 	}
 }
 

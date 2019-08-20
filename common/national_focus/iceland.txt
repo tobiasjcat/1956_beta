@@ -20,10 +20,18 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			100 = {	CONTROLLER = { tag = ICE } }
-		}
+				NOT = {
+					DEN ={
+						focus_progress = {
+							focus = DEN_icelandic_roads
+							progress > 0
+						}
+					}
+				}
+			}
 
 		bypass = {
+		  OR = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
 				100 = {
@@ -33,7 +41,11 @@ focus_tree = {
 					}
 				}
 			}
+			ICE = {
+				has_completed_focus = DEN_icelandic_roads
+			}
 		}
+	}
 
 
 		x = 2
@@ -41,6 +53,7 @@ focus_tree = {
 
 		completion_reward = {
 			100 = {
+			  add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -141,7 +154,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ICE_domestic_ind
-		icon = GFX_focus_focus_generic_industry_1
+		icon = GFX_focus_generic_industry_2
 		cost = 10.00
 		ai_will_do = {
 			factor = 100
@@ -153,12 +166,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			100 = {
-				CONTROLLER = { tag = ICE }
+				NOT = {
+					DEN ={
+						focus_progress = {
+							focus = DEN_icelandic_domestic_industry
+							progress > 0
+						}
+					}
+				}
 			}
-		}
-
 		bypass = {
+		 OR = {
 			100 = {
 				free_building_slots = {
 					building = industrial_complex
@@ -166,7 +184,11 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
+			ICE = {
+				has_completed_focus = DEN_icelandic_domestic_industry
+			}
 		}
+	}
 
 		x = 3
 		y = 1
@@ -181,8 +203,8 @@ focus_tree = {
 				}
 			}
 		}
-
 	}
+
 	focus = {
 		id = ICE_new_industry
 		icon = GFX_goal_generic_construction
@@ -365,6 +387,14 @@ focus_tree = {
 
 		available = {
 			has_tech = excavation2
+			NOT = {
+				DEN ={
+					focus_progress = {
+						focus = DEN_icelands_steel
+						progress > 0
+					}
+				}
+			}
 			100 = {
 				CONTROLLER = {
 					tag = ICE

@@ -9,7 +9,7 @@ focus_tree = {
 	}
 
 	continuous_focus_position = { x = 400 y = 1000 }
-	
+
 	default = no
 	# ECONOMIC TREE
 
@@ -1125,7 +1125,7 @@ focus_tree = {
 			}
 
 			add_equipment_to_stockpile = {
-			    type = fighter_equipment 
+			    type = fighter_equipment
 			    amount = 100
 			    producer = FRI
 			}
@@ -1145,9 +1145,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = FRI_fortify_the_chinese_border_tt
-			
+
 			hidden_effect = {
-						
+
 						670 = {
 							add_building_construction = {
 							type = bunker
@@ -1559,13 +1559,13 @@ focus_tree = {
 		y = 3
 			completion_reward = {
 					custom_effect_tooltip = FRI_the_second_yen_bai_mutiny_tt
-					
-					
+
+
 					hidden_effect = {
 
 					remove_ideas = FRI_strikes
 					remove_ideas = FRI_growing_vietnamese_nationalism
-						
+
 						VIN = {
 							transfer_state = 671
 							country_event = {
@@ -1576,7 +1576,6 @@ focus_tree = {
 							    id = axis_minors.1
 							    days = 1
 							}
-							inherit_technology = FRI
 							set_popularities = {
 								democratic = 25
 								neutrality = 25
@@ -1595,4 +1594,3 @@ focus_tree = {
 	}
 
 	# END OF INDEPENDENCE TREE
-	

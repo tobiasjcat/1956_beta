@@ -16,16 +16,663 @@ focus_tree = {
 	continuous_focus_position = { x = 0 y = 1000 }
 
 	focus = {
-		id = DEN_staunning_government
-		icon = GFX_goal_DEN_flag
-		x = 6
+		id = DEN_assign_colonial_corporations
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 3
 		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  every_state = {
+	      limit = {
+		      OR = {
+			      state = 100
+			      state = 101
+			      state = 337
+          }
+			  }
+	      add_extra_state_shared_building_slots = 1
+      }
+    }
+  }
+
+	focus = {
+		id = DEN_encourage_faroe_rural_economy
+		icon = GFX_focus_generic_industry_1
+		prerequisite = { focus = DEN_assign_colonial_corporations }
+		x = -1
+		y = 1
+		relative_position_id = DEN_assign_colonial_corporations
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 337
+		}
+
+		cancel_if_invalid = yes
+
 		completion_reward = {
-			add_political_power = 120
+		  337 = {
+	    	add_extra_state_shared_building_slots = 2
+	    	add_building_construction = {
+		    	type = industrial_complex
+			    level = 1
+			    instant_build = yes
+	     	}
+		    add_building_construction = {
+			    type = infrastructure
+		      level = 2
+			    instant_build = yes
+		    }
+	    }
+	  }
+	}
+
+	focus = {
+		id = DEN_expand_greenland_roads
+		icon = gfx_cold_railway_2
+		prerequisite = { focus = DEN_assign_colonial_corporations }
+		x = 2
+		y = 1
+		relative_position_id = DEN_assign_colonial_corporations
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 101
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  101 = {
+	    	add_extra_state_shared_building_slots = 1
+		    add_building_construction = {
+			    type = infrastructure
+		      level = 1
+			    instant_build = yes
+		    }
+	    }
+	  }
+	}
+
+	focus = {
+		id = DEN_expand_Ivittuut_cryolite
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = DEN_expand_greenland_roads }
+		x = 0
+		y = 1
+		relative_position_id = DEN_expand_greenland_roads
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 101
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		101 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+			add_resource = {
+				type = aluminium
+				amount = 7
+				state = 101
+			}
+	  }
+	}
+
+	focus = {
+		id = DEN_icelandic_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = DEN_assign_colonial_corporations }
+		x = 0
+		y = 2
+		relative_position_id = DEN_assign_colonial_corporations
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  OR = {
+			ICE = {
+			  exists = yes
+				has_capitulated = no
+			  has_completed_focus = ICE_look_den
+			}
+				NOT = {
+					ICE ={
+						focus_progress = {
+							focus = ICE_roads_program
+							progress > 0
+						}
+					}
+				}
+			has_full_control_of_state = 100
+			}
+		}
+
+    bypass = {
+		  ICE = {
+			  has_completed_focus = ICE_roads_program
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			100 = {
+		   	add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				ICE = {
+					add_autonomy_ratio = {
+						value = -0.04
+						localization = danish_investment
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_icelandic_domestic_industry
+		icon = GFX_focus_generic_industry_2
+		prerequisite = { focus = DEN_icelandic_roads }
+		x = -1
+		y = 1
+		relative_position_id = DEN_icelandic_roads
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  OR = {
+			ICE = {
+			  exists = yes
+				has_capitulated = no
+			}
+				NOT = {
+					ICE ={
+						focus_progress = {
+							focus = ICE_domestic_ind
+							progress > 0
+						}
+					}
+				}
+			has_full_control_of_state = 100
+			}
+		}
+
+    bypass = {
+		  ICE = {
+			  has_completed_focus = ICE_domestic_ind
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			100 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					ICE = {
+						add_autonomy_ratio = {
+							value = -0.04
+							localization = danish_investment
+						}
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = DEN_icelands_steel
+			icon = GFX_focus_generic_steel
+			prerequisite = { focus = DEN_icelandic_roads }
+			x = 1
+			y = 1
+			relative_position_id = DEN_icelandic_roads
+			cost = 10
+			ai_will_do = {
+				factor = 10
+			}
+
+			available_if_capitulated = no
+
+				available = {
+				  has_tech = excavation2
+				  OR = {
+					ICE = {
+					  exists = yes
+						has_capitulated = no
+					}
+						NOT = {
+							ICE ={
+								focus_progress = {
+									focus = ICE_domestic_ind
+									progress > 0
+								}
+							}
+						}
+					has_full_control_of_state = 100
+					}
+				}
+
+	    bypass = {
+			  ICE = {
+				  has_completed_focus = ICE_steel_mill
+				}
+			}
+
+			cancel_if_invalid = yes
+
+			completion_reward = {
+			  add_resource = {
+				  type = steel
+				  amount = 12
+				  state = 100
+			  }
+					if = {
+						limit = {
+							has_dlc = "Together for Victory"
+						}
+						ICE = {
+							add_autonomy_ratio = {
+								value = -0.04
+								localization = danish_investment
+							}
+						}
+					}
+				}
+			}
+
+	focus = {
+		id = DEN_fight_unemployment
+		icon = GFX_focus_generic_decrease_unemployment
+		x = 10
+		y = 0
+		cost = 7.15
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  swap_ideas = { remove_idea = DEN_unemployment add_idea = DEN_unemployment_2 }
+	  }
+	}
+
+	focus = {
+		id = DEN_further_support_Kanslergadeforliget
+		icon = GFX_focus_GRE_Combat_depression
+		prerequisite = { focus = DEN_fight_unemployment }
+		x = -1
+		y = 1
+		relative_position_id = DEN_fight_unemployment
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  bonus = 1
+			  uses = 2
+			  category = industry
+		  }
+			37 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		  99 = {
+	  	  add_extra_state_shared_building_slots = 1
+	    }
+	  }
+	}
+
+	focus = {
+		id = DEN_increase_industrial_presence
+		icon = GFX_sca_focus_danish_industry
+		prerequisite = { focus = DEN_fight_unemployment }
+		x = 1
+		y = 1
+		relative_position_id = DEN_fight_unemployment
+		cost = 7.15
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  swap_ideas = { remove_idea = DEN_unemployment_2 add_idea = DEN_unemployment_3 }
+			99 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	  }
+	}
+
+	focus = {
+		id = DEN_finish_storstrom_link
+		icon = GFX_goal_DEN_danish_automobiles
+		prerequisite = { focus = DEN_increase_industrial_presence }
+		prerequisite = { focus = DEN_further_support_Kanslergadeforliget }
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = DEN_further_support_Kanslergadeforliget
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 37
+			has_tech = construction2
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  custom_effect_tooltip = DEN_storstrom_link
+		  hidden_effect = {
+			  37 = {
+				  if = {
+					  limit = { is_controlled_by = ROOT }
+					  add_building_construction = {
+						  type = infrastructure
+						  level = 10
+						  instant_build = yes
+					  }
+				  }
+			  }
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_fund_armament_production
+		icon = GFX_goal_ammunitions
+		prerequisite = { focus = DEN_finish_storstrom_link }
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = DEN_finish_storstrom_link
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  random_owned_controlled_state = {
+			  add_extra_state_shared_building_slots = 1
+			  add_building_construction = {
+				  type = arms_factory
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+	  }
+	}
+
+	focus = {
+		id = DEN_fund_rearmament
+		icon = GFX_goal_mexico_become_industrialised
+		prerequisite = { focus = DEN_fund_armament_production }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DEN_fund_armament_production
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  OR = {
+		    threat > 0.24
+		    has_war = yes
+	 	  }
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+      if = {
+			  limit = {
+			    OR = {
+			      has_idea = civilian_economy
+					  has_idea = low_economic_mobilisation
+			    }
+			  }
+			  add_ideas = partial_economic_mobilisation
+			}
+		  random_owned_controlled_state = {
+			  add_extra_state_shared_building_slots = 2
+			  add_building_construction = {
+				  type = industrial_complex
+				  level = 2
+				  instant_build = yes
+			  }
+		  }
+	  }
+	}
+
+	focus = {
+		id = DEN_defeat_unemployment
+		icon = GFX_tblra_union_agreement
+		prerequisite = { focus = DEN_finish_storstrom_link }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DEN_finish_storstrom_link
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		  remove_ideas = DEN_unemployment_3
+		  99 = {
+			  add_extra_state_shared_building_slots = 1
+			  add_building_construction = {
+				  type = industrial_complex
+				  level = 1
+				  instant_build = yes
+			  }
+		  }
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+	  }
+	}
+
+	focus = {
+		id = DEN_expand_copenhagen_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = DEN_defeat_unemployment }
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = DEN_defeat_unemployment
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 37
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+			37 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_begin_more_public_works
+		icon = GFX_focus_generic_public_works_A
+		prerequisite = { focus = DEN_defeat_unemployment }
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = DEN_defeat_unemployment
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 37
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+		custom_effect_tooltip = DEN_public_works
+		hidden_effect = {
+			99 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 10
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+	focus = {
+		id = DEN_connect_all_islands
+		icon = GFX_goal_war_infrastructure
+		prerequisite = { focus = DEN_expand_copenhagen_port focus = DEN_begin_more_public_works }
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = DEN_defeat_unemployment
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 37
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+      add_ideas = DEN_connect_all_islands
 		}
 	}

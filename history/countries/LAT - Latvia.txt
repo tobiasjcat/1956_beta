@@ -213,7 +213,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "Žanis Bahs"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	portrait_path = "gfx/leaders/LAT/r56_portrait_LAT_zanis_bachs.dds"
 	traits = {
 		meticulous
 	}
@@ -277,7 +277,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Ronis Class"								
+		name = "Ronis Class"
 		type = ship_hull_submarine_1
 		name_group = LAT_SS_HISTORICAL
 		parent_version = 0
