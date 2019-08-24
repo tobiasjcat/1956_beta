@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = DEN_assign_colonial_corporations
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 3
+		x = 2
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = DEN_fight_unemployment
 		icon = GFX_focus_generic_decrease_unemployment
-		x = 10
+		x = 8
 		y = 0
 		cost = 7.15
 		ai_will_do = {
@@ -471,7 +471,7 @@ focus_tree = {
 		id = DEN_fund_armament_production
 		icon = GFX_goal_ammunitions
 		prerequisite = { focus = DEN_finish_storstrom_link }
-		x = -2
+		x = -3
 		y = 1
 		cost = 5
 		relative_position_id = DEN_finish_storstrom_link
@@ -654,7 +654,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_connect_all_islands
-		icon = GFX_goal_war_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = DEN_expand_copenhagen_port focus = DEN_begin_more_public_works }
 		x = 0
 		y = 2
@@ -668,6 +668,54 @@ focus_tree = {
 
 		available = {
 		  has_full_control_of_state = 37
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+      add_ideas = DEN_connect_all_islands
+		}
+	}
+
+
+	focus = {
+		id = DEN_connect_all_islands
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = DEN_expand_copenhagen_port focus = DEN_begin_more_public_works }
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = DEN_defeat_unemployment
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
+		  has_full_control_of_state = 37
+		}
+
+		cancel_if_invalid = yes
+
+		completion_reward = {
+      add_ideas = DEN_connect_all_islands
+		}
+	}
+
+	focus = {
+		id = DEN_haeren
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = no
+
+		available = {
 		}
 
 		cancel_if_invalid = yes

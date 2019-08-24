@@ -68,7 +68,8 @@ ideas = {
 			picture = christian_x
 
 			modifier = {
-       stability = 0.1
+       stability_factor = 0.1
+			 war_support_factor = 0.05
 			 neutrality_acceptance = 40
 			}
 		}
@@ -114,7 +115,7 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 
-		Den_henrikk_kauffman = {
+		DEN_henrikk_kauffman = {
 
 			picture = generic_political_advisor_europe_4
 
@@ -435,4 +436,67 @@ ideas = {
 
 		}
 	}
+
+industrial_concern = {
+
+	DEN_tdc = {
+
+    picture = generic_electronics_concern_2
+
+		allowed = {
+		  original_tag = DEN
+		}
+
+		research_bonus = {
+			electronics = 0.15
+		}
+
+		traits = { electronics_concern }
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DEN_flsmidth = {
+
+		picture = generic_industrial_concern_1
+
+		allowed = {
+		  original_tag = DEN
+		}
+
+		cost = 150
+
+		research_bonus = {
+			industry = 0.1
+		}
+
+		traits = { industrial_concern }
+	}
 }
+
+tank_manufacturer = {
+
+	designer = yes
+
+	DEN_frichs = {
+
+	  picture = DEN_frichs
+
+		allowed = {
+			original_tag = DEN
+		}
+
+		available = {
+      has_completed_focus = DEN_frichs_tanks
+		}
+
+		research_bonus = {
+			armor = 0.15
+		}
+
+		traits = { converted_train_manufacturer }
+
+	 }
+  }
+ }

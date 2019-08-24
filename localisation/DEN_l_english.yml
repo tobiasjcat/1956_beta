@@ -10,12 +10,13 @@
  DEN_fight_unemployment:0 "Fight Urban Unemployment"
  DEN_further_support_Kanslergadeforliget:0 "Further Support Kanslergadeforliget"
  DEN_increase_industrial_presence:0 "Increase Industrial Presence In Jutland"
- DEN_finish_the_storstromsbroen:0 "Finish The Storstrømsbroen"
+ DEN_finish_storstrom_link:0 "Finish The Storstrømsbroen"
  DEN_fund_armament_production:0 "Fund Armaments Production"
  DEN_fund_rearmament:0 "Fund The Rearmament Process"
  DEN_defeat_unemployment:0 "Defeat Unemployment"
  DEN_expand_copenhagen_port:0 "Expand Copenhagen Port"
  DEN_begin_more_public_works:0 "Begin More Public Work Projects"
+ DEN_connect_all_islands:0 "Connect All The Islands"
  DEN_staunning_government:0 "§RStaunning Eller Kaos!§!"
 
  #Ideas
@@ -23,8 +24,11 @@
  DEN_unemployment_2:0 "Urban Unemployment"
  DEN_unemployment_3:0 "Urban Unemployment"
  DEN_christian_x:0 "Christian X"
+ DEN_henrikk_kauffman:0 "Henrikk Kauffman"
  staunning_eller_kaos:0 "Staunning Eller Kaos"
-
+ DEN_tdc:0 "TDC"
+ DEN_flsmidth:0 "FLSmidth"
+ DEN_frichs:0 "Frichs"
  #Misc
  DEN_storstrom_link:0 "§YAdds Max infrastructure To Sjælland!§!"
  DEN_public_works:0 "§YAdds Max infrastructure And Building Slots To Jutland!§!"
