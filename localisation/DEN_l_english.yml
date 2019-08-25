@@ -18,6 +18,14 @@
  DEN_begin_more_public_works:0 "Begin More Public Work Projects"
  DEN_connect_all_islands:0 "Connect All The Islands"
  DEN_staunning_government:0 "§RStaunning Eller Kaos!§!"
+ DEN_haeren:0 "Hæren"
+ DEN_forsvarets_dag:0 "Forsvarets Dag"
+ DEN_bicycle_battalion:0 "Cykeldivision"
+ DEN_fortify_denmark:0 "Defensive Meassures"
+ DEN_infantry_modernization:0 "Infantry Modernization"
+ DEN_frichs_tanks:0 "Frichs Tank Locomotives"
+ DEN_military_studies:0 "Military Studies Department"
+ DEN_domestic_technology_breakthrough:0 "Domestic Technology Breakthrough"
 
  #Ideas
  DEN_unemployment:0 "Urban Unemployment"
@@ -28,7 +36,7 @@
  staunning_eller_kaos:0 "Staunning Eller Kaos"
  DEN_tdc:0 "TDC"
  DEN_flsmidth:0 "FLSmidth"
- DEN_frichs:0 "Frichs"
+ DEN_frichs:0 "Frichs Locomotives"
  #Misc
  DEN_storstrom_link:0 "§YAdds Max infrastructure To Sjælland!§!"
  DEN_public_works:0 "§YAdds Max infrastructure And Building Slots To Jutland!§!"

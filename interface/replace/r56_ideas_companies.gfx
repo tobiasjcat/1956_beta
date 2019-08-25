@@ -380,7 +380,7 @@ spriteTypes = {
 ###------> DEN <><> <><> <><> <><> <><>
 SpriteType = {
 	name = "GFX_idea_DEN_frichs"
-	texturefile = "gfx/interface/ideas/cze/companies/r56_idea_DEN_frichs.dds"
+	texturefile = "gfx/interface/ideas/den/companies/r56_idea_DEN_frichs.dds"
 }
 ###------> ENG <><> <><> <><> <><> <><>
 	spriteType = {

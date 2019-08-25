@@ -343,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = DEN_fight_unemployment
 		icon = GFX_focus_generic_decrease_unemployment
-		x = 8
+		x = 9
 		y = 0
 		cost = 7.15
 		ai_will_do = {
@@ -468,10 +468,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = DEN_domestic_technology_breakthrough
+		icon = GFX_goal_research_silver
+		prerequisite = { focus = DEN_finish_storstrom_link }
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = DEN_finish_storstrom_link
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  add_research_slot = 1
+	  }
+	}
+
+	focus = {
 		id = DEN_fund_armament_production
 		icon = GFX_goal_ammunitions
 		prerequisite = { focus = DEN_finish_storstrom_link }
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 		relative_position_id = DEN_finish_storstrom_link
@@ -705,22 +731,248 @@ focus_tree = {
 
 	focus = {
 		id = DEN_haeren
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 12
+		icon = GFX_goal_DEN_army
+		x = 14
 		y = 0
-		cost = 10
+		cost = 7.15
+
+		available_if_capitulated = yes
+
 		ai_will_do = {
-			factor = 10
+			factor = 3
 		}
 
-		available_if_capitulated = no
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = POL_romanian_bridgehead_strategy
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_forsvarets_dag
+		icon = GFX_focus_generic_army_modernizations
+		prerequisite = { focus = DEN_haeren }
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = DEN_haeren
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
 
 		available = {
 		}
 
-		cancel_if_invalid = yes
+    bypass = {
+		  has_idea = extensive_conscription
+	  }
 
 		completion_reward = {
-      add_ideas = DEN_connect_all_islands
+      add_ideas = extensive_conscription
 		}
+	}
+
+	focus = {
+		id = DEN_bicycle_battalion
+		icon = GFX_goal_small_infantry
+		prerequisite = { focus = DEN_haeren }
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = DEN_haeren
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+    bypass = {
+	  }
+
+		completion_reward = {
+		set_technology = { bicycle_infantry = 1 }
+		division_template = {
+			name = "Cykeldivision"
+			division_names_group = DEN_INF_01
+			regiments = {
+				bicycle_battalion = { x = 0 y = 0 }
+				bicycle_battalion = { x = 0 y = 1 }
+				bicycle_battalion = { x = 1 y = 1 }
+				bicycle_battalion = { x = 1 y = 0 }
+				bicycle_battalion = { x = 2 y = 0 }
+			}
+			support = {
+				recon = { x = 0 y = 0 }
+			}
+		}
+		add_tech_bonus = {
+			name = YUG_motorized_recon_companies
+			bonus = 1.0
+			uses = 1
+			category = recon_tech
+		}
+	}
+}
+
+
+	focus = {
+		id = DEN_fortify_denmark
+		icon = GFX_goal_DEN_flag_fortress
+		prerequisite = { focus = DEN_haeren }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DEN_haeren
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+    bypass = {
+		  has_idea = extensive_conscription
+	  }
+
+		completion_reward = {
+		  add_ideas = LAT_fortifications
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 332
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 1
+				province = 11251
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 6287
+				instant_build = yes
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_infantry_modernization
+		icon = GFX_goal_infantry_offensive
+		prerequisite = { focus = DEN_haeren }
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = DEN_fortify_denmark
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  name = POL_army_modernisation
+			  bonus = 1.0
+		  	uses = 1
+			  category = infantry_weapons
+		  }
+			add_tech_bonus = {
+				name = POL_artillery_modernisation
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+	  }
+	}
+
+	focus = {
+		id = DEN_frichs_tanks
+		icon = GFX_goal_DEN_frichs
+		prerequisite = { focus = DEN_haeren }
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = DEN_fortify_denmark
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  custom_effect_tooltip = available_materiel_manufacturer
+		  show_ideas_tooltip = DEN_frichs
+			99 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+	  }
+	}
+}
+
+	focus = {
+		id = DEN_military_studies
+		icon = GFX_goal_defensive_position2
+		prerequisite = { focus = DEN_infantry_modernization }
+		prerequisite = { focus = DEN_frichs_tanks }
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = DEN_infantry_modernization
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  add_research_slot = 1
+		  add_tech_bonus = {
+			  name = POL_romanian_bridgehead_strategy
+			  bonus = 1.0
+			  uses = 1
+			  category = land_doctrine
+		  }
+	  }
 	}
