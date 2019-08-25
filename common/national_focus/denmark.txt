@@ -15,6 +15,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 0 y = 1000 }
 
+	shared_focus = GEN_Aviation_Effort
+
+
 	focus = {
 		id = DEN_assign_colonial_corporations
 		icon = GFX_focus_usa_reestablish_the_gold_standard
