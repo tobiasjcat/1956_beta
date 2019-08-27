@@ -16,12 +16,13 @@ focus_tree = {
 	continuous_focus_position = { x = 0 y = 1000 }
 
 	shared_focus = GEN_Aviation_Effort
+	shared_focus = GEN_Naval_Effort
 
 
 	focus = {
 		id = DEN_assign_colonial_corporations
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 2
+		x = 0
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -346,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = DEN_fight_unemployment
 		icon = GFX_focus_generic_decrease_unemployment
-		x = 9
+		x = 7
 		y = 0
 		cost = 7.15
 		ai_will_do = {
@@ -735,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = DEN_haeren
 		icon = GFX_goal_DEN_army
-		x = 14
+		x = 34
 		y = 0
 		cost = 7.15
 
