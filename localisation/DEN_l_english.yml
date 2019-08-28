@@ -29,6 +29,9 @@
  DEN_develop_the_air_corps:0 "Develop The Haerens Flyvertropper"
  DEN_support_fokker:0 "Support Fokker"
  DEN_rearm_the_naval_service:0 "Marinens Flyvevæsen Rearmament Program"
+ DEN_a_fighting_chance:0 "A Fighting Chance"
+ DEN_the_path_to_an_airforce:0 "The Path To an Airforce"
+ DEN_extend_air_tactics:0 "Extend Air Tactics"
 
  #Ideas
  DEN_unemployment:0 "Urban Unemployment"
@@ -42,6 +45,7 @@
  DEN_frichs:0 "Frichs Locomotives"
  DEN_fokker:0 "Fokker"
  DEN_danske_statsbaner:0 "Danske Statsbaner"
+ DEN_orlogsvaerftet:0 "Orlogsvaerftet"
  #Misc
  DEN_storstrom_link:0 "§YAdds Max infrastructure To Sjælland!§!"
  DEN_public_works:0 "§YAdds Max infrastructure And Building Slots To Jutland!§!"

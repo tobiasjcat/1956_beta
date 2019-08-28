@@ -939,6 +939,12 @@ focus_tree = {
 		completion_reward = {
 		  custom_effect_tooltip = available_materiel_manufacturer
 		  show_ideas_tooltip = DEN_frichs
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
 			99 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1066,6 +1072,117 @@ focus_tree = {
 			  bonus = 1
 			  uses = 1
 			  technology = naval_bomber1
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_a_fighting_chance
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = DEN_develop_the_air_corps }
+		x = 1
+		y = 2
+		cost = 10
+		relative_position_id = DEN_develop_the_air_corps
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  name = naval_doctrine_bonus
+			  bonus = 1
+			  uses = 1
+			  technology = fighter1
+			}
+			add_tech_bonus = {
+				name = naval_doctrine_bonus
+				bonus = 1
+				uses = 1
+				technology = home_defence
+				technology = air_superiority
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_the_path_to_an_airforce
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = DEN_a_fighting_chance focus = DEN_rearm_the_naval_service }
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = DEN_a_fighting_chance
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 1
+			uses = 1
+			category = air_doctrine
+		}
+		}
+	}
+
+	focus = {
+		id = DEN_extend_air_tactics
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = DEN_the_path_to_an_airforce }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = DEN_the_path_to_an_airforce
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  add_tech_bonus = {
+			  name = air_doc_bonus
+			  bonus = 1
+			  uses = 2
+			  category = air_doctrine
 			}
 		}
 	}

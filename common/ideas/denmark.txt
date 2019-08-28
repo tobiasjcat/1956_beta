@@ -420,7 +420,6 @@ ideas = {
 				}
 			}
 		}
-	}
 
 	naval_manufacturer = {
 
@@ -487,7 +486,7 @@ industrial_concern = {
 			factor = 1
 		}
 	}
-	
+
 	DEN_flsmidth = {
 
 		picture = generic_industrial_concern_1
