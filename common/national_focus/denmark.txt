@@ -15,7 +15,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 0 y = 1000 }
 
-	shared_focus = GEN_Aviation_Effort
 
 	focus = {
 		id = DEN_assign_colonial_corporations
@@ -713,7 +712,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_connect_all_islands
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_generic_road
 		prerequisite = { focus = DEN_expand_copenhagen_port focus = DEN_begin_more_public_works }
 		x = 0
 		y = 2
@@ -982,4 +981,91 @@ focus_tree = {
 			  category = land_doctrine
 		  }
 	  }
+	}
+
+	focus = {
+		id = DEN_develop_the_air_corps
+		icon = GFX_goal_generic_air_doctrine
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+	    add_ideas = HOL_air_industry_contacts
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1
+				uses = 1
+				category = air_doctrine
+		  }
+		}
+	}
+
+	focus = {
+		id = DEN_support_fokker
+		icon = GFX_focus_hol_fokker
+		prerequisite = { focus = DEN_develop_the_air_corps }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = DEN_develop_the_air_corps
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  custom_effect_tooltip = available_materiel_manufacturer
+		  show_ideas_tooltip = DEN_fokker
+		}
+	}
+
+	focus = {
+		id = DEN_rearm_the_naval_service
+		icon = GFX_goal_multiple_bombers
+		prerequisite = { focus = DEN_develop_the_air_corps }
+		x = -1
+		y = 2
+		cost = 10
+		relative_position_id = DEN_develop_the_air_corps
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+		  custom_effect_tooltip = available_materiel_manufacturer
+		  show_ideas_tooltip = DEN_orlogsvaerftet
+		  add_tech_bonus = {
+			  name = naval_doctrine_bonus
+			  bonus = 1
+			  uses = 1
+			  technology = naval_bomber1
+			}
+		}
 	}

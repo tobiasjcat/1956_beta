@@ -382,6 +382,10 @@ SpriteType = {
 	name = "GFX_idea_DEN_frichs"
 	texturefile = "gfx/interface/ideas/den/companies/r56_idea_DEN_frichs.dds"
 }
+SpriteType = {
+	name = "GFX_idea_DEN_danske_statsbaner"
+	texturefile = "gfx/interface/ideas/den/companies/r56_idea_DEN_danske_statsbaner.dds"
+}
 ###------> ENG <><> <><> <><> <><> <><>
 	spriteType = {
 		name = "GFX_idea_ENG_general_aircraft_limited"
@@ -398,8 +402,8 @@ SpriteType = {
 	spriteType = {
 		name = "GFX_idea_ENG_gloster_aircraft"
 		texturefile = "gfx/interface/ideas/eng/companies/r56_idea_ENG_company_gloster.dds"
-	}	
-	
+	}
+
 ###------> EST <><> <><> <><> <><> <><>
 	spriteType = {
 		name = "GFX_idea_EST_tallinn_radiotehas"
@@ -918,49 +922,49 @@ SpriteType = {
 		name = "GFX_idea_rodriguez.dds"
 		texturefile = "gfx/interface/ideas/mex/companies/r56_idea_MEX_company_rodriguez.dds"
 	}
-	
+
 
 ###------> NOR <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_idea_NOR_norsk_hydro"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_norsk_hydro.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_NOR_christiania_spigerverk"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_christiania_spigerverk.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_kongsberg"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_kongsberg.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_raufoss_ammunisjonsfabrikker"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_raufoss_ammunisjonsfabrikker.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_kjeller_flyfabrikk"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_kjeller_flyfabrikk.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_NOR_marinens_flyvebaatfabrikk"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_marinens_flyvebaatfabrikk.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_NOR_det_norske_luftfartselskap"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_det_norske_luftfartselskap.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_NOR_marinens_hovedverft"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_marinens_hovedverft.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_NOR_thunes_mekaniske_verksted"
 		texturefile = "gfx/interface/ideas/nor/companies/r56_idea_NOR_company_thunes_mekaniske_verksted.dds"

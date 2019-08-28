@@ -26,6 +26,9 @@
  DEN_frichs_tanks:0 "Frichs Tank Locomotives"
  DEN_military_studies:0 "Military Studies Department"
  DEN_domestic_technology_breakthrough:0 "Domestic Technology Breakthrough"
+ DEN_develop_the_air_corps:0 "Develop The Haerens Flyvertropper"
+ DEN_support_fokker:0 "Support Fokker"
+ DEN_rearm_the_naval_service:0 "Marinens Flyvevæsen Rearmament Program"
 
  #Ideas
  DEN_unemployment:0 "Urban Unemployment"
@@ -37,6 +40,8 @@
  DEN_tdc:0 "TDC"
  DEN_flsmidth:0 "FLSmidth"
  DEN_frichs:0 "Frichs Locomotives"
+ DEN_fokker:0 "Fokker"
+ DEN_danske_statsbaner:0 "Danske Statsbaner"
  #Misc
  DEN_storstrom_link:0 "§YAdds Max infrastructure To Sjælland!§!"
  DEN_public_works:0 "§YAdds Max infrastructure And Building Slots To Jutland!§!"

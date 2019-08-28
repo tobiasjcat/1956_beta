@@ -369,25 +369,55 @@ ideas = {
 
 		designer = yes
 
-		htk_orlogsvaerftet = {
+		DEN_fokker = {
 
-			picture = generic_air_manufacturer_3
+				picture = fokker
 
+				available = {
+					has_completed_focus = DEN_support_fokker
+				}
 
-			allowed = {
-				original_tag = DEN
+				allowed = {
+					original_tag = DEN
+				}
+
+				cost = 75
+
+				research_bonus = {
+					air_equipment = 0.15
+				}
+
+				traits = { light_aircraft_manufacturer }
+
+				equipment_bonus = {
+					# fokker D.XXI fighter, not very effective vs armored aircraft but excellent otherwise
+				}
+
+				ai_will_do = {
+					factor = 1
+				}
 			}
 
-			research_bonus = {
-				air_equipment = 0.15
-			}
+			DEN_orlogsvaerftet = {
 
-			traits = { light_aircraft_manufacturer }
+				picture = generic_air_manufacturer_3
 
-			# recon and fighter aircraft
 
-			ai_will_do = {
-				factor = 1
+				allowed = {
+					original_tag = DEN
+				}
+
+				research_bonus = {
+					air_equipment = 0.15
+				}
+
+				traits = { naval_aircraft_manufacturer }
+
+				# recon and fighter aircraft
+
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
 	}
@@ -457,6 +487,7 @@ industrial_concern = {
 			factor = 1
 		}
 	}
+	
 	DEN_flsmidth = {
 
 		picture = generic_industrial_concern_1
@@ -473,6 +504,19 @@ industrial_concern = {
 
 		traits = { industrial_concern }
 	}
+
+DEN_danske_statsbaner  = {
+
+	picture = danske_statsbaner
+
+	allowed = {
+		original_tag = DEN
+	}
+
+	cost = 150
+
+	traits = { POL_State_Owned_Railways  }
+ }
 }
 
 tank_manufacturer = {
