@@ -738,7 +738,7 @@ focus_tree = {
 	focus = {
 		id = DEN_haeren
 		icon = GFX_goal_DEN_army
-		x = 34
+		x = 15
 		y = 0
 		cost = 7.15
 
@@ -1184,5 +1184,28 @@ focus_tree = {
 			  uses = 2
 			  category = air_doctrine
 			}
+		}
+	}
+
+	focus = {
+		id = DEN_navy
+		icon = GFX_goal_navy_schematics
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+
 		}
 	}
