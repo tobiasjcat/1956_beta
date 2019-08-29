@@ -1206,6 +1206,82 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+		random_owned_controlled_state = {
+		  add_building_construction = {
+			  type = dockyard
+			  level = 1
+			  instant_build = yes
+		  }
+		}
+		random_owned_controlled_state = {
+		  add_building_construction = {
+			  type = dockyard
+			  level = 1
+			  instant_build = yes
+		  }
 		}
 	}
+}
+
+focus = {
+	id = DEN_degrade_supply
+	icon = GFX_generic_navy_submarine
+	prerequisite = { focus = DEN_navy }
+	mutually_exclusive = { focus = DEN_cruiser_pride }
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = DEN_navy
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	  add_tech_bonus = {
+	  	name = DEN_ss_bonus
+		  bonus = 1
+		  uses = 2
+		  category = ss_tech
+	  }
+	}
+}
+
+focus = {
+	id = DEN_lightweight_fleet
+	icon = GFX_focus_generic_destroyer
+	prerequisite = { focus = DEN_navy }
+	mutually_exclusive = { focus = DEN_degrade_supply }
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = DEN_navy
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	  add_tech_bonus = {
+	  	name = DEN_cruiser_bonus
+		  bonus = 1
+		  uses = 2
+		  category = cl_tech
+			category = dd_tech
+	  }
+	}
+}

@@ -33,6 +33,8 @@
  DEN_the_path_to_an_airforce:0 "The Path To an Airforce"
  DEN_extend_air_tactics:0 "Extend Air Tactics"
  DEN_navy:0 "Søværnet"
+ DEN_degrade_supply:0 "Supply Degredation"
+ DEN_lightweight_fleet:0 "Focus On A Lightweight Fleet"
 
  #Ideas
  DEN_unemployment:0 "Urban Unemployment"
