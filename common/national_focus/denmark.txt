@@ -1046,7 +1046,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_rearm_the_naval_service
-		icon = GFX_goal_multiple_bombers
+		icon = GFX_goal_DEN_orlogsværftet
 		prerequisite = { focus = DEN_develop_the_air_corps }
 		x = -1
 		y = 2
@@ -1189,7 +1189,7 @@ focus_tree = {
 
 	focus = {
 		id = DEN_navy
-		icon = GFX_goal_navy_schematics
+		icon = GFX_goal_DEN_navy
 		x = 20
 		y = 0
 		cost = 10
@@ -1227,7 +1227,7 @@ focus = {
 	id = DEN_degrade_supply
 	icon = GFX_generic_navy_submarine
 	prerequisite = { focus = DEN_navy }
-	mutually_exclusive = { focus = DEN_cruiser_pride }
+	mutually_exclusive = { focus = DEN_lightweight_fleet }
 	x = -1
 	y = 1
 	cost = 10
@@ -1256,7 +1256,7 @@ focus = {
 
 focus = {
 	id = DEN_lightweight_fleet
-	icon = GFX_focus_generic_destroyer
+	icon = GFX_goal_sea_navy
 	prerequisite = { focus = DEN_navy }
 	mutually_exclusive = { focus = DEN_degrade_supply }
 	x = 1
@@ -1283,5 +1283,108 @@ focus = {
 		  category = cl_tech
 			category = dd_tech
 	  }
+	}
+}
+
+focus = {
+	id = DEN_capital_ship_project
+	icon = GFX_goal_liberty_ships
+	prerequisite = { focus = DEN_lightweight_fleet focus = DEN_degrade_supply }
+	x = 0
+	y = 1
+	cost = 5
+	relative_position_id = DEN_navy
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	  add_tech_bonus = {
+	  	name = DEN_cap_bonus
+			bonus = 1
+		  uses = 1
+			category = bc_tech
+			category = bb_tech
+	  }
+	}
+}
+
+focus = {
+	id = DEN_expand_naval_bases
+	icon = GFX_goal_generic_naval_effort2
+	prerequisite = { focus = DEN_capital_ship_project  }
+	x = -1
+	y = 1
+	cost = 5
+	relative_position_id = DEN_capital_ship_project
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+		add_building_construction = {
+			type = naval_base
+			level = 2
+			province = 10968
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = naval_base
+			level = 2
+			province = 6364
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = naval_base
+			level = 2
+			province = 6287
+			instant_build = yes
+		}
+	}
+}
+
+focus = {
+	id = DEN_royal_danish_naval_academy
+	icon = GFX_sca_focus_admirality
+	prerequisite = { focus = DEN_capital_ship_project  }
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = DEN_capital_ship_project
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1
+			uses = 2
+			category = naval_doctrine
+		}
 	}
 }

@@ -400,11 +400,15 @@ ideas = {
 
 			DEN_orlogsvaerftet = {
 
-				picture = generic_air_manufacturer_3
+				picture = DEN_orlogsværftet
 
 
 				allowed = {
 					original_tag = DEN
+				}
+
+				available = {
+					has_completed_focus = DEN_rearm_the_naval_service
 				}
 
 				research_bonus = {

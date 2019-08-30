@@ -386,6 +386,10 @@ SpriteType = {
 	name = "GFX_idea_DEN_danske_statsbaner"
 	texturefile = "gfx/interface/ideas/den/companies/r56_idea_DEN_danske_statsbaner.dds"
 }
+SpriteType = {
+	name = "GFX_idea_DEN_orlogsværftet"
+	texturefile = "gfx/interface/ideas/den/companies/r56_idea_DEN_orlogsværftet.dds"
+}
 ###------> ENG <><> <><> <><> <><> <><>
 	spriteType = {
 		name = "GFX_idea_ENG_general_aircraft_limited"

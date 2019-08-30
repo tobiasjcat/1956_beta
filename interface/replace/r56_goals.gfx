@@ -1340,6 +1340,14 @@ spriteTypes = {
 		name = "GFX_goal_DEN_frichs"
 		texturefile = "gfx/interface/goals/den/r56_goal_DEN_frichs.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_DEN_orlogsværftet"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_orlogsværftet.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_navy"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_navy.dds"
+	}
 
 ###------> DNZ <><> <><> <><> <><> <><>
 	SpriteType = {
