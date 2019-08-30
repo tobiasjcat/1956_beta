@@ -1139,6 +1139,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/bul/r56_focus_BUL_boris.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_BUL_boris_2"
+		texturefile = "gfx/interface/goals/bul/r56_goal_BUL_boris_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_BUL_defend_bulgaria"
 		texturefile = "gfx/interface/goals/bul/r56_focus_BUL_defend_bulgaria.dds"
 	}
