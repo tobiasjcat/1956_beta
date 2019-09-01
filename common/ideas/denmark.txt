@@ -74,7 +74,7 @@ ideas = {
 			}
 		}
 
-		DEN_connect_all_islands = {
+		DEN_christian_x_2 = {
 
 		allowed = {
 			NOT = {
@@ -92,6 +92,46 @@ ideas = {
 
 			removal_cost = -1
 
+			picture = christian_x
+
+			modifier = {
+        stability_factor = 0.1
+			  war_support_factor = 0.05
+			  neutrality_acceptance = 60
+			  neutrality_drift = 0.06
+			}
+		}
+
+	  DEN_royalist_government = {
+
+		allowed = {
+			NOT = {
+				OR= {
+					has_government = communism
+					}
+				}
+			}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = communism
+			}
+		}
+
+			removal_cost = -1
+
+			picture = christian_x
+
+			modifier = {
+        political_power_gain = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+
+		DEN_connect_all_islands = {
+
+			removal_cost = -1
+
 			picture = generic_build_infrastructure
 
 			modifier = {
@@ -99,6 +139,18 @@ ideas = {
 				land_reinforce_rate = 0.05
 				production_speed_infrastructure_factor = 0.05
 			}
+		}
+
+		DEN_holiday_acts = {
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+        industrial_capacity_factory = 0.1
+				consumer_goods_factor = 0.04
+
 		}
 	}
 

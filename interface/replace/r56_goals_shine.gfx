@@ -18575,8 +18575,156 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-
-
+	SpriteType = {
+		name = "GFX_goal_DEN_k_shine"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_k.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_christian_shine"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_christian.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_christian.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_christian.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_staunning_shine"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_staunning.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_staunning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_staunning.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_coa_shine"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_coa.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_coa.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_coa.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_klausen_shine"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_klausen.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_klausen.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/den/r56_goal_DEN_klausen.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 0.75
+			animationdelay = 1.0
+			animationblendmode = "add"#add, multiply, overlay
+			animationtype = "scrolling"#scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 	SpriteType = {
 		name = "GFX_goal_CAN_maple_leaf_shine"
 		texturefile = "gfx/interface/goals/can/r56_goal_CAN_maple_leaf.dds"

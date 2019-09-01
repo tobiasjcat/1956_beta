@@ -35,12 +35,26 @@
  DEN_navy:0 "Søværnet"
  DEN_degrade_supply:0 "Supply Degredation"
  DEN_lightweight_fleet:0 "Focus On A Lightweight Fleet"
+ DEN_capital_ship_project:0 "Capital Ship Project"
+ DEN_expand_naval_bases:0 "Expand Naval Bases"
+ DEN_royal_danish_naval_academy:0 "Royal Danish Naval Academy"
+ DEN_ally_communist:0 "Accept Larsen's Alliance"
+ DEN_legacy_of_the_easter_crisis:0 "Legacy Of The Easter Crisis"
+ DEN_establish_kings_cabinet:0 "The King's Cabinet"
+ DEN_radicalize_the_right:0 "Radicalize The Right"
+ DEN_institute_holiday_acts:0 "Institute Holiday Acts"
+
+#Events
+r56_denmark.1.t:0 "King Christian Dismisses Parliament!"
+r56_denmark.1.d:0 "King Christian has dismissed parliament in favour of a more royalist one much like the events of the Easter Crisis, this time however it seems the king will not back down and instead keep his self-appointed cabinet in power."
+r56_denmark.1.d:0 "Here We Go Again"
 
  #Ideas
  DEN_unemployment:0 "Urban Unemployment"
  DEN_unemployment_2:0 "Urban Unemployment"
  DEN_unemployment_3:0 "Urban Unemployment"
  DEN_christian_x:0 "Christian X"
+ DEN_christian_x_2:0 "Christian X"
  DEN_henrikk_kauffman:0 "Henrikk Kauffman"
  staunning_eller_kaos:0 "Staunning Eller Kaos"
  DEN_tdc:0 "TDC"
@@ -49,6 +63,8 @@
  DEN_fokker:0 "Fokker"
  DEN_danske_statsbaner:0 "Danske Statsbaner"
  DEN_orlogsvaerftet:0 "Orlogsvaerftet"
+ DEN_holiday_acts:0 "Holiday Acts"
+ DEN_royalist_government:0 "Royalist Cabinet"
  #Misc
  DEN_storstrom_link:0 "§YAdds Max infrastructure To Sjælland!§!"
  DEN_public_works:0 "§YAdds Max infrastructure And Building Slots To Jutland!§!"

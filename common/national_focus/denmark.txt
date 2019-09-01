@@ -1207,6 +1207,7 @@ focus_tree = {
 
 		completion_reward = {
 		random_owned_controlled_state = {
+		  add_extra_state_shared_building_slots = 1
 		  add_building_construction = {
 			  type = dockyard
 			  level = 1
@@ -1214,6 +1215,7 @@ focus_tree = {
 		  }
 		}
 		random_owned_controlled_state = {
+		  add_extra_state_shared_building_slots = 1
 		  add_building_construction = {
 			  type = dockyard
 			  level = 1
@@ -1225,7 +1227,7 @@ focus_tree = {
 
 focus = {
 	id = DEN_degrade_supply
-	icon = GFX_generic_navy_submarine
+	icon = GFX_goal_generic_navy_submarine
 	prerequisite = { focus = DEN_navy }
 	mutually_exclusive = { focus = DEN_lightweight_fleet }
 	x = -1
@@ -1291,7 +1293,7 @@ focus = {
 	icon = GFX_goal_liberty_ships
 	prerequisite = { focus = DEN_lightweight_fleet focus = DEN_degrade_supply }
 	x = 0
-	y = 1
+	y = 2
 	cost = 5
 	relative_position_id = DEN_navy
 	available_if_capitulated = yes
@@ -1386,5 +1388,166 @@ focus = {
 			uses = 2
 			category = naval_doctrine
 		}
+	}
+}
+
+
+focus = {
+	id = DEN_ally_communist
+	icon = GFX_goal_DEN_k
+	mutually_exclusive = { focus = DEN_staunning_government focus = DEN_legacy_of_the_easter_crisis focus = DEN_radicalize_the_right }
+	x = 26
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	  add_ideas = communist_influence
+	  add_popularity = {
+		  ideology = communism
+		  popularity = 0.05
+	  }
+  }
+}
+
+
+focus = {
+	id = DEN_staunning_government
+	icon = GFX_goal_DEN_staunning
+	mutually_exclusive = { focus = DEN_legacy_of_the_easter_crisis focus = DEN_ally_communist focus = DEN_radicalize_the_right }
+	x = 30
+	y = 0
+	cost = 10
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+    add_political_power = 120
+  }
+}
+
+focus = {
+	id = DEN_institute_holiday_acts
+	icon = GFX_goal_treaty_peoples
+	prerequisite = { focus = DEN_staunning_government }
+	x = 0
+	y = 1
+	cost = 10
+	relative_position_id = DEN_staunning_government
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+    add_ideas = DEN_holiday_acts
+  }
+}
+
+focus = {
+	id = DEN_legacy_of_the_easter_crisis
+	mutually_exclusive = { focus = DEN_staunning_government focus = DEN_ally_communist focus = DEN_radicalize_the_right }
+	icon = GFX_goal_DEN_coa
+	x = 34
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+   	add_popularity = {
+		  ideology = neutrality
+		  popularity = 0.05
+	   }
+		 swap_ideas = { remove_idea = DEN_christian_x add_idea = DEN_christian_x_2 }
+	}
+}
+
+focus = {
+	id = DEN_establish_kings_cabinet
+	icon = GFX_goal_DEN_christian
+	prerequisite = { focus = DEN_legacy_of_the_easter_crisis  }
+	x = 1
+	y = 1
+	cost = 10
+	relative_position_id = DEN_legacy_of_the_easter_crisis
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	  neutrality > 0.45
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+	country_event = { id = r56_denmark.1 }
+	}
+}
+
+focus = {
+	id = DEN_radicalize_the_right
+	mutually_exclusive = { focus = DEN_staunning_government focus = DEN_ally_communist focus = DEN_legacy_of_the_easter_crisis }
+	icon = GFX_goal_DEN_klausen
+	x = 38
+	y = 0
+	cost = 5
+	available_if_capitulated = yes
+
+	ai_will_do = {
+		factor = 3
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	completion_reward = {
+   	add_ideas = fascist_influence
+   	add_popularity = {
+		  ideology = fascism
+		  popularity = 0.05
+	   }
 	}
 }

@@ -1352,7 +1352,26 @@ spriteTypes = {
 		name = "GFX_goal_DEN_navy"
 		texturefile = "gfx/interface/goals/den/r56_goal_DEN_navy.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_goal_DEN_k"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_christian"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_christian.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_staunning"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_staunning.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_coa"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_coa.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEN_klausen"
+		texturefile = "gfx/interface/goals/den/r56_goal_DEN_klausen.dds"
+	}
 ###------> DNZ <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_DNZ_coat_of_arms"

@@ -1,0 +1,20 @@
+
+add_namespace = r56_denmark
+
+country_event = {
+	id = r56_denmark.1
+	title = r56_denmark.1.t
+	desc = r56_denmark.1.d
+	picture = GFX_report_event_christian_x_rides
+
+	is_triggered_only = yes
+
+	option = {
+		name = r56_denmark.1.a
+
+    set_politics = { ruling_party = neutrality elections_allowed = no }
+    add_stability = -0.2
+    swap_ideas = { remove_idea = DEN_christian_x_2 add_idea = DEN_royalist_government }
+
+	}
+}
