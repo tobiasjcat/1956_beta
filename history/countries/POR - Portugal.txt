@@ -10,14 +10,13 @@ if = {
 }
 
 set_war_support = 0.4
-set_stability = 0.6 
+set_stability = 0.6
 set_convoys = 50
 set_research_slots = 4
 
 add_ideas = {
-		partial_economic_mobilisation
-		r56i_laws_war_diplomacy
-	}
+  POR_pvde
+}
 
 set_technology = {
 
@@ -25,7 +24,7 @@ set_technology = {
 	etax_doctrine = 1
 	camo = 1
 	gw_armored_car = 1
-	
+
 	gnr = 1
 	fec = 1
 	mil = 1
@@ -37,7 +36,7 @@ set_technology = {
 	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_military_police = 1
 	early_fighter = 1
@@ -78,10 +77,10 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	
+
 	#generic focuses
 	complete_national_focus = ABC_establish_a_general_staff
-	 
+
 	complete_national_focus = ABC_motorization_effort
 	complete_national_focus = GEN_Aviation_Effort
 	complete_national_focus = GEN_Naval_Effort
@@ -89,7 +88,7 @@ if = {
 	complete_national_focus = GEN_Industrial_Start
 	complete_national_focus = GEN_Expand_Infra
 	complete_national_focus = GEN_Military_Buildup
-	
+
 	oob = "POR_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -98,13 +97,13 @@ if = {
 			set_naval_oob = "POR_1939_naval_legacy"
 		}
 	}
-	
+
 	set_technology = {
 
 		# Extended Technologies
 		etax_doctrine = 1
 		camo = 1
-		
+
 		interwar_artillery = 1
 		interwar_antiair = 1
 		infantry_weapons2 = 1
@@ -155,7 +154,7 @@ set_popularities = {
 }
 
 1939.1.1 = {
-	set_politics = {		
+	set_politics = {
 		ruling_party = neutrality
 		last_election = "1938.10.30"
 		elections_allowed = yes
@@ -217,52 +216,14 @@ create_country_leader = {
 
 
 create_corps_commander = {
-	name = "Afonso de Almeida Fernandes"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { trickster }
-	skill = 2
+	name = "José Norton de Matos"
+	portrait_path = "gfx/leaders/
+	
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 4
 
-}
-
-create_field_marshal = {
-	name = "Marechal Costa Franco"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { defensive_doctrine }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-
-}
-
-create_corps_commander = {
-	name = "Jaime Silvério Marques"
-	portrait_path = "gfx/leaders/POR/r56_portrait_POR_Jaime_Silvero_Marques.dds"
-	traits = {  }
-	skill = 2
-
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-
-}
-
-create_navy_leader = {
-	name = "Comandante Gomes da Costa"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
-	traits = { superior_tactician }
-	traits = { navy_career_officer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
 }
 
 ### VARIANTS ###
@@ -275,7 +236,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Delfim Class"				
+		name = "Delfim Class"
 		type = ship_hull_submarine_2
 		name_group = POR_SS_HISTORICAL
 		parent_version = 0
@@ -287,7 +248,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Guadiana Class"					
+		name = "Guadiana Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0
@@ -304,7 +265,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Douro Class"	
+		name = "Douro Class"
 		type = ship_hull_light_1
 		name_group = POR_DD_HISTORICAL
 		parent_version = 0

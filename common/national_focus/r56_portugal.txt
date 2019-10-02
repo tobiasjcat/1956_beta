@@ -1,0 +1,75 @@
+focus_tree = {
+	id = r56_portugal
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = POR
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 800 y = 1000 }
+
+
+	focus = {
+		id = POR_build_tarrafal_prison_camp
+		icon = GFX_goal_SAF_institute_apartheid
+		x = 10
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = POR_strengthen_salazar
+		icon = GFX_goal_SAF_institute_apartheid
+		prerequisite = { focus = POR_build_tarrafal_prison_camp }
+		x = 10
+		y = 0
+    relative_position_id = POR_build_tarrafal_prison_camp
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
