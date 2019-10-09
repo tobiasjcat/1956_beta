@@ -1174,6 +1174,22 @@ BUL_aggressive_revisionist = {
 		justify_war_goal_time = -0.15
 		generate_wargoal_tension = -0.5
 	}
+
+	###------> GUA <><> <><> <><> <><> <><>
+
+	GUA_napoleon = {
+		random = no
+		political_power_gain = 0.10
+		drift_defence_factor = 0.10
+		army_org_Factor = 0.05
+	}
+
+	GUA_napoleon_2 = {
+		random = no
+		political_power_gain = 0.20
+		drift_defence_factor = 0.20
+		army_org = 0.1
+	}
 ###------> HUN <><> <><> <><> <><> <><>
 
 	retired_admiral = {
@@ -1224,7 +1240,7 @@ BUL_aggressive_revisionist = {
 	Archigos = {
 		random = no
 
-        political_power_gain = 0.15
+        political_power_gain = 0.10
 		command_power_gain = 0.1
 
 		ai_will_do = {

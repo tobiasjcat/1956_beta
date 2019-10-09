@@ -20,9 +20,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_status_quo
-				FRA_economic_reforms
-				FRA_radicalize_front
+				FRA_support_daladier
+				FRA_brumaire_movement
+				FRA_cagoule_coup
 			}
 		}
 
@@ -187,60 +187,35 @@ bookmarks = {
 			}
 		}
 
-		"CUB" = {
+		"SIA" = {
 			minor = yes
-			history = "CUB_GATHERING_STORM_DESC"
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				SIA_civilian_wing_opposition
+				SIA_small_depression_effects
+				SIA_fascist_sympathies_in_the_army
+			}
+			focuses = {
+				SIA_the_democratic_cause
+        		SIA_restore_rama_vii
+        		SIA_choosing_a_side
+			}
+		}
+
+		"GRE" = {
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-
+			GRE_depression_1
+			GRE_government_crisis
+			GRE_shadow_of_1921
 			}
 			focuses = {
-				CUB_results_of_the_presidential_election
-				CUB_suggest_operation_hemingway
-				CUB_abandon_capitalism
-			}
-		}
-
-		"SAF" = {
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			SAF_untrained_staff_officers
-			SAF_racial_segregation
-			}
-			focuses = {
-				SAF_ethnic_legislation
-        		SAF_sensibilize_the_africans
-				SAF_solidify_german_contacts
-			}
-		}
-
-		"LIT" = {
-			minor = yes
-			history = "LIT_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			}
-			focuses = {
-				LIT_finish_marshalls_reforms
-				LIT_revive_the_trade_sector
-				LIT_increase_the_currency_value
-			}
-		}
-
-		"VIN" = {
-			minor = yes
-			history = "VIN_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				VIN_illiteracy
-				VIN_militias_based_army
-			}
-			focuses = {
-				VIN_ho_chi_minh_victorious
-				VIN_align_with_trotsky_regime
-				VIN_the_greater_vietnam_concept
+			  GRE_reinforce_4th_of_august_regime
+				GRE_third_hellenic_civilization
+				GRE_Reinforce_the_hierarchy
 			}
 		}
 
@@ -276,6 +251,21 @@ bookmarks = {
 			}
 		}
 
+		"NOR" = {
+			minor = yes
+			history = "NOR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				NOR_haakon
+				NOR_policy_of_disarmament
+				NOR_aftermath_of_the_depression_3
+			}
+			focuses = {
+				NOR_british_ally
+        		NOR_traditions_and_monarchy
+        		NOR_three_brothers
+			}
+		}		
 		effect = {
 			randomize_weather = 22345 #Obligatory in every bookmark.
 			#123 = { rain_light = yes }

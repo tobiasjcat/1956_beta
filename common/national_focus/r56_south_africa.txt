@@ -179,10 +179,23 @@ focus_tree = {
              controls_state = 275
         }
         completion_reward = {
-            add_resource = {
-                type = steel
-                amount = 6
-                state = 275
+            random_owned_controlled_state = {
+                prioritize = { 275 }
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = steel_mill
+                    level = 2
+                    instant_build = yes
+                }
+            }
+            add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 1
+                uses = 1
+                technology = steel_production_1
+                technology = steel_production_2
+                technology = steel_production_3
+                technology = steel_production_4
             }
         }
     }
@@ -1500,7 +1513,7 @@ focus_tree = {
         y = 0
         cost = 10
         ai_will_do = {
-            factor = 70
+            factor = 10
         }
 
         available_if_capitulated = yes
@@ -1517,7 +1530,11 @@ focus_tree = {
         y = 0
         cost = 5
         ai_will_do = {
-            factor = 30
+            factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				factor = 2
+			}
         }
 
         available_if_capitulated = yes
@@ -1538,9 +1555,8 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-            factor = 50
-
-          }
+            factor = 10
+        }
         available_if_capitulated = yes
 
         completion_reward = {
@@ -1560,7 +1576,7 @@ focus_tree = {
           y = 1
           cost = 7.15
           ai_will_do = {
-              factor = 40
+              factor = 10
           }
 
           available_if_capitulated = yes
@@ -1584,7 +1600,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
 
         available = {
@@ -1608,7 +1624,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            factor = 25
+            factor = 10
         }
 
         available_if_capitulated = yes
@@ -1655,7 +1671,7 @@ focus_tree = {
         y = 2
         cost = 10
         ai_will_do = {
-          factor = 40
+          factor = 8
         }
 
         available = {
@@ -1679,7 +1695,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
         available_if_capitulated = yes
 
@@ -1698,7 +1714,7 @@ focus_tree = {
         y = 2
         cost = 10
         ai_will_do = {
-          factor = 60
+          factor = 10
             }
 
         available = {
@@ -1720,7 +1736,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-          factor = 40
+          factor = 10
         }
 
         available_if_capitulated = yes
@@ -1748,7 +1764,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
 
         available_if_capitulated = yes
@@ -1769,7 +1785,7 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
 
         available_if_capitulated = yes
@@ -1788,7 +1804,7 @@ focus_tree = {
         y = 1
         cost = 5
         ai_will_do = {
-          factor = 50
+          factor = 10
         }
         available = {
             ENG = {
@@ -1823,7 +1839,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
         available_if_capitulated = yes
 
@@ -1864,7 +1880,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
         available_if_capitulated = yes
 
@@ -1910,7 +1926,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-        factor = 50
+        factor = 10
             }
         available_if_capitulated = yes
         completion_reward = {
@@ -1954,7 +1970,7 @@ focus_tree = {
           cost = 7.15
 
           ai_will_do = {
-          factor = 60
+          factor = 10
           }
 
           available_if_capitulated = yes
@@ -1976,7 +1992,7 @@ focus_tree = {
           cost = 5
 
           ai_will_do = {
-          factor = 70
+          factor = 10
           }
 
           available_if_capitulated = yes
@@ -2018,7 +2034,7 @@ focus_tree = {
             cost = 10
 
             ai_will_do = {
-            factor = 60
+            factor = 10
             }
 
             available_if_capitulated = yes
@@ -2043,7 +2059,7 @@ focus_tree = {
               cost = 7.15
 
               ai_will_do = {
-              factor = 50
+              factor = 10
               }
 
               available_if_capitulated = yes
@@ -2069,7 +2085,7 @@ focus_tree = {
           		cost = 10
 
           		ai_will_do = {
-              factor = 50
+              factor = 10
           		}
 
           		available = {
@@ -2103,8 +2119,12 @@ focus_tree = {
         y = 1
         cost = 5
         ai_will_do = {
-        factor = 25
-            }
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				factor = 5
+			}
+        }
         available_if_capitulated = yes
         completion_reward = {
           add_timed_idea = { idea = democratic_influence days = 90 }
@@ -2126,8 +2146,12 @@ focus_tree = {
         y = 1
         cost = 5
         ai_will_do = {
-        factor = 25
-            }
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				factor = 4
+			}
+        }
         available_if_capitulated = yes
         completion_reward = {
             add_timed_idea = { idea = nationalism days = 90 }
@@ -2148,7 +2172,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-            factor = 50
+            factor = 10
             }
         available_if_capitulated = yes
         completion_reward = {
@@ -2177,7 +2201,11 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-            factor = 40
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				factor = 3
+			}
         }
 
         available = {
@@ -2200,11 +2228,12 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-            factor = 60
+            factor = 10
         }
 
         available = {
           fascism > 0.44
+
         }
         available_if_capitulated = yes
 
@@ -2223,12 +2252,14 @@ focus_tree = {
         cost = 5
 
         ai_will_do = {
-            factor = 25
+            factor = 10
         }
 
         available = {
-          NOT = {
-            is_in_faction_with = ENG
+          is_in_faction = no
+          GER = {
+            is_faction_leader = yes
+            has_government = fascism
           }
         }
 
@@ -2252,7 +2283,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-            factor = 40
+            factor = 10
         }
 
         available_if_capitulated = yes
@@ -2271,7 +2302,7 @@ focus_tree = {
         cost = 7.15
 
         ai_will_do = {
-            factor = 40
+            factor = 10
         }
 
         available_if_capitulated = yes
@@ -2327,7 +2358,13 @@ focus_tree = {
         cost = 7.15
 
         ai_will_do = {
-            factor = 40
+            factor = 10
+            modifier = {
+                factor = 0
+                ENG = {
+                    has_war = no
+                }
+            }
         }
 
         available = {
@@ -2352,7 +2389,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-            factor = 40
+            factor = 10
         }
 
         available = {
@@ -2378,7 +2415,11 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-            factor = 50
+			factor = 0
+			modifier = {
+				is_historical_focus_on = no
+				factor = 5
+			}
         }
 
         available = {
@@ -2412,7 +2453,7 @@ focus_tree = {
         cost = 10
 
         ai_will_do = {
-        factor = 50
+        factor = 10
         }
 
         available = {
@@ -2439,7 +2480,7 @@ focus_tree = {
         mutually_exclusive = { focus = SAF_relax_racial_laws }
 
         ai_will_do = {
-        factor = 60
+        factor = 10
         }
 
         available = {
@@ -2465,7 +2506,7 @@ focus_tree = {
         mutually_exclusive = { focus = SAF_separation_policy }
 
         ai_will_do = {
-        factor = 40
+        factor = 10
         }
 
         available_if_capitulated = yes
@@ -2488,7 +2529,7 @@ focus_tree = {
         y = 1
         cost = 10
         ai_will_do = {
-        factor = 40
+        factor = 10
         }
         available_if_capitulated = yes
         completion_reward = {

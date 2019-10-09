@@ -636,6 +636,11 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/gre/companies/r56_idea_GRE_company_chropei.dds"
 	}
 
+	###------> GUA <><> <><> <><> <><> <><>
+		spriteType = {
+			name = "GFX_idea_GUA_irca"
+			texturefile = "gfx/interface/ideas/gua/companies/r56_idea_GUA_irca.dds"
+		}
 
 ###------> HOL <><> <><> <><> <><> <><>
 	spriteType = {
@@ -721,11 +726,11 @@ SpriteType = {
 ###------> INS <><> <><> <><> <><> <><>
 	spriteType = {
 		name = "GFX_idea_knilm"
-		texturefile = "gfx/interface/ideas/ins/companies/r56_idea_INS_company_knilm.dds"
+		texturefile = "gfx/interface/ideas/ins/companies/r56_idea_INS_knilm.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_shell"
-		texturefile = "gfx/interface/ideas/ins/companies/r56_idea_INS_company_shell.dds"
+		texturefile = "gfx/interface/ideas/ins/companies/r56_idea_INS_shell.dds"
 	}
 
 
@@ -1074,6 +1079,10 @@ SpriteType = {
 	spriteType = {
 		name = "GFX_idea_stocznia_gdynia"
 		texturefile = "gfx/interface/ideas/pol/companies/r56_idea_POL_company_Stocznia_Gdynia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_stocznia_gdanska"
+		texturefile = "gfx/interface/ideas/pol/companies/r56_idea_POL_company_Stocznia_Gdanska.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_Ursus"

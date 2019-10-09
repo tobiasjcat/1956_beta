@@ -800,6 +800,7 @@ form_baltic_federation_category = {
 		allowed = {
 			OR = {
 				original_tag = EST
+				original_tag = LIT
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -856,6 +857,7 @@ form_baltic_federation_category = {
 				11 = { add_core_of = ROOT }
 				189 = { add_core_of = ROOT }
 				188 = { add_core_of = ROOT }
+				784 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.60 hours = 6 }
@@ -2148,6 +2150,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_albania_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2197,6 +2200,7 @@ form_byzantine_empire_category = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_wallachia_integrated }
 			has_global_flag = byz_bulgaria_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2251,6 +2255,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_bulgaria_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 
@@ -2312,6 +2317,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_yugoslavia_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 75
@@ -2386,6 +2392,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = byz_turkey_integrated }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2466,6 +2473,7 @@ form_byzantine_empire_category = {
 			NOT = { has_global_flag = triumph_for_italy }
 			has_global_flag = byz_bulgaria_integrated
 			has_global_flag = byz_yugoslavia_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2535,6 +2543,7 @@ form_byzantine_empire_category = {
 			original_tag = GRE
 			NOT = { has_global_flag = triumph_for_middle_east }
 			has_global_flag = byz_turkey_integrated
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
@@ -2604,6 +2613,7 @@ form_byzantine_empire_category = {
 		visible = {
 			original_tag = GRE
 			NOT = { has_global_flag = triumph_for_egypt_and_tunis }
+			has_global_flag = form_byzantine_empire_flag
 		}
 
 		cost = 100
