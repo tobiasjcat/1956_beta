@@ -148,11 +148,11 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-        industrial_capacity_factory = 0.1
+                industrial_capacity_factory = 0.1
 				consumer_goods_factor = 0.04
-
-		}
-	}
+		    }
+	    }
+    }
 
 	political_advisor = {
 
