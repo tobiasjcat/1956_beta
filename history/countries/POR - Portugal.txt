@@ -215,15 +215,50 @@ create_country_leader = {
 }
 
 
+create_field_marshal = {
+	name = "Óscar Carmona"
+	picture = "r56_portrait_POR_oscar_carmona.tga"
+	traits = { old_guard cavalry_leader  politically_connected skilled_staffer media_personality }
+	skill = 4
+	id = 6500
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
 create_corps_commander = {
 	name = "José Norton de Matos"
-	portrait_path = "gfx/leaders/
-	
+	picture = "r56_portrait_POR_norton_de_mattos.tga"
+	traits = { inspirational_leader }
+	skill = 2
+	id = 6501
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 4
+}
 
+create_navy_leader = {
+	name = "Américo Tomás"
+	picture = "r56_portrait_POR_americo_thomaz.tga"
+	traits = { superior_tactician  fleet_protector  }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Fernando de Quintanilha e Mendonça Dias"
+	picture = "r56_portrait_POR_fernando_de_quintanilha.tga"
+	traits = { bold }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
 
 ### VARIANTS ###
