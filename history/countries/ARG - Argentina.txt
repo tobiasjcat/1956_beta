@@ -181,7 +181,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nimo de Anquín"
 	desc = "POLITICS_NIMO_DE_ANQUIN_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+	picture = "gfx/leaders/ARG/r56_portrait_ARG_Nimio_de_Anquín.tga"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -224,7 +224,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 	name = "Juan Pistarini"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	portrait_path = "gfx/leaders/ARG/r56_portrait_ARG_Juan_Pistarini.tga"
 	traits = { urban_assault_specialist fortress_buster decided_planner}
 	skill = 3
     attack_skill = 4
