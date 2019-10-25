@@ -114,9 +114,9 @@ create_country_leader = {
 	create_country_leader = {
 		name = "León Cortés Castro"
 		desc = "POLITICS_LEON_CORTES_CASTRO_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+		picture = "gfx/leaders/COS/r56_Portrait_COS_León_Cortés_Castro.tga"
 		expire = "1965.1.1"
-		ideology = liberalism
+		ideology = conservatism
 		traits = {
 			#
 		}
