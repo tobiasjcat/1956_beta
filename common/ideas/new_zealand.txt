@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		NZL_wairarapa_sheep_farms = {
+		NZL_the_wairarapa_sheep_farms = {
 
 			allowed = {
 				always = no
@@ -20,6 +20,200 @@ ideas = {
 			
 		}
 
+		NZL_resource_imports = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				local_resources_factor = 0.03
+			}
+		}
+
+		NZL_pilot_recruitment_drive = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_superiority_efficiency = 0.10
+				conscription_factor = .02
+			}
+		}
+
+		NZL_remember_anzac = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				alwasy = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				mobilization_speed = 0.15
+				army_morale_Factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		NZL_new_zealand_will_not_fall = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				alwasy = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.03
+				conscription_factor = 0.05
+				
+			}
+		}
+
+		NZL_a_poor_army = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				mobilization_speed = -0.20
+				army_morale_factor = -0.25
+				war_support_factor = -0.15
+				army_org_factor = -0.05
+			}
+		}
+
+		NZL_negotiate_off_the_debt = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		NZL_new_zealand_special_forces = {
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				special_forces_cap = 0.03
+				special_forces_attack_factor = 0.03
+				special_forces_defence_factor = 0.03
+				conscription_factor = 0.02
+			}
+		}
+		
+		NZL_distribute_the_national_defense_budget = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.1
+			}
+		}
+		NZL_royal_new_zealand_engineer_and_supply_corp = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.5
+					instant = yes
+				}
+			}
+		}		
 		NZL_bob_semple_tank = {
 
 			allowed = {
