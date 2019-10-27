@@ -4414,8 +4414,22 @@ spriteType = {
 		name = "GFX_goal_SOV_imperial_eagle"
 		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_imperial_eagle.dds"
 	}
-
-
+	SpriteType = {
+		name = "GFX_goal_SOV_tsardom"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_tsardom.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_nkvd"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_nkvd.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_kiril"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_kiril.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_kerensky"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_kerensky.dds"
+	}
 ###------> SWE <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_swedish_tank"

@@ -1402,7 +1402,7 @@ ideas = {
 
 		SOV_vyacheslav_molotov = {
 			
-			picture = generic_political_advisor_europe_1
+			picture = SOV_vyacheslav_molotov
 			
 			allowed = {
 				tag = SOV
@@ -1415,8 +1415,8 @@ ideas = {
 
 		SOV_nikolai_voznesensky = {
 			
-			picture = generic_political_advisor_europe_2
-			
+			picture = SOV_nikolai_voznesensky
+
 			allowed = {
 				original_tag = SOV
 			}
@@ -1433,8 +1433,7 @@ ideas = {
 				original_tag = SOV
 			}
 
-			available = 
-			{
+			available = { 			{
 				NOT = { has_country_flag = counter_coup_purge }
 				NOT = { has_country_flag = purge_2_group_a }
 			}

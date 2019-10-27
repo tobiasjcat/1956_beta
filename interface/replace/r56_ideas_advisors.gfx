@@ -2267,6 +2267,14 @@ spriteType = {
 		name = "GFX_idea_SOV_nikolai_yezhov"
 		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_SOV_advisor_nikolai_yezhov.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SOV_vyacheslav_molotov"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_SOV_vyacheslav_molotov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SOV_nikolai_voznesensky"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_SOV_nikolai_voznesensky.dds"
+	}
 
 
 ###------> SWE <><> <><> <><> <><> <><>

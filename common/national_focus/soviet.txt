@@ -5202,7 +5202,7 @@ focus = {
 
 		focus = {
 		id = SOV_nkvd_primacy
-		icon = GFX_goal_arrests
+		icon = GFX_goal_SOV_nkvd
 		prerequisite = { focus = SOV_stalin_constitution }
 		x = -1
 		y = 1
@@ -5637,49 +5637,14 @@ focus = {
 ### COUNTER COUP
 
 	focus = {
-		id = SOV_power_struggle
-		icon = GFX_goal_centralize_power
-		allow_branch = {
-			tag = SOV
-		}
-		x = 48
-		y = 2
-
-		prerequisite = { focus = SOV_counter_coup }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 10
-			}
-		available = {
-			#
-		}
-
-		bypass = {
-			is_puppet = yes
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-				country_event = { id = r56.soviet.26 days = 1 }
-				remove_ideas = SOV_internal_chaos_3
-			}
-		}
-
-		focus = {
-		id = SOV_in_the_name_of_the_czar
-		icon = GFX_focus_generic_home_defense
-		mutually_exclusive = { focus = SOV_nation_above_all }
+		id = SOV_restore_the_monarchy
+		icon = GFX_goal_SOV_tsardom
+		mutually_exclusive = { focus = SOV_return_of_rodzaevsky }
 		mutually_exclusive = { focus = SOV_restore_the_republic }
-		prerequisite = { focus = SOV_power_struggle }
-		x = -4
+		prerequisite = { focus = SOV_counter_coup }
+		x = 0
 		y = 1
-		relative_position_id = SOV_power_struggle
+		relative_position_id = SOV_counter_coup
 
 		cost = 10
 
@@ -5701,6 +5666,7 @@ focus = {
 
 
 		completion_reward = {
+		remove_ideas = SOV_internal_chaos_3
 		hidden_effect = {
 			set_cosmetic_tag = SOV3
 			retire_country_leader = yes
@@ -5723,14 +5689,14 @@ focus = {
 		}
 	}
 	focus = {
-		id = SOV_nation_above_all
-		icon = GFX_goal_support_fascism
-		mutually_exclusive = { focus = SOV_in_the_name_of_the_czar }
+		id = SOV_return_of_rodzaevsky
+		icon = GFX_goal_MAN_no_rfp
+		mutually_exclusive = { focus = SOV_restore_the_monarchy }
 		mutually_exclusive = { focus = SOV_restore_the_republic }
-		prerequisite = { focus = SOV_power_struggle }
-		x = 0
+		prerequisite = { focus = SOV_counter_coup }
+		x = 4
 		y = 1
-		relative_position_id = SOV_power_struggle
+		relative_position_id = SOV_counter_coup
 
 		cost = 10
 
@@ -5738,8 +5704,6 @@ focus = {
 			factor = 0
 		}
 		available = {
-			has_idea = konstantin_rodzaevsky
-			has_government = fascism
 		}
 
 
@@ -5749,8 +5713,7 @@ focus = {
 
 
 		completion_reward = {
-			add_war_support = 0.10
-			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
+			remove_ideas = SOV_internal_chaos_3
 
 		}
 	}
@@ -5758,10 +5721,10 @@ focus = {
 	focus = {
 		id = SOV_organize_the_youth
 		icon = GFX_goal_extensive_conscription_fascism
-		prerequisite = { focus = SOV_nation_above_all }
-		x = 0
-		y = 2
-		relative_position_id = SOV_power_struggle
+		prerequisite = { focus = SOV_return_of_rodzaevsky }
+		x = 1
+		y = 1
+		relative_position_id = SOV_return_of_rodzaevsky
 
 		cost = 10
 
@@ -5792,12 +5755,12 @@ focus = {
 	focus = {
 		id = SOV_restore_the_republic
 		icon = GFX_focus_generic_russian_deal
-		mutually_exclusive = { focus = SOV_in_the_name_of_the_czar  }
-		mutually_exclusive = { focus = SOV_nation_above_all }
-		prerequisite = { focus = SOV_power_struggle }
-		x = 4
+		mutually_exclusive = { focus = SOV_restore_the_monarchy  }
+		mutually_exclusive = { focus = SOV_return_of_rodzaevsky }
+		prerequisite = { focus = SOV_counter_coup }
+		x = -4
 		y = 1
-		relative_position_id = SOV_power_struggle
+		relative_position_id = SOV_counter_coup
 
 		cost = 10
 
@@ -5806,8 +5769,6 @@ focus = {
 		}
 
 		available = {
-			has_idea = alexander_kerensky
-			has_government = democratic
 		}
 
 
@@ -5816,18 +5777,18 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 25
-
-			add_stability = 0.10
-
-			add_ideas = GEN_Strenghten_Democracy_I
+			remove_ideas = SOV_internal_chaos_3
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 		}
 	}
 	focus = {
-		id = SOV_secure_the_nation
-		icon = GFX_goal_generic_construct_mil_factory
+		id = SOV_president_kerensky
+		icon = GFX_goal_SOV_kerensky
 		prerequisite = { focus = SOV_restore_the_republic }
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = SOV_restore_the_republic
 
@@ -5836,36 +5797,163 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+
 		available = {
-
 		}
 
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-
-			add_ideas = GEN_Military_Build_I
+			add_political_power = 120
 		}
 	}
 
 	focus = {
+		id = SOV_agrarian_prioritization
+		icon = GFX_goal_SOV_kerensky
+		prerequisite = { focus = SOV_president_kerensky }
+		x = 0
+		y = 1
+		relative_position_id = SOV_president_kerensky
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SOV_reassure_the_industrial_workers
+		icon = GFX_goal_SOV_kerensky
+		prerequisite = { focus = SOV_agrarian_prioritization }
+		x = -1
+		y = 1
+		relative_position_id = SOV_agrarian_prioritization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SOV_maintain_state_owned_industry
+		icon = GFX_goal_SOV_kerensky
+		prerequisite = { focus = SOV_agrarian_prioritization }
+		x = 1
+		y = 1
+		relative_position_id = SOV_agrarian_prioritization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = SOV_federalization
+		icon = GFX_goal_SOV_kerensky
+		prerequisite = { focus = SOV_maintain_state_owned_industry }
+		prerequisite = { focus = SOV_reassure_the_industrial_workers }
+		x = -1
+		y = 1
+		relative_position_id = SOV_maintain_state_owned_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = SOV_draft_the_constitution
+		icon = GFX_goal_consitution
+		prerequisite = { focus = SOV_president_kerensky }
+		x = 2
+		y = 1
+		relative_position_id = SOV_president_kerensky
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
 		id = SOV_white_exiles
 		icon = GFX_sca_focus_into_fire
-
-		prerequisite = { focus = SOV_in_the_name_of_the_czar }
-		x = -2
+		prerequisite = { focus = SOV_restore_the_monarchy focus = SOV_restore_the_republic }
+		x = -1
 		y = 1
-		relative_position_id = SOV_in_the_name_of_the_czar
+		relative_position_id = SOV_restore_the_monarchy
 
 		cost = 5
 
@@ -5912,11 +6000,10 @@ focus = {
 	focus = {
 		id = SOV_tsar_militarism
 		icon = GFX_goal_military_government
-
-		prerequisite = { focus = SOV_in_the_name_of_the_czar }
-		x = 0
+		prerequisite = { focus = SOV_restore_the_monarchy }
+		x = 01
 		y = 1
-		relative_position_id = SOV_in_the_name_of_the_czar
+		relative_position_id = SOV_restore_the_monarchy
 
 		cost = 10
 
@@ -5948,11 +6035,11 @@ focus = {
 		id = SOV_imperial_legacy
 		icon = GFX_goal_SOV_imperial_eagle
 
-		prerequisite = { focus = SOV_in_the_name_of_the_czar  focus = SOV_nation_above_all }
+		prerequisite = { focus = SOV_restore_the_monarchy  focus = SOV_return_of_rodzaevsky }
 		mutually_exclusive = { focus = SOV_national_security_act }
 		x = 2
 		y = 2
-		relative_position_id = SOV_in_the_name_of_the_czar
+		relative_position_id = SOV_restore_the_monarchy
 
 		cost = 10
 
@@ -6397,240 +6484,6 @@ focus = {
 			add_state_claim = 147
 		}	
 	}	
-	focus = {
-		id = SOV_ideological_fanaticism
-		icon = GFX_r56_focus_army_elite
-
-		prerequisite = { focus = SOV_imperial_legacy focus = SOV_national_security_act }
-		x = 2
-		y = 1
-		relative_position_id = SOV_imperial_legacy
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_ideas = ideological_fanaticism_focus
-		}
-	}
-	focus = {
-		id = SOV_national_security_act
-		icon = GFX_goal_arrests
-
-		prerequisite = { focus = SOV_restore_the_republic focus = SOV_nation_above_all }
-		mutually_exclusive = { focus = SOV_imperial_legacy }
-		x = -2
-		y = 2
-		relative_position_id = SOV_restore_the_republic
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-
-			add_popularity = { ideology = communism popularity = -0.05 }
-
-			add_ideas = GEN_Defence_Act_I
-		}
-	}
-	focus = {
-		id = SOV_liberty_ethos
-		icon = GFX_sca_focus_liberty
-
-		prerequisite = { focus = SOV_restore_the_republic }
-		x = 2
-		y = 1
-		relative_position_id = SOV_restore_the_republic
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_political_power = 125
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-		}
-	}
-	focus = {
-		id = SOV_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = SOV_liberty_ethos }
-		mutually_exclusive = { focus = SOV_interventionism_focus }
-		
-		x = 1
-		y = 1
-		relative_position_id = SOV_liberty_ethos
-		
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				tag = AUS
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.05
-
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				add_ideas = neutrality_idea
-			}
-		}
-	}
-	
-	
-	focus = {
-		id = SOV_interventionism_focus
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SOV_liberty_ethos }
-		mutually_exclusive = { focus = SOV_neutrality_focus }
-		
-		x = -1
-		y = 1
-		relative_position_id = SOV_liberty_ethos
-		
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_idea = neutrality_idea
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 75
-			add_war_support = 0.05
-		
-			if = {
-				limit = { has_idea = neutrality_idea }
-				remove_ideas = neutrality_idea
-			}	
-			set_rule = { can_send_volunteers = yes }
-		}
-	}
-	
-	
-	focus = {
-		id = SOV_Brigades
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = SOV_interventionism_focus }
-		
-		x = 0
-		y = 1
-		relative_position_id = SOV_interventionism_focus
-		
-		cost = 10
-
-		available_if_capitulated = yes
-
-		available = {
-			
-		}
-		
-		completion_reward = {
-			add_ideas = GEN_Brigades_I
-		}
-	}
-	
-	
-	focus = {
-		id = SOV_why_we_fight
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SOV_neutrality_focus focus = SOV_Brigades }
-		available = { 
-			OR = { 
-				threat > 0.50
-				has_defensive_war = yes 
-			}
-		}
-
-		continue_if_invalid = yes
-		
-		x = 1
-		y = 1
-		relative_position_id = SOV_Brigades
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = GEN_why_we_fight_I
-			custom_effect_tooltip = why_we_fight_effect
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
-			}
-		}	
-}
 
 ###
 
