@@ -219,7 +219,7 @@ focus = {
 	}
 focus = {
 		id = NZL_form_the_new_zealand_navy
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_liberty_ships
 		x = 1
 		y = 1
 		relative_position_id = NZL_solidify_the_new_zealand_division
@@ -245,14 +245,7 @@ focus = {
 			available_if_capitulated = no
 
 			completion_reward = {
-			add_tech_bonus = {
-				name = NZL_form_the_new_zealand_navy
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
-			#1x 50% research bonus for Destroyers
-			#insert national spirit
+			add_ideas = NZL_form_the_new_zealand_navy
 		}
 	}
 
@@ -494,7 +487,7 @@ focus = {
 
 focus = {
 		id = NZL_defend_our_islands
-		icon = GFX_goal_multiple_bombers
+		icon = GFX_goal_iron_people
 		prerequisite = { focus = NZL_remember_anzac }
 		x = -1
 		y = 2
@@ -863,7 +856,7 @@ focus = {
 
 focus = {
 		id = NZL_fighter_production
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus =  NZL_construct_the_whenuapai_base }
 		x = -1
 		y = 1
@@ -936,7 +929,7 @@ focus = {
 
 focus = {
 		id = NZL_allocate_resources_to_the_rnzf
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_goal_fighters_uk
 		prerequisite = { focus = NZL_fighter_production }
 		prerequisite = { focus = NZL_bomber_production }
 		x = 1.5
@@ -989,7 +982,7 @@ focus = {
 
 focus = {
 	id = NZL_new_zealand_special_forces
-	icon = GFX_goal_generic_air_doctrine
+	icon = GFX_r56_focus_army_elite
 	prerequisite = { focus = NZL_allocate_resources_to_the_rnzf}
 	prerequisite = { focus = NZL_royal_new_zealand_engineer_and_supply_corp }
 	x = -1
@@ -1021,7 +1014,7 @@ focus = {
 
 focus = {
 	id = NZL_piolt_recuitment_drive
-	icon = GFX_goal_generic_air_doctrine
+	icon = GFX_goal_manpower
 	prerequisite = { focus = NZL_allocate_resources_to_the_rnzf }
 	x = 1
 	y = 2
@@ -1054,7 +1047,7 @@ focus = {
 
 focus = {
 		id = NZL_connect_the_nation
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_goal_war_infrastructure
 		x = 20
 		y = 0
 
@@ -1212,7 +1205,7 @@ focus = {
 
 focus = {
 	id = NZL_resource_imports
-	icon = GFX_goal_generic_production2
+	icon = GFX_goal_refining
 	prerequisite = { focus = NZL_new_zealand_steel_works }
 	x = -.5
 	y = 2
@@ -1408,7 +1401,7 @@ focus = {
 
 focus = {
 	id = NZL_negotiate_off_the_debt
-	icon = GFX_goal_generic_consumer_goods
+	icon = GFX_goal_generic_business_bills
 	prerequisite = { focus = NZL_industrial_awakening} 
 	prerequisite = { focus = NZL_resource_imports}
 	x = -2
@@ -1513,7 +1506,7 @@ focus = {
 
 focus = {
 		id = NZL_hire_physicists
-		icon = GFX_goal_NZL_hire_scientists
+		icon = GFX_focus_research
 		prerequisite = { focus = NZL_distribute_the_national_defense_budget }
 		x = 1
 		y = 1
