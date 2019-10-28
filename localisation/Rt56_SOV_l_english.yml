@@ -2,6 +2,43 @@
 
  #Focuses 
  #Counter Coup Tree
+
+ SOV_president_kerensky:0 "Return Of Kerensky"
+ SOV_president_kerensky_desc:0 ""
+ SOV_agrarian_prioritization:0 "Agrarian Prioritization"
+ SOV_agrarian_prioritization_desc:0 ""
+ SOV_de_bolshevize_the_left:0 "De-Bolshevize The Left"
+ SOV_de_bolshevize_the_left_desc:0 ""
+ SOV_federalization:0 "Federalization"
+ SOV_federalization_desc:0 ""
+ SOV_reassure_the_industrial_workers:0 "Reassure The Industrial Workers"
+ SOV_reassure_the_industrial_workers_desc:0 ""
+ SOV_general_amnesty_law:0 "General Amnesty Law"
+ SOV_general_amnesty_law_desc:0 ""
+ SOV_maintain_state_owned_industry:0 "Maintain State-Owned Industry"
+ SOV_maintain_state_owned_industry_desc:0 ""
+ SOV_protect_national_minorities:0 "Protect National Minorities"
+ SOV_national_reconciliation:0 "National Reconciliation"
+ SOV_national_reconciliation_desc:0 ""
+
+ SOV_purge_the_bureaucracy:0 "Purge The Bureaucracy"
+ SOV_purge_the_bureaucracy_desc:0 ""
+ SOV_support_landowners:0 "Support Landowners"
+ SOV_support_landowners_desc:0 ""
+ SOV_decollectivization:0 "Decollectivization"
+ SOV_decollectivization_desc:0 ""
+ SOV_new_white_terror:0 "New White Terror"
+ SOV_new_white_terror_desc:0 ""
+ SOV_reestablish_the_okhrana:0 "Reestablish The Okhrana"
+ SOV_reestablish_the_okhrana_desc:0 ""
+ SOV_return_of_the_orthodox_church:0 "Return Of The Orthodox Church"
+ SOV_return_of_the_orthodox_church_desc:0 ""
+ SOV_great_russian_nationalism:0 "Great Russian Nationalism"
+ SOV_great_russian_nationalism_desc:0 ""
+ 
+
+
+
  SOV_conscription_law:0 "Conscription Law"
  SOV_conscription_law_desc:0 ""
  SOV_power_struggle:0 "Post Coup Power Struggle"

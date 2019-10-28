@@ -4427,6 +4427,10 @@ spriteType = {
 		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_kiril.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_SOV_integrate_white_exiles"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_integrate_white_exiles.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_SOV_kerensky"
 		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_kerensky.dds"
 	}
