@@ -8729,7 +8729,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
->>>>>>> NZL
     SpriteType = {
         name = "GFX_goal_ROM_puppet_bulgaria_shine"
         texturefile = "gfx/interface/goals/rom/r56_goal_ROM_puppet_bulgaria.dds"
@@ -9464,7 +9463,6 @@ spriteTypes = {
         legacy_lazy_load = no
     }
 
->>>>>>> NZL
 	SpriteType = {
 		name = "GFX_allies_shine"
 		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_allies.dds"
@@ -11383,13 +11381,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-<<<<<<< HEAD
 		name = "GFX_goal_mielec_aircraft_factory_shine"
 		texturefile = "gfx/interface/goals/pol/r56_goal_mielec_aircraft_factory.dds"
-=======
 		name = "GFX_goal_mocidade_shine"
 		texturefile = "gfx/interface/goals/por/r56_goal_POR_mocidade.dds"
->>>>>>> NZL
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pol/r56_goal_mielec_aircraft_factory.dds"
@@ -11419,13 +11414,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-<<<<<<< HEAD
 		name = "GFX_goal_polish_medium_bomber_development_shine"
 		texturefile = "gfx/interface/goals/pol/r56_goal_polish_medium_bomber_development.dds"
-=======
 		name = "GFX_focus_por_support_mns_shine"
 		texturefile = "gfx/interface/goals/por/focus_por_support_mns.dds"
->>>>>>> NZL
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pol/r56_goal_polish_medium_bomber_development.dds"
@@ -11455,13 +11447,10 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-<<<<<<< HEAD
 		name = "GFX_goal_POL_three_year_plan_shine"
 		texturefile = "gfx/interface/goals/pol/r56_goal_POL_three_year_plan.dds"
-=======
 		name = "GFX_r56_goal_POR_pcp_shine"
 		texturefile = "gfx/interface/goals/por/r56_goal_POR_pcp.dds"
->>>>>>> NZL
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pol/r56_goal_POL_three_year_plan.dds"
@@ -12304,7 +12293,6 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pol/r56_focus_pol_invest_middle_class.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-=======
 	
 ###------> NZL <><> <><> <><> <><> <><>
 	SpriteType = {
@@ -12314,7 +12302,6 @@ spriteTypes = {
 		animation = {
 			animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
->>>>>>> NZL
 			animationrotation = -90.0
 			animationlooping = no
 			animationtime = 0.75
@@ -12325,13 +12312,12 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/pol/r56_focus_pol_invest_middle_class.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-=======
+
 			animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
->>>>>>> NZL
+
 			animationrotation = 90.0
 			animationlooping = no
 			animationtime = 0.75
@@ -12343,7 +12329,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-<<<<<<< HEAD
+
 	SpriteType = {
 		name = "GFX_goal_pol_student_movement_shine"
 		texturefile = "gfx/interface/goals/pol/r56_goal_pol_student_movement.dds"
@@ -12381,38 +12367,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pol/r56_focus_generic_collective_defense.dds"
-=======
 
-    SpriteType = {
-        name = "GFX_goal_NZL_new_zealand_will_not_fall_shine"
-        texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
-        effectFile = "gfx/FX/buttonstate.lua"
-        animation = {
-            animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
-            animationrotation = -90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"#add, multiply, overlay
-            animationtype = "scrolling"#scrolling, rotating, pulsing
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        animation = {
-            animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
-            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
-            animationrotation = 90.0
-            animationlooping = no
-            animationtime = 0.75
-            animationdelay = 0
-            animationblendmode = "add"#add, multiply, overlay
-            animationtype = "scrolling"#scrolling, rotating, pulsing
-            animationrotationoffset = { x = 0.0 y = 0.0 }
-            animationtexturescale = { x = 1.0 y = 1.0 }
-        }
-        legacy_lazy_load = no
-    }
+   
 
 ###------> SWE <><> <><> <><> <><> <><>
 	SpriteType = {
@@ -12421,7 +12377,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/swe/r56_goal_SWE_swedish_tank.dds"
->>>>>>> NZL
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0
 			animationlooping = no
@@ -12434,11 +12389,8 @@ spriteTypes = {
 		}
 
 		animation = {
-<<<<<<< HEAD
 			animationmaskfile = "gfx/interface/goals/pol/r56_focus_generic_collective_defense.dds"
-=======
 			animationmaskfile = "gfx/interface/goals/swe/r56_goal_SWE_swedish_tank.dds"
->>>>>>> NZL
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0
 			animationlooping = no
@@ -12729,7 +12681,6 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
->>>>>>> NZL
 	SpriteType = {
 		name = "GFX_sca_focus_battleship_shine"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_focus_battleship.dds"
@@ -12976,7 +12927,6 @@ spriteTypes = {
         }
         legacy_lazy_load = no
     }
->>>>>>> NZL
 	SpriteType = {
 		name = "GFX_sca_focus_worker_support_shine"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_workers_support.dds"
@@ -13734,6 +13684,36 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+ SpriteType = {
+        name = "GFX_goal_NZL_new_zealand_will_not_fall_shine"
+        texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+            animationrotation = -90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"#add, multiply, overlay
+            animationtype = "scrolling"#scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        animation = {
+            animationmaskfile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+            animationtexturefile = "gfx/interface/goals/shine_overlay.dds"# <- the animated file
+            animationrotation = 90.0
+            animationlooping = no
+            animationtime = 0.75
+            animationdelay = 0
+            animationblendmode = "add"#add, multiply, overlay
+            animationtype = "scrolling"#scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+        }
+        legacy_lazy_load = no
+    }
 ###------> SWE <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_swedish_tank_shine"
@@ -23352,8 +23332,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-=======
->>>>>>> NZL
     SpriteType = {
         name = "GFX_goal_CHI_academia_sinica_shine"
         texturefile = "gfx/interface/goals/chi/r56_goal_CHI_academia_sinica.dds"
