@@ -5638,15 +5638,50 @@ focus = {
 
 	################################################ TSAR PATH #######################################
 
+
 	focus = {
-		id = SOV_restore_the_monarchy
-		icon = GFX_goal_SOV_kiril
-		mutually_exclusive = { focus = SOV_return_of_rodzaevsky }
+		id = SOV_restore_the_tsardom
+		icon = GFX_goal_SOV_tsardom
 		mutually_exclusive = { focus = SOV_restore_the_republic }
+		mutually_exclusive = { focus = SOV_return_of_rodzaevsky }
 		prerequisite = { focus = SOV_counter_coup }
-		x = 10
+		x = 4
 		y = 1
 		relative_position_id = SOV_counter_coup
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_idea = boris_smyslovsky
+			has_government = neutrality
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = SOV_reassert_tsarist_power
+		icon = GFX_goal_SOV_kiril
+		mutually_exclusive = { focus = SOV_president_kerensky }
+		mutually_exclusive = { focus = SOV_appoint_kochubei }
+		prerequisite = { focus = SOV_restore_the_tsardom }
+		x = 3
+		y = 1
+		relative_position_id = SOV_restore_the_tsardom
 
 		cost = 10
 
@@ -5678,7 +5713,7 @@ focus = {
     		long_name = r56_SOV_neu_long
     		name = r56_SOV_neu_short
 			}
-		create_country_leader = {
+		        create_country_leader = {
 					name = "Kirill Vladimirovich"
 					desc = "POLITICS_KIRIL_VLADIMIROVICH_DESC"
 					picture = "r56_portrait_SOV_Kirill_Vladimirovich_Romanov.dds"
@@ -5687,9 +5722,8 @@ focus = {
 					traits = {
 					}
 				}
-			add_ideas = GEN_Anti_Invasion_I
-		}
-	}
+		    }
+	    }
 
 	focus = {
 		id = SOV_purge_the_bureaucracy
@@ -5698,7 +5732,7 @@ focus = {
 		prerequisite = { focus = SOV_decollectivization }
 		x = 0
 		y = 2
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5728,10 +5762,10 @@ focus = {
 	focus = {
 		id = SOV_white_exiles
 		icon = GFX_sca_focus_into_fire
-		prerequisite = { focus = SOV_restore_the_monarchy }
+		prerequisite = { focus = SOV_reassert_tsarist_power }
 		x = -1
 		y = 1
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5764,7 +5798,7 @@ focus = {
 		prerequisite = { focus = SOV_decollectivization }
 		x = 2
 		y = 2
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5794,10 +5828,10 @@ focus = {
 	focus = {
 		id = SOV_decollectivization
 		icon = GFX_r56_goal_FRA_root_out_communism
-		prerequisite = { focus = SOV_restore_the_monarchy }
+		prerequisite = { focus = SOV_reassert_tsarist_power }
 		x = 1
 		y = 1
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5830,7 +5864,7 @@ focus = {
 		prerequisite = { focus = SOV_white_exiles }
 		x = -2
 		y = 2
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5864,7 +5898,7 @@ focus = {
 		prerequisite = { focus = SOV_purge_the_bureaucracy }
 		x = -1
 		y = 3
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5898,7 +5932,7 @@ focus = {
 		prerequisite = { focus = SOV_purge_the_bureaucracy }
 		x = 1
 		y = 3
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5932,7 +5966,7 @@ focus = {
 		prerequisite = { focus = SOV_return_of_the_orthodox_church }
 		x = 0
 		y = 4
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 5
 
@@ -5963,7 +5997,7 @@ focus = {
 	focus = {
 		id = SOV_return_of_rodzaevsky
 		icon = GFX_goal_SOV_Rodzaevsky
-		mutually_exclusive = { focus = SOV_restore_the_monarchy }
+		mutually_exclusive = { focus = SOV_restore_the_tsardom }
 		mutually_exclusive = { focus = SOV_restore_the_republic }
 		prerequisite = { focus = SOV_counter_coup }
 		x = 15
@@ -6029,10 +6063,10 @@ focus = {
 	focus = {
 		id = SOV_restore_the_republic
 		icon = GFX_focus_generic_russian_deal
-		mutually_exclusive = { focus = SOV_restore_the_monarchy  }
+		mutually_exclusive = { focus = SOV_restore_the_tsardom  }
 		mutually_exclusive = { focus = SOV_return_of_rodzaevsky }
 		prerequisite = { focus = SOV_counter_coup }
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = SOV_counter_coup
 
@@ -6062,7 +6096,8 @@ focus = {
 		id = SOV_president_kerensky
 		icon = GFX_goal_SOV_kerensky
 		prerequisite = { focus = SOV_restore_the_republic }
-		mutually_exclusive = { focus = SOV_president_kochubey }
+		mutually_exclusive = { focus = SOV_appoint_kochubei }
+		mutually_exclusive = { focus = SOV_reassert_tsarist_power }
 		x = -3
 		y = 1
 		relative_position_id = SOV_restore_the_republic
@@ -6309,15 +6344,43 @@ focus = {
 			add_political_power = 50
 		}
 	}
+    focus = { 
+	id = SOV_western_outreach
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = SOV_appoint_kochubei focus = SOV_president_kerensky }
+	x = 3
+	y = 1
+	relative_position_id = SOV_president_kerensky
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
 
 	# Kochubey
 
 	focus = {
-		id = SOV_president_kochubey
-		icon = GFX_goal_SOV_kerensky
-		prerequisite = { focus = SOV_restore_the_republic }
+		id = SOV_appoint_kochubei
+		icon = GFX_goal_royal_law
+		prerequisite = { focus = SOV_restore_the_republic focus = SOV_restore_the_tsardom }
 		mutually_exclusive = { focus = SOV_president_kerensky }
-		x = 8
+		mutually_exclusive = { focus = SOV_reassert_tsarist_power }
+		x = 4
 		y = 1
 		relative_position_id = SOV_restore_the_republic
 
@@ -6341,13 +6404,12 @@ focus = {
 	}
 
 	focus = {
-		id = SOV_president_kochubey
-		icon = GFX_goal_SOV_kerensky
-		prerequisite = { focus = SOV_president_kochubey }
-		mutually_exclusive = { focus = SOV_president_kerensky }
-		x = 0
+		id = SOV_deradicalize_politics
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SOV_appoint_kochubei }
+		x = 1
 		y = 1
-		relative_position_id = SOV_president_kochubey
+		relative_position_id = SOV_appoint_kochubei
 
 		cost = 10
 
@@ -6368,18 +6430,72 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = SOV_increase_private_businesses
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SOV_appoint_kochubei }
+		x = -1
+		y = 1
+		relative_position_id = SOV_appoint_kochubei
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+	focus = {
+		id = SOV_prevent_another_revolution
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SOV_deradicalize_politics }
+		x = 1
+		y = 1
+		relative_position_id = SOV_deradicalize_politics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
 	#########################################################################################################################
 
 
 	focus = {
 		id = SOV_imperial_legacy
 		icon = GFX_goal_SOV_imperial_eagle
-
-		prerequisite = { focus = SOV_restore_the_monarchy  focus = SOV_return_of_rodzaevsky }
-		mutually_exclusive = { focus = SOV_national_security_act }
+		prerequisite = { focus = SOV_reassert_tsarist_power focus = SOV_return_of_rodzaevsky }
 		x = 10
 		y = 2
-		relative_position_id = SOV_restore_the_monarchy
+		relative_position_id = SOV_reassert_tsarist_power
 
 		cost = 10
 

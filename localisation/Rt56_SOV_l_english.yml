@@ -25,6 +25,10 @@
  SOV_Alexander_Ivanovich_Verkhovsky:0 "Alexander Ivanovich Verkhovsky"
  SOV_Nikolai_Vissarionovich_Nekrasov:0 "Nikolai Vissarionovich Nekrasov"
 
+
+#Tsarist tree
+ SOV_restore_the_tsardom:0 "Restore The Tsardom"
+ SOV_reassert_tsarist_power:0 "Return Of The Tsar's Authority"
  SOV_purge_the_bureaucracy:0 "Purge The Bureaucracy"
  SOV_purge_the_bureaucracy_desc:0 ""
  SOV_support_landowners:0 "Support Landowners"
@@ -40,14 +44,13 @@
  SOV_great_russian_nationalism:0 "Great Russian Nationalism"
  SOV_great_russian_nationalism_desc:0 ""
  
-
-
+#Conservative Democratic tree
+SOV_appoint_kochubei:0 "Revive The Union Of October 17"
 
  SOV_conscription_law:0 "Conscription Law"
  SOV_conscription_law_desc:0 ""
  SOV_power_struggle:0 "Post Coup Power Struggle"
  SOV_power_struggle_desc:0 ""
- SOV_restore_the_monarchy:0 "Restore The Tsardom"
  SOV_return_of_rodzaevsky:0 "The Return Of Rodzaevsky"
  SOV_return_of_rodzaevsky:0 ""
  SOV_organize_the_youth:0 "Organize the Youth"
