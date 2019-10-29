@@ -1848,7 +1848,7 @@ spriteType = {
 	SpriteType = {
 		name = "GFX_idea_PER_SAIPA"
 		texturefile = "gfx/interface/ideas/per/companies/r56_idea_PER_SAIPA.dds"
-
+	}
 
 ###------> POL <><> <><> <><> <><> <><>
 #-> Danzig ideas <><>

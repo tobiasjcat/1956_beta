@@ -323,11 +323,8 @@ create_country_leader = {
 create_country_leader = {
 	name = "Alexander Fyodorovich Kerensky"
 	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
-<<<<<<< HEAD
 	picture = "gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds"
-=======
 	picture = "gfx/leaders/SPR/r56_portrait_SOV_Alexander_Kerensky.dds"
->>>>>>> NZL
 	expire = "1953.3.1"
 	ideology = socialism
 	traits = {
