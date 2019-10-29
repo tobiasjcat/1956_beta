@@ -1506,7 +1506,7 @@ focus = {
 
 focus = {
 		id = NZL_hire_physicists
-		icon = GFX_focus_research
+		icon = GFX_goal_NZL_summon_scientists
 		prerequisite = { focus = NZL_distribute_the_national_defense_budget }
 		x = 1
 		y = 1
