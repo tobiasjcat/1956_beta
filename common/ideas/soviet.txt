@@ -1342,7 +1342,7 @@ ideas = {
 
 		pavel_milyukov = {
 
-			picture = generic_political_advisor_europe_2
+			picture = advisor_SOV_pavel_miliukov
 			
 			cost = 75
 			
@@ -1470,32 +1470,6 @@ ideas = {
 			}
 		}
 
-		sofia_panina = {
-			
-			picture = generic_political_advisor_female_europe
-
-			allowed = {
-				original_tag = "SOV"
-			}
-			
-			available = { 
-				NOT = {
-					has_government = communism
-				}
-			}
-			
-			traits = { financial_expert }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
 
 		boris_smyslovsky = {
 
@@ -1581,6 +1555,110 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 0
+			}
+		}
+
+		sofia_panina = {
+			
+			picture = generic_political_advisor_female_europe
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			available = { 
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			traits = { financial_expert }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		SOV_Aleksandr_Konovalov = {
+			
+			picture = advisor_SOV_Aleksandr_Konovalov
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			available = { 
+				has_government = democratic
+			}
+			
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOV_Alexander_Ivanovich_Verkhovsky = {
+			
+			picture = advisor_SOV_Alexander_Ivanovich_Verkhovsky
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			available = { 
+				has_government = democratic
+			}
+			
+			traits = { war_industry_specialist }
+
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOV_Nikolai_Vissarionovich_Nekrasov = {
+			
+			picture = advisor_SOV_Nikolai_Vissarionovich_Nekrasov
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			available = { 
+				has_government = democratic
+			}
+			
+			traits = { free_mason }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SOV_Sergei_Prokopovich = {
+			
+			picture = advisor_SOV_Sergei_Prokopovich
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			
+			available = { 
+				has_government = democratic
+			}
+			
+			traits = { ambitious_agrarian }
+			
+			ai_will_do = {
+				factor = 1
 			}
 		}
 	}
@@ -1708,7 +1786,31 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+
+		SOV_Anton_Denikin = {
+
+		picture = advisor_SOV_Anton_Denikin
+		
+		allowed = {
+				original_tag = SOV
+			}
+
+		available = {
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+
+		cost = 150
+
+		traits = { army_chief_offensive_2 }
+
+		ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 	navy_chief = {
 		

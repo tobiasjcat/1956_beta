@@ -21,6 +21,10 @@
  SOV_national_reconciliation:0 "National Reconciliation"
  SOV_national_reconciliation_desc:0 ""
 
+ SOV_Aleksandr_Konovalov:0 "Aleksandr Konovalov"
+ SOV_Alexander_Ivanovich_Verkhovsky:0 "Alexander Ivanovich Verkhovsky"
+ SOV_Nikolai_Vissarionovich_Nekrasov:0 "Nikolai Vissarionovich Nekrasov"
+
  SOV_purge_the_bureaucracy:0 "Purge The Bureaucracy"
  SOV_purge_the_bureaucracy_desc:0 ""
  SOV_support_landowners:0 "Support Landowners"

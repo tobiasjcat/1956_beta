@@ -5962,7 +5962,7 @@ focus = {
 	##########################################################################################################################
 	focus = {
 		id = SOV_return_of_rodzaevsky
-		icon = GFX_goal_MAN_no_rfp
+		icon = GFX_goal_SOV_Rodzaevsky
 		mutually_exclusive = { focus = SOV_restore_the_monarchy }
 		mutually_exclusive = { focus = SOV_restore_the_republic }
 		prerequisite = { focus = SOV_counter_coup }
@@ -6115,7 +6115,7 @@ focus = {
 
 	focus = {
 		id = SOV_reassure_the_industrial_workers
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		icon = GFX_r56_goal_generic_peoples_social_democracy
 		prerequisite = { focus = SOV_de_bolshevize_the_left }
 		x = -2
 		y = 3

@@ -299,6 +299,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_agriculture2.dds"
 	}
 	spriteType = {
+		name = "GFX_r56_goal_generic_peoples_social_democracy"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_peoples_social_democracy.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_generic_foreign_diplomacy"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_foreign_diplomacy.dds"
 	}
@@ -4429,6 +4433,10 @@ spriteType = {
 	SpriteType = {
 		name = "GFX_goal_SOV_integrate_white_exiles"
 		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_integrate_white_exiles.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_SOV_Rodzaevsky"
+		texturefile = "gfx/interface/goals/sov/r56_goal_SOV_Rodzaevsky.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_SOV_kerensky"
