@@ -308,8 +308,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_foreign_diplomacy.dds"
 	}
 	spriteType = {
-=======
->>>>>>> NZL
 		name = "GFX_r56_goal_generic_bills"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_bills.dds"
 	}
@@ -712,16 +710,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_generic_radar"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_radar.dds"
->>>>>>> NZL
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_censorship"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_censorship.dds"
 	}
-<<<<<<< HEAD
-=======
-
->>>>>>> NZL
 
 
 ###------> ALB <><> <><> <><> <><> <><>
@@ -3428,15 +3421,6 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
 	}
 	
-	SpriteType = {
-		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
-	}
 
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
