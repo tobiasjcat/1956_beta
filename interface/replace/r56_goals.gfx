@@ -299,10 +299,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_agriculture2.dds"
 	}
 	spriteType = {
+<<<<<<< HEAD
 		name = "GFX_goal_generic_foreign_diplomacy"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_foreign_diplomacy.dds"
 	}
 	spriteType = {
+=======
+>>>>>>> NZL
 		name = "GFX_r56_goal_generic_bills"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_bills.dds"
 	}
@@ -691,17 +694,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_seperation.dds"
 	}
 	SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_goal_generic_expand_the_naval_industry"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_expand_the_naval_industry.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_radar2"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_radar2.dds"
+=======
+		name = "GFX_goal_generic_expanded_naval_industry1"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_expand_the_naval_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_radar"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_radar.dds"
+>>>>>>> NZL
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_censorship"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_censorship.dds"
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> NZL
 
 
 ###------> ALB <><> <><> <><> <><> <><>
@@ -3384,6 +3400,7 @@ SpriteType = {
 
 ###------> NZL <><> <><> <><> <><> <><>
 	SpriteType = {
+<<<<<<< HEAD
 		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 	}
@@ -3403,7 +3420,37 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_new_zealand_army.dds"
 	}
 
+=======
+<<<<<<< HEAD
+		name = "GFX_goal_NZL_improve_the_radars"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_improve_the_radars.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_NZL_expanded_naval_industry"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_expanded_naval_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_NZL_new_zealand_will_not_fall"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
+	}
 
+	SpriteType = {
+		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
+	}
+>>>>>>> NZL
+
+	SpriteType = {
+		name = "GFX_goal_NZL_summon_scientists"
+		texturefile = "gfx/interface/goals/nzl/r56_NZL_hire_scientists.dds"
+	}
+
+
+>>>>>>> 89c613fa1ce30731fe213476a5ab13806be57d89
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_PER_agreement"

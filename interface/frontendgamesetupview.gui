@@ -706,6 +706,7 @@ guiTypes = {
 		#	allwaystransparent = yes
 		#}
 
+<<<<<<< HEAD
 		iconType = {
 			name = "update_overlay"
 			quadTextureSprite ="GFX_country_selection_NEW_entry_overlay"
@@ -713,6 +714,15 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
 		}
+=======
+		#iconType = {
+		#	name = "update_overlay"
+		#	quadTextureSprite ="GFX_country_selection_NEW_entry_overlay"
+		#	position = { x = 615 y = 333 }
+		#	Orientation = "UPPER_LEFT"
+		#	allwaystransparent = yes
+		#}
+>>>>>>> NZL
 
 		iconType = {
 			name = "update_overlay_2"
