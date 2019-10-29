@@ -3400,7 +3400,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_NZL_hire_scientists"
+		name = "GFX_goal_NZL_summon_scientists"
 		texturefile = "gfx/interface/goals/nzl/r56_NZL_hire_scientists.dds"
 	}
 
