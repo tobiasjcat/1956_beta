@@ -3406,6 +3406,20 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_goal_NZL_booming_towns"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_booming_towns.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_new_zealand_army"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_summon_scientists"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_summon_scientists.dds"
+	}
 
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
