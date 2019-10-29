@@ -3400,7 +3400,6 @@ SpriteType = {
 
 ###------> NZL <><> <><> <><> <><> <><>
 	SpriteType = {
-<<<<<<< HEAD
 		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 	}
@@ -3420,15 +3419,6 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_new_zealand_army.dds"
 	}
 
-=======
-<<<<<<< HEAD
-		name = "GFX_goal_NZL_improve_the_radars"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_improve_the_radars.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_NZL_expanded_naval_industry"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_expanded_naval_industry.dds"
-	}
 	SpriteType = {
 		name = "GFX_goal_NZL_new_zealand_will_not_fall"
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
@@ -3441,12 +3431,6 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
-	}
->>>>>>> NZL
-
-	SpriteType = {
-		name = "GFX_goal_NZL_summon_scientists"
-		texturefile = "gfx/interface/goals/nzl/r56_NZL_hire_scientists.dds"
 	}
 
 
