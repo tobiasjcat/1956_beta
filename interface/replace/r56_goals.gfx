@@ -3412,6 +3412,11 @@ SpriteType = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_NZL_summon_scientists"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_summon_scientists.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_goal_NZL_new_zealand_army"
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_army.dds"
 	}

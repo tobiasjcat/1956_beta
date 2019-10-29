@@ -1658,7 +1658,6 @@ spriteType = {
 
 ###------> PER <><> <><> <><> <><> <><>
 	spriteType = {
-<<<<<<< HEAD
 		name = "GFX_idea_advisor_PER_Mahmoud_Afshartous"
 		texturefile = "gfx/interface/ideas/per/advisors/r56_idea_advisor_PER_Mahmoud_Afshartous.dds"
 	}
@@ -1769,7 +1768,6 @@ spriteType = {
 	spriteType = {
 		name = "GFX_idea_PER_anglo_iranian_oil_company"
 		texturefile = "gfx/interface/ideas/per/r56_idea_PER_anglo_iranian_oil_company.dds"
-=======
 		name = "GFX_idea_advisor_PER_abol_ghasem_kashani"
 		texturefile = "gfx/interface/ideas/per/advisors/r56_idea_advisor_PER_abol_ghasem_kashani.dds"
 	}
