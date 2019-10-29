@@ -1518,9 +1518,14 @@
 		prerequisite = { focus = GEN_Aviation_Effort }
 		mutually_exclusive = { focus = GEN_Own_Design }
 		
+<<<<<<< HEAD
 
 		offset = {
 			x = 0
+=======
+		offset = {
+			x = 4
+>>>>>>> NZL
 			y = 0
 			trigger = {
 				tag = SOV

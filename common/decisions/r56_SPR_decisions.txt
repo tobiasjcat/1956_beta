@@ -443,7 +443,11 @@ war_measures = {
 				traits = { superior_tactician }
 				skill = 2
 			}
+<<<<<<< HEAD
 			set_country_flag = rallied_spanish_generals			
+=======
+			set_global_flag = rally_spanish_generals			
+>>>>>>> NZL
 		}
 		ai_will_do = {
 			factor = 100

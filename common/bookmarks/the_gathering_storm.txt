@@ -170,6 +170,7 @@ bookmarks = {
 				PRC_found_our_nation
 			}
 		}
+<<<<<<< HEAD
 		
 		"SIA" = {
 			minor = yes
@@ -215,6 +216,22 @@ bookmarks = {
 				PER_continue_government_purges
 				PER_appoint_zahedi
 				PER_restore_constitutionalism
+=======
+
+		"SIA" = {
+			minor = yes
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				SIA_civilian_wing_opposition
+				SIA_small_depression_effects
+				SIA_fascist_sympathies_in_the_army
+			}
+			focuses = {
+				SIA_the_democratic_cause
+        		SIA_restore_rama_vii
+        		SIA_choosing_a_side
+>>>>>>> NZL
 			}
 		}
 		
@@ -233,6 +250,7 @@ bookmarks = {
 				KMT_democratic_republic
 			}
 		}
+<<<<<<< HEAD
 		
 		"NOR" = {
 			minor = yes
@@ -250,6 +268,9 @@ bookmarks = {
 			}
 		}
 		
+=======
+
+>>>>>>> NZL
 		"POL" = {
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
@@ -281,7 +302,26 @@ bookmarks = {
 				HOL_NSB_electoral_success
 			}
 		}
+<<<<<<< HEAD
 		
+=======
+
+		"NOR" = {
+			minor = yes
+			history = "NOR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				NOR_haakon
+				NOR_policy_of_disarmament
+				NOR_aftermath_of_the_depression_3
+			}
+			focuses = {
+				NOR_british_ally
+        		NOR_traditions_and_monarchy
+        		NOR_three_brothers
+			}
+		}		
+>>>>>>> NZL
 		effect = {
 			randomize_weather = 22345 #Obligatory in every bookmark.
 			#123 = { rain_light = yes }
