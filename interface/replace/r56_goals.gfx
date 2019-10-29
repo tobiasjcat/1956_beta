@@ -3433,8 +3433,6 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 	}
 
-
->>>>>>> 89c613fa1ce30731fe213476a5ab13806be57d89
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_PER_agreement"
