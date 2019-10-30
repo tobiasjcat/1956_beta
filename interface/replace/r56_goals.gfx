@@ -3397,7 +3397,20 @@ SpriteType = {
 
 ###------> NZL <><> <><> <><> <><> <><>
 	
+	SpriteType = {
+		name = "GFX_goal_NZL_new_zealand_will_not_fall"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_new_charlton_automatic_rifle"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
+	}
 	
+	SpriteType = {
+		name = "GFX_goal_NZL_MJS"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_MJS.dds"
+	}
 
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
