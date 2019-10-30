@@ -1,5 +1,296 @@
 ideas = {
 	country = {
+
+		SOV_white_exiles = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = chi_army_corruption3
+			
+			modifier = {
+				army_org_factor = 0.05
+				max_planning = 0.15
+			}
+		}
+
+		SOV_great_russian_nationalism = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription = 0.015
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		SOV_return_of_the_orthodox_church = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = YUG_orthodox_church_support
+			
+			modifier = {
+				army_morale_factor = 0.05
+				attrition = -0.05
+			}
+		}
+
+		SOV_support_landowners = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		SOV_national_reconciliation = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_fortification_focus
+			
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
+
+		SOV_protect_national_minorities = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		SOV_federalization = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_pp_unity_bonus
+			
+			modifier = {
+				political_power_factor = 0.1
+				conscription = 0.005
+			}
+		}
+
+		SOV_maintain_state_owned_industry = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+
+		SOV_agrarian_prioritization = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_agrarian_society
+			
+			modifier = {
+				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		SOV_memories_of_the_soviet_regime = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_memories_of_the_soviet_regime
+			
+			modifier = {
+				conscription_factor = -0.2
+				army_morale_factor = -0.1
+				stability_factor = -0.2
+			}
+		}
+
+		SOV_memories_of_the_soviet_regime_2 = {
+
+			name = SOV_memories_of_the_soviet_regime
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_memories_of_the_soviet_regime
+			
+			modifier = {
+				conscription_factor = -0.1
+				army_morale_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		SOV_legacy_of_soviet_industry_idea = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_legacy_of_soviet_economy
+			
+			modifier = {
+					consumer_goods_factor = 0.1
+					industrial_capacity_factory = -0.1
+					research_speed_factor = -0.05
+			}
+		}
+
+		SOV_legacy_of_soviet_industry_idea_2 = {
+		
+			name = SOV_legacy_of_soviet_industry_idea
+
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_legacy_of_soviet_economy
+			
+			modifier = {
+					consumer_goods_factor = 0.06
+					industrial_capacity_factory = -0.06
+					research_speed_factor = -0.02
+			}
+		}
+
+		SOV_legacy_of_soviet_industry_idea_3 = {
+		
+			name = SOV_legacy_of_soviet_industry_idea
+
+			removal_cost = -1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_legacy_of_soviet_economy
+			
+			modifier = {
+					consumer_goods_factor = 0.02
+					industrial_capacity_factory = -0.15
+			}
+		}
+
 		#Don't remove 'ghost' ideas ffs
 		SOV_revolutionized_industry_ghost = {
 		

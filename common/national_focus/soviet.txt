@@ -5509,7 +5509,6 @@ focus = {
 		set_global_flag = soviet_civil_war_1
 		country_event = { id = r56.soviet.24 days = 7 }
 		clr_country_flag = SOV_fifth_column_started
-		set_cosmetic_tag = SOV2
 		set_country_flag = counter_purge
 		remove_ideas = mikhail_kalinin
 		remove_ideas = ivan_konev
@@ -5526,7 +5525,7 @@ focus = {
 			create_country_leader = {
 					name = "Nikolai Yezhov"
 					desc = "POLITICS_ANDREY_VLASOV_DESC"
-					picture = "portrait_nikolai_ivanovich_yezhov.dds"
+					picture = "gfx/leaders/SOV/r56_portrait_SOV_Nikolai_Yezhov.dds"
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -5575,6 +5574,12 @@ focus = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_counter_coup_tt
 		hidden_effect = {
+			country_event = {
+			    id = r56.soviet.26
+			    days = 20
+			}
+			add_ideas = SOV_legacy_of_soviet_industry_idea
+			add_ideas = SOV_memories_of_the_soviet_regime
 			set_country_flag = counter_coup_purge
 			set_province_name = { id = 3529 name = "Tsaritsyn"}
 			set_province_name = { id = 3151 name = "St.Petersburg"}
@@ -5649,18 +5654,17 @@ focus = {
 		y = 1
 		relative_position_id = SOV_counter_coup
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
-			has_idea = boris_smyslovsky
-			has_government = neutrality
+			has_country_flag = restore_the_monarchy_counter_coup
 		}
 
 		bypass = {
-
+			has_country_flag = restore_the_monarchy_counter_coup
 		}
 
 		cancel_if_invalid = yes
@@ -5669,6 +5673,7 @@ focus = {
 
 
 		completion_reward = {
+			custom_effect_tooltip = SOV_restore_the_tsardom_tt
 		}
 	}
 
@@ -5683,18 +5688,17 @@ focus = {
 		y = 1
 		relative_position_id = SOV_restore_the_tsardom
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
-			has_idea = boris_smyslovsky
-			has_government = neutrality
+			has_country_flag = absolute_monarchy_flag
 		}
 
 		bypass = {
-
+			has_country_flag = absolute_monarchy_flag
 		}
 
 		cancel_if_invalid = yes
@@ -5703,25 +5707,7 @@ focus = {
 
 
 		completion_reward = {
-		remove_ideas = SOV_internal_chaos_3
-		hidden_effect = {
-			set_cosmetic_tag = SOV3
-			retire_country_leader = yes
-		}
-			set_party_name = {
-   			ideology = neutrality
-    		long_name = r56_SOV_neu_long
-    		name = r56_SOV_neu_short
-			}
-		        create_country_leader = {
-					name = "Kirill Vladimirovich"
-					desc = "POLITICS_KIRIL_VLADIMIROVICH_DESC"
-					picture = "r56_portrait_SOV_Kirill_Vladimirovich_Romanov.dds"
-					expire = "1965.1.1"
-					ideology = despotism
-					traits = {
-					}
-				}
+				custom_effect_tooltip = SOV_reassert_tsarist_power_tt
 		    }
 	    }
 
@@ -5737,7 +5723,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 		available = {
 
@@ -5756,12 +5742,24 @@ focus = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = SOV_memories_of_the_soviet_regime_2
+				}
+				remove_ideas = SOV_memories_of_the_soviet_regime_2
+				else = {
+					swap_ideas = {
+						remove_idea = SOV_memories_of_the_soviet_regime
+						add_idea = SOV_memories_of_the_soviet_regime_2
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = SOV_white_exiles
-		icon = GFX_sca_focus_into_fire
+		icon = GFX_goal_SOV_integrate_white_exiles
 		prerequisite = { focus = SOV_reassert_tsarist_power }
 		x = -1
 		y = 1
@@ -5770,7 +5768,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 47
 		}
 		available = {
 
@@ -5789,6 +5787,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_white_exiles
 		}
 	}
 
@@ -5818,10 +5817,11 @@ focus = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
 		}
 
 		completion_reward = {
+			remove_ideas = SOV_legacy_of_soviet_industry_idea_2
+			add_ideas = SOV_support_landowners
 		}
 	}
 
@@ -5836,7 +5836,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 56
 		}
 		available = {
 
@@ -5855,6 +5855,10 @@ focus = {
 		}
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_soviet_industry_idea
+				add_idea = SOV_legacy_of_soviet_industry_idea_2
+			}
 		}
 	}
 
@@ -5869,7 +5873,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 47
 		}
 		available = {
 
@@ -5888,6 +5892,18 @@ focus = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = SOV_memories_of_the_soviet_regime_2
+				}
+				remove_ideas = SOV_memories_of_the_soviet_regime_2
+				else = {
+					swap_ideas = {
+						remove_idea = SOV_memories_of_the_soviet_regime
+						add_idea = SOV_memories_of_the_soviet_regime_2
+					}
+				}
+			}
 		}
 	}
 
@@ -5903,7 +5919,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 53
 		}
 		available = {
 
@@ -5922,6 +5938,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_reestablish_the_okhrana
 		}
 	}
 
@@ -5937,7 +5954,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 54
 		}
 		available = {
 
@@ -5956,6 +5973,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_return_of_the_orthodox_church
 		}
 	}
 
@@ -5971,7 +5989,7 @@ focus = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 24
 		}
 		available = {
 
@@ -5990,6 +6008,7 @@ focus = {
 		}
 
 		completion_reward = {
+			add_ideas = SOV_great_russian_nationalism
 		}
 	}
 
@@ -6004,12 +6023,17 @@ focus = {
 		y = 1
 		relative_position_id = SOV_counter_coup
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
-			factor = 0
+			factor = 15
 		}
 		available = {
+			has_country_flag = fascist_government_counter_coup
+		}
+
+		bypass = {
+			has_country_flag = fascist_government_counter_coup
 		}
 
 
@@ -6019,8 +6043,7 @@ focus = {
 
 
 		completion_reward = {
-			remove_ideas = SOV_internal_chaos_3
-
+			custom_effect_tooltip = SOV_return_of_rodzaevsky_tt
 		}
 	}
 
@@ -6070,13 +6093,18 @@ focus = {
 		y = 1
 		relative_position_id = SOV_counter_coup
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+			has_country_flag = restore_the_republic_counter_coup
+		}
+
+		bypass = {
+			has_country_flag = restore_the_republic_counter_coup
 		}
 
 
@@ -6085,11 +6113,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			remove_ideas = SOV_internal_chaos_3
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
+			custom_effect_tooltip = SOV_restore_the_republic_tt
 		}
 	}
 	focus = {
@@ -6102,13 +6126,18 @@ focus = {
 		y = 1
 		relative_position_id = SOV_restore_the_republic
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
-			factor = 1
+			factor = 50
 		}
 
 		available = {
+			has_country_flag = trudoviks_win_election_flag
+		}
+
+		bypass = {
+			has_country_flag = trudoviks_win_election_flag
 		}
 
 
@@ -6117,7 +6146,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = SOV_president_kerensky_tt
 		}
 	}
 
@@ -6132,7 +6161,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 65
 		}
 
 		available = {
@@ -6144,7 +6173,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 120
+			add_ideas = SOV_agrarian_prioritization
+			swap_ideas = {
+				remove_idea = SOV_legacy_of_soviet_industry_idea
+				add_idea = SOV_legacy_of_soviet_industry_idea_2
+			}
 		}
 	}
 
@@ -6159,7 +6192,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 45
 		}
 
 		available = {
@@ -6171,7 +6204,8 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 120
+			add_stability = 0.1
+			remove_ideas = SOV_legacy_of_soviet_industry_idea_2
 		}
 	}
 
@@ -6199,7 +6233,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 120
+			add_ideas = SOV_maintain_state_owned_industry
 		}
 	}
 
@@ -6214,7 +6248,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 51
 		}
 
 		available = {
@@ -6226,8 +6260,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			add_ideas = SOV_federalization
 		}
 	}
 
@@ -6254,8 +6287,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			add_ideas = SOV_protect_national_minorities
 		}
 	}
 
@@ -6271,7 +6303,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 38
 		}
 
 		available = {
@@ -6283,8 +6315,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			remove_ideas = SOV_memories_of_the_soviet_regime_2
 		}
 	}
 
@@ -6299,7 +6330,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 41
 		}
 
 		available = {
@@ -6311,8 +6342,10 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			swap_ideas = {
+				remove_idea = SOV_memories_of_the_soviet_regime
+				add_idea = SOV_memories_of_the_soviet_regime_2
+			}
 		}
 	}
 
@@ -6328,7 +6361,7 @@ focus = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 19
 		}
 
 		available = {
@@ -6340,8 +6373,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = 0.1
-			add_political_power = 50
+			add_ideas = SOV_national_reconciliation
 		}
 	}
     focus = { 
@@ -6384,22 +6416,32 @@ focus = {
 		y = 1
 		relative_position_id = SOV_restore_the_republic
 
-		cost = 10
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+			OR = {
+				has_country_flag = octobrists_win_election_flag
+				has_country_flag = constitutional_monarchy_flag
+			}
 		}
 
+		bypass = {
+			OR = {
+				has_country_flag = octobrists_win_election_flag
+				has_country_flag = constitutional_monarchy_flag
+			}
+		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 120
+			custom_effect_tooltip = SOV_appoint_kochubei_tt
 		}
 	}
 
@@ -6838,12 +6880,12 @@ focus = {
 		}
 		bypass = {
 			OR = {
-				MOL = {
-					r56_script_standard_bypass = yes
-				}
 				ROM = {
-					r56_script_standard_bypass = yes
-				}							
+					exists = no
+				}
+				controls_state = 80
+				controls_state = 78
+				controls_state = 766
 			}
 
 		}

@@ -1495,6 +1495,33 @@ spriteType = {
 		texturefile = "gfx/event_pictures/news_event_de_valera_churchill.dds"
 	}
 
+###------> SOV <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_news_event_yezhov_and_nkvd"
+		texturefile = "gfx/event_pictures/news_event_yezhov_and_nkvd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_vlasov_speech"
+		texturefile = "gfx/event_pictures/news_event_vlasov_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_vlasov_speech"
+		texturefile = "gfx/event_pictures/report_event_vlasov_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_russia_elections"
+		texturefile = "gfx/event_pictures/report_event_russia_elections.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_russia_corronation"
+		texturefile = "gfx/event_pictures/report_event_russia_corronation.dds"
+	}
+
 }
 
 #####---------------------------------------------------------------------> End

@@ -4116,33 +4116,43 @@ spriteType = {
 ###------> SOV <><> <><> <><> <><> <><>
 
 	spriteType = {
+		name = "GFX_idea_SOV_legacy_of_soviet_economy"
+		texturefile = "gfx/interface/ideas/sov/r56_idea_SOV_legacy_of_soviet_economy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_SOV_memories_of_the_soviet_regime"
+		texturefile = "gfx/interface/ideas/sov/r56_idea_SOV_memories_of_the_soviet_regime.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_advisor_SOV_Anton_Denikin"
 		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_Anton_Denikin.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_SOV_Sergei_Prokopovich"
-		texturefile = "gfx/interface/ideas/sov/r56_idea_advisor_SOV_Sergei_Prokopovich.dds"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_Sergei_Prokopovich.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_SOV_Aleksandr_Konovalov"
-		texturefile = "gfx/interface/ideas/sov/r56_idea_advisor_SOV_Aleksandr_Konovalov.dds"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_Aleksandr_Konovalov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_SOV_Alexander_Ivanovich_Verkhovsky"
-		texturefile = "gfx/interface/ideas/sov/r56_idea_advisor_SOV_Alexander_Ivanovich_Verkhovsky.dds"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_Alexander_Ivanovich_Verkhovsky.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_SOV_Nikolai_Vissarionovich_Nekrasov"
-		texturefile = "gfx/interface/ideas/sov/r56_idea_advisor_SOV_Nikolai_Vissarionovich_Nekrasov.dds"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_Nikolai_Vissarionovich_Nekrasov.dds"
 	}
 
 	spriteType = {
 		name = "GFX_idea_advisor_SOV_pavel_miliukov"
-		texturefile = "gfx/interface/ideas/sov/r56_idea_advisor_SOV_pavel_miliukov.dds"
+		texturefile = "gfx/interface/ideas/sov/advisors/r56_idea_advisor_SOV_pavel_miliukov.dds"
 	}
 
 	spriteType = {

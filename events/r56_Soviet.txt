@@ -788,7 +788,7 @@ country_event = {
 	id = r56.soviet.26
 	title = r56.soviet.26.t
 	desc = r56.soviet.26.d
-	picture = GFX_report_event_soviet_tanks
+	picture = GFX_report_event_vlasov_speech
 
 	fire_only_once = yes
 
@@ -801,11 +801,27 @@ country_event = {
 		 }
 		add_political_power = 75
 		add_popularity = {
-				ideology = democratic
-				popularity = 0.29
-			}
+			ideology = democratic
+			popularity = 0.29
+		}
+		set_country_flag = restore_the_republic_counter_coup
+		custom_effect_tooltip = "Elections will be held in one month"
 		hidden_effect = {
+			create_country_leader = {
+					name = "Andrey Vlasov"
+					desc = "POLITICS_ANDREY_VLASOV_DESC"
+					picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+					}
+				}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 			drop_cosmetic_tag = yes
+			country_event = { id = r56.soviet.31 days = 30 }
 		}
 	}
 
@@ -817,11 +833,14 @@ country_event = {
 		add_political_power = 75
 		add_popularity = {
 				ideology = neutrality
-				popularity = 0.03
+				popularity = 0.1
 			}
+		set_country_flag = restore_the_monarchy_counter_coup
 		hidden_effect = {
-			drop_cosmetic_tag = yes
+			country_event = { id = r56.soviet.32 days = 30 }
 		}
+		custom_effect_tooltip = "The monarchy will be restored in a month"
+		set_cosmetic_flag = SOV_monarchy
 	}
 
 	option = {
@@ -831,9 +850,14 @@ country_event = {
 		 factor = 0
 		 }
 		add_popularity = {
-				ideology = fascism
-				popularity = 0.27
-			}
+			ideology = fascism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		set_country_flag = fascist_government_counter_coup
 		hidden_effect = {
 			drop_cosmetic_tag = yes
 		}
@@ -845,7 +869,7 @@ news_event = {
 	id = r56.soviet.27
 	title = r56.soviet.27.t
 	desc = r56.soviet.27.d
-	picture = GFX_report_event_polish_demobilization
+	picture = GFX_news_event_yezhov_and_nkvd
 
 	major = yes
 
@@ -870,7 +894,7 @@ news_event = {
 	id = r56.soviet.28
 	title = r56.soviet.28.t
 	desc = r56.soviet.28.d
-	picture = GFX_report_event_polish_demobilization
+	picture = GFX_news_event_vlasov_speech
 
 	major = yes
 
@@ -940,6 +964,105 @@ news_event = {
 		 		}
 			 }
 	}	 
+
+}
+
+# ELECTION EVENT AFTER RESTORING THE REPUBLIC
+country_event = { 
+
+	id = r56.soviet.31
+	title = r56.soviet.31.t
+	desc = r56.soviet.31.d
+	picture = GFX_report_event_russia_elections
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = r56.soviet.31.a
+		set_country_flag = trudoviks_win_election_flag
+		create_country_leader = {
+			name = "Alexander Fyodorovich Kerensky"
+			desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+			picture = "gfx/leaders/SOV/r56_portrait_SOV_Alexander_Kerensky.dds"
+			expire = "1953.3.1"
+			ideology = socialism
+			traits = {
+				
+			}
+		}
+	}
+
+	option = {
+		name = r56.soviet.31.b
+		set_country_flag = octobrists_win_election_flag
+		create_country_leader = {
+			name = "Vassili Vassilievitch Kochubey"
+			desc = ""
+			picture = "gfx/leaders/SOV/r56_portrait_SOV_Vassili_Vassilievitch_Kochubey.dds"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+	}
+
+}
+
+# RESTORATION OF THE MONARCHY EVENT
+country_event = { 
+
+	id = r56.soviet.32
+	title = r56.soviet.32.t
+	desc = r56.soviet.32.d
+	picture = GFX_report_event_russia_corronation
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = r56.soviet.32.a
+		set_country_flag = absolute_monarchy_flag
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+		}
+		create_country_leader = {
+			name = "Kirill Vladimirovich"
+			desc = "POLITICS_KIRIL_VLADIMIROVICH_DESC"
+			picture = "r56_portrait_SOV_Kirill_Vladimirovich_Romanov.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+
+	option = {
+		name = r56.soviet.32.b
+		set_country_flag = constitutional_monarchy_flag
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.45
+		}
+		create_country_leader = {
+			name = "Vassili Vassilievitch Kochubey"
+			desc = ""
+			picture = "gfx/leaders/SOV/r56_portrait_SOV_Vassili_Vassilievitch_Kochubey.dds"
+			expire = "1953.3.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
 
 }
 
