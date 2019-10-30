@@ -3396,15 +3396,7 @@ SpriteType = {
 	}
 
 ###------> NZL <><> <><> <><> <><> <><>
-	SpriteType = {
-		name = "GFX_goal_NZL_new_charlton_automatic_rifles"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_goal_NZL_new_zealand_will_not_fall"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
-	}
+	
 	
 
 ###------> PER <><> <><> <><> <><> <><>
