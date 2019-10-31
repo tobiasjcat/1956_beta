@@ -774,7 +774,7 @@ focus = {
 
 focus = {
 	id = NZL_a_sustainable_army
-	icon = GFX_goal_generic_army_mobilization
+	icon = GFX_goal_NZL_army
 	prerequisite = { focus = NZL_the_begining_of_an_artillery_regiment }
 	prerequisite = { focus = NZL_ford_munition_plant }
 	x = -1.5
