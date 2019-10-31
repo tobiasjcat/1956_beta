@@ -1336,7 +1336,7 @@ focus = {
 
 focus = {
 		id = NZL_industrial_awakening
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_NZL_bt
 		prerequisite = { focus = NZL_the_wairarapa_sheep_farms }
 		x = .5
 		y = 2
