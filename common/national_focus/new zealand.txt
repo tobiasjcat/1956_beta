@@ -89,7 +89,7 @@ focus = {
 	
 	focus = {
 		id = NZL_supply_the_new_zealand_navy_divsion
-		icon = GFX_goal_navy_funding
+		icon = GFX_goal_navy_schematics
 		x = 0
 		y = 1
 		relative_position_id = NZL_improve_the_radars
@@ -164,7 +164,7 @@ focus = {
 
 focus = { 
 	id = NZL_naval_profit
-	icon = GFX_goal_navy_schematics
+	icon = GFX_goal_navy_funding
 	x= 0
 	y= 1
 	relative_position_id = NZL_supply_the_new_zealand_navy_divsion
