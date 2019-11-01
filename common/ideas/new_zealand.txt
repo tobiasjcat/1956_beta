@@ -63,7 +63,7 @@ ideas = {
 			}
 		}
 
-		NZL_remember_anzac = {
+		NZL_lessons_of_the_great_war = {
 
 			allowed = {
 				always = no

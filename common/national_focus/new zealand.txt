@@ -481,7 +481,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = NZL_remember_anzac
+		add_ideas = NZL_lessons_of_the_great_war
 	}
 }
 
