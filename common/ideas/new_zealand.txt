@@ -193,7 +193,7 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
-		NZL_royal_new_zealand_engineer_and_supply_corp = {
+		NZL_the_engineer_corp = {
 
 			allowed = {
 				always = no
@@ -236,6 +236,24 @@ ideas = {
 			}
 		}
 
+		NZL_hot_climate_equipment = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				heat_attrition_factor = -0.10
+			}
+		}
 		NZL_bob_semple_tank = {
 
 			allowed = {

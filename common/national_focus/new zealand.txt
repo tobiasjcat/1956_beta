@@ -771,6 +771,7 @@ focus = {
 			technology = tech_logistics_company3
 			technology = tech_logistics_company4
 		}
+		add_ideas = NZL_the_engineer_corp
 	}
 }
 
@@ -1536,3 +1537,47 @@ focus = {
 			add_research_slot = 1
 		}
 	}
+
+focus = {
+	id = NZL_hot_climate_equipment
+	icon = GFX_goal_r56_generic_desert_warfare
+	prerequisite = { focus = NZL_mution_companies_investments}
+	x = 0
+	y = 1
+	relative_position_id = NZL_mution_companies_investments
+
+	cost = 10
+
+	cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			 add_tech_bonus = {
+                name = infantry_artillery_bonus
+                bonus = 1
+                uses = 1
+                category = summer_clothing_tech
+            }
+            add_tech_bonus = {
+                name = infantry_artillery_bonus
+                bonus = 1
+                uses = 2
+                category = r56_desert_infantry_tech
+            }
+			add_ideas = NZL_hot_climate_equipment
+		}
