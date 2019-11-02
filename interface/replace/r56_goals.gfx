@@ -279,6 +279,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_crush_resistance.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_crush_resistance2"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_crush_resistance2.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_rhineland"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_rhineland.dds"
 	}
@@ -2732,6 +2736,46 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_goal_IRE_island_defences"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_island_defences.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_empower_the_blueshirts"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_empower_the_blueshirts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_our_way"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_our_way.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_united_ireland"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_united_ireland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_plan_w"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_plan_w.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_offense_against_the_state_act"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_offense_against_the_state_act.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_the_celtic_way"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_the_celtic_way.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_IRE_operation_kathleen"
+		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_operation_kathleen.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_r56_goal_IRE_fianna_fail"
 		texturefile = "gfx/interface/goals/ire/r56_goal_IRE_fianna_fail.dds"
 	}
@@ -3861,18 +3905,9 @@ SpriteType = {
 	}
 ###------> SAU <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_SAU_develop_ploesti_oil_fields"
-		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_develop_ploesti_oil_fields.dds"
+		name = "GFX_goal_SAU_the_unifier"
+		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_the_unifier.dds"
 	}
-	SpriteType = {
-		name = "GFX_SAU_develop_the_heavy_industry"
-		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_develop_the_heavy_industry.dds"
-	}
-	SpriteType = {
-		name = "GFX_SAU_foreign_loans"
-		texturefile = "gfx/interface/goals/sau/r56_goal_SAU_foreign_loans.dds"
-	}
-
 
 ###------> SCA <><> <><> <><> <><> <><>
 	spriteType = {
