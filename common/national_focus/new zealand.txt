@@ -861,6 +861,7 @@ focus = {
 		id = NZL_fighter_production
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus =  NZL_construct_the_whenuapai_base }
+		prerequisite = { focus = NZL_form_the_new_zealand_air_force }
 		x = -1
 		y = 1
 		relative_position_id = NZL_construct_the_whenuapai_base
@@ -1581,3 +1582,34 @@ focus = {
             }
 			add_ideas = NZL_hot_climate_equipment
 		}
+
+focus = {
+	id = NZL_form_the_new_zealand_air_force
+	icon = GFX_goal_generic_army_mobilization
+	x = 13
+	y = 0
+
+	cost = 10
+
+	cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward ={
+			add_ideas = NZL_form_the_new_zealand_air_force
+		}
+}
