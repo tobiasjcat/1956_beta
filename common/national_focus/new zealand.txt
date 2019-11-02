@@ -1618,7 +1618,7 @@ focus = {
 focus = {
 	id = NZL_air_training_progam
 	icon = GFX_goal_generic_army_mobilization
-	x = 16
+	x = 17
 	y = 0
 
 	cost = 10
