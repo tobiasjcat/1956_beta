@@ -899,6 +899,7 @@ focus = {
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = NZL_construct_the_whenuapai_base }
 		prerequisite = { focus = NZL_form_the_new_zealand_air_force }
+		prerequisite = { focus = NZL_air_training_progam }
 		x = 1
 		y = 1
 		relative_position_id = NZL_construct_the_whenuapai_base
@@ -1593,6 +1594,33 @@ focus = {
 
 	cost = 10
 
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = NZL_form_the_new_zealand_air_force
+		}
+}
+
+focus = {
+	id = NZL_air_training_progam
+	icon = GFX_goal_generic_army_mobilization
+	x = 15
+	y = 0
+
 	cost = 10
 
 		ai_will_do = {
@@ -1611,8 +1639,23 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward ={
-			add_ideas = NZL_form_the_new_zealand_air_force
+		completion_reward = {
+			add_air_expierence = 15
+			add_tech_bonus = {
+				name = NZL_air_training_program
+				bonus = 1.0
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+			add_tech_bonus = {
+				name = NZL_air_training_program
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
 		}
 }
 
