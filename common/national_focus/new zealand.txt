@@ -1618,7 +1618,7 @@ focus = {
 focus = {
 	id = NZL_air_training_progam
 	icon = GFX_goal_generic_army_mobilization
-	x = 15
+	x = 16
 	y = 0
 
 	cost = 10
@@ -1640,16 +1640,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_air_expierence = 15
-			add_tech_bonus = {
-				name = NZL_air_training_program
-				bonus = 1.0
-				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-			}
+			air_experience = 15
 			add_tech_bonus = {
 				name = NZL_air_training_program
 				bonus = 1.0
