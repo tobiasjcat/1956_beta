@@ -1709,12 +1709,12 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		 add_popularity = {
+		add_ideas = NZL_look_to_old_parties
+		add_popularity = {
             ideology = fascism
             popularity = 0.2
         }
 		add_stability = .15
-		add_ideas = NZL_look_to_old_parties
 	}
 }
 
