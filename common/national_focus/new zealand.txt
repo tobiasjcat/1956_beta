@@ -1710,10 +1710,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		fascism_drift = 0.2
+		 add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
 		autonomy_gain = 1
+		add_stability = .15
 	}
-
-
-
-}
