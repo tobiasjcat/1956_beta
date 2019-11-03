@@ -1710,7 +1710,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		fascist_drift = .1
+		fascism_drift = 0.2
+		autonomy_gain = 1
 	}
 
 
