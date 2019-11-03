@@ -231,7 +231,7 @@ ideas = {
 
 			equipment_bonus = {
 				artillery_equipment = {
-					soft_attack = 0.5
+					soft_attack = 0.1
 					instant = yes
 				}
 			}
@@ -381,6 +381,26 @@ ideas = {
 
 		}
 
+		NZL_obtain_funding = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				add_stability = .05
+			}
+		}
 		NZL_social_security_act = {
 
 			allowed = {

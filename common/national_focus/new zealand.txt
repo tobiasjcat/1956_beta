@@ -1687,7 +1687,7 @@ focus = {
 	id = NZL_look_to_old_parties
 	icon = GFX_goal_NZL_jo
 	prerequisite = { focus = NZL_mushroom_season}
-	x = 0
+	x = -5
 	y = 1
 	relative_position_id = NZL_mushroom_season
 
@@ -1714,6 +1714,40 @@ focus = {
             ideology = fascism
             popularity = 0.2
         }
-		autonomy_gain = 1
 		add_stability = .15
+		add_ideas = NZL_in_the_darkness 
 	}
+
+focus = {
+	id = NZL_obtain_funding
+	icon = GFX_focus_mex_privatisation
+	prerequisite = { focus = NZL_look_to_old_parties }
+	x = -1
+	y = .5
+	relative_position_id = NZL_look_to_old_parties
+
+	cost = 5
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_obtain_funding
+	}
+
+}
