@@ -1679,7 +1679,7 @@ focus = {
 
 		completion_reward = {
 			add_stability = -.2
-			add_ideas = NZL_mushroom_season
+			add_timed_idea = { idea = NZL_mushroom_season days = 365}
 		}
 }
 
@@ -1710,7 +1710,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		fascist_drift = .1
 	}
 
 

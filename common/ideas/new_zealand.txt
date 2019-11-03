@@ -274,6 +274,8 @@ ideas = {
 
 			modifier = {
 			democratic_drift = -0.1
+			communist_drift = 0.05
+			fascist_drift = 0.05
 		}
 		
 		NZL_hot_climate_equipment = {
