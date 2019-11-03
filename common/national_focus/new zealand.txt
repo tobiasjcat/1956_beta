@@ -1728,6 +1728,35 @@ focus = {
 
 	cost = 5
 
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_obtain_funding
+	}
+}
+
+focus = {
+	id = NZL_mend_the_divion
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = NZL_look_to_old_parties }
+	x = 1.5
+	y = 1
+	relative_position_id = NZL_look_to_old_parties
+
 	cost = 10
 
 	ai_will_do = {
@@ -1747,6 +1776,12 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = NZL_obtain_funding
+		add_political_power = 150
+		add_stability = .05
+		add_ideas =  NZL_organizing_communists
+		add_popularity = {
+            ideology = fascism
+            popularity = 0.2
+        }
 	}
 }

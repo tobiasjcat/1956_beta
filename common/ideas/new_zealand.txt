@@ -236,6 +236,31 @@ ideas = {
 				}
 			}
 		}		
+		
+		 NZL_organizing_communists = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				add_stability = -.1
+				add_popularity = {
+           		 ideology = communism
+           		 popularity = 0.2
+			}
+		}
+	}
+
 		NZL_form_the_new_zealand_navy = {
 
 			allowed = {
