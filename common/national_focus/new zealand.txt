@@ -1649,7 +1649,6 @@ focus = {
 			add_political_power = 150
 			add_stability = .1
 		}
-
 }
 
 focus = {
@@ -1715,15 +1714,16 @@ focus = {
             popularity = 0.2
         }
 		add_stability = .15
-		add_ideas = NZL_in_the_darkness 
+		add_ideas = NZL_look_to_old_parties
 	}
+}
 
 focus = {
 	id = NZL_obtain_funding
 	icon = GFX_focus_mex_privatisation
 	prerequisite = { focus = NZL_look_to_old_parties }
 	x = -1
-	y = .5
+	y = 1
 	relative_position_id = NZL_look_to_old_parties
 
 	cost = 5
@@ -1749,5 +1749,4 @@ focus = {
 	completion_reward = {
 		add_ideas = NZL_obtain_funding
 	}
-
 }

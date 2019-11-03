@@ -360,25 +360,25 @@ ideas = {
 				}
 			}
 
-		NZL_bob_semple_tank = {
+		NZL_look_to_old_parties = {
 
 			allowed = {
 				always = no
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = generic_fascism_drift_bonus
 			
 			modifier = {
-				army_core_defence_factor = 0.05
-				army_org_factor = 0.02
+				autonomy_gain = 1
+				fascism_drift = 0.01
+				production_speed_buildings_factor = 0.1
 			}
-
 		}
 
 		NZL_obtain_funding = {
@@ -401,6 +401,28 @@ ideas = {
 				add_stability = .05
 			}
 		}
+		
+		NZL_bob_semple_tank = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_org_factor = 0.02
+			}
+
+		}
+		
 		NZL_social_security_act = {
 
 			allowed = {
@@ -610,27 +632,6 @@ ideas = {
 			modifier = {
 				autonomy_gain = 1
 				communism_drift = 0.02
-				production_speed_buildings_factor = 0.1
-			}
-		}
-
-		NZL_in_the_darkness = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-			removal_cost = -1
-
-			picture = generic_fascism_drift_bonus
-			
-			modifier = {
-				autonomy_gain = 1
-				fascism_drift = 0.01
 				production_speed_buildings_factor = 0.1
 			}
 		}
