@@ -254,9 +254,7 @@ ideas = {
 
 			modifier = {
 				add_stability = -.1
-				add_popularity = {
-           		 ideology = communism
-           		 popularity = 0.2
+				communism_drift = 0.1
 			}
 		}
 	}
