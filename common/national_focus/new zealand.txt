@@ -1620,3 +1620,64 @@ focus = {
 		}
 }
 
+focus = {
+	id = NZL_the_labour_government
+	icon = GFX_focus_generic_treaty
+	x = 25
+	y = 0 
+
+	cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 150
+			add_stability = .1
+		}
+
+}
+
+focus = {
+	id = NZL_mushroom_season
+	icon = GFX_goal_generic_multipartism
+	x = 35
+	y = 0
+
+	cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -.2
+			
+		}
+
+}
