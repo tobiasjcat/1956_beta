@@ -1625,6 +1625,7 @@ focus = {
 	icon = GFX_focus_generic_treaty
 	x = 25
 	y = 0 
+	mutually_exclusive = { focus = NZL_mushroom_season}
 
 	cost = 10
 
@@ -1654,8 +1655,9 @@ focus = {
 focus = {
 	id = NZL_mushroom_season
 	icon = GFX_goal_generic_multipartism
-	x = 35
+	x = 40
 	y = 0
+	mutually_exclusive = { focus = NZL_the_labour_government }
 
 	cost = 10
 
@@ -1677,7 +1679,6 @@ focus = {
 
 		completion_reward = {
 			add_stability = -.2
-			
+			add_ideas = NZL_mushroom_season
 		}
-
 }

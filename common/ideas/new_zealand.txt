@@ -257,7 +257,25 @@ ideas = {
 				convoy_raiding_efficiency_factor = 0.1
 			}
 		}
+		
+		NZL_mushroom_season = {
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+			democratic_drift = -0.1
+		}
+		
 		NZL_hot_climate_equipment = {
 
 			allowed = {
