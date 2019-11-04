@@ -518,7 +518,7 @@ focus = {
 				name = NZL_defend_our_islands
 				bonus = 1.00
 				uses = 2
-				category = naval_air
+				category = anti_air
 			}
 		}
 	}
