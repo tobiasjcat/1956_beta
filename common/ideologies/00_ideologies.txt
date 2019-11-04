@@ -157,6 +157,9 @@ ideologies = {
 			
 			despotism  = {
 			}
+
+			absolute_monarchism = {
+			}
 			
 			oligarchism  = {
 			}
@@ -192,8 +195,6 @@ ideologies = {
 			can_puppet = yes
 			can_send_volunteers = no
 		}
-		
-		can_host_government_in_exile = yes
 		
 		modifiers = {
 			#increased_influence_factor = 0.3 #40% easier to influence.

@@ -780,6 +780,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_france_popular_front.dds"
 	}
 
+	spriteType = {
+		name = "GFX_news_event_flandin_petain_marquet"
+		texturefile = "gfx/event_pictures/news_event_flandin_petain_marquet.dds"
+	}
+
 ###------> GRE <><> <><> <><> <><> <><>
 
 spriteType = {
@@ -1367,6 +1372,12 @@ spriteType = {
 		texturefile = "gfx/event_pictures/report_event_malayan_emergency.dds"
 	}
 
+###------> UKR <><> <><> <><> <><> <><>
+
+	spriteType = {
+		name = "GFX_report_event_ukraine_war_of_independence"
+		texturefile = "gfx/event_pictures/report_event_ukraine_war_of_independence.dds"
+	}
 
 ###------> ITA <><> <><> <><> <><> <><>
 

@@ -1154,13 +1154,13 @@ country_event = {
 	mean_time_to_happen = { days = 120 }
 
 	option = {
-		ai_chance = { factor = 75 }
+		ai_chance = { factor = 50 }
 		name = prc.24.a
 		white_peace = XSM
 	}
 
 	option = {
-		ai_chance = { factor = 25 }
+		ai_chance = { factor = 50 }
 		name = prc.24.b
 	}
 }
@@ -2567,6 +2567,9 @@ country_event = {
 		has_defensive_war_with = JAP
 		SOV = {
 			has_government = communism
+			NOT = {
+				has_war_with = CHI
+			}		
 		}
 		NOT = {
 			has_country_flag = sov_supported
@@ -2577,18 +2580,19 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = SOV }
 			set_country_flag = sov_supported
 		}
 	}
 
 	option = {
 		name = prc.48.a
-		effect_tooltip = {
-			set_technology = { tech_support = 1 }
-			set_technology = { support_weapons = 1 }
-			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = SOV }
-		}
+        add_tech_bonus = {
+            name = infantry_artillery_bonus
+            bonus = 0.5
+            uses = 1
+            category = infantry_weapons
+        }
+		add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2500 producer = SOV }
 	}
 }
 
@@ -2957,14 +2961,7 @@ country_event = {
 		custom_effect_tooltip = PRC_zxl_will_become_leader_if_agree
 		custom_effect_tooltip = PRC_no_wargoal_to_chi_when_ok_tt
 		set_global_flag = PRC_no_wargoal_to_chi_when_ok
-		random_list = {
-			80 = {
-				country_event = { id = prc.57 }
-			}
-			20 = {
-				country_event = { id = prc.58 }
-			}
-		}
+		country_event = { id = prc.57 }
 	}
 
 	option = {
