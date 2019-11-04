@@ -726,7 +726,7 @@ focus = {
 			uses = 1
 			category = artillery
 		}
-		add_ideas = NZL_royal_new_zealand_engineer_and_supply_corp
+		add_ideas = NZL_the_engineer_corp
 	}
 }
 
@@ -771,7 +771,6 @@ focus = {
 			technology = tech_logistics_company3
 			technology = tech_logistics_company4
 		}
-		add_ideas = NZL_the_engineer_corp
 	}
 }
 
