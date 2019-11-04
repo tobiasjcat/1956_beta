@@ -215,6 +215,28 @@ ideas = {
 				production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
+		
+		NZL_obtain_funding = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				add_stability = .05
+			}
+		}
+
 		NZL_the_engineer_corp = {
 
 			allowed = {
@@ -257,7 +279,6 @@ ideas = {
 				communism_drift = 0.1
 			}
 		}
-	}
 
 		NZL_form_the_new_zealand_navy = {
 
@@ -299,27 +320,6 @@ ideas = {
 				autonomy_gain = 1
 				fascism_drift = 0.01
 				production_speed_buildings_factor = 0.1
-			}
-		}
-
-		NZL_obtain_funding = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_production_bonus
-
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-				add_stability = .05
 			}
 		}
 

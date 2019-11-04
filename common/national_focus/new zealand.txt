@@ -518,7 +518,7 @@ focus = {
 				name = NZL_defend_our_islands
 				bonus = 1.00
 				uses = 2
-				category = anti_air
+				category = artillery
 			}
 		}
 	}
@@ -1781,7 +1781,7 @@ focus = {
 		add_ideas =  NZL_organizing_communists
 		add_popularity = {
             ideology = fascism
-            popularity = 0.2
+            popularity = 0.05
         }
 	}
 }
