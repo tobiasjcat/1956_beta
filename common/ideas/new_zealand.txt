@@ -424,7 +424,8 @@ ideas = {
 					instant = yes
 				}
 			}
-
+		}
+		
 		NZL_bob_semple_tank = {
 
 			allowed = {
