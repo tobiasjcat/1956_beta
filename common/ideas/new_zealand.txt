@@ -259,7 +259,7 @@ ideas = {
 			}
 		}		
 		
-		 NZL_organizing_communists = {
+		NZL_organizing_communists = {
 
 
 			allowed = {
