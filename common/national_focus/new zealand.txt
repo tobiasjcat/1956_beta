@@ -1788,8 +1788,8 @@ focus = {
 focus = {
 	id = NZL_revive_the_legion
 	icon = GFX_goal_support_fascism
-	prerequiste = { focus = NZL_mend_the_division }
-	prereuisite = { focus = NZL_look_to_old_parties }
+	prerequisite = { focus = NZL_mend_the_division }
+	prerequisite = { focus = NZL_look_to_old_parties }
 	relative_position_id = NZL_mend_the_division
 	x = 0
 	y = 1
@@ -1801,7 +1801,7 @@ focus = {
 	}
 
 	available = {
-
+		fascism > .5
 	}
 
 	bypass = {
@@ -1811,6 +1811,10 @@ focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
+
+	completion_reward = {
+		
+	}
 
 
 }
