@@ -1791,7 +1791,7 @@ focus = {
 	prerequisite = { focus = NZL_mend_the_division }
 	prerequisite = { focus = NZL_look_to_old_parties }
 	relative_position_id = NZL_mend_the_division
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 5
