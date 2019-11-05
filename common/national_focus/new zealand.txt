@@ -1813,8 +1813,24 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_party_name = { 
+			    ideology = fascism 
+			    long_name = NZL_fascism_new_zealand_legion_long 
+			    name = NZL_fascism_new_zealand_legion_long 
+			}
+			create_country_leader = {
+				name = "John Ormond"
+				desc = "POLITICS_John_Ormond_DESC"
+				picture = "gfx/leaders/SPR/r56_portrait_NZL_John_Ormond.dds"
+				expire = "1965.1.1"
+				ideology = fascism
+				traits = {
+					
+				}
+			}
+		}
 	}
-
-
-}
