@@ -39,7 +39,6 @@ ideas = {
 				conscription_factor = .03
 				stability_facor = .05
 				autonomy_gain = 5
-				 political_power_gain = 0.1
 			}
 		}
 
