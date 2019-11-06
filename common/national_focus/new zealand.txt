@@ -1936,7 +1936,7 @@ focus = {
 	prerequisite = { focus = NZL_individualism }
 	prerequisite = { focus = NZL_supress_the_traitors }
 	prerequisite = { focus = NZL_politicize_the_fallen }
-	x = -.5
+	x = 0
 	y = 1
 	relative_position_id = NZL_individualsim
 
