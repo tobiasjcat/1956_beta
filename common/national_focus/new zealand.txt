@@ -1834,3 +1834,98 @@ focus = {
 			}
 		}
 	}
+
+focus = { 
+	id = NZL_politicize_the_fallen
+	icon = GFX_goal_NZL_ptf
+	prerequisite = { focus = NZL_revive_the_legion }
+	x = -3
+	y = 1
+	relative_position_id = NZL_revive_the_legion
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_politicize_the_fallen
+	}
+}
+
+focus = {
+	id = NZL_supress_the_traitors
+	icon = GFX_goal_generic_anti_communism
+	prerequisite = { focus = NZL_revive_the_legion }
+	x = 3
+	y = 1
+	relative_position_id = NZL_revive_the_legion
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		remove_ideas =  NZL_organizing_communists
+		add_war_support = .05
+	}
+}
+
+focus = {
+	id = NZL_individualism
+	icon = GFX_sca_focus_generic_political
+	prerequisite = { focus = NZL_revive_the_legion }
+	x = 0
+	y = 1
+	relative_position_id = NZL_revive_the_legion
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = { 
+		add_ideas = NZL_individualism
+	}
+
+}
