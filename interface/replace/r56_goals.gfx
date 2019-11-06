@@ -3536,6 +3536,11 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_ptf.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_goal_NZL_kac"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_kac.dds"
+	}
+
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_PER_agreement"
