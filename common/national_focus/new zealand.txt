@@ -1929,3 +1929,66 @@ focus = {
 	}
 
 }
+
+focus = {
+	id = NZL_a_strong_unity
+	icon = GFX_goal_centralize_power
+	prerequisite = { focus = NZL_individualism }
+	prerequisite = { focus = NZL_supress_the_traitors }
+	prerequisite = { focus = NZL_politicize_the_fallen }
+	x = -1
+	y = 1
+	relative_position_id = NZL_individualsim
+
+	cost = 10
+
+	ai_will_do = { 
+		factor = 35
+	}
+
+	available = {
+			OR = {
+				is_subject = no
+				AND = {
+					if = {
+						limit = { not = { has_government = fascism } }
+						has_autonomy_state = autonomy_dominion
+					}
+					if = {
+						limit = { has_government = fascism } 
+						has_autonomy_state = autonomy_satellite
+					}
+					compare_autonomy_progress_ratio > 0.8
+				}
+			}
+			NOT = { has_war_together_with = ENG }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AST_deal_with_japan_tt
+			if = {
+				limit = { is_in_faction_with = ENG }
+				ENG = { remove_from_faction = ROOT }
+			}
+			OVERLORD = {
+				set_autonomy = {
+					target = AST
+					autonomy_state = autonomy_free
+				}
+			}
+			set_rule = { can_create_factions = yes }
+		}
+	}
