@@ -20,28 +20,6 @@ ideas = {
 			
 		}
 
-		NZL_politicize_the_fallen = {
-
-			allowed = {
-				always = no 
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_manpower_bonus
-
-			modifier = {
-				war_support_factor = .1
-				conscription_factor = .03
-				stability_factor = .05
-				polticical_power_gain = .03
-			}
-		}
-
 		NZL_resource_imports = {
 
 			allowed = {
@@ -61,6 +39,29 @@ ideas = {
 				mobilization_laws_cost_factor = -0.25
 				economy_cost_factor = -0.25
 				local_resources_factor = 0.03
+			}
+		}
+
+		NZL_politicize_the_fallen = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = .1
+				conscription_factor = .03
+				stability_factor = .05
+				polticical_power_gain = .03
+				autonomy_gain = 5
 			}
 		}
 
