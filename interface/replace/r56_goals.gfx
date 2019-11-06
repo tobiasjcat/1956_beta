@@ -2484,7 +2484,10 @@ spriteTypes = {
 		name = "GFX_goal_GRE_balkan_pact"
 		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_balkan_pact.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_goal_GRE_demertzis_death"
+		texturefile = "gfx/interface/goals/gre/r56_goal_GRE_demertzis_death.dds"
+	}
 ###------> GUA <><> <><> <><> <><> <><>
 	SpriteType = {
 		name = "GFX_goal_strike_elsalvador"

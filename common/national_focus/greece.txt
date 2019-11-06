@@ -2040,14 +2040,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 120
 		}
 	}
 
 
 	focus = {
 	   id = GRE_divided_nation
-		icon = GFX_goal_pp
+		icon = GFX_goal_GRE_demertzis_death
        	text = GRE_divided_nation
        	prerequisite = { focus = GRE_political_awakening }
 		x = 0
@@ -2058,11 +2058,17 @@ focus = {
 			factor = 90
 		}
 
+        available = {
+	    	has_country_flag = pmd_over
+		}
+
+        bypass = {
+			has_country_flag = pmd_over
+		}
+
 		available_if_capitulated = no
 
 		completion_reward = {
-		    add_political_power = 60
-		  	unlock_decision_tooltip = GRE_work_on_government
 		  }
  	  }
 

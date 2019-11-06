@@ -42,17 +42,17 @@ country_event = {
     }
   }
 
-				if = {
-						limit = {
-						  has_idea = GRE_ioannis_metaxas
-						}
-						swap_ideas = { remove_idea = GRE_ioannis_metaxas add_idea = GRE_kostas_kotzias }
-				}
-				else = {
-				  custom_effect_tooltip = available_political_advisor
-	        show_ideas_tooltip = GRE_kostas_kotzias
-				}
-    }
+	if = {
+		limit = {
+			 has_idea = GRE_ioannis_metaxas
+		}
+		swap_ideas = { remove_idea = GRE_ioannis_metaxas add_idea = GRE_kostas_kotzias }
+	}
+	else = {
+		 custom_effect_tooltip = available_political_advisor
+	    show_ideas_tooltip = GRE_kostas_kotzias
+	}
+}
 
 	option = {
 	    name = greece.5.b
