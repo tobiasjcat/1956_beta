@@ -37,8 +37,9 @@ ideas = {
 			modifier = {
 				war_support_factor = .1
 				conscription_factor = .03
-				stability_facor = .05
+				stability_factor = .05
 				autonomy_gain = 5
+				polticical_power_gaIN = .03
 			}
 		}
 
