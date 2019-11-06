@@ -2307,7 +2307,6 @@ focus = {
 			791 = { add_claim_by = BUL }
 			46 = { add_claim_by = BUL }
 			106 = { add_claim_by = BUL }
-			105 = { add_claim_by = BUL }
 			108 = { add_claim_by = BUL }
 			184 = { add_claim_by = BUL }
 			341 = { add_claim_by = BUL }
@@ -2449,7 +2448,6 @@ focus = {
 	available = {
 	  has_full_control_of_state = 44
 	  has_full_control_of_state = 791
-	  has_full_control_of_state = 105
 	  has_full_control_of_state = 108
 	  has_full_control_of_state = 341
 	  has_full_control_of_state = 731
@@ -2459,7 +2457,6 @@ focus = {
 	add_stability = -0.1
 	44 = { add_core_of = BUL }
 	791 = { add_core_of = BUL }
-	105 ={ add_core_of = BUL }
 	108 = { add_core_of = BUL }
 	341 = { add_core_of = BUL }
 	731 = { add_core_of = BUL }
