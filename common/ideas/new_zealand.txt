@@ -254,10 +254,32 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
-				production_speed_synthetic_refinery_factor = 0.1
+				research_speed_factor = 0.03
 			}
 		}
 		
+		NZL_champions_of_the_depression = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.2
+				global_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+
 		NZL_obtain_funding = {
 
 			allowed = {
@@ -383,8 +405,8 @@ ideas = {
 			democratic_drift = -0.1
 			communism_drift = 0.05
 			fascism_drift = 0.05
+			}
 		}
-	}
 		
 		NZL_hot_climate_equipment = {
 

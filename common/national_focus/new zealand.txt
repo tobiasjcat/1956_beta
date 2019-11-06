@@ -1937,7 +1937,7 @@ focus = {
 	prerequisite = { focus = NZL_supress_the_traitors }
 	prerequisite = { focus = NZL_politicize_the_fallen }
 	relative_position_id = NZL_individualism
-	x = -1
+	x = -1.5
 	y = 1
 
 	cost = 10
@@ -1992,3 +1992,35 @@ focus = {
 			set_rule = { can_create_factions = yes }
 		}
 	}
+
+focus = {
+	id = NZL_champions_of_the_depression
+	icon = GFX_goal_stock_exchange
+	prerequisite = { focus = NZL_a_strong_unity }
+	relative_position_id = NZL_a_strong_unity
+	x = 1
+	y = 1 
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_champions_of_the_depression
+	}
+
+}
