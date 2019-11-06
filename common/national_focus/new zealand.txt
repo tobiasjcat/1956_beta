@@ -1978,14 +1978,14 @@ focus = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = AST_deal_with_japan_tt
+			custom_effect_tooltip = NZL_a_strong_unity
 			if = {
 				limit = { is_in_faction_with = ENG }
 				ENG = { remove_from_faction = ROOT }
 			}
 			OVERLORD = {
 				set_autonomy = {
-					target = AST
+					target = NZL
 					autonomy_state = autonomy_free
 				}
 			}
