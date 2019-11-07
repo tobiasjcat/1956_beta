@@ -2057,8 +2057,8 @@ focus = {
 }
 
 focus = {
-	id = NZL_not_our_fight
-	icon = GFX_sca_focus_fortification
+	id = NZL_purchase_axis_arms
+	icon = GFX_goal_generic_gun_purchase
 	prerequisite = { focus = NZL_end_government_funding }
 	prerequisite = { focus = NZL_champions_of_the_depression }
 	relative_position_id = NZL_end_government_funding
@@ -2072,7 +2072,7 @@ focus = {
 	}
 
 	available = {
-		
+	
 	}
 
 	bypass = {
@@ -2083,4 +2083,10 @@ focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 
+	completion_reward = {
+	add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 4500
+	producer = JAP
+	}
 }
