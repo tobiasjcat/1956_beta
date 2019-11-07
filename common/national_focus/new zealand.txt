@@ -2030,7 +2030,7 @@ focus = {
 	prerequisite = { focus = NZL_a_strong_unity }
 	relative_position_id = NZL_a_strong_unity
 	x = -1
-	y = 2
+	y = 1
 
 	cost = 5
 
@@ -2059,9 +2059,9 @@ focus = {
 focus = {
 	id = NZL_not_our_fight
 	icon = GFX_sca_focus_fortification
-	prerequisite = { focus = NZL_end_governemnt_funding }
+	prerequisite = { focus = NZL_end_government_funding }
 	prerequisite = { focus = NZL_champions_of_the_depression }
-	relative_position_id = NZL_end_governemnt_funding
+	relative_position_id = NZL_end_government_funding
 	x = 1
 	y = 1
 

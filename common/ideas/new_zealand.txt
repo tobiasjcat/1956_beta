@@ -273,7 +273,6 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.2
 				global_building_slots_factor = 0.1
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.03
