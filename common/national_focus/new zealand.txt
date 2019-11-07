@@ -2022,5 +2022,65 @@ focus = {
 	completion_reward = {
 		add_ideas = NZL_champions_of_the_depression
 	}
+}
+
+focus = {
+	id = NZL_end_government_funding
+	icon = GFX_focus_generic_industry_2
+	prerequisite = { focus = NZL_a_strong_unity }
+	relative_position_id = NZL_a_strong_unity
+	x = -1
+	y = 2
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 150
+		add_country_leader_trait = conservative_law_maker
+	}
+}
+
+focus = {
+	id = NZL_not_our_fight
+	icon = GFX_sca_focus_fortification
+	prerequisite = { focus = NZL_end_governemnt_funding }
+	prerequisite = { focus = NZL_champions_of_the_depression }
+	relative_position_id = NZL_end_governemnt_funding
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 }

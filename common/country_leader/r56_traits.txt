@@ -1871,6 +1871,7 @@ LAT_ulmanis = {
 		}
 	}
 
+
 	######### Together For Victory ##########
 
 	army_chief_organizational_2_mck_tfv = {
@@ -2321,6 +2322,15 @@ LAT_ulmanis = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
+###------> NZL <><> <><> <><> <><> <><>
+	
+	conservative_law_maker = {
+		random = no
+		stability_factor = 0.02
+		consumer_goods_factor = -0.03
+		political_power_gain = 0.03
 	}
 
 
