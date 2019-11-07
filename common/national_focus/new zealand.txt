@@ -2090,3 +2090,15 @@ focus = {
 	producer = JAP
 	}
 }
+
+focus = {
+	id = NZL_king_and_country
+	icon = GFX_goal_NZL_kac
+	prerequisite = { focus = NZL_individualism }
+	prerequisite = { focus = NZL_supress_the_traitors }
+	prerequisite = { focus = NZL_politicize_the_fallen }
+	relative_position_id = NZL_individualism
+	x = 1.5
+	y = 1
+	
+}
