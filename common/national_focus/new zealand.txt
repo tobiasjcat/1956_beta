@@ -2138,8 +2138,8 @@ focus = {
 			}
 			create_country_leader = {
 				name = "Sidney Holland"
-				desc = "POLITICS_Goerge_S._Holland_DESC"
-				picture = "gfx/leaders/NZL/r56_portrait_NZL_Goerge_S._Holland.dds"
+				desc = "POLITICS_Goerge_S_Holland_DESC"
+				picture = "gfx/leaders/NZL/r56_portrait_NZL_Goerge_S_Holland.dds"
 				expire = "1965.1.1"
 				ideology = neutrality
 				traits = {
