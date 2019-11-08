@@ -2127,24 +2127,5 @@ focus = {
 				autonomy_state = autonomy_puppet
 			}
 		}
-	set_politics = {
-				ruling_party = authoritarian
-				elections_allowed = no
-			}
-			set_party_name = { 
-			    ideology = neutrality 
-			    long_name = NZL_neutrality_new_zealand_national_party_long 
-			    name = NZL_fascism_new_zealand_national_party_long 
-			}
-			create_country_leader = {
-				name = "Sidney Holland"
-				desc = "POLITICS_Goerge_S_Holland_DESC"
-				picture = "gfx/leaders/NZL/r56_portrait_NZL_Goerge_S_Holland.dds"
-				expire = "1965.1.1"
-				ideology = neutrality
-				traits = {
-				}
-			}
-		}
+	}
 }
-
