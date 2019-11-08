@@ -2090,6 +2090,7 @@ focus = {
 	producer = JAP
 	}
 }
+}
 
 focus = {
 	id = NZL_king_and_country
@@ -2101,4 +2102,51 @@ focus = {
 	x = 1.5
 	y = 1
 	
+	cost = 8
+
+	OR = {
+	is_subject = no
+		AND = {
+			if = {
+				limit = { not = { has_government = fascism } }
+				has_autonomy_state = autonomy_dominion
+			}
+			if = {
+				limit = { has_government = fascism } 
+				has_autonomy_state = autonomy_satellite
+				}
+	compare_autonomy_progress_ratio > 0.8
+		}
+	}
+
+	completion_reward = {
+			custom_effect_tooltip = NZL_a_strong_unity
+			OVERLORD = {
+			set_autonomy = {
+				target = NZL
+				autonomy_state = autonomy_puppet
+			}
+		}
+	}
+	set_politics = {
+				ruling_party = authoritarian
+				elections_allowed = no
+			}
+			set_party_name = { 
+			    ideology = authoritarian 
+			    long_name = NZL_fascism_new_zealand_legion_long 
+			    name = NZL_fascism_new_zealand_legion_long 
+			}
+			create_country_leader = {
+				name = "John Ormond"
+				desc = "POLITICS_John_Ormond_DESC"
+				picture = "gfx/leaders/SPR/r56_portrait_NZL_John_Ormond.dds"
+				expire = "1965.1.1"
+				ideology = fascism
+				traits = {
+					
+				}
+			}
+		}
 }
+
