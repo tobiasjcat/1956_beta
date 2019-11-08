@@ -2168,7 +2168,7 @@ focus = {
 			    name = NZL_neutrality_new_zealand_national_party_long 
 			}
 			create_country_leader = {
-				name = "John Ormond"
+				name = "Sidney Holland"
 				desc = "POLITICS_Sidney_Holland_DESC"
 				picture = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
 				expire = "1965.1.1"
