@@ -2098,6 +2098,7 @@ focus = {
 	prerequisite = { focus = NZL_individualism }
 	prerequisite = { focus = NZL_supress_the_traitors }
 	prerequisite = { focus = NZL_politicize_the_fallen }
+	mutually_exclusive = { focus = NZL_a_strong_unity }
 	relative_position_id = NZL_individualism
 	x = 1.5
 	y = 1
@@ -2128,4 +2129,54 @@ focus = {
 			}
 		}
 	}
+}
+
+focus = {
+	id = our_loyal_leader
+	icon = GFX_goal_NZL_sh
+	prerequisite = { focus = NZL_king_and_country }
+	relative_position_id = NZL_king_and_country
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_party_name = { 
+			    ideology = neutrality 
+			    long_name = NZL_neutrality_new_zealand_national_party_long 
+			    name = NZL_neutrality_new_zealand_national_party_long 
+			}
+			create_country_leader = {
+				name = "John Ormond"
+				desc = "POLITICS_John_Ormond_DESC"
+				picture = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
+				expire = "1965.1.1"
+				ideology = neutrality
+				traits = {
+					
+				}
+			}
+		}
+	} 
 }
