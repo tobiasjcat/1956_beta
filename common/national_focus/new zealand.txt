@@ -2100,7 +2100,7 @@ focus = {
 	prerequisite = { focus = NZL_politicize_the_fallen }
 	mutually_exclusive = { focus = NZL_a_strong_unity }
 	relative_position_id = NZL_individualism
-	x = 1.5
+	x = 2
 	y = 1
 	
 	cost = 8
@@ -2169,7 +2169,7 @@ focus = {
 			}
 			create_country_leader = {
 				name = "John Ormond"
-				desc = "POLITICS_John_Ormond_DESC"
+				desc = "POLITICS_Sidney_Holland_DESC"
 				picture = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
 				expire = "1965.1.1"
 				ideology = neutrality
