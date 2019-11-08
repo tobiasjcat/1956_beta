@@ -2109,7 +2109,7 @@ focus = {
 		AND = {
 			if = {
 				limit = { not = { has_government = fascism } }
-				has_autonomy_state = autonomy_dominion
+				has_autonomy_state = autonomy_free
 			}
 			if = {
 				limit = { has_government = fascism } 
@@ -2120,7 +2120,7 @@ focus = {
 	}
 
 	completion_reward = {
-			custom_effect_tooltip = NZL_a_strong_unity
+			custom_effect_tooltip = NZL_king_and_country
 			OVERLORD = {
 			set_autonomy = {
 				target = NZL
