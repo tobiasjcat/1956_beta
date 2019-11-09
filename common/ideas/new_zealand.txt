@@ -40,6 +40,7 @@ ideas = {
 				army_morale_factor = 0.03
 			}
 		}
+	
 		NZL_resource_imports = {
 
 			allowed = {
@@ -59,6 +60,26 @@ ideas = {
 				mobilization_laws_cost_factor = -0.25
 				economy_cost_factor = -0.25
 				local_resources_factor = 0.03
+			}
+		}
+
+		NZL_politicize_the_fallen_2 = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.05 
+				political_power_gain = 0.05
 			}
 		}
 
@@ -299,6 +320,30 @@ ideas = {
 			}
 		}
 
+		NZL_english_military_aid = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+			
+			modifier = {
+				planning_speed = 0.1
+				military_leader_cost_factor = -0.50
+				army_leader_start_level = 1
+			}		
+		}
+
 		NZL_obtain_funding = {
 
 			allowed = {
@@ -382,6 +427,26 @@ ideas = {
 				naval_hit_chance = 0.03
 				navy_capital_ship_attack_factor = 0.03
 				convoy_raiding_efficiency_factor = 0.1
+			}
+		}
+		
+		NZL_look_to_old_parties_2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.01
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		

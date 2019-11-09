@@ -129,7 +129,9 @@ focus = {
 			        target = NZL
 		}
 	}
-}	
+}
+}
+
 focus = {
 		id = NZL_solidify_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -2166,7 +2168,54 @@ focus = {
 
 	completion_reward = {
 		add_ideas = NZL_one_for_the_empire
-		
+		swap_ideas = {
+			remove_ideas = NZL_politicize_the_fallen
+			add_ideas = NZL_politicize_the_fallen_2
+		}
+		swap_ideas = {
+			remove_ideas = NZL_look_to_old_parties
+			add_ideas = NZL_look_to_old_parties_2
+	}
+}
+}
+
+focus = {
+	id = NZL_english_military_aid
+	icon = GFX_1_6_goal_ENG_sun_never_sets
+	prerequisite = { focus = NZL_king_and_country }
+	relative_position_id = NZL_king_and_country
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
 	}
 
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+	add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 4500
+	producer = ENG
+	}
+	add_ideas = NZL_english_military_aid
+}
+}
+
+focus = {
+	id = NZL_aid_in_the_australian_reclaimation
+	icon = 
 }
