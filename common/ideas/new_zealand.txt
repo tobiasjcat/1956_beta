@@ -20,6 +20,26 @@ ideas = {
 			
 		}
 
+		NZL_one_for_the_empire = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				political_power_gain = 0.05
+				planning_speed = 0.10
+				army_morale_factor = 0.03
+			}
+		}
 		NZL_resource_imports = {
 
 			allowed = {
@@ -59,7 +79,7 @@ ideas = {
 			modifier = {
 				autonomy_gain = 5
 				war_support_factor = 0.05 
-				political_power_gain = 0.1
+				political_power_gain = 0.05
 			}
 		}
 
