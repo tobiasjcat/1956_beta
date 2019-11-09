@@ -2121,62 +2121,20 @@ focus = {
 	}
 
 	completion_reward = {
-			custom_effect_tooltip = NZL_king_and_country
-			OVERLORD = {
+		custom_effect_tooltip = NZL_king_and_country
+		OVERLORD = {
 			set_autonomy = {
-				target = NZL
-				autonomy_state = autonomy_puppet
+					target = NZL
+					autonomy_state = autonomy_puppet
 			}
 		}
-	}
-}
-
-focus = {
-	id = our_loyal_leader
-	icon = GFX_goal_NZL_sh
-	prerequisite = { focus = NZL_king_and_country }
-	relative_position_id = NZL_king_and_country
-	x = 0
-	y = 1
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 35
-	}
-
-	available = {
-	
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
+		retire_country_leader = yes	
+		drop_cosmetic_tag = yes
+		set_party_name = { ideology = neutrality  long_name = NZL_neutrality_party_long name =NZL_neutrality_party }
 		set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-			set_party_name = { 
-			    ideology = neutrality 
-			    long_name = NZL_neutrality_new_zealand_national_party_long 
-			    name = NZL_neutrality_new_zealand_national_party_long 
-			}
-			create_country_leader = {
-				name = "Sidney Holland"
-				desc = "POLITICS_Sidney_Holland_DESC"
-				picture = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
-				expire = "1965.1.1"
-				ideology = neutrality
-				traits = {
-					
-				}
-			}
-		}
-	} 
+			ruling_party = neutrality
+			elections_allowed = no
+		}			
+	}
 }
+
