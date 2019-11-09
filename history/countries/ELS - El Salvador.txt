@@ -129,8 +129,8 @@ create_country_leader = {
 	}
 }
 create_corps_commander = {
-	name = "Salvador Castaneda Castro"
-	portrait_path = "gfx/leaders/ELS/r56_Portrait_ELS_Salvador_Castaneda_Castro.dds"
+	name = "Salvador Castañeda Castro"
+	portrait_path = "gfx/leaders/ELS/r56_Portrait_ELS_Salvador_Castañeda_Castro.tga"
 	traits = { }
 	skill = 2
     attack_skill = 2
