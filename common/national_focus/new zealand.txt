@@ -2217,5 +2217,36 @@ focus = {
 
 focus = {
 	id = NZL_aid_in_the_australian_reclaimation
-	icon = 
+	icon = GFX_focus_attack_australia
+	prerequisite = { focus = NZL_english_military_aid }
+	prerequisite = { focus = NZL_one_for_the_empire } 
+	relative_position_id = NZL_one_for_the_empire
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = AST
+			expire = 0
+		}
+	}
 }
