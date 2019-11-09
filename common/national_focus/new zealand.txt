@@ -2181,10 +2181,10 @@ focus = {
 
 focus = {
 	id = NZL_english_military_aid
-	icon = GFX_1_6_goal_ENG_sun_never_sets
+	icon = GFX_focus_generic_little_entente
 	prerequisite = { focus = NZL_king_and_country }
 	relative_position_id = NZL_king_and_country
-	x = 1
+	x = 2
 	y = 1
 
 	cost = 5
