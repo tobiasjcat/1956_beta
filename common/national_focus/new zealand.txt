@@ -1655,7 +1655,7 @@ focus = {
 focus = {
 	id = NZL_mushroom_season
 	icon = GFX_goal_generic_multipartism
-	x = 40
+	x = 55
 	y = 0
 	mutually_exclusive = { focus = NZL_the_labour_government }
 
