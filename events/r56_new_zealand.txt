@@ -1,0 +1,51 @@
+
+add_namespace = r56_new_zealand
+
+country_event = {
+	id = r56_new_zealand.1
+	title = r56_new_zealand.1.t
+	desc = r56_new_zealand.1.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1939.03.27
+		tag = NZL
+	}
+
+	option = {
+		name = r56_new_zealand.1.a
+		unlock_national_focus = NZL_frasers_leadership
+		set_country_flag = NZL_peter_fraser_flag
+	}
+
+	option = {
+		name = r56_new_zealand.1.b
+		unlock_national_focus = NZL_trust_in_the_opposition
+		set_country_flag = NZL_gervan_macmillan_flag
+	}
+}
+
+country_event = {
+	id = r56_new_zealand.2
+	title = r56_new_zealand.2.t
+	desc = r56_new_zealand.2.d
+	picture = GFX_report_event_europe_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1940.03.27
+		tag = NZL
+	}
+
+	option = {
+		name = r56_new_zealand.2.a
+		set_country_flag = NZL_savage_dead
+		NZL = {
+			add_stability = -0.05
+		}
+	}
+}
+
