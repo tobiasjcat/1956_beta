@@ -2333,6 +2333,11 @@ LAT_ulmanis = {
 		political_power_gain = 0.03
 	}
 
+	sick = {
+		random = no
+		stability_factor = -0.05
+		political_power_gain = -0.03
+	}
 
 ###------> PRC <><> <><> <><> <><> <><>
 
