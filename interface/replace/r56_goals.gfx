@@ -3531,7 +3531,7 @@ SpriteType = {
 
 	SpriteType ={
 		name = "GFX_goal_NZL_fra"
-		texturefile "gfx/interface/goals/nzl/r56_goal_NZL_fra.dds"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_fra.dds"
 	}
 
 	SpriteType = { 
