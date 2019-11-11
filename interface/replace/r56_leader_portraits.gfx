@@ -375,3 +375,19 @@ spriteTypes = {
 		name = "GFX_Portrait_r56_portrait_MEX_manuel_avila"
 		texturefile = "gfx/leaders/MEX/r56_portrait_MEX_manuel_avila.dds"		
 	}
+
+#->  NZL <><>
+	spriteType = {
+		name = "GFX_Portrait_NZL_Gervan_McMillan"
+		texturefile = "gfx/leaders/NZL/r56_portrait_NZL_Gervan_McMillan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NZL_Sidney_Holland"
+		texturefile = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_NZL_Peter_Fraser"
+		texturefile = "gfx/leaders/NZL/r56_portrait_NZL_Peter_Fraser.dds"
+	}
