@@ -2296,47 +2296,6 @@ focus = {
 		add_stability = 0.1
 	}
 }
-}
-
-focus = {
-	id = NZL_frasers_leadership
-	icon = GFX_goal_NZL_fra
-	prerequisite = { focus = NZL_the_labour_government }
-	relative_position_id = NZL_the_labour_government
-	x = 5
-	y =1
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 35
-	}
-
-	available = {
-	
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-		create_country_leader = {
-			name = "Peter Fraser"
-			desc = "POLITICS_Peter_Fraser"
-			picture = "GFX_Portrait_NZL_Peter_Fraser.dds"
-			expire = "1965.1.1"
-			ideology = democratic
-			traits = {
-			}
-		}
-		add_political_power = 150
-	}
-}
 
 focus = {
 	id = NZL_public_health_service
