@@ -2278,6 +2278,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		retire_country_leader = yes
 		create_country_leader = {
 			name = "Gervan McMillan"
 			desc = "POLITICS_Gervan_Macmillan"
@@ -2290,8 +2291,8 @@ focus = {
 		}
 		set_party_name = { 
 		    ideology = democratic 
-		    long_name = "The Labour Government" 
-		    name = "The Labour Government"
+		    long_name = "New Zealand Labour Party" 
+		    name = "New Zealand Labour Party"
 		}
 		add_stability = 0.1
 	}
