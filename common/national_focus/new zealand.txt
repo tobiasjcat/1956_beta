@@ -2296,6 +2296,7 @@ focus = {
 		add_stability = 0.1
 	}
 }
+}
 
 focus = {
 	id = NZL_frasers_leadership
@@ -2340,7 +2341,7 @@ focus = {
 focus = {
 	id = NZL_public_health_service
 	icon = GFX_goal_consitution
-	prerequisite = NZL_trust_in_the_opposition
+	prerequisite = { focus = NZL_trust_in_the_opposition }
 	relative_position_id = NZL_trust_in_the_opposition
 	x = 2
 	y = 1
@@ -2371,5 +2372,68 @@ focus = {
 			category = tech_field_hospital4
 		}
 		add_political_power = 50
+	}
+}
+
+focus = {
+	id = NZL_research_grants
+	icon = GFX_goal_research_silver
+	prerequisite = { focus =  NZL_trust_in_the_opposition }
+	relative_position_id =  NZL_trust_in_the_opposition
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_research_grants
+	}
+}
+
+focus = {
+	id = NZL_review_the_prison_system
+	icon = GFX_goal_generic_prison_break
+	prerequisite = { focus = NZL_research_grants }
+	prerequisite = { focus = NZL_public_health_service }
+	relative_position_id = NZL_research_grants 
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_review_the_prison_system
 	}
 }
