@@ -20,6 +20,50 @@ ideas = {
 			
 		}
 
+		NZL_lower_labor_wages = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = -0.05
+				war_support_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		
+		NZL_attempt_at_a_war_economy = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.02
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+			}
+		}
+		
 		NZL_one_for_the_empire = {
 
 			allowed = {
@@ -41,6 +85,26 @@ ideas = {
 			}
 		}
 	
+		NZL_destruction_of_the_lee_afair = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.1
+			}
+		}
+		
 		NZL_resource_imports = {
 
 			allowed = {
@@ -59,7 +123,6 @@ ideas = {
 				trade_laws_cost_factor = -0.25
 				mobilization_laws_cost_factor = -0.25
 				economy_cost_factor = -0.25
-				local_resources_factor = 0.03
 			}
 		}
 
@@ -226,10 +289,10 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.05
-				production_factory_efficiency_gain_factor = 0.05
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
+				consumer_goods_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.02
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
 				stability_factor = 0.05
 			}
 		}
@@ -356,7 +419,7 @@ ideas = {
 
 			modifier = {
 				global_building_slots_factor = 0.1
-				production_factory_max_efficiency_factor = 0.10
+				production_factory_max_efficiency_factor = 0.03
 				production_factory_efficiency_gain_factor = 0.03
 			}
 		}
