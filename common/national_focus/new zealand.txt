@@ -2328,7 +2328,7 @@ focus = {
 			name = NZL_public_health_servics
 			bonus = 1.0
 			uses = 1
-			category = tech_field_hospital4
+			category = hospital_tech
 		}
 		add_political_power = 50
 	}
@@ -2394,5 +2394,36 @@ focus = {
 
 	completion_reward = {
 		add_ideas = NZL_review_the_prison_system
+	}
+}
+
+focus = {
+	id = reconcile_political_opponents
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = NZL_research_grants }
+	prerequisite = { focus = NZL_public_health_service }
+	relative_position_id = NZL_research_grants 
+	x = -2
+	y = 1
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+		add advisors later
 	}
 }

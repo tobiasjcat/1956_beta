@@ -278,6 +278,27 @@ ideas = {
 			}
 		}
 
+		NZL_review_the_prison_system = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				stability_factor = -0.05
+				democratic_drift = 0.05
+				conscription_factor = 0.01
+			}
+		}
+	
 		NZL_research_grants = {
 
 			allowed = {
