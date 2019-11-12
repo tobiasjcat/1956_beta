@@ -20,6 +20,28 @@ ideas = {
 			
 		}
 
+		NZL_silence_the_discontent = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.03
+				political_power_gain = 0.02
+				partisan_effect = 0.10
+			}
+		}
+		
 		NZL_lower_labor_wages = {
 
 			allowed = {

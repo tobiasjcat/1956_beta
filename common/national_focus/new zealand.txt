@@ -2406,6 +2406,8 @@ focus = {
 	x = 0
 	y = 1
 
+	cost = 10
+	
 	ai_will_do = {
 		factor = 35
 	}
@@ -2434,6 +2436,8 @@ focus = {
 	relative_position_id = NZL_the_labour_government
 	x = 5
 	y = 1
+
+	cost = 10
 
 	ai_will_do = {
 		factor = 35
@@ -2471,3 +2475,160 @@ focus = {
 	}
 }
 
+focus = {
+	id = NZL_rally_the_opponents
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { focus = NZL_frasers_leadership }
+	relative_position_id = NZL_frasers_leadership
+	x = -1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		remove_ideas = NZL_destruction_of_the_lee_afair
+	}
+}
+
+focus = {
+	id = NZL_attempt_at_a_war_economy
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = NZL_frasers_leadership }
+	relative_position_id = NZL_frasers_leadership 
+	x = 1
+	y = 1
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_attempt_at_a_war_economy
+	}
+}
+
+focus = {
+	id = NZL_lower_labor_wages
+	icon = GFX_focus_generic_decrease_unemployment
+	prerequisite = { focus = NZL_attempt_at_a_war_economy }
+	prerequisite = { focus = NZL_rally_the_opponents }
+	relative_position_id = NZL_attempt_at_a_war_economy
+	x = 0 
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_lower_labor_wages
+	}
+}
+
+focus = {
+	id = NZL_silence_the_discontent
+	icon = GFX_goal_generic_control_the_radio
+	prerequisite = { focus = NZL_attempt_at_a_war_economy }
+	prerequisite = { focus = NZL_rally_the_opponents }
+	relative_position_id = NZL_rally_the_opponents
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_silence_the_discontent
+	}
+}
+
+focus = {
+	id = NZL_fight_for_control_over_our_soldiers
+	icon = GFX_sca_focus_into_fire
+	prerequisite = { focus = NZL_silence_the_discontent }
+	prerequisite = { focus = NZL_lower_labor_wages }
+	relative_position_id = NZL_silence_the_discontent 
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		
+	}
+}
