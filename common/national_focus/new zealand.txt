@@ -2427,3 +2427,48 @@ focus = {
 		add advisors later
 	}
 }
+
+focus = {
+	id = NZL_frasers_leadership
+	icon = GFX_goal_NZL_fra
+	prerequisite = { focus = NZL_the_labour_government }
+	relative_position_id = NZL_the_labour_government
+	x = 5
+	y = 1
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		create_country_leader = {
+			name = "Peter Fraser"
+			desc = "POLITICS_Peter_Fraser"
+			picture = "gfx/leaders/NZL/r56_portrait_NZL_Peter_Fraser.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+
+			}
+		}
+		set_party_name = { 
+		    ideology = conservatism 
+		    long_name = "New Zealand Labour Party" 
+		    name = "New Zealand Labour Party"
+		}
+		add_stability = 0.1
+	}
+}
+}
