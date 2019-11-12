@@ -2470,5 +2470,5 @@ focus = {
 		}
 		add_stability = 0.1
 	}
-}
+
 
