@@ -695,12 +695,12 @@
  GCOL_communism_ADJ:0 "Andean"
 
  #GER
- GER_neutrality:0 "Deutsches Kaiserreich"
- GER_neutrality_DEF:0 "Deutsches Reich"
- GER_democratic:0 "Bundesrepublik Deutschland"
- GER_democratic_DEF:0 "Das Bundesrepublik Deutschland"
- GER_communism:0 "Deutsche Demokratische Republik"
- GER_communism_DEF:0 "Das Deutsche Demokratische Republik"
+ GER_neutrality:0 "German Empire"
+ GER_neutrality_DEF:0 "The German Empire"
+ GER_democratic:0 "Federal Republic Of Germany"
+ GER_democratic_DEF:0 "The Federal Republic Of Germany"
+ GER_communism:0 "German Democratic Republic"
+ GER_communism_DEF:0 "The German Democratic Republic"
  GER_FRA_autonomy_dominion:0 "German Protectorate"
  GER_FRA_autonomy_colony:0 "Confederation of the Rhine"
  GER_FRA_autonomy_puppet:0 "Confederation of the Rhine"
@@ -1081,6 +1081,10 @@
  PAR_BRA_autonomy_integrated_puppet:0 "Western Mato Grosso"
  PAR_BRA_autonomy_dominion:0 "Brazilian Paraguay"
 
+ #PER
+ PER_democratic:0 "Iran"
+ PER_democratic_DEF:0 "Iran"
+
  #PGR
  PGR_fascism:0 "Provisional Government of Republic of China"
  PGR_fascism_ADJ:0 "Chinese"
@@ -1162,6 +1166,9 @@
  RGR_communism:0 "Chinese Socialist State"
  RGR_communism_ADJ:0 "Chinese"
  RGR_communism_DEF:0 "The Chinese Socialist State"
+
+ #SAU -missing line base game
+ SAU_neutrality_ADJ:0 "Saudi"
 
  #SCA
  SCA_fascism:0 "Nordic Empire"
@@ -1470,19 +1477,28 @@
  ZAM_communism_ADJ:0 "Zambian"
 
  #ZIB
- ZIB_neutrality:0 "Zimbabwe"
- ZIB_neutrality_DEF:0 "Zimbabwe"
- ZIB_democratic:0 "Republic of Zimbabwe"
- ZIB_democratic_DEF:0 "Republic of Zimbabwe"
- ZIB_fascism:0 "Independent Rhodesia"
- ZIB_fascism_DEF:0 "Independent Rhodesia"
- ZIB_communism:0 "Social Republic of Rhodesia"
- ZIB_communism_DEF:0 "Social Republic of Rhodesia"
- ZIB_communism_ADJ:0 "Rhodenian"
- ZIB_fascism_ADJ:0 "Rhodenian"
- ZIB_democratic_ADJ:0 "Zimbabwean"
- ZIB_neutrality_ADJ:0 "Zimbabwean"
-
+ #it's ZIM not ZIB
+ #ZIB_neutrality:0 "Zimbabwe"
+ #ZIB_neutrality_DEF:0 "Zimbabwe"
+ #ZIB_democratic:0 "Republic of Zimbabwe"
+ #ZIB_democratic_DEF:0 "Republic of Zimbabwe"
+ #ZIB_fascism:0 "Independent Rhodesia"
+ #ZIB_fascism_DEF:0 "Independent Rhodesia"
+ #ZIB_communism:0 "Social Republic of Rhodesia"
+ #ZIB_communism_DEF:0 "Social Republic of Rhodesia"
+ #ZIB_communism_ADJ:0 "Rhodenian"
+ #ZIB_fascism_ADJ:0 "Rhodenian"
+ #ZIB_democratic_ADJ:0 "Zimbabwean"
+ #ZIB_neutrality_ADJ:0 "Zimbabwean"
+ ZIM_ENG_autonomy_dominion:0 "Southern Rhodesia"
+ ZIM_ENG_autonomy_colony:0 "Southern Rhodesia"
+ ZIM_ENG_autonomy_puppet:0 "Southern Rhodesia"
+ ZIM_ENG_autonomy_integrated_puppet:0 "Southern Rhodesia"
+ ZIM_ENG_autonomy_dominion_DEF:0 "the Colony of Southern Rhodesia"
+ ZIM_ENG_autonomy_colony_DEF:0 "the Colony of Southern Rhodesia"
+ ZIM_ENG_autonomy_puppet_DEF:0 "the Colony of Southern Rhodesia"
+ ZIM_ENG_autonomy_integrated_puppet_DEF:0 "the Colony of Southern Rhodesia"
+ 
  SPQR_UNIFIED_communism:0 "Res Publica Proletariorum Romanorum"
  SPQR_UNIFIED_communism_DEF:0 "Res Publica Proletariorum Romanorum"
 
