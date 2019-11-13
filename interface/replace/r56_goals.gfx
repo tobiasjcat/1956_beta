@@ -3496,6 +3496,65 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_charlton_automatic_rifles.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_goal_NZL_new_zealand_will_not_fall"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_new_zealand_will_not_fall.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_MJS"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_MJS.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_bt"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_bt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_ss"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_ss.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_army"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_jo"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_jo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_ptf"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_ptf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_kac"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_kac.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_sh"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_sh.dds"
+	}
+
+	SpriteType ={
+		name = "GFX_goal_NZL_fra"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_fra.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_goal_NZL_mc"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_mc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_NZL_nzleng"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_nzleng.dds"
+	}
 
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
