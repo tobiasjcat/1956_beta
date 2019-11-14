@@ -2634,3 +2634,34 @@ focus = {
 		add_stability = -0.05
 	}
 }
+
+focus = {
+	id = NZL_the_labour_partys_reforms
+	icon = GFX_goal_NZL_MJS
+	prerequisite = { focus = NZL_the_labour_government }
+	x = 0
+	y = 2
+	relative_position_id = NZL_the_labour_government
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_first_labor_government
+	}
+}
