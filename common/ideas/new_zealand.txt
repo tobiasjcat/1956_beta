@@ -744,6 +744,26 @@ ideas = {
 			}
 		}
 
+		NZL_unemployment_benefit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				consumer_goods_factor = 0.03
+				conscription_factor = 0.07
+				political_power_cost = 0.2
+			}
+		}
 		NZL_bob_semple_tank = {
 
 			allowed = {
@@ -764,7 +784,7 @@ ideas = {
 			}
 		}
 		
-		NZL_social_security_act = {
+		NZL_the_social_security_act = {
 
 			allowed = {
 				always = no
@@ -781,9 +801,8 @@ ideas = {
 			modifier = {
 				conscription = 0.02
 				stability_factor = 0.05	
-				war_support_factor = 0.05
+				consumer_goods_factor = -0.4
 			}
-
 		}
 
 		NZL_2nzef = {
@@ -894,6 +913,26 @@ ideas = {
 			}
 		}
 
+		NZL_stiff_opposition = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.03
+			}
+		}
 		NZL_defend_our_islands ={
 
 			allowed = {

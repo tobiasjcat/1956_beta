@@ -2635,7 +2635,7 @@ focus = {
 	icon = GFX_goal_NZL_MJS
 	prerequisite = { focus = NZL_the_labour_government }
 	x = 0
-	y = 2
+	y = 4
 	relative_position_id = NZL_the_labour_government
 
 	cost = 5
@@ -2658,6 +2658,7 @@ focus = {
 
 	completion_reward = {
 		add_ideas = NZL_first_labor_government
+		add_ideas = NZL_stiff_opposition
 	}
 }
 
@@ -2666,7 +2667,7 @@ focus = {
 	icon = GFX_goal_generic_deadly_treaty
 	prerequisite = { focus = NZL_the_labour_partys_reforms }
 	relative_position_id = NZL_the_labour_partys_reforms
-	x = -1
+	x = 1
 	y = 1
 
 	cost = 5
@@ -2836,5 +2837,131 @@ focus = {
 					owner = NZL
 			}
 		}
+	}
+}
+
+focus = {
+	id = NZL_begin_lobbying_for_reforms
+	icon = GFX_goal_generic_foreign_diplomacy
+	prerequisite = { focus = NZL_the_labour_partys_reforms }
+	relative_position_id = NZL_the_labour_partys_reforms
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		remove_ideas = NZL_stiff_opposition
+	}
+}
+
+focus = {
+	id = NZL_the_social_security_act
+	icon = GFX_r56_goal_generic_bills
+	prerequisite = { focus = NZL_begin_lobbying_for_reforms }
+	relative_position_id = NZL_begin_lobbying_for_reforms
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_the_social_security_act
+	}
+}
+
+focus = {
+	id = NZL_unenmployment_benefit
+	icon = GFX_focus_generic_decrease_unemployment
+	prerequisite = { focus = NZL_begin_lobbying_for_reforms }
+	relative_position_id = NZL_begin_lobbying_for_reforms
+	x = 1 
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_unemployment_benefit
+	}
+}
+
+focus = {
+	id = NZL_the_second_nzl_volunteer_force
+	icon = GFX_focus_generic_commonwealth_build_infantry
+	prerequisite = { focus = NZL_unemplyment_benefit }
+	prerequisite = { focus = NZL_the_social_security_act }
+	prerequisite = { focus = NZL_the_maori_division }
+	relative_position_id = NZL_the_maori_division
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_the_second_nzl_volunteer_force
 	}
 }
