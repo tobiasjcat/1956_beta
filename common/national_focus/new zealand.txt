@@ -2729,7 +2729,7 @@ focus = {
 	icon = GFX_goal_generic_citizens
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 1
+	x = 2
 	y = 1
 
 	cost = 5
@@ -2760,7 +2760,7 @@ focus = {
 	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 2
+	x = 4
 	y = 1
 
 	cost = 5
@@ -2815,7 +2815,6 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		completion_reward = {
 			division_template = {
 				is_locked = yes
 				name = "Maori Volunteers"
@@ -2835,7 +2834,6 @@ focus = {
 				create_unit = {
 					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
 					owner = NZL
-				}
 			}
 		}
 	}
