@@ -2699,7 +2699,7 @@ focus = {
 	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 5
@@ -2730,7 +2730,7 @@ focus = {
 	icon = GFX_goal_generic_citizens
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 2
+	x = 1
 	y = 1
 
 	cost = 5
@@ -2761,7 +2761,7 @@ focus = {
 	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 4
+	x = 3
 	y = 1
 
 	cost = 5
@@ -2845,7 +2845,7 @@ focus = {
 	icon = GFX_goal_generic_foreign_diplomacy
 	prerequisite = { focus = NZL_the_labour_partys_reforms }
 	relative_position_id = NZL_the_labour_partys_reforms
-	x = 5
+	x = 4
 	y = 1
 
 	cost = 5
@@ -2934,10 +2934,41 @@ focus = {
 }
 
 focus = {
+	id = NZL_the_question_of_the_finance_minister
+	icon = GFX_focus_mex_privatisation
+	prerequisite = { focus = NZL_the_social_security_act }
+	prerequisite = { focus = NZL_unemployment_benefit }
+	relative_position_id = NZL_the_social_security_act
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+
+	}
+}
+
+focus = {
 	id = NZL_the_second_nzl_volunteer_force
 	icon = GFX_focus_generic_commonwealth_build_infantry
-	prerequisite = { focus = NZL_unemplyment_benefit }
-	prerequisite = { focus = NZL_the_social_security_act }
+	prerequisite = { focus = NZL_the_question_of_the_finance_minister }
 	prerequisite = { focus = NZL_the_maori_division }
 	relative_position_id = NZL_the_maori_division
 	x = 3.5
