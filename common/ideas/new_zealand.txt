@@ -143,7 +143,7 @@ ideas = {
 
 			modifier = {
 				trade_laws_cost_factor = -0.25
-				mobilization_laws_cost_factor = -0.25
+				min_export = -0.05
 				economy_cost_factor = -0.25
 			}
 		}
@@ -338,6 +338,27 @@ ideas = {
 				special_forces_attack_factor = 0.03
 				special_forces_defence_factor = 0.03
 				conscription_factor = 0.02
+			}
+		}
+		
+		NZL_protect_maori_land = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
+				consumer_goods_factor = -0.01
 			}
 		}
 		
@@ -873,7 +894,7 @@ ideas = {
 			}
 		}
 
-		NZL_waitangi_tribunal = {
+		NZL_defend_our_islands ={
 
 			allowed = {
 				always = no
@@ -885,11 +906,54 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = generic_infantry_bonus
+
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_coastal_bunker_factor = 0.1
+				dig_in_speed_factor = 0.05
+			}
+		}
+		
+		NZL_respect_maori_culture = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				mobilization_speed = 0.03
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+	
+		NZL_minor_native_representation_in_gov = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
 			
 			modifier = {
 				conscription = 0.02
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.04
+				political_power_gain = 0.03
 			}
 		}
 

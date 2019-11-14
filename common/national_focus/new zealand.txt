@@ -516,14 +516,9 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = NZL_defend_our_islands
-				bonus = 1.00
-				uses = 2
-				category = artillery
-			}
-		}
+			add_ideas = NZL_defend_our_islands
 	}
+}
 
 focus = {
 	id = NZL_ford_munition_plant
@@ -2663,5 +2658,185 @@ focus = {
 
 	completion_reward = {
 		add_ideas = NZL_first_labor_government
+	}
+}
+
+focus = {
+	id = NZL_critize_uk_foreign_policy
+	icon = GFX_goal_generic_deadly_treaty
+	prerequisite = { focus = NZL_the_labour_partys_reforms }
+	relative_position_id = NZL_the_labour_partys_reforms
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_war_support = 0.05
+		add_ideas = NZL_angered_uk
+	}
+}
+
+focus = {
+	id = NZL_protect_maori_land
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = NZL_critize_uk_foreign_policy }
+	relative_position_id = NZL_critize_uk_foreign_policy
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_protect_maori_land
+	}
+}
+
+focus = {
+	id = NZL_respect_maori_culture
+	icon = GFX_goal_generic_citizens
+	prerequisite = { focus = NZL_critize_uk_foreign_policy }
+	relative_position_id = NZL_critize_uk_foreign_policy
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_respect_maori_culture
+	}
+}
+
+focus = {
+	id = NZL_minor_native_representation_in_gov
+	icon = GFX_focus_generic_concessions
+	prerequisite = { focus = NZL_critize_uk_foreign_policy }
+	relative_position_id = NZL_critize_uk_foreign_policy
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_minor_native_representation_in_gov
+	}
+}
+
+focus = {
+	id = NZL_the_maori_division
+	icon = GFX_r56_focus_multinational_army
+	prerequisite = { focus = NZL_minor_native_representation_in_gov }
+	prerequisite = { focus = NZL_respect_maori_culture }
+	prerequisite = { focus = NZL_protect_maori_land }
+	relative_position_id = NZL_protect_maori_land
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		completion_reward = {
+			division_template = {
+				is_locked = yes
+				name = "Maori Volunteers"
+				division_names_group = NZL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 284 723 }
+				create_unit = {
+					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
+					owner = NZL
+				}
+			}
+		}
 	}
 }
