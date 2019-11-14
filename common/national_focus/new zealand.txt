@@ -2635,7 +2635,7 @@ focus = {
 	icon = GFX_goal_NZL_MJS
 	prerequisite = { focus = NZL_the_labour_government }
 	x = 0
-	y = 3.5
+	y = 4.5
 	relative_position_id = NZL_the_labour_government
 
 	cost = 5
