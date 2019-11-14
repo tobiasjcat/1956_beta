@@ -2667,7 +2667,7 @@ focus = {
 	icon = GFX_goal_generic_deadly_treaty
 	prerequisite = { focus = NZL_the_labour_partys_reforms }
 	relative_position_id = NZL_the_labour_partys_reforms
-	x = 1
+	x = -1
 	y = 1
 
 	cost = 5
