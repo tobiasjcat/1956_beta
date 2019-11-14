@@ -805,7 +805,7 @@ ideas = {
 			}
 		}
 
-		NZL_2nzef = {
+		NZL_the_second_nzl_volunteer_force = {
 
 			allowed = {
 				always = no
@@ -827,7 +827,6 @@ ideas = {
 				send_volunteers_tension = -0.5
 				send_volunteer_size = 1
 			}
-
 		}
 
 		NZL_stomp_out_pacifism = {

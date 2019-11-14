@@ -2429,7 +2429,7 @@ focus = {
 	icon = GFX_goal_NZL_fra
 	prerequisite = { focus = NZL_the_labour_government }
 	relative_position_id = NZL_the_labour_government
-	x = 5
+	x = 3
 	y = 1
 
 	cost = 10
@@ -2635,7 +2635,7 @@ focus = {
 	icon = GFX_goal_NZL_MJS
 	prerequisite = { focus = NZL_the_labour_government }
 	x = 0
-	y = 3
+	y = 3.5
 	relative_position_id = NZL_the_labour_government
 
 	cost = 5
@@ -2940,7 +2940,7 @@ focus = {
 	prerequisite = { focus = NZL_the_social_security_act }
 	prerequisite = { focus = NZL_the_maori_division }
 	relative_position_id = NZL_the_maori_division
-	x = 2
+	x = 3.5
 	y = 1
 
 	cost = 5
