@@ -2393,7 +2393,7 @@ focus = {
 }
 
 focus = {
-	id = reconcile_political_opponents
+	id = NZL_reconcile_political_opponents
 	icon = GFX_focus_generic_self_management
 	prerequisite = { focus = NZL_research_grants }
 	prerequisite = { focus = NZL_public_health_service }
@@ -2424,6 +2424,39 @@ focus = {
 	}
 }
 
+focus = {
+	id = NZL_denounce_conservative_politicians
+	icon = GFX_goal_generic_censorship
+	prerequisite = { focus = NZL_reconcile_political_opponents }
+	prerequisite = { focus = NZL_review_the_prison_system }
+	relative_position_id = NZL_reconcile_political_opponents
+	x = 1
+	y = 1
+
+	cost = 10
+	
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+
+}
 focus = {
 	id = NZL_frasers_leadership
 	icon = GFX_goal_NZL_fra
@@ -2845,7 +2878,7 @@ focus = {
 	icon = GFX_goal_generic_foreign_diplomacy
 	prerequisite = { focus = NZL_the_labour_partys_reforms }
 	relative_position_id = NZL_the_labour_partys_reforms
-	x = 4
+	x = 3
 	y = 1
 
 	cost = 5
@@ -2937,7 +2970,7 @@ focus = {
 	id = NZL_the_question_of_the_finance_minister
 	icon = GFX_focus_mex_privatisation
 	prerequisite = { focus = NZL_the_social_security_act }
-	prerequisite = { focus = NZL_unemployment_benefit }
+	prerequisite = { focus = NZL_unenmployment_benefit }
 	relative_position_id = NZL_the_social_security_act
 	x = 1
 	y = 1
