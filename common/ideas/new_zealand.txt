@@ -341,6 +341,28 @@ ideas = {
 			}
 		}
 		
+		NZL_angered_uk = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				autonomy_gain = 1
+				stability_factor = -0.05
+				army_core_defence_factor = 0.03
+				army_org_factor = 0.03
+			}
+		}
+		
 		NZL_industrial_awakening = {
 
 			allowed = {
@@ -378,7 +400,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				stability_factor = -0.05
+				stability_factor = -0.02
 				democratic_drift = 0.05
 				conscription_factor = 0.01
 			}
