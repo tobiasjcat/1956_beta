@@ -1820,16 +1820,16 @@ focus = {
 				elections_allowed = no
 			}
 			set_party_name = { 
-			    ideology = conservatism 
+			    ideology = fascism 
 			    long_name = NZL_fascism_new_zealand_legion_long 
 			    name = NZL_fascism_new_zealand_legion_long 
 			}
 			create_country_leader = {
 				name = "John Ormond"
 				desc = "POLITICS_John_Ormond_DESC"
-				picture = "gfx/leaders/NZL/r56_portrait_NZL_John_Ormond.dds"
+				picture = "gfx/leaders/NZL/r56_Portrait_NZL_John_Ormond.dds"
 				expire = "1965.1.1"
-				ideology = conservatism
+				ideology = fascism
 				traits = {
 					
 				}
