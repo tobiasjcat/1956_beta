@@ -18,29 +18,12 @@ country_event = {
 		name = r56_new_zealand.1.a
 		unlock_national_focus = NZL_frasers_leadership
 		set_country_flag = NZL_peter_fraser_flag
-		create_country_leader = {
-			name = "Peter Fraser"
-			desc = "POLITICS_Peter_Fraser"
-			picture = "GFX_Portrait_NZL_Peter_Fraser.dds"
-			expire = "1965.1.1"
-			traits = {
-			}
-		}
 	}
 	
 	option = {
 		name = r56_new_zealand.1.b
 		unlock_national_focus = NZL_trust_in_the_opposition
 		set_country_flag = NZL_gervan_macmillan_flag
-		create_country_leader = {
-			name = "Gervan McMillan"
-			desc = "POLITICS_Gervan_Macmillan"
-			picture = "GFX_Portrait_NZL_Gervan_McMillan.dds"
-			expire = "1965.1.1"
-			traits = {
-
-			}
-		}
 	}
 }
 
