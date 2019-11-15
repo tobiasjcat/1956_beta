@@ -16,13 +16,11 @@ country_event = {
 
 	option = {
 		name = r56_new_zealand.1.a
-		unlock_national_focus = NZL_frasers_leadership
 		set_country_flag = NZL_peter_fraser_flag
 	}
 	
 	option = {
 		name = r56_new_zealand.1.b
-		unlock_national_focus = NZL_trust_in_the_opposition
 		set_country_flag = NZL_gervan_macmillan_flag
 	}
 }

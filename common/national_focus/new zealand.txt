@@ -2261,7 +2261,7 @@ focus = {
 	}
 
 	available = {
-	
+		has_country_flag = NZL_gervan_macmillan_flag
 	}
 
 	bypass = {
@@ -2288,7 +2288,6 @@ focus = {
 		    long_name = "New Zealand Labour Party" 
 		    name = "New Zealand Labour Party"
 		}
-		add_stability = 0.1
 	}
 }
 
@@ -2471,7 +2470,7 @@ focus = {
 	}
 
 	available = {
-	
+		has_country_flag = NZL_peter_fraser_flag
 	}
 
 	bypass = {
@@ -2498,7 +2497,6 @@ focus = {
 		    long_name = "New Zealand Labour Party" 
 		    name = "New Zealand Labour Party"
 		}
-		add_stability = 0.1
 	}
 }
 
