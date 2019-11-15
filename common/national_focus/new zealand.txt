@@ -2793,7 +2793,7 @@ focus = {
 	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 1.5
+	x = 2
 	y = 1
 
 	cost = 5
@@ -2826,7 +2826,7 @@ focus = {
 	prerequisite = { focus = NZL_respect_maori_culture }
 	prerequisite = { focus = NZL_protect_maori_land }
 	relative_position_id = NZL_protect_maori_land
-	x = 1.5
+	x = 2
 	y = 1
 
 	cost = 5
