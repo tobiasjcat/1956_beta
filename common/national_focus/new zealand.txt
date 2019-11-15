@@ -2251,7 +2251,7 @@ focus = {
 	icon = GFX_goal_NZL_mc
 	prerequisite = { focus = NZL_the_labour_government }
 	relative_position_id = NZL_the_labour_government 
-	x = -5
+	x = -3
 	y = 1
 
 	cost = 5
@@ -2731,7 +2731,7 @@ focus = {
 	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = -1
+	x = -2
 	y = 1
 
 	cost = 5
@@ -2762,7 +2762,7 @@ focus = {
 	icon = GFX_goal_generic_citizens
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 1
+	x = 0
 	y = 1
 
 	cost = 5
@@ -2793,7 +2793,7 @@ focus = {
 	icon = GFX_focus_generic_concessions
 	prerequisite = { focus = NZL_critize_uk_foreign_policy }
 	relative_position_id = NZL_critize_uk_foreign_policy
-	x = 3
+	x = 1
 	y = 1
 
 	cost = 5
