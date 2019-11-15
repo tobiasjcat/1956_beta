@@ -2908,7 +2908,7 @@ focus = {
 	icon = GFX_r56_goal_generic_bills
 	prerequisite = { focus = NZL_begin_lobbying_for_reforms }
 	relative_position_id = NZL_begin_lobbying_for_reforms
-	x = -1
+	x = -2
 	y = 1
 
 	cost = 5
@@ -2939,7 +2939,7 @@ focus = {
 	icon = GFX_focus_generic_decrease_unemployment
 	prerequisite = { focus = NZL_begin_lobbying_for_reforms }
 	relative_position_id = NZL_begin_lobbying_for_reforms
-	x = 1 
+	x = 0 
 	y = 1
 
 	cost = 5
@@ -2966,12 +2966,43 @@ focus = {
 }
 
 focus = {
+	id = NZL_old_age_pension
+	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = NZL_begin_lobbying_for_reforms }
+	relative_position_id = NZL_begin_lobbying_for_reforms
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		
+	}
+}
+focus = {
 	id = NZL_the_question_of_the_finance_minister
 	icon = GFX_focus_mex_privatisation
 	prerequisite = { focus = NZL_the_social_security_act }
 	prerequisite = { focus = NZL_unenmployment_benefit }
+	prerequisite = { focus = NZL_old_age_pension }
 	relative_position_id = NZL_the_social_security_act
-	x = 1
+	x = 2
 	y = 1
 
 	cost = 5
