@@ -1183,7 +1183,11 @@ ideas = {
 			allowed = {
 				original_tag = NZL
 			}
-		
+			
+			available = {
+				has_country_flag = NZL_gervan_macmillan_flag
+			}
+			
 			traits = {socialist_finance_minister}
 		}
 	
@@ -1195,6 +1199,10 @@ ideas = {
 				original_tag = NZL
 			}
 
+			available = {
+				has_country_flag = NZL_gervan_macmillan_flag
+			}
+			
 			traits = {socialist_follower}
 		}
 	}
