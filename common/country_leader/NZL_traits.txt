@@ -4,7 +4,6 @@ leader_traits = {
 		random = no
 		sprite = 13
 		consumer_goods_factor = -.-3
-		political_power_gain = 0.25
 		democratic_drift = 0.05
 		
 		ai_will_do = {
@@ -17,8 +16,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		stability_factor = 0.05
-		political_power_gain = 0.25
-		war_support_factor = 0.05
+		political_power_gain = 0.05
 		
 		ai_will_do = {
 			factor = 1
