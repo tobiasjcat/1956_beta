@@ -1185,7 +1185,7 @@ ideas = {
 			}
 			
 			available = {
-				has_country_flag = NZL_gervan_macmillan_flag
+				has_completed_focus = NZL_NZL_reconcile_political_opponents
 			}
 			
 			traits = {socialist_finance_minister}
@@ -1200,7 +1200,7 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = NZL_gervan_macmillan_flag
+				 has_completed_focus = NZL_NZL_reconcile_political_opponents
 			}
 			
 			traits = {socialist_follower}
