@@ -2421,7 +2421,11 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_stability = 0.05
+		custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = NZL_john_a_lee
+
+		custom_effect_tooltip = available_political_advisor
+        show_ideas_tooltip = NZL_bill_barnard
 	}
 }
 
