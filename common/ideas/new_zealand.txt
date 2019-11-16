@@ -81,8 +81,8 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.03
 				production_factory_efficiency_gain_factor = 0.02
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
+				industry_repair_factor = 0.15
+				mobilization_speed = 0.1
 			}
 		}
 		
@@ -335,8 +335,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.02
 				production_factory_efficiency_gain_factor = 0.02
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
 				stability_factor = 0.05
 			}
 		}
@@ -379,7 +377,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
+				production_speed_infrastructure_factor = 0.05
 				consumer_goods_factor = -0.03
 			}
 		}
@@ -420,9 +418,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -.02
-				production_factory_efficiency_gain_factor = 0.02
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
+				production_speed_buildings_factor = 0.05
 			}
 		}
 
@@ -463,8 +459,7 @@ ideas = {
 
 			modifier = {
 				research_speed_factor = 0.05
-				industrial_capacity_factory = 0.02
-				industrial_capacity_dockyard = 0.02
+				global_building_slots_factor = 0.05
 			}
 		}
 
