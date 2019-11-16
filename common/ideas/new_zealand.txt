@@ -1177,6 +1177,28 @@ ideas = {
 		}
 	}
 
+	NZL_john_a_lee = {
+
+		picture = GFX_idea_NZL_john_a_lee
+
+		allowed = {
+			original_tag = NZL
+		}
+		
+		traits = {socialist_finance_minister}
+	}
+	
+	NZL_bill_barnard = {
+
+		picture = GFX_idea_NZL_bill_barnard
+
+		allowed = {
+			original_tag = NZL
+		}
+
+		traits = {socialist_follower}
+	}
+	
 	theorist = {
 
 		NZL_keith_j_holyoake = {
