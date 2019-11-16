@@ -1175,29 +1175,28 @@ ideas = {
 			
 			traits = { armaments_organizer }
 		}
-	}
 
-	NZL_john_a_lee = {
+		NZL_john_a_lee = {
 
-		picture = GFX_idea_NZL_john_a_lee
+			picture = GFX_idea_NZL_john_a_lee
 
-		allowed = {
-			original_tag = NZL
-		}
+			allowed = {
+				original_tag = NZL
+			}
 		
-		traits = {socialist_finance_minister}
-	}
-	
-	NZL_bill_barnard = {
-
-		picture = GFX_idea_NZL_bill_barnard
-
-		allowed = {
-			original_tag = NZL
+			traits = {socialist_finance_minister}
 		}
+	
+		NZL_bill_barnard = {
 
-		traits = {socialist_follower}
-	}
+			picture = GFX_idea_NZL_bill_barnard
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			traits = {socialist_follower}
+		}
 	}
 	
 	theorist = {
