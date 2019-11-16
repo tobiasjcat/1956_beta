@@ -2454,7 +2454,7 @@ focus = {
 
 	completion_reward = {
 		add_stability = 0.05
-		remove_ideas = NZL_stiff_opposition
+		remove_ideas = NZL_destruction_of_the_lee_afair
 	}
 }
 
