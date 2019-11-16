@@ -2532,6 +2532,7 @@ focus = {
 
 	completion_reward = {
 		remove_ideas = NZL_destruction_of_the_lee_afair
+		add_ideas = NZL_rally_the_opponents
 	}
 }
 
@@ -2658,9 +2659,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_war_support = 0.05
-		add_political_power = 150
-		add_stability = -0.05
+		add_ideas = NZL_fight_for_authority_over_our_troops
 	}
 }
 
@@ -2817,7 +2816,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = NZL_minor_native_representation_in_gov
+		remove_ideas = NZL_upset_maori_population
+		add_political_power = 50
 	}
 }
 
@@ -2994,7 +2994,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		add_ideas = NZL_old_age_pension
 	}
 }
 focus = {
