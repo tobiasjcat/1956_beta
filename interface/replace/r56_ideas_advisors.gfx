@@ -1550,6 +1550,20 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_john_ormond.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_NZL_bill_barnard"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_bill_barnard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_NZL_john_a_lee"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_john_a_lee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_walter_nash"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_walter_nash.dds"
+	}
 	###------> POL <><> <><> <><> <><> <><>
 #-> Danzig advisors <><>
 	spriteType = {
