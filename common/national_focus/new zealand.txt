@@ -2454,6 +2454,7 @@ focus = {
 
 	completion_reward = {
 		add_stability = 0.05
+		remove_ideas = NZL_stiff_opposition
 	}
 }
 
@@ -3026,7 +3027,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-
+		add_ideas = NZL_the_question_of_the_finance_minister
 	}
 }
 
