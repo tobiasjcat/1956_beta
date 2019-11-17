@@ -20,6 +20,26 @@ ideas = {
 			
 		}
 
+		NZL_collaborate_for_a_war_council = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				training_time_factor = -0.05
+				mobilization_speed = 0.1
+				planning_speed = 0.1
+			}
+		}
 		NZL_condem_government_intervention = {
 
 			allowed = {

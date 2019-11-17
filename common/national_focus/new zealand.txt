@@ -3306,11 +3306,44 @@ focus = {
 	}
 }
 
+
+focus = {
+	id = NZL_collaborate_for_a_war_council
+	icon = GFX_goal_military_government
+	prerequisite = { focus = NZL_equality_through_conscription }
+	prerequisite = { focus = NZL_fight_off_inflation }
+	relative_position_id = NZL_equality_through_conscription
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_collaborate_for_a_war_council
+	}
+}
+
 focus = {
 	id = NZL_open_up_the_free_market
 	icon = GFX_goal_generic_business_bills
-	prerequisite = { focus = NZL_equality_through_conscription }
 	prerequisite = { focus = NZL_fight_off_inflation }
+	prerequisite = { focus = NZL_collaborate_for_a_war_council}
 	relative_position_id = NZL_equality_through_conscription
 	x = 1
 	y = 1
