@@ -3537,8 +3537,8 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_NZL_sidney"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_sidney.dds"
+		name = "GFX_goal_NZL_sidney_h"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_sidney_h.dds"
 	}
 
 	SpriteType ={
@@ -3552,8 +3552,8 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_NZL_flag"
-		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_flag.dds"
+		name = "GFX_goal_NZL_flags"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_flags.dds"
 	}
 
 	SpriteType = {

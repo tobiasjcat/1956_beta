@@ -1620,7 +1620,7 @@ focus = {
 
 focus = {
 	id = NZL_the_labour_government
-	icon = GFX_goal_NZL_flag
+	icon = GFX_goal_NZL_flags
 	x = 30
 	y = 0 
 	mutually_exclusive = { focus = NZL_mushroom_season}
@@ -3073,7 +3073,7 @@ focus = {
 
 focus = {
 	id = NZL_the_national_party_triumphs
-	icon = GFX_goal_NZL_sidney
+	icon = GFX_goal_NZL_sidney_h
 	x = 40
 	y = 0
 	mutually_exclusive = { focus = NZL_mushroom_season}
