@@ -3117,7 +3117,7 @@ focus = {
 focus = {
 	id = NZL_appeal_to_rural_communities
 	icon = GFX_goal_generic_farm_tractor
-	x = -1.5
+	x = -2
 	y = 1
 	prerequisite = { focus = NZL_the_national_party_triumphs }
 	relative_position_id = NZL_the_national_party_triumphs
@@ -3215,7 +3215,7 @@ focus = {
 	icon = GFX_focus_generic_diplomatic_treaty
 	prerequisite = { focus = NZL_the_national_party_triumphs }
 	relative_position_id = NZL_the_national_party_triumphs
-	x = 1.5
+	x = 2
 	y = 1
 
 	cost = 5
