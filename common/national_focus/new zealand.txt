@@ -1624,7 +1624,6 @@ focus = {
 	x = 30
 	y = 0 
 	mutually_exclusive = { focus = NZL_mushroom_season}
-	mutually_exclusive = { focus = NZL_the_national_party_triumphs }
 
 	cost = 10
 
@@ -1656,7 +1655,6 @@ focus = {
 	x = 55
 	y = 0
 	mutually_exclusive = { focus = NZL_the_labour_government }
-	mutually_exclusive = { focus = NZL_the_national_party_triumphs }
 
 	cost = 10
 
@@ -3074,10 +3072,10 @@ focus = {
 focus = {
 	id = NZL_the_national_party_triumphs
 	icon = GFX_goal_NZL_sidney_h
-	x = 40
-	y = 0
-	mutually_exclusive = { focus = NZL_mushroom_season}
-	mutually_excluisve = { focus = NZL_the_labour_party }
+	prerequisite = { focus = NZL_mushroom_season }
+	relative_postion_id = NZL_mushroom_season
+	x = 5
+	y = 1
 
 	cost = 10
 
@@ -3086,7 +3084,7 @@ focus = {
 	}
 
 	available = {
-	
+		has_country_flag = NZL_holland_flag
 	}
 
 	bypass = {
