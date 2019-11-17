@@ -1610,6 +1610,21 @@ ideas = {
 			}
 			traits = { infantry_equipment_manufacturer }
 		}
+		
+		NZL_ford_munitions_company = {
+			
+			available = {
+				has_completed_focus = NZL_ford_munition_plant
+			}
+			allowed = {
+				original_tag = NZL
+			}
+			
+			research_bonus = {
+				infantry_equipment = 0.2
+			}
+		}
+
 	}	
  #schofield tanks with wheels and tracks like Sweden :D
 	tank_manufacturer = {

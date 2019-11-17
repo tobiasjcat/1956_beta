@@ -438,6 +438,7 @@ focus = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = NZL_colonial_amunitions_company
 			random_owned_controlled_state = {
 				prioritize = { 284 723 }
 				limit = {
@@ -561,6 +562,7 @@ focus = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = NZL_ford_munitions_company
 			random_owned_controlled_state = {
 				prioritize = { 284 723 }
 				limit = {
