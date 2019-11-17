@@ -3079,7 +3079,7 @@ focus = {
 	mutually_exclusive = { focus = NZL_mushroom_season}
 	mutually_excluisve = { focus = NZL_the_labour_party }
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
 		factor = 35
@@ -3110,8 +3110,228 @@ focus = {
 		}
 		set_party_name = { 
 		    ideology = conservatism  
-		    long_name = "New Zealand Labour Party" 
-		    name = "New Zealand Labour Party"
+		    long_name = "New Zealand National Party" 
+		    name = "New Zealand National Party"
 		}
 	}
+}
+
+focus = {
+	id = NZL_appeal_to_rural_communities
+	icon = GFX_goal_generic_farm_tractor
+	x = -1
+	y = 1
+	prerequisite = { focus = NZL_the_national_party_triumphs }
+	relative_position_id = NZL_the_national_party_triumphs
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_appeal_to_rural_communities
+	}
+}
+
+focus = {
+	id = NZL_condem_government_intervention
+	icon = GFX_goal_centralize_power
+	prerequisite = { focus = NZL_appeal_to_rural_communities}
+	relative_position_id = NZL_appeal_to_rural_communities
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_condem_government_intervention
+	}
+}
+
+focus = {
+	id = NZL_equality_through_conscription
+	icon = GFX_goal_generic_citizens
+	prerequisite = { focus = NZL_condem_governemnt_intervention }
+	relative_position_id = NZL_condem_government_intervention
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		remove_ideas = NZL_upset_maori_population
+		add_ideas = NZL_equality_through_conscription
+	}
+}
+
+focus = {
+	id = NZL_absorb_conservative_parties
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = NZL_the_national_party_triumphs }
+	relative_position_id = NZL_the_national_party_triumphs
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		remove_ideas = NZL_destruction_of_the_lee_afair
+		add_political_power = 150
+	}
+}
+
+focus = {
+	id = NZL_fight_militant_worker_unions
+	icon = GFX_goal_generic_armed_protest
+	prerequisite = { focus = NZL_absorb_conservative_parties}
+	relative_position_id = NZL_absorb_conservative_parties
+	x = 0
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_fight_militant_worker_unions
+	}
+}
+
+focus = {
+	id = NZL_fight_off_inflation
+	icon = GFX_goal_generic_economics_reform
+	prerequisite = { focus = NZL_fight_militant_worker_unions }
+	relative_position_id = NZL_fight_militant_worker_unions
+	x = 0 
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_fight_off_inflation
+	}
+}
+
+focus = {
+	id = NZL_open_up_the_free_market
+	icon = GFX_goal_generic_business_bills
+	prerequisite = { focus = NZL_equality_through_conscription }
+	prerequisite = { focus = NZL_fight_off_inflation }
+	relative_position_id = NZL_equality_through_conscription
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = { 
+		add_ideas = NZL_open_up_the_free_market
+	} 
 }
