@@ -1624,6 +1624,7 @@ focus = {
 	x = 30
 	y = 0 
 	mutually_exclusive = { focus = NZL_mushroom_season}
+	mutually_exclusive = { focus = NZL_the_national_party_triumphs }
 
 	cost = 10
 
@@ -1655,6 +1656,7 @@ focus = {
 	x = 55
 	y = 0
 	mutually_exclusive = { focus = NZL_the_labour_government }
+	mutually_exclusive = { focus = NZL_the_national_party_triumphs }
 
 	cost = 10
 
@@ -3072,7 +3074,7 @@ focus = {
 focus = {
 	id = NZL_the_national_party_triumphs
 	icon = GFX_goal_NZL_sh
-	x = 35
+	x = 40
 	y = 0
 	mutually_exclusive = { focus = NZL_mushroom_season}
 	mutually_excluisve = { focus = NZL_the_labour_party }
