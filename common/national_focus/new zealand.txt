@@ -3068,3 +3068,48 @@ focus = {
 		add_ideas = NZL_the_second_nzl_volunteer_force
 	}
 }
+
+focus = {
+	id = NZL_the_national_party_triumphs
+	icon = GFX_goal_NZL_sh
+	x = 35
+	y = 0
+	mutually_exclusive = { focus = NZL_mushroom_season}
+	mutually_excluisve = { focus = NZL_the_labour_party }
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		create_country_leader = {
+			name = "Sidney Holland"
+			desc = "POLITICS_Sidney_Holland"
+			picture = "gfx/leaders/NZL/r56_portrait_NZL_Sidney_Holland.dds"
+			expire = "1965.1.1"
+			ideology = conservatism 
+			traits = {
+
+			}
+		}
+		set_party_name = { 
+		    ideology = conservatism  
+		    long_name = "New Zealand Labour Party" 
+		    name = "New Zealand Labour Party"
+		}
+	}
+}
