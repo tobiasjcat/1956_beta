@@ -3117,7 +3117,7 @@ focus = {
 focus = {
 	id = NZL_appeal_to_rural_communities
 	icon = GFX_goal_generic_farm_tractor
-	x = -1
+	x = -1.5
 	y = 1
 	prerequisite = { focus = NZL_the_national_party_triumphs }
 	relative_position_id = NZL_the_national_party_triumphs
@@ -3148,8 +3148,8 @@ focus = {
 focus = {
 	id = NZL_condem_government_intervention
 	icon = GFX_goal_centralize_power
-	prerequisite = { focus = NZL_appeal_to_rural_communities}
-	relative_position_id = NZL_appeal_to_rural_communities
+	prerequisite = { focus = NZL_the_national_party_triumphs }
+	relative_position_id = NZL_the_national_party_triumphs
 	x = 0
 	y = 1
 
@@ -3180,8 +3180,10 @@ focus = {
 	id = NZL_equality_through_conscription
 	icon = GFX_goal_generic_citizens
 	prerequisite = { focus = NZL_condem_government_intervention }
+	prerequisite = { focus = NZL_appeal_to_rural_communities }
+	prerequisite = { focus = NZL_absorb_conservative_parties }
 	relative_position_id = NZL_condem_government_intervention
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 5
@@ -3213,7 +3215,7 @@ focus = {
 	icon = GFX_focus_generic_diplomatic_treaty
 	prerequisite = { focus = NZL_the_national_party_triumphs }
 	relative_position_id = NZL_the_national_party_triumphs
-	x = 1
+	x = 1.5
 	y = 1
 
 	cost = 5
@@ -3244,8 +3246,10 @@ focus = {
 	id = NZL_fight_militant_worker_unions
 	icon = GFX_goal_generic_armed_protest
 	prerequisite = { focus = NZL_absorb_conservative_parties}
+	prerequisite = { focus = NZL_condem_government_intervention }
+	prerequisite = { focus = NZL_appeal_to_rural_communities }
 	relative_position_id = NZL_absorb_conservative_parties
-	x = 0
+	x = -1
 	y = 1
 
 	cost = 5
