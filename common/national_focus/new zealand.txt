@@ -3073,7 +3073,7 @@ focus = {
 	id = NZL_the_national_party_triumphs
 	icon = GFX_goal_NZL_sidney_h
 	prerequisite = { focus = NZL_mushroom_season }
-	relative_postion_id = NZL_mushroom_season
+	relative_position_id = NZL_mushroom_season
 	x = 5
 	y = 1
 
