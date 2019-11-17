@@ -3346,7 +3346,7 @@ focus = {
 	prerequisite = { focus = NZL_collaborate_for_a_war_council}
 	relative_position_id = NZL_collaborate_for_a_war_council
 	x = 1
-	y = 1.5
+	y = 2
 
 	cost = 5
 
