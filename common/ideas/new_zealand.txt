@@ -1613,6 +1613,8 @@ ideas = {
 		
 		NZL_ford_munitions_company = {
 			
+			picture = GFX_idea_ford_motor_company
+			
 			available = {
 				has_completed_focus = NZL_ford_munition_plant
 			}
