@@ -1,0 +1,75 @@
+add_namespace = r56_new_zealand
+
+country_event = {
+	id = r56_new_zealand.1
+	title = r56_new_zealand.1.t
+	desc = r56_new_zealand.1.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1939.03.27
+		tag = NZL
+	}
+
+	option = {
+		name = r56_new_zealand.1.a
+		set_country_flag = NZL_peter_fraser_flag
+	}
+	
+	option = {
+		name = r56_new_zealand.1.b
+		set_country_flag = NZL_gervan_macmillan_flag
+	}
+}
+
+country_event = {
+	id = r56_new_zealand.2
+	title = r56_new_zealand.2.t
+	desc = r56_new_zealand.2.d
+	picture = GFX_report_event_europe_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1940.03.27
+		tag = NZL
+	}
+
+	option = {
+		name = r56_new_zealand.2.a
+		set_country_flag = NZL_savage_dead
+		NZL = {
+			add_stability = -0.05
+		}
+	}
+}
+
+country_event = {
+	id = r56_new_zealand.3
+	title = r56_new_zealand.3.t
+	desc = r56_new_zealand.3.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		date > 1936.05.14
+		tag = NZL
+	}
+
+	option = {
+		name = r56_new_zealand.1.a
+		set_country_flag = NZL_holland_flag
+	}
+
+	option = {
+		name = r56_new_zealand.1.b
+		NZL = {
+			add_stability = -0.05
+		}
+	}
+}
+}
+
