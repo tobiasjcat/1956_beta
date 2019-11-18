@@ -3344,8 +3344,8 @@ focus = {
 	icon = GFX_goal_generic_business_bills
 	prerequisite = { focus = NZL_fight_off_inflation }
 	prerequisite = { focus = NZL_collaborate_for_a_war_council}
-	relative_position_id = NZL_collaborate_for_a_war_council
-	x = .5
+	relative_position_id = NZL_fight_off_inflation
+	x = -1
 	y = 1.5
 
 	cost = 5
