@@ -3248,8 +3248,8 @@ focus = {
 	prerequisite = { focus = NZL_absorb_conservative_parties}
 	prerequisite = { focus = NZL_condem_government_intervention }
 	prerequisite = { focus = NZL_appeal_to_rural_communities }
-	relative_position_id = NZL_absorb_conservative_parties
-	x = -1
+	relative_position_id = NZL_condem_government_intervention 
+	x = 1
 	y = 1
 
 	cost = 5
