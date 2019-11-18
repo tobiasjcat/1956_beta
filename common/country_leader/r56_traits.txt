@@ -2324,6 +2324,21 @@ LAT_ulmanis = {
 	}
 
 
+###------> NZL <><> <><> <><> <><> <><>
+	
+	conservative_law_maker = {
+		random = no
+		stability_factor = 0.02
+		consumer_goods_factor = -0.03
+		political_power_gain = 0.03
+	}
+
+	sick = {
+		random = no
+		stability_factor = -0.05
+		political_power_gain = -0.03
+	}
+
 ###------> PRC <><> <><> <><> <><> <><>
 
 	the_great_chairman = {
