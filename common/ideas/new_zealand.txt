@@ -20,7 +20,7 @@ ideas = {
 			
 		}
 
-		NZL_war_council = {
+		NZL_collaborate_for_a_war_council = {
 
 			allowed = {
 				always = no 
