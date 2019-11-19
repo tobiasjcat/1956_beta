@@ -2096,7 +2096,7 @@ focus = {
 	prerequisite = { focus = NZL_champions_of_the_depression }
 	prerequisite = { focus = NZL_maori_assimilation}
 	relative_position_id = NZL_minimize_government_funding
-	x = 1.5
+	x = 2
 	y = 1
 
 
