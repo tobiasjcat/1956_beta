@@ -1893,7 +1893,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		remove_ideas =  NZL_organizing_communists
+		remove_ideas = NZL_organizing_communists
+		remove_ideas = NZL_destruction_of_the_lee_afair
 		add_war_support = .05
 	}
 }
@@ -2093,8 +2094,9 @@ focus = {
 	icon = GFX_goal_generic_defence
 	prerequisite = { focus = NZL_minimize_government_funding }
 	prerequisite = { focus = NZL_champions_of_the_depression }
-	relative_position_id = NZL_champions_of_the_depression
-	x = -1
+	prerequisite = { focus = NZL_maori_assimilation}
+	relative_position_id = NZL_minimize_government_funding
+	x = 1.5
 	y = 1
 
 

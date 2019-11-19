@@ -796,7 +796,6 @@ ideas = {
 			modifier = {
 				autonomy_gain = 1
 				fascism_drift = 0.01
-				production_speed_buildings_factor = 0.1
 			}
 		}
 
