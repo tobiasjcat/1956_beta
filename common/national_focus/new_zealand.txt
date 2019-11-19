@@ -1818,7 +1818,7 @@ focus = {
 				elections_allowed = no
 			}
 			set_party_name = { 
-			    ideology = oligarchism 
+			    ideology = fascism_ideology 
 			    long_name = NZL_fascism_new_zealand_legion_long 
 			    name = NZL_fascism_new_zealand_legion_long 
 			}
@@ -1827,7 +1827,7 @@ focus = {
 				desc = "POLITICS_John_Ormond_DESC"
 				picture = "gfx/leaders/NZL/r56_Portrait_NZL_John_Ormond.dds"
 				expire = "1965.1.1"
-				ideology = oligarchism
+				ideology = fascism_ideology
 				traits = {
 					
 				}
@@ -1839,7 +1839,7 @@ focus = {
 	id = NZL_politicize_the_fallen
 	icon = GFX_goal_NZL_ptf
 	prerequisite = { focus = NZL_revive_the_legion }
-	x = -3
+	x = -2
 	y = 1
 	relative_position_id = NZL_revive_the_legion
 
@@ -1870,7 +1870,7 @@ focus = {
 	id = NZL_supress_the_traitors
 	icon = GFX_goal_generic_anti_communism
 	prerequisite = { focus = NZL_revive_the_legion }
-	x = 3
+	x = 2
 	y = 1
 	relative_position_id = NZL_revive_the_legion
 
@@ -1937,7 +1937,7 @@ focus = {
 	prerequisite = { focus = NZL_supress_the_traitors }
 	prerequisite = { focus = NZL_politicize_the_fallen }
 	relative_position_id = NZL_individualism
-	x = -1.5
+	x = -1
 	y = 1
 
 	cost = 10
