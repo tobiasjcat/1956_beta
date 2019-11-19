@@ -1818,7 +1818,7 @@ focus = {
 				elections_allowed = no
 			}
 			set_party_name = { 
-			    ideology = fascism 
+			    ideology = oligarchism 
 			    long_name = NZL_fascism_new_zealand_legion_long 
 			    name = NZL_fascism_new_zealand_legion_long 
 			}
@@ -1827,7 +1827,7 @@ focus = {
 				desc = "POLITICS_John_Ormond_DESC"
 				picture = "gfx/leaders/NZL/r56_Portrait_NZL_John_Ormond.dds"
 				expire = "1965.1.1"
-				ideology = fascism
+				ideology = oligarchism
 				traits = {
 					
 				}
@@ -2092,162 +2092,7 @@ focus = {
 }
 }
 
-focus = {
-	id = NZL_king_and_country
-	icon = GFX_goal_NZL_kac
-	prerequisite = { focus = NZL_individualism }
-	prerequisite = { focus = NZL_supress_the_traitors }
-	prerequisite = { focus = NZL_politicize_the_fallen }
-	mutually_exclusive = { focus = NZL_a_strong_unity }
-	relative_position_id = NZL_individualism
-	x = 2
-	y = 1
-	
-	cost = 8
 
-	OR = {
-	is_subject = no
-		AND = {
-			if = {
-				limit = { not = { has_government = fascism } }
-				has_autonomy_state = autonomy_free
-			}
-			if = {
-				limit = { has_government = fascism } 
-				has_autonomy_state = autonomy_satellite
-				}
-		compare_autonomy_progress_ratio > 0.8
-		}
-	}
-
-	completion_reward = {
-		custom_effect_tooltip = NZL_king_and_country
-		OVERLORD = {
-			set_autonomy = {
-					target = NZL
-					autonomy_state = autonomy_puppet
-			}
-		}
-		retire_country_leader = yes	
-		drop_cosmetic_tag = yes
-		set_party_name = { ideology = neutrality  long_name = NZL_neutrality_party_long name =NZL_neutrality_party }
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
-		}			
-	}
-}
-
-focus = {
-	id = NZL_one_for_the_empire
-	icon = GFX_1_6_goal_ENG_sun_never_sets
-	prerequisite = { focus = NZL_king_and_country }
-	relative_position_id = NZL_king_and_country
-	x = 0
-	y = 1
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 35
-	}
-
-	available = {
-	
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-		add_ideas = NZL_one_for_the_empire
-		swap_ideas = {
-			remove_ideas = NZL_politicize_the_fallen
-			add_ideas = NZL_politicize_the_fallen_2
-		}
-		swap_ideas = {
-			remove_ideas = NZL_look_to_old_parties
-			add_ideas = NZL_look_to_old_parties_2
-	}
-}
-}
-
-focus = {
-	id = NZL_english_military_aid
-	icon = GFX_focus_generic_little_entente
-	prerequisite = { focus = NZL_king_and_country }
-	relative_position_id = NZL_king_and_country
-	x = 2
-	y = 1
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 35
-	}
-
-	available = {
-	
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-	add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 4500
-	producer = ENG
-	}
-	add_ideas = NZL_english_military_aid
-}
-}
-
-focus = {
-	id = NZL_aid_in_the_australian_reclaimation
-	icon = GFX_focus_attack_australia
-	prerequisite = { focus = NZL_english_military_aid }
-	prerequisite = { focus = NZL_one_for_the_empire } 
-	relative_position_id = NZL_one_for_the_empire
-	x = 1
-	y = 1
-
-	cost = 5
-
-	ai_will_do = {
-		factor = 35
-	}
-
-	available = {
-	
-	}
-
-	bypass = {
-
-	}
-
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
-
-	completion_reward = {
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = AST
-			expire = 0
-		}
-	}
-}
 
 focus = {
 	id = NZL_trust_in_the_opposition
