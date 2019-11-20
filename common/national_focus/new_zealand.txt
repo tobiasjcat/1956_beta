@@ -3247,3 +3247,77 @@ focus = {
 	} 
 }
 
+focus = {
+	id = NZL_usurp_all_branches_of_gov
+	icon = GFX_goal_military_government
+	prerequsite = { focus = NZL_mushroom_season }
+	x = 10
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		create_country_leader = {
+			name = "Cyril Louis Newall"
+			desc = "POLITICS_Cyril_Louis_Newall"
+			picture = "gfx/leaders/NZL/r56_portrait_NZL_Cyril_Louis_Newall.dds"
+			expire = "1965.1.1"
+			ideology = despotism 
+			traits = {
+
+			}
+		}
+		set_party_name = { 
+		    ideology = despotism  
+		    long_name = "Governor General Position" 
+		    name = "Governor General Position"
+		}
+	}
+}
+
+focus = {
+	id = NZL_dissolve_parliment
+	icon = GFX_focus_renounce_the_treaty_of_trianon
+	prerequisite = { focus = NZL_usurp_all_branches_of_gov }
+	relative_position_id = NZL_usurp_all_branches_of_gov
+	x = 2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward_id = {
+		add_ideas = NZL_dissolve_parliment
+	}
+}
