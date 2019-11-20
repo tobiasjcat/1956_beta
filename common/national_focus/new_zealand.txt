@@ -3251,7 +3251,8 @@ focus = {
 	id = NZL_usurp_all_branches_of_gov
 	icon = GFX_goal_military_government
 	prerequsite = { focus = NZL_mushroom_season }
-	x = 10
+	relative_position_id = NZL_mushroom_season
+	x = 0
 	y = 1
 
 	cost = 5
