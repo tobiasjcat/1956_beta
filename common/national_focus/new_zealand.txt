@@ -3250,7 +3250,7 @@ focus = {
 focus = {
 	id = NZL_usurp_all_branches_of_gov
 	icon = GFX_goal_military_government
-	prerequsite = { focus = NZL_mushroom_season }
+	prerequisite = { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 0
 	y = 1
@@ -3274,18 +3274,23 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		hidden_effect = {
+				kill_country_leader = yes
+			}
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_popularity = { ideology = neutrality popularity = 0.15 }
 		create_country_leader = {
 			name = "Cyril Louis Newall"
 			desc = "POLITICS_Cyril_Louis_Newall"
 			picture = "gfx/leaders/NZL/r56_portrait_NZL_Cyril_Louis_Newall.dds"
 			expire = "1965.1.1"
-			ideology = despotism 
+			ideology = despotism _ideology
 			traits = {
 
 			}
 		}
 		set_party_name = { 
-		    ideology = despotism  
+		    ideology = despotism_ideology  
 		    long_name = "Governor General Position" 
 		    name = "Governor General Position"
 		}
@@ -3318,7 +3323,8 @@ focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 
-	completion_reward_id = {
+	completion_reward = {
 		add_ideas = NZL_dissolve_parliment
 	}
 }
+

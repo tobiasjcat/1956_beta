@@ -21,6 +21,25 @@ ideas = {
 		}
 
 		
+		NZL_reinstate_the_royal_assent_meaning = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				
+			}
+		}
+
 		NZL_dissolve_parliment = {
 
 			allowed = {
