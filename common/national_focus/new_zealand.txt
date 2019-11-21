@@ -3434,7 +3434,7 @@ focus = {
 	id = NZL_absorb_labour_party_remnants
 	icon = GFX_focus_generic_diplomatic_treaty
 	prerequisite = { focus = NZL_override_the_constitution }
-	relative_position_id = override_the_constitution
+	relative_position_id = NZL_override_the_constitution
 	x = 0
 	y = 1
 
