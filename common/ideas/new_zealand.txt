@@ -1373,6 +1373,17 @@ ideas = {
 
 	political_advisor = {
 
+		NZL_peter_fraser = {
+
+			picture = GFX_idea_NZL_peter_fraser
+
+			allowed = {
+				has_completed_focus = NZL_absorb_labour_party_remnants
+			}
+
+			traits = {labour_party_remnant}
+		}
+
 		NZL_a_e_davy = {
 
 			picture = generic_political_advisor_europe_1

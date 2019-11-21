@@ -1565,6 +1565,11 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_walter_nash.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_NZL_peter_fraser"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_peter_fraser.dds"
+	}
+	
 	###------> POL <><> <><> <><> <><> <><>
 #-> Danzig advisors <><>
 	spriteType = {
