@@ -715,7 +715,7 @@ ideas = {
 			}
 		}
 
-		NZL_english_military_aid = {
+		NZL_shared_military_exercises = {
 			allowed = {
 				always = no
 			}
@@ -735,7 +735,8 @@ ideas = {
 			modifier = {
 				planning_speed = 0.1
 				military_leader_cost_factor = -0.50
-				army_leader_start_level = 1
+				army_org_factor = 0.05
+				max_planning = 0.10
 			}		
 		}
 
@@ -1325,6 +1326,47 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				stability_factor = -0.05
+			}
+		}
+
+		NZL_erradicate_maori_identity = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = -0.02
+				political_power_gain = 0.05
+			}
+		}
+		NZL_reverse_socialist_finance_schemes = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.02
 			}
 		}
 
