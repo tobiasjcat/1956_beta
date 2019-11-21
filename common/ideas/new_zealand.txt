@@ -21,6 +21,30 @@ ideas = {
 		}
 
 		
+		NZL_override_the_constitution = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+
+			modifier = {
+				high_command_cost_factor = -0.25
+				air_chief_cost_factor = -0.25
+				army_chief_cost_factor = -0.25
+				navy_chief_cost_factor = -0.25
+			}
+		}
+
+
 		NZL_reinstate_the_royal_assent_meaning = {
 
 			allowed = {
@@ -36,7 +60,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				
+				political_power_gain = 0.05
+				political_advisor_cost_factor = -0.25
 			}
 		}
 

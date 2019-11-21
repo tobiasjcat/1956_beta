@@ -3328,3 +3328,73 @@ focus = {
 	}
 }
 
+focus = {
+	id = NZL_reinstate_the_royal_assent_meaning
+	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = NZL_usurp_all_branches_of_gov}
+	relative_position_id = NZL_usurp_all_branches_of_gov
+	x = -2
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_reinstate_the_royal_assent_meaning
+	}
+}
+
+focus = {
+	id = NZL_reinstate_ties_with_britain
+	icon = GFX_goal_NZL_flags
+	prerequisite = { focus = NZL_reinstate_the_royal_assent_meaning }
+	prerequisite = { focus = NZL_dissolve_parliment }
+	relative_position_id = NZL_dissolve_parliment
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		is_subject = no
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = NZL_reinstate_ties_with_britain
+			OVERLORD = {
+				set_autonomy = {
+					target = NZL
+					autonomy_state = autonomy_dominion
+				}
+			}
+		set_rule = { can_create_factions = yes }
+	}
+}
+
