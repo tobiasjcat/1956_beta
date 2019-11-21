@@ -3302,7 +3302,7 @@ focus = {
 	icon = GFX_focus_renounce_the_treaty_of_trianon
 	prerequisite = { focus = NZL_usurp_all_branches_of_gov }
 	relative_position_id = NZL_usurp_all_branches_of_gov
-	x = 2
+	x = 1
 	y = 1
 
 	cost = 5
@@ -3333,7 +3333,7 @@ focus = {
 	icon = GFX_focus_generic_treaty
 	prerequisite = { focus = NZL_usurp_all_branches_of_gov}
 	relative_position_id = NZL_usurp_all_branches_of_gov
-	x = -2
+	x = -1
 	y = 1
 
 	cost = 5
@@ -3498,7 +3498,7 @@ focus = {
 	id = NZL_erradicate_maori_identity
 	icon = GFX_goal_generic_censorship
 	prerequisite = { focus = NZL_reverse_socialist_finance_schemes }
-	relative_position_id = reverse_socialist_finance_schemes
+	relative_position_id = NZL_reverse_socialist_finance_schemes
 	x = 0
 	y = 1
 
