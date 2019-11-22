@@ -3563,7 +3563,7 @@ focus = {
 	icon = GFX_goal_commie
 	prerequisite =  { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
-	x = 8
+	x = 15
 	y = 1
 
 	cost = 5
