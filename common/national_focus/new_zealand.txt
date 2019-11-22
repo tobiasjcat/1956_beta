@@ -3706,8 +3706,10 @@ focus = {
 focus = {
 	id = NZL_invite_radical_labour_exiles
 	icon = GFX_sca_focus_communist_loyalty
-	prerequisite = { focus = NZL_emerge_from_the_caves }
-	x = 0
+	prerequisite = { focus = NZL_complete_maori_equality}
+	prerequisite = { focus = NZL_public_housing }
+	relative_position_id = NZL_complete_maori_equality
+	x = 2
 	y = 1
 
 	cost = 10
@@ -3745,7 +3747,7 @@ focus = {
 	icon = GFX_sca_focus_communist_loyalty
 	prerequisite = { focus = NZL_emerge_from_the_caves }
 	relative_position_id = NZL_emerge_from_the_caves
-	x = 2
+	x = 1
 	y = 1
 
 	cost = 35
@@ -3807,7 +3809,7 @@ focus = {
 	icon = GFX_focus_GRE_red_victory
 	prerequisite = { focus = NZL_emerge_from_the_caves}
 	relative_position_id = NZL_emerge_from_the_caves
-	x = -2
+	x = -1
 	y = 1
 
 	cost = 35
