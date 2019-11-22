@@ -1370,7 +1370,7 @@ ideas = {
 			}
 		}
 
-		NZL_the_workers_party_1 = {
+		NZL_exploit_the_chaos_above = {
 
 			allowed = {
 				always = no
@@ -1386,7 +1386,8 @@ ideas = {
 			
 			modifier = {
 				autonomy_gain = 1
-				communism_drift = 0.02
+				communism_drift = 0.03
+				stability_factor = -0.03
 			}
 		}
 

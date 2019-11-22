@@ -3558,3 +3558,33 @@ focus = {
 	}
 }
 
+focus = {
+	id = NZL_exploit_the_chaos_above
+	icon = GFX_goal_commie
+	prerequisite =  { focus = NZL_mushroom_season }
+	relative_position_id = NZL_mushroom_season
+	x = 8
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_exploit_the_chaos_above
+	}
+}
