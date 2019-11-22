@@ -3588,3 +3588,115 @@ focus = {
 		add_ideas = NZL_exploit_the_chaos_above
 	}
 }
+
+focus = {
+	id = NZL_the_peoples_voice
+	icon = GFX_goal_pv
+	prerequisite = { focus = NZL_exploit_the_chaos_above }
+	relative_position_id = NZL_exploit_the_chaos_above
+	x = 1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_the_peoples_voice
+	}
+}
+
+focus = {
+	id = NZL_obtain_soviet_funding
+	icon = GFX_goal_generic_communist_economy
+	prerequisite = { focus = NZL_exploit_the_chaos_above }
+	relative_position_id = NZL_exploit_the_chaos_above
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+	
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = NZL_obtain_soviet_funding
+	}
+}
+
+focus = {
+	id = NZL_emerge_from_the_caves
+	icon = GFX_sca_focus_communist_pride
+	prerequisite = { focus = NZL_obtain_soviet_funding}
+	prerequisite = { focus = NZL_the_peoples_voice }
+	relative_position_id = NZL_the_peoples_voice
+	x = -1
+	y = 1
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 35
+	}
+
+	available = {
+		fascism > .5
+	}
+
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_party_name = { 
+			    ideology = fascism_ideology 
+			    long_name = NZL_fascism_new_zealand_legion_long 
+			    name = NZL_fascism_new_zealand_legion_long 
+			}
+			create_country_leader = {
+				name = "John Ormond"
+				desc = "POLITICS_John_Ormond_DESC"
+				picture = "gfx/leaders/NZL/r56_Portrait_NZL_John_Ormond.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					
+			}
+		}
+	}
+}

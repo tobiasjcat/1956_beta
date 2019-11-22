@@ -1370,6 +1370,48 @@ ideas = {
 			}
 		}
 
+		NZL_obtain_soviet_funding = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				consumer_goods_factor = -0.02
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		NZL_the_peoples_voice = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				political_power_gain = 0.02
+				communism_drift = 0.05
+				partisan_effect = 0.05
+			}
+		}
+
+
 		NZL_exploit_the_chaos_above = {
 
 			allowed = {
