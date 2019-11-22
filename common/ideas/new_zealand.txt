@@ -338,6 +338,47 @@ ideas = {
 			}
 		}
 		
+		NZL_complete_maori_equality = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription_factor = 0.02
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		
+		NZL_new_wave_of_feminism = {
+
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+
+			modifier = {
+				conscription_factor = 0.02
+				war_support_factor = 0.05
+				autonomy_gain = 1
+			}
+		}
 		
 		NZL_public_housing = {
 
@@ -1162,6 +1203,32 @@ ideas = {
 			modifier = {
 				send_volunteers_tension = -0.5
 				send_volunteer_size = 1
+			}
+		}
+
+		NZL_encourage_bravery = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			rule = {
+				can_send_volunteers = yes
+			}
+			
+			modifier = {
+				send_volunteers_tension = -0.5
+				send_volunteer_size = 3
+				war_support_factor = 0.05
+				conscription_factor = 0.02
 			}
 		}
 
