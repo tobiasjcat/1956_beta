@@ -3659,8 +3659,8 @@ focus = {
 	prerequisite = { focus = NZL_obtain_soviet_funding}
 	prerequisite = { focus = NZL_the_peoples_voice }
 	prerequisite = { focus = NZL_invite_radical_labour_exiles }
-	relative_position_id = NZL_the_peoples_voice
-	x = -1
+	relative_position_id = NZL_invite_radical_labour_exiles
+	x = 0
 	y = 1
 
 	cost = 5
