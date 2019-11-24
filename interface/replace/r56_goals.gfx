@@ -3597,7 +3597,7 @@ SpriteType = {
 
 	SpriteType = {
 		name = "GFX_goal_coat"
-		texturefile = "gfx/inteface/goals/nzl/r56_goal_NZL_coat.dds"
+		texturefile = "gfx/interface/goals/nzl/r56_goal_NZL_coat.dds"
 	}
 ###------> PER <><> <><> <><> <><> <><>
 	SpriteType = {
