@@ -2950,7 +2950,7 @@ focus = {
 
 focus = {
 	id = NZL_the_national_party_triumphs
-	icon = GFX_goal_NZL_sidney_h
+	icon = GFX_goal_sholland
 	prerequisite = { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 5
@@ -3251,7 +3251,7 @@ focus = {
 
 focus = {
 	id = NZL_usurp_all_branches_of_gov
-	icon = GFX_goal_military_government
+	icon = GFX_goal_coat
 	prerequisite = { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 0
