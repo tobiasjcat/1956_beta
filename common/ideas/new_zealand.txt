@@ -1570,8 +1570,12 @@ ideas = {
 
 			picture = GFX_idea_NZL_peter_fraser
 
-			allowed = {
+			available = {
 				has_completed_focus = NZL_absorb_labour_party_remnants
+			}
+			
+			allowed = {
+				original_tag = NZL
 			}
 
 			traits = {labour_party_remnant}
