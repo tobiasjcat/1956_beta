@@ -1453,7 +1453,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				conscription_factor = -0.02
+				conscription_factor = 0.02
 				political_power_gain = 0.05
 			}
 		}
@@ -1628,6 +1628,10 @@ ideas = {
 			
 			available = {
 				has_completed_focus = NZL_reconcile_political_opponents
+				
+				OR = {
+					has_completed_focus =  NZL_invite_radical_labour_exiles
+				}
 			}
 			
 			traits = {socialist_finance_minister}
@@ -1643,6 +1647,10 @@ ideas = {
 
 			available = {
 				 has_completed_focus = NZL_reconcile_political_opponents
+			
+				OR = {
+					has_completed_focus =  NZL_invite_radical_labour_exiles
+				}
 			}
 			
 			traits = {socialist_follower}
