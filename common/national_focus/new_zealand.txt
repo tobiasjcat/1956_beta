@@ -1653,7 +1653,7 @@ focus = {
 focus = {
 	id = NZL_mushroom_season
 	icon = GFX_goal_generic_multipartism
-	x = 55
+	x = 40
 	y = 0
 	mutually_exclusive = { focus = NZL_the_labour_government }
 
@@ -3565,7 +3565,7 @@ focus = {
 	icon = GFX_goal_commie
 	prerequisite =  { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
-	x = 15
+	x = 8
 	y = 1
 
 	cost = 5
