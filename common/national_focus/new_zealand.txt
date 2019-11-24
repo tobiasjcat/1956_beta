@@ -1684,6 +1684,9 @@ focus = {
 focus = {
 	id = NZL_look_to_old_parties
 	icon = GFX_goal_NZL_jo
+	mutually_exclusive = { focus = NZL_the_national_party_triumphs}
+	mutually_exclusive = { focus = NZL_usurp_all_branches_of_gov }
+	mutually_exclusive = { focus = NZL_exploit_the_chaos_above }
 	prerequisite = { focus = NZL_mushroom_season}
 	x = -5
 	y = 1
@@ -2951,6 +2954,9 @@ focus = {
 focus = {
 	id = NZL_the_national_party_triumphs
 	icon = GFX_goal_sholland
+	mutually_exclusive = { focus = NZL_look_to_old_parties}
+	mutually_exclusive = { focus = NZL_usurp_all_branches_of_gov }
+	mutually_exclusive = { focus = NZL_exploit_the_chaos_above }
 	prerequisite = { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 5
@@ -3252,6 +3258,9 @@ focus = {
 focus = {
 	id = NZL_usurp_all_branches_of_gov
 	icon = GFX_goal_coat
+	mutually_exclusive = { focus = NZL_the_national_party_triumphs}
+	mutually_exclusive = { focus = NZL_look_to_old_parties }
+	mutually_exclusive = { focus = NZL_exploit_the_chaos_above }
 	prerequisite = { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 0
@@ -3566,6 +3575,9 @@ focus = {
 focus = {
 	id = NZL_exploit_the_chaos_above
 	icon = GFX_goal_commie
+	mutually_exclusive = { focus = NZL_the_national_party_triumphs}
+	mutually_exclusive = { focus = NZL_usurp_all_branches_of_gov }
+	mutually_exclusive = { focus = NZL_look_to_old_parties }
 	prerequisite =  { focus = NZL_mushroom_season }
 	relative_position_id = NZL_mushroom_season
 	x = 11
