@@ -1621,7 +1621,7 @@ focus = {
 
 focus = {
 	id = NZL_the_labour_government
-	icon = GFX_goal_NZL_flags
+	icon = GFX_goal_new_flag
 	x = 30
 	y = 0 
 	mutually_exclusive = { focus = NZL_mushroom_season}
@@ -3264,7 +3264,10 @@ focus = {
 	}
 
 	available = {
-	
+		ENG = {
+			has_government = neutrality
+				
+		}
 	}
 
 	bypass = {
