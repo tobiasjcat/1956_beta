@@ -1585,6 +1585,10 @@ ideas = {
 				original_tag = NZL
 			}
 			
+			available = {
+				original_tag = NZL
+			}
+			
 			traits = { ideological_crusader }
 		}
 
