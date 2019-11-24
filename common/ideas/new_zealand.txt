@@ -1627,10 +1627,10 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = NZL_reconcile_political_opponents
-				
 				OR = {
 					has_completed_focus =  NZL_invite_radical_labour_exiles
+					
+				    has_completed_focus = NZL_reconcile_political_opponents
 				}
 			}
 			
@@ -1646,10 +1646,10 @@ ideas = {
 			}
 
 			available = {
-				 has_completed_focus = NZL_reconcile_political_opponents
-			
 				OR = {
 					has_completed_focus =  NZL_invite_radical_labour_exiles
+					
+					 has_completed_focus = NZL_reconcile_political_opponents
 				}
 			}
 			
