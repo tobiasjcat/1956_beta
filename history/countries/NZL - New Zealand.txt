@@ -90,11 +90,16 @@ if = {
 	}
 
 	add_ideas = {
-		#laws
+		laws
 		low_economic_mobilisation
 		limited_conscription
 	}
 
+	add_ideas = {
+		NZL_a_poor_army
+		NZL_destruction_of_the_lee_afair
+		NZL_upset_maori_population
+	}
 	
 	set_technology = {
 
