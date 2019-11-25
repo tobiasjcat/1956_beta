@@ -2335,7 +2335,7 @@ LAT_ulmanis = {
 
 	sick = {
 		random = no
-		stability_factor = -0.05
+		stability_factor = -0.02
 		political_power_gain = -0.03
 	}
 
