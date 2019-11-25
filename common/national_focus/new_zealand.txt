@@ -2523,7 +2523,7 @@ focus = {
 	id = NZL_fight_for_control_over_our_soldiers
 	icon = GFX_sca_focus_into_fire
 	prerequisite = { focus = NZL_silence_the_discontent }
-	prerequisite = { focus = NZL_lower_labor_wages }
+	prerequisite = { focus = NZL_attempt_at_a_war_economy }
 	relative_position_id = NZL_silence_the_discontent 
 	x = 1
 	y = 1
