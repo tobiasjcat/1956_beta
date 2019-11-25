@@ -582,8 +582,8 @@ ideas = {
 			picture = GFX_idea_tfv_can_conscription_crisis
 
 			modifier = {
-				mobilization_speed = -0.20
-				army_morale_factor = -0.25
+				mobilization_speed = -0.1
+				army_morale_factor = -0.15
 				war_support_factor = -0.15
 				army_org_factor = -0.05
 			}
@@ -1413,7 +1413,7 @@ ideas = {
 
 			modifier = { 
 				conscription_factor = -0.02
-				stability_factor = -0.09
+				stability_factor = -0.05
 			}
 		}
 		
