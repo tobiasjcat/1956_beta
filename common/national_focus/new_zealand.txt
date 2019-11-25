@@ -2490,7 +2490,7 @@ focus = {
 focus = {
 	id = NZL_silence_the_discontent
 	icon = GFX_goal_generic_control_the_radio
-	prerequisite = { focus = NZL_attempt_at_a_war_economy }
+	prerequisite = { focus = NZL_lower_labor_wages }
 	prerequisite = { focus = NZL_rally_the_opponents }
 	relative_position_id = NZL_rally_the_opponents
 	x = 0
