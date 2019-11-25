@@ -1412,8 +1412,8 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = { 
-				political_power_gain = -0.05
-				stability_factor = -0.05
+				conscription_factor = -0.02
+				stability_factor = -0.09
 			}
 		}
 		
