@@ -330,7 +330,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = GFX_idea_generic_disjointed_gov
 
 			modifier = {
 				political_power_gain = -0.05
@@ -579,7 +579,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = GFX_idea_tfv_can_conscription_crisis
 
 			modifier = {
 				mobilization_speed = -0.20
@@ -1409,7 +1409,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = GFX_idea_FRA_matignon_agreements
 
 			modifier = { 
 				conscription_factor = -0.02
