@@ -60,7 +60,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				political_power_gain = 0.05
+				political_power_gain = 0.1
 				political_advisor_cost_factor = -0.25
 			}
 		}
@@ -80,8 +80,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				stability_factor = -0.05
-				political_power_gain = 0.02
+				stability_factor = -0.08
+				political_power_gain = 0.05
 				neutrality_drift = 0.1
 			}
 		}
@@ -102,8 +102,8 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.05
-				conscription_factor = 0.03
-				political_power_gain = 0.02
+				conscription_factor = 0.06
+				political_power_gain = 0.08
 			}
 		}
 		
@@ -123,7 +123,7 @@ ideas = {
 
 			modifier = {
 				training_time_factor = -0.05
-				mobilization_speed = 0.1
+				mobilization_speed = 0.15
 				planning_speed = 0.1
 			}
 		}
@@ -142,9 +142,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				political_power_gain = -0.02
-				stability_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.02
+				political_power_gain = -0.05
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 		
@@ -163,8 +163,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.02
-				political_power_gain = 0.05
+				consumer_goods_factor = -0.04
+				political_power_gain = 0.09
 			}
 		}
 		NZL_silence_the_discontent = {
@@ -182,9 +182,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				war_support_factor = 0.05
-				stability_factor = -0.03
-				political_power_gain = 0.02
+				war_support_factor = 0.15
+				stability_factor = -0.1
+				political_power_gain = 0.08
 				partisan_effect = 0.10
 			}
 		}
@@ -204,10 +204,10 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.02
+				consumer_goods_factor = 0.05
 				stability_factor = -0.05
-				war_support_factor = -0.03
-				production_factory_efficiency_gain_factor = 0.1
+				war_support_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
 		
@@ -248,10 +248,10 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.03
-				production_factory_efficiency_gain_factor = 0.02
+				consumer_goods_factor = -0.06
+				production_factory_efficiency_gain_factor = 0.1
 				industry_repair_factor = 0.15
-				mobilization_speed = 0.1
+				mobilization_speed = 0.15
 			}
 		}
 		
@@ -270,8 +270,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				political_power_gain = 0.05
-				army_morale_factor = 0.03
+				political_power_gain = 0.08
+				army_morale_factor = 0.06
 				training_time_factor = -0.05
 			}
 		}
@@ -291,7 +291,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				stability_factor = 0.05
+				stability_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.05
 			}
@@ -312,9 +312,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.03
-				war_support_factor = 0.05 
-				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05
+				war_support_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		
@@ -333,8 +333,8 @@ ideas = {
 			picture = generic_disjointed_gov
 
 			modifier = {
-				political_power_gain = -0.05
-				stability_factor = -0.1
+				political_power_gain = -0.09
+				stability_factor = -0.15
 			}
 		}
 		
@@ -353,7 +353,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.05
 				stability_factor = 0.05
 				war_support_factor = 0.1
 			}
@@ -374,7 +374,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.04
 				war_support_factor = 0.05
 				autonomy_gain = 1
 			}
@@ -396,7 +396,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = 0.04
-				global_building_slots_factor = 0.05
+				global_building_slots_factor = 0.06
 			}
 		}
 		
@@ -415,8 +415,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.03
-				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.13
 				production_speed_buildings_factor = 0.07
 			}
 		}
@@ -457,8 +457,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				war_support_factor = 0.05 
-				political_power_gain = 0.05
+				war_support_factor = 0.15 
+				political_power_gain = 0.09
 			}
 		}
 
@@ -478,8 +478,8 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = 5
-				war_support_factor = 0.05 
-				political_power_gain = 0.05
+				war_support_factor = 0.15 
+				political_power_gain = 0.09
 			}
 		}
 
@@ -498,9 +498,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				army_morale_factor = 0.03
+				army_morale_factor = 0.08
 				partisan_effect = 0.10
-  				enemy_partisan_effect = -0.05
+  				enemy_partisan_effect = -0.1
 			}
 		}
 		
@@ -519,9 +519,9 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				air_ace_generation_chance_factor = 0.10
-				air_superiority_efficiency = 0.10
-				conscription_factor = .02
+				air_ace_generation_chance_factor = 0.15
+				air_superiority_efficiency = 0.15
+				conscription_factor = .03
 			}
 		}
 
@@ -542,7 +542,7 @@ ideas = {
 			modifier = {
 				mobilization_speed = 0.15
 				army_morale_Factor = 0.05
-				war_support_factor = 0.05
+				war_support_factor = 0.1
 			}
 		}
 
@@ -562,7 +562,7 @@ ideas = {
 
 			modifier = {
 				army_core_defence_factor = 0.05
-				army_org_factor = 0.03
+				army_org_factor = 0.06
 				conscription_factor = 0.05
 			}
 		}
@@ -585,7 +585,7 @@ ideas = {
 				mobilization_speed = -0.1
 				army_morale_factor = -0.15
 				war_support_factor = -0.15
-				army_org_factor = -0.05
+				army_org_factor = -0.09
 			}
 		}
 
@@ -607,7 +607,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
            		political_power_factor = 0.1
-           		stability_factor = 0.05
+           		stability_factor = 0.08
 			}
 		}
 		
@@ -626,9 +626,9 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.02
-				production_factory_efficiency_gain_factor = 0.02
-				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.08
+				stability_factor = 0.08
 			}
 		}
 
@@ -647,10 +647,10 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				special_forces_cap = 0.03
-				special_forces_attack_factor = 0.03
-				special_forces_defence_factor = 0.03
-				conscription_factor = 0.02
+				special_forces_cap = 0.04
+				special_forces_attack_factor = 0.06
+				special_forces_defence_factor = 0.06
+				conscription_factor = 0.04
 			}
 		}
 		
@@ -669,9 +669,9 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.02
-				production_speed_infrastructure_factor = 0.05
-				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.08
+				production_speed_infrastructure_factor = 0.08
+				consumer_goods_factor = -0.05
 			}
 		}
 		
@@ -730,9 +730,9 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				stability_factor = -0.02
+				stability_factor = -0.05
 				democratic_drift = 0.05
-				conscription_factor = 0.01
+				conscription_factor = 0.04
 			}
 		}
 	
@@ -751,7 +751,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.07
 				global_building_slots_factor = 0.05
 			}
 		}
@@ -772,7 +772,7 @@ ideas = {
 
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
-				research_speed_factor = 0.03
+				research_speed_factor = 0.05
 			}
 		}
 		
@@ -792,8 +792,8 @@ ideas = {
 
 			modifier = {
 				global_building_slots_factor = 0.1
-				production_factory_max_efficiency_factor = 0.03
-				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 
@@ -817,7 +817,7 @@ ideas = {
 			modifier = {
 				planning_speed = 0.1
 				military_leader_cost_factor = -0.50
-				army_org_factor = 0.05
+				army_org_factor = 0.08
 				max_planning = 0.10
 			}		
 		}
@@ -837,8 +837,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.15
 				add_stability = .05
 			}
 		}
@@ -881,8 +881,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				add_stability = -.1
-				communism_drift = 0.1
+				add_stability = -.15
+				communism_drift = 0.05
 			}
 		}
 
@@ -944,7 +944,7 @@ ideas = {
 			
 			modifier = {
 				autonomy_gain = 1
-				fascism_drift = 0.01
+				fascism_drift = 0.05
 			}
 		}
 
@@ -984,7 +984,7 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				heat_attrition_factor = -0.10
+				heat_attrition_factor = -0.15
 			}
 		}
 		
@@ -1069,9 +1069,7 @@ ideas = {
 
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				global_building_slots_factor = 0.2
-				production_factory_start_efficiency_factor = 0.05
-				consumer_goods_factor = -0.03
+				global_building_slots_factor = 0.1
 			}
 		}
 		
@@ -1092,7 +1090,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.08
 				max_planning = 0.10
-				planning_speed = -0.10
+				planning_speed = 0.10
 				army_org_Factor = 0.05
 			}
 		}
@@ -1113,10 +1111,10 @@ ideas = {
 
 			modifier = {
 				political_advisor_cost_factor = -0.1
-				high_command_cost_factor = -0.1
-				air_chief_cost_factor = -0.1
-				army_chief_cost_factor = -0.1
-				navy_chief_cost_factor = -0.1
+				high_command_cost_factor = -0.15
+				air_chief_cost_factor = -0.15
+				army_chief_cost_factor = -0.15
+				navy_chief_cost_factor = -0.15
 			}
 		}
 		
@@ -1135,7 +1133,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_factor = 0.05
 				conscription_factor = 0.04
 				political_power_cost = 0.4
 				war_support_factor = 0.1
@@ -1176,9 +1174,9 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.02
-				stability_factor = 0.05	
-				consumer_goods_factor = -0.04
+				conscription = 0.05
+				stability_factor = 0.1
+				consumer_goods_factor = 0.04
 			}
 		}
 
@@ -1202,7 +1200,7 @@ ideas = {
 			
 			modifier = {
 				send_volunteers_tension = -0.5
-				send_volunteer_size = 1
+				send_volunteer_size = 5
 			}
 		}
 
@@ -1226,9 +1224,9 @@ ideas = {
 			
 			modifier = {
 				send_volunteers_tension = -0.5
-				send_volunteer_size = 3
-				war_support_factor = 0.05
-				conscription_factor = 0.02
+				send_volunteer_size = 8
+				war_support_factor = 0.18
+				conscription_factor = 0.07
 			}
 		}
 
@@ -1269,7 +1267,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.02
 				stability_factor = 0.05
 			}
@@ -1331,8 +1329,8 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			modifier = {
-				stability_factor = -0.05
-				political_power_gain = -0.03
+				stability_factor = -0.08
+				political_power_gain = -0.08
 			}
 		}
 		NZL_defend_our_islands ={
@@ -1372,7 +1370,7 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			modifier = {
-				conscription_factor = 0.02
+				conscription_factor = 0.03
             	partisan_effect = 0.1
 			}
 		}
@@ -1392,8 +1390,8 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				stability_factor = -0.05
-				conscription_factor = 0.04
+				stability_factor = -0.07
+				conscription_factor = 0.06
 			}
 		}
 		
@@ -1412,8 +1410,8 @@ ideas = {
 			picture = FRA_matignon_agreements
 
 			modifier = { 
-				conscription_factor = -0.02
-				stability_factor = -0.05
+				conscription_factor = -0.05
+				stability_factor = -0.1
 			}
 		}
 		
@@ -1432,8 +1430,8 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				conscription = 0.01
-				stability_factor = -0.05
+				conscription = 0.07
+				stability_factor = -0.15
 			}
 		}
 
@@ -1453,7 +1451,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.05
-				conscription_factor = 0.02
+				conscription_factor = 0.04
 				political_power_gain = 0.05
 			}
 		}
@@ -1472,9 +1470,8 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = -0.05
-				consumer_goods_factor = -0.02
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.08
 			}
 		}
 
@@ -1494,8 +1491,8 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.02
-				war_support_factor = 0.05
-				production_speed_buildings_factor = 0.05
+				war_support_factor = 0.1
+				production_speed_buildings_factor = 0.09
 			}
 		}
 		NZL_the_peoples_voice = {
@@ -1513,9 +1510,9 @@ ideas = {
 			picture = generic_communism_drift_bonus
 
 			modifier = {
-				political_power_gain = 0.02
+				political_power_gain = 0.08
 				communism_drift = 0.05
-				partisan_effect = 0.05
+				partisan_effect = 0.15
 			}
 		}
 
@@ -1536,8 +1533,8 @@ ideas = {
 			
 			modifier = {
 				autonomy_gain = 1
-				communism_drift = 0.03
-				stability_factor = -0.03
+				communism_drift = 0.05
+				stability_factor = -0.1
 			}
 		}
 
