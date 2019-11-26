@@ -131,7 +131,7 @@ focus = {
 		}
 	}
 }
-
+}
 
 focus = {
 		id = NZL_solidify_the_new_zealand_division
