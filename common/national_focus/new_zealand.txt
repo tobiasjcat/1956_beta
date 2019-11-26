@@ -108,7 +108,7 @@ focus = {
 
 		}
 
-		#bypass = {
+		bypass = {
 			NOT = { is_subject_of = ENG }
 		}
 
@@ -250,9 +250,26 @@ focus = {
 			available_if_capitulated = no
 
 			completion_reward = {
+				random_owned_controlled_state = {
+				prioritize = { 284 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 			add_ideas = NZL_form_the_new_zealand_navy
 		}
 	}
+}
 
 focus = {
 		id = NZL_destroyer_production
@@ -2483,8 +2500,24 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
+		random_owned_controlled_state = {
+				prioritize = { 284 723 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
 		add_ideas = NZL_attempt_at_a_war_economy
 	}
+}
 }
 
 focus = {
