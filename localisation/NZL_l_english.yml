@@ -64,7 +64,7 @@
  NZL_begin_lobbying_for_reforms:0 "Begin Lobbying for Reforms"
  NZL_the_social_security_act:0 "The Social Security Act"
  NZL_unenmployment_benefit:0 "Unemployment Benefit"
- NZL_the_question_of_the_finance_minister:0 "The Question of Finance"
+ NZL_the_question_of_the_finance_minister:0 "Finance Minister's Refroms"
  NZL_the_second_nzl_volunteer_force:0 "The Second Volunteer Force"
  NZL_old_age_pension:0 "Old Age Pension"
  NZL_the_national_party_triumphs:0 "The National Party Triumphs"
@@ -112,4 +112,7 @@
  NZL_a_poor_army:0 "An Underequipted Army"
  NZL_destruction_of_the_lee_afair:0 "Destruction of the Lee Afair"
  NZL_upset_maori_population:0 "Discontent Native Population"
-
+ NZL_organizing_communists:0 "Organizign Communists"
+ NZL_angered_uk:0 "Angered UK"
+ NZL_stiff_opposition:0 "Stiff Opposition"
+ NZL_unemployment_benefit:0 "Unemployment Benefit"
