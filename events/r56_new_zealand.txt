@@ -60,12 +60,12 @@ country_event = {
 	}
 
 	option = {
-		name = r56_new_zealand.1.a
+		name = r56_new_zealand.3.a
 		set_country_flag = NZL_holland_flag
 	}
 
 	option = {
-		name = r56_new_zealand.1.b
+		name = r56_new_zealand.3.b
 		NZL = {
 			add_stability = -0.05
 		}
