@@ -1604,6 +1604,9 @@ focus = {
 focus = {
 	id = NZL_air_training_progam
 	icon = GFX_goal_atc
+	prerequisite = {
+
+	}
 	x = 17
 	y = 0
 
