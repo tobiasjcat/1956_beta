@@ -1850,15 +1850,6 @@ ideas = {
 				}
 			}
 
-			available = {
-			if = {
-					limit = {
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = NZL_the_lee_affair
-				}
-			}
 
 			traits = { communist_revolutionary }
 
@@ -1883,19 +1874,6 @@ ideas = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
 			}
-
-			available = {
-				if = {
-					limit = {
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = NZL_strengthen_the_commonwealth
-						has_completed_focus = NZL_constitution_amendment_act
-					}
-				}
-			}
 			traits = { democratic_reformer }
 
 			do_effect = {
@@ -1917,16 +1895,6 @@ ideas = {
 				NOT = { OR = { tag = GER tag = NIC tag = GRE tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = PRC tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = WHY tag = MAN tag = CZE tag = BHU tag = BEL tag = TIB tag = BHU tag = HOL tag = BUL } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
-				}
-			}
-
-			available = {
-				if = {
-					limit = {
-						original_tag = NZL
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = NZL_in_the_darkness
 				}
 			}
 
