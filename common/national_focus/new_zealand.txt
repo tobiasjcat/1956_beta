@@ -1603,7 +1603,7 @@ focus = {
 
 focus = {
 	id = NZL_air_training_progam
-	icon = GFX_goal_generic_army_mobilization
+	icon = GFX_goal_atc
 	x = 17
 	y = 0
 
