@@ -1667,6 +1667,7 @@ focus = {
 		completion_reward = {
 			add_political_power = 150
 			add_stability = .1
+			add_ideas = NZL_stiff_opposition
 		}
 }
 
@@ -2145,6 +2146,27 @@ focus = {
 		add_political_power = 150
 		add_stability = 0.05
 		add_ideas = neutrality_idea
+		division_template = {
+				is_locked = yes
+				name = "Home Guard"
+				division_names_group = NZL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 284 723 }
+				create_unit = {
+					division = " name = \"Home Guard\" division_template = \"Home Guard\" start_experience_factor = 0.0"
+					owner = NZL
+			}
+		}
 	}
 }
 
@@ -2228,7 +2250,8 @@ focus = {
 			uses = 1
 			category = hospital_tech
 		}
-		add_political_power = 50
+		add_political_power = 150
+		add_stabilty = 0.08
 	}
 }
 
@@ -2615,7 +2638,6 @@ focus = {
 
 	completion_reward = {
 		add_ideas = NZL_first_labor_government
-		add_ideas = NZL_stiff_opposition
 	}
 }
 
@@ -2646,7 +2668,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_war_support = 0.05
+		add_war_support = 0.15
 		add_ideas = NZL_angered_uk
 	}
 }
@@ -3327,7 +3349,7 @@ focus = {
 				kill_country_leader = yes
 			}
 			set_politics = { ruling_party = neutrality elections_allowed = no }
-			add_popularity = { ideology = neutrality popularity = 0.15 }
+			add_popularity = { ideology = neutrality popularity = 0.25 }
 		create_country_leader = {
 			name = "Cyril Louis Newall"
 			desc = "POLITICS_Cyril_Louis_Newall"

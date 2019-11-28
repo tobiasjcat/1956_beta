@@ -81,8 +81,9 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.08
-				political_power_gain = 0.05
+				political_power_gain = 0.08
 				neutrality_drift = 0.1
+				war_support_factor = 15
 			}
 		}
 		
@@ -1199,8 +1200,8 @@ ideas = {
 			}
 			
 			modifier = {
-				send_volunteers_tension = -0.5
-				send_volunteer_size = 5
+				send_volunteers_tension = -0.8
+				send_volunteer_size = 3
 			}
 		}
 
@@ -1224,7 +1225,7 @@ ideas = {
 			
 			modifier = {
 				send_volunteers_tension = -0.5
-				send_volunteer_size = 8
+				send_volunteer_size = 5
 				war_support_factor = 0.18
 				conscription_factor = 0.07
 			}
