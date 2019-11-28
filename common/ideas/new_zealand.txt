@@ -166,6 +166,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.04
 				political_power_gain = 0.05
+				war_support_factor = 0.15
 			}
 		}
 		NZL_silence_the_discontent = {
