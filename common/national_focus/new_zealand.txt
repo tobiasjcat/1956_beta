@@ -915,7 +915,6 @@ focus = {
 		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = NZL_construct_the_whenuapai_base }
 		prerequisite = { focus = NZL_form_the_new_zealand_air_force }
-		prerequisite = { focus = NZL_air_training_progam }
 		x = 1
 		y = 1
 		relative_position_id = NZL_construct_the_whenuapai_base
@@ -1604,10 +1603,9 @@ focus = {
 focus = {
 	id = NZL_air_training_progam
 	icon = GFX_goal_atc
-	prerequisite = {
-
-	}
-	x = 17
+	prerequisite = { focus = NZL_open_up_the_free_market focus = NZL_shared_military_exercises}
+	relaive_position_id = NZL_shared_military_exercises
+	x = 5
 	y = 0
 
 	cost = 10
