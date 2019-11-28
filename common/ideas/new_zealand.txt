@@ -606,8 +606,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.03
-           		political_power_factor = 0.1
-           		stability_factor = 0.08
+           		political_power_factor = 0.5
 			}
 		}
 		
@@ -1175,8 +1174,7 @@ ideas = {
 			
 			modifier = {
 				conscription = 0.05
-				stability_factor = 0.1
-				consumer_goods_factor = 0.04
+				consumer_goods_factor = -0.03
 			}
 		}
 
@@ -1470,8 +1468,8 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.08
-				consumer_goods_factor = -0.08
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.04
 			}
 		}
 
