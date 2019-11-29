@@ -1662,16 +1662,14 @@ ideas = {
 			picture = GFX_idea_NZL_thomas_leech
 
 			available = {
-				has_completed_focus =  NZL_NZL_hire_physicists
+				has_completed_focus =  NZL_hire_physicists
 			}
 			
 			research_bonus = {
-				computing_tech = 0.15
-				encryption_tech = 0.1
-				decryption_tech	= 0.1
+				nuclear = 0.15
 			}
 			
-			traits = { mathematician }
+			traits = { nuclear_scientist }
 		}
 
 	}
@@ -1758,6 +1756,16 @@ ideas = {
 			}
 		}
 		
+		NZL_harold_barrowclough = {
+			picture = GFX_idea_NZL_harold_barrowclough
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			traits = { army_chief_drill_2 }
+		}
+
 		NZL_edward_puttick = {
 			
 			picture = generic_army_europe_1

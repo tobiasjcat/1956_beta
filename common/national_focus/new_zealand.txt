@@ -1524,6 +1524,9 @@ focus = {
 
 		completion_reward = {
 			add_research_slot = 1
+			custom_effect_tooltip = available_theorist
+        	
+        	show_ideas_tooltip = NZL_thomas_leech
 		}
 	}
 
