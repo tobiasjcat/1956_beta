@@ -1,6 +1,17 @@
 ﻿l_english:
+ ### COMPANIES
+ NZL_colonial_amunitions_company:0 "Colonial Amunitions Company"
+ NZL_ford_munitions_company:0 "Ford Munitions Company"
  NZL_morrison_motor_mower_company:0 "Morrison Motor Mower Company"
  NZL_generic_light_aircraft_manufacturer:0 "Whenuapai Workshop"
+
+ ################
+
+
+
+
+ ### NATIONAL FOCUSES 
+
  NZL_a_sustainable_army:0 "A Sustainable Army"
  NZL_new_zealand_will_not_fall:0 "New Zealand Will Not Fall"
  NZL_improve_the_radars:0 "Improve the RADARS"
@@ -17,7 +28,7 @@
  NZL_remember_anzac:0 "Lessons of the Great War"
  NZL_ford_munition_plant:0 "Ford Munitions Plant"
  NZL_new_charlton_automatic_rifles:0 "New Charlton Automatic Rifles"
- NZL_expand_our_tank_warfare:0 "Our Very Own Tanks"
+ NZL_expand_our_tank_warfare:0 "Develop The Bob Semple Tank"
  NZL_the_begining_of_an_artillery_regiment:0 "The Begining of an Artillery Regiment"
  NZL_royal_new_zealand_engineer_and_supply_corp:0 "The Engineer Corp"
  NZL_construct_the_whenuapai_base:0 "Construct the Whenuapai Base"
@@ -38,7 +49,7 @@
  NZL_the_tsunami_project:0 "The Tsunami Project"
  NZL_hire_physicists:0 "Hire Physicists"
  NZL_Train_New_Officers:0 "Train New Officers"
- NZL_hot_climate_equipment:0 "Obtain Hot Climate Equipment"
+ NZL_hot_climate_equipment:0 "Hot Climate Equipment"
  NZL_form_the_new_zealand_air_force:0 "Form the New Zealand Air Force"
  NZL_air_training_progam:0 "Air Training Program"
  NZL_defend_our_islands:0 "Try to Filed Artillery"
@@ -84,7 +95,7 @@
  NZL_supress_the_traitors:0 "Into the Caves"
  NZL_individualism:0 "The Value of Individualism"
  NZL_a_strong_unity:0 "End Reliance from Britain"
- NZL_champions_of_the_depression:0 "Champions of the Depression"
+ NZL_champions_of_the_depression:0 "Champion of the Depression"
  NZL_minimize_government_funding:0 "Minimize Government Spending"
  NZL_maori_assimilation:0 "Maori Assimilation"
  NZL_turn_from_international_affaris:0 "Turn from International Affairs"
@@ -109,11 +120,13 @@
  NZL_encourage_bravery:0 "Encourage Selfless Citizens"
  NZL_the_labour_government:0 "The Labour Government"
  NZL_mushroom_season:0 "Mushroom Season"
+ NZL_join_the_japaneses:0 "Join The Japanese"
+
+ ###################
  NZL_a_poor_army:0 "An Underequipted Army"
  NZL_destruction_of_the_lee_afair:0 "Destruction of the Lee Afair"
  NZL_upset_maori_population:0 "Discontent Native Population"
  NZL_organizing_communists:0 "Organizign Communists"
- NZL_angered_uk:0 "Angered UK"
  NZL_stiff_opposition:0 "Stiff Opposition"
  NZL_unemployment_benefit:0 "Unemployment Benefit"
  socialist_finance_minister:0 "Socialsit Finance Minister"
@@ -128,9 +141,12 @@
  r56_new_zealand.2.a:0 "Rest in Peace"
  r56_new_zealand.3.t:0 "National Party Forms"
  r56_new_zealand.3.d:0 "A new political party has formed calling itself "The National Party". It seems to be a right wing party, that formed out of spite of the Labour Party's reforms. Adam Hamilton is the leader of this new party with Sidney Holland as an important advisor. They also appear to be gathering more support on a weekly basis."
- r56_new_zealand.3.a:0 "A more conservative approach is in order"
- r56_new_zealand.3.b:0 "Its just a new party nothing special"
+ r56_new_zealand.3.a:0 "Looks Like The Convervatives Are Restructuring Themselves"
  NZL_peter_fraser:0 "Peter Fraser"
  NZL_john_a_lee:0 "John Lee"
  NZL_bill_barnard:0 "Bill Barnard"
  conservative_law_maker:0 "Conservative Law Maker"
+
+ NZL_peter_fraser_flag:0 "Peter Fraser Succeded Michael Joseph Savage"
+ NZL_gervan_macmillan_flag:0 "Gervan McMillan Succeded Michael Joseph Savage"
+ NZL_savage_dead:0 "Michael Joseph Savage Is Dead"
