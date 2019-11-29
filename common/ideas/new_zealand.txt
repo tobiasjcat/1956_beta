@@ -1652,6 +1652,28 @@ ideas = {
 			
 			traits = { naval_theorist }
 		}
+		
+		NZL_thomas_leech = {
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			picture = GFX_idea_NZL_thomas_leech
+
+			available = {
+				has_completed_focus =  NZL_NZL_hire_physicists
+			}
+			
+			research_bonus = {
+				computing_tech = 0.15
+				encryption_tech = 0.1
+				decryption_tech	= 0.1
+			}
+			
+			traits = { mathematician }
+		}
+
 	}
 
 	high_command = {

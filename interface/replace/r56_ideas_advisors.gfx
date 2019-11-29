@@ -1569,6 +1569,11 @@ spriteType = {
 		name = "GFX_idea_NZL_peter_fraser"
 		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_peter_fraser.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_NZL_thomas_leech"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_ideas_NZL_advisor_thomas_leech.dds"
+	}
 	
 	###------> POL <><> <><> <><> <><> <><>
 #-> Danzig advisors <><>
