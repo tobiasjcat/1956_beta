@@ -1572,7 +1572,7 @@ spriteType = {
 
 	spriteType = {
 		name = "GFX_idea_NZL_thomas_leech"
-		texturefile = "gfx/interface/ideas/nzl/advisors/r56_ideas_NZL_advisor_thomas_leech.dds"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_thomas_leech.dds"
 	}
 
 	spriteType = {

@@ -160,9 +160,13 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_stability = .05
-			add_political_power = 50
 			navy_experience = 25
+			add_tech_bonus = {
+				name = NZL_Train_New_Officrs
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}
 						
 		}
 	}
