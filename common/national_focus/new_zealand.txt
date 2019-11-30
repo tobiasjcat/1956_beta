@@ -160,14 +160,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 15
 			add_tech_bonus = {
-				name = NZL_Train_New_Officrs
+				name = NZL_solidify_the_new_zealand_division
 				bonus = 1.0
 				uses = 2
 				category = naval_doctrine
-			}
-						
+			}			
+			add_ideas = NZL_create_a_satnding_navy
 		}
 	}
 
@@ -3026,6 +3026,7 @@ focus = {
 	}
 
 	available = {
+		has_country_flag = NZL_holland_flag
 	}
 
 	bypass = {
@@ -3052,6 +3053,7 @@ focus = {
 		    long_name = "New Zealand National Party" 
 		    name = "New Zealand National Party"
 		}
+		remove_ideas = NZL_mushroom_season
 	}
 }
 

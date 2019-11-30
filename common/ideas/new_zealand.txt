@@ -905,6 +905,24 @@ ideas = {
 			}
 		}
 
+		NZL_create_a_satnding_navy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+		
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 		NZL_mushroom_season = {
 
 			allowed = {
