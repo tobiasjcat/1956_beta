@@ -257,6 +257,17 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
+	name = "Harold Barrowclough"
+	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_Harold_Barrowclough.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
 	name = "Robert Row"
 	gfx = "GFX_NZL_robert_row"
 	traits = { naval_invader }
@@ -291,7 +302,7 @@ create_navy_leader = {
 
 create_navy_leader = {
 	name = "Peter Phipps"
-	gfx = "GFX_NZL_peter_phipps"
+	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_Peter_Phipps.dds"
 	traits = { navy_career_officer }
 	skill = 3
 	attack_skill = 2
@@ -299,6 +310,7 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 3
 }
+
 
 ### VARIANTS ###
 # 1936 Start #
