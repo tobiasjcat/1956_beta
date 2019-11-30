@@ -812,7 +812,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_manpower_bonus
+			picture = generic_artillery_regiments
 
 			equipment_bonus = {
 				artillery_equipment = {
@@ -917,7 +917,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = escort_effort_focus
 		
 			modifier = {
 				industrial_capacity_dockyard = 0.05
@@ -976,7 +976,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_production_bonus
+			picture = air_war_plans_division_focus
 
 			equipment_bonus = {
 				fighter_equipment = {
@@ -1316,7 +1316,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = ast_all_in
 
 			modifier = {
 				production_speed_bunker_factor = 0.3
