@@ -688,8 +688,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -.02
-				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.15
 			}
 		}
 
@@ -1175,6 +1175,26 @@ ideas = {
 			}
 		}
 
+		NZL_distribute_the_national_defense_budget = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_license_production
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		
 		NZL_encourage_bravery = {
 
 			allowed = {
