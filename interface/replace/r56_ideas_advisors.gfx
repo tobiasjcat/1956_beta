@@ -1609,6 +1609,11 @@ spriteType = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_NZL_stephen_weir"
+		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_stephen_weir.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_NZL_bill_barnard"
 		texturefile = "gfx/interface/ideas/nzl/advisors/r56_idea_NZL_advisor_bill_barnard.dds"
 	}

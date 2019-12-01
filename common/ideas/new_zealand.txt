@@ -1604,6 +1604,36 @@ ideas = {
 			traits = { armaments_organizer }
 		}
 
+		NZL_john_ormond = {
+
+			picture = GFX_idea_NZL_john_ormond
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			available = {
+				current_ruling_party = fascist
+			}
+
+			traits = { prince_of_terror }
+		}
+		
+		NZL_elsie_locke = {
+
+			picture = 
+
+			allowed = {
+				original_tag = NZL
+			}
+
+			available = {
+
+			}
+			
+			traits = { revolutionary_writer }
+		}
+
 		NZL_john_a_lee = {
 
 			picture = GFX_idea_NZL_john_a_lee
@@ -1713,6 +1743,21 @@ ideas = {
 	}
 
 	high_command = {
+
+		NZL_stephen_weir = {
+
+			picture = GFX_idea_NZL_stephen_weir
+		
+			allowed = {
+				original_tag = NZL
+			}
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		NZL_norris_stephen_falla = {
 
