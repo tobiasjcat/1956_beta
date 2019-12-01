@@ -87,6 +87,7 @@ country_event = {
 		trigger = {
 			date > 1938.10.15
 			tag = NZL
+			has_government = democratic
 		}
 
 		option = {
