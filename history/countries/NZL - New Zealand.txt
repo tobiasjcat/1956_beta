@@ -246,25 +246,14 @@ set_convoys = 70
 }
 
 create_corps_commander = {
-	name = "Bernard Freyberg"
-	gfx = "GFX_NZL_bernard_freyberg"
-	traits = {  }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-create_corps_commander = {
 	name = "Harold Barrowclough"
 	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_Harold_Barrowclough.dds"
 	traits = { infantry_officer }
 	skill = 3
 	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -279,14 +268,25 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "William Stevens"
-	gfx = "GFX_NZL_william_stevens"
+	name = "William George Stevens"
+	portrait_path = ""
 	traits = {  }
 	skill = 4
 	attack_skill = 2
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 4
+}
+	
+create_corps_commander = {
+	name = "Bernard Freyberg"
+	gfx = ""
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_navy_leader = {
