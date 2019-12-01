@@ -269,7 +269,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William George Stevens"
-	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_Willam_George_Stevens.dds"
+	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_William_George_Stevens.dds"
 	traits = {  }
 	skill = 4
 	attack_skill = 2
