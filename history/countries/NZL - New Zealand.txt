@@ -258,7 +258,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Robert Row"
-	gfx = "GFX_NZL_robert_row"
+	gfx = ""
 	traits = { naval_invader }
 	skill = 3
 	attack_skill = 3
@@ -269,7 +269,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "William George Stevens"
-	portrait_path = ""
+	portrait_path = "gfx/leaders/NZL/r56_portrait_NZL_Willam_George_Stevens.dds"
 	traits = {  }
 	skill = 4
 	attack_skill = 2

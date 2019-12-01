@@ -831,7 +831,7 @@ focus = {
 
 focus = {
 	id = NZL_construct_the_whenuapai_base
-	icon = GFX_goal_generic_army_mobilization
+	icon = GFX_goal_excavation
 	x = 15
 	y = 0
 
@@ -1582,7 +1582,7 @@ focus = {
 
 focus = {
 	id = NZL_form_the_new_zealand_air_force
-	icon = GFX_goal_generic_army_mobilization
+	icon = GFX_goal_generic_air_production
 	x = 13
 	y = 0
 
