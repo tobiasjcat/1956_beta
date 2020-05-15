@@ -191,6 +191,5 @@ objectTypes = {
 			texture_normal = "generic_tank_light_normal.dds"
 			texture_specular = "generic_tank_light_specular.dds"
 		}	
-
 	}			
 }

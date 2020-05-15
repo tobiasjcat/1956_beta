@@ -849,12 +849,67 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/FRA/news_event_france_popular_front.dds"
 	}
 
-	spriteType = {
-		name = "GFX_news_event_flandin_petain_marquet"
-		texturefile = "gfx/event_pictures/FRA/news_event_flandin_petain_marquet.dds"
-	}
+###------> GRE <><> <><> <><> <><> <><>
 
-###------> GER <><> <><> <><> <><> <><>
+spriteType = {
+	name = "GFX_report_GRE_klaras"
+	texturefile = "gfx/event_pictures/gre_klaras.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_fascist_victory"
+	texturefile = "gfx/event_pictures/gre_fascist_victory.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_third_civ"
+	texturefile = "gfx/event_pictures/gre_third_civ.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_communist_victory"
+	texturefile = "gfx/event_pictures/gre_communist_victory.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_unrest"
+	texturefile = "gfx/event_pictures/gre_unrest.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_demertzis_funeral"
+	texturefile = "gfx/event_pictures/gre_demertzis_funeral.tga"
+}
+
+spriteType = {
+	name = "GFX_report_GRE_civil_war"
+	texturefile = "gfx/event_pictures/gre_civil_war.tga"
+}
+spriteType = {
+	name = "GFX_report_GRE_metaxas"
+	texturefile = "gfx/event_pictures/report_event_GRE_metaxas.dds"
+}
+spriteType = {
+	name = "GFX_report_GRE_venizelist_coup"
+	texturefile = "gfx/event_pictures/report_event_GRE_venizelist_coup.dds"
+}
+spriteType = {
+	name = "GFX_report_event_GRE_kondylis_death"
+	texturefile = "gfx/event_pictures/report_event_GRE_kondylis_death.dds"
+}
+spriteType = {
+	name = "GFX_report_event_venizelos_death"
+	texturefile = "gfx/event_pictures/report_event_venizelos_death.dds"
+}
+spriteType = {
+	name = "GFX_report_event_metaxas_goebells"
+	texturefile = "gfx/event_pictures/report_event_metaxas_goebells.dds"
+}
+spriteType = {
+	name = "GFX_report_event_GRE_officers"
+	texturefile = "gfx/event_pictures/report_event_GRE_officers.dds"
+}
+###------> ICE <><> <><> <><> <><> <><>
 
 	spriteType = {
 		name = "GFX_erwache_reichsbank"

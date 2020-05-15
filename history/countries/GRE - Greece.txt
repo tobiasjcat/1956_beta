@@ -18,11 +18,9 @@ add_ideas = {
 
 
 add_ideas = {
-	GRE_depression_1
-	GRE_shadow_of_1921
-	GRE_government_crisis
+  GRE_doomed_economy
+	GRE_desperate_need_of_reform
 	GRE_divided_nation
-	GRE_naval_industry_rivalary
 }
 
 GRE = { country_event = { days = 25 id = greece.43 } }
@@ -216,7 +214,7 @@ set_popularities = {
 	neutrality = 23
 }
 
-set_stability = 0.40
+set_stability = 0.60
 
 
 
@@ -265,7 +263,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Alexander Papagos"
-	picture = "r56_portrait_GRE_Alexander_Papagos.dds"
+	picture = "r56_portrait_GRE_Alexandros_Papagos.tga"
 	traits = { old_guard offensive_doctrine cavalry_officer brilliant_strategist inspirational_leader }
 	skill = 4
 	id = 75000
@@ -287,10 +285,9 @@ create_corps_commander = {
 	logistics_skill = 2
 }
 
-
 create_corps_commander = {
 	name = "Haralabos Katsimitros"
-	picture = "r56_portrait_GRE_Haralambos_Katsimitros.dds"
+	picture = "r56_portrait_GRE_Haralambos_Katsimitros.tga"
 	traits = { career_officer trait_mountaineer homeland_connoisseur }
 	skill = 2
 	id = 75002
@@ -307,14 +304,14 @@ create_corps_commander = {
 	skill = 3
 	id = 75003
 	attack_skill = 3
-	defense_skill = 3
+	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
 }
 
 create_navy_leader = {
 	name = "Alexandros Sakellariou"
-	picture = "r56_portrait_GRE_Alexandros_Sakellariou.dds"
+	picture = "r56_portrait_GRE_Alexandros_Sakellariou.tga"
 	traits = { spotter old_guard_navy fleet_protector  }
 	skill = 3
 	attack_skill = 3
@@ -325,7 +322,7 @@ create_navy_leader = {
 
 create_corps_commander = {
 	name = "Panagiotis Demestichas"
-	picture = "r56_portrait_GRE_Panagiotis_Demestichas.dds"
+	picture = "r56_portrait_GRE_Panagiotis_Demestichas.tga"
 	traits = { politically_connected }
 	skill = 1
 	id = 75004
@@ -337,7 +334,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Georgios Kosmas"
-	picture = "r56_portrait_GRE_Georgios_Kosmas.dds"
+	picture = "r56_portrait_GRE_Georgios_Kosmas.tga"
 	traits = { homeland_connoisseur trait_cautious }
 	skill = 2
 	id = 75005
@@ -350,12 +347,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ioannis Kotoulas"
 	traits = { trait_cautious }
-	picture = "r56_portrait_GRE_Ioannis_Kotoulas.dds"
+	picture = "r56_portrait_GRE_Ioannis_Kotoulas.tga"
 	skill = 1
 	id = 75006
 	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
+	defense_skill = 2
+	planning_skill = 2
 	logistics_skill = 1
 }
 
@@ -380,8 +377,8 @@ create_corps_commander = {
 		id = 75008
     attack_skill = 1
     defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -395,6 +392,19 @@ create_corps_commander = {
     planning_skill = 1
     logistics_skill = 2
 }
+
+create_corps_commander = {
+    name = "Georgios Bakos"
+    picture = "r56_portrait_GRE_georgios_bakos.tga"
+    traits = { harsh_leader }
+    skill = 1
+	id = 75012
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 1
+}
+
 
 create_navy_leader = {
 	name = "Petros Voulgaris"
@@ -507,7 +517,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
