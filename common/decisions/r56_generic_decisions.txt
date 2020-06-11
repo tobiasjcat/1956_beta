@@ -55,7 +55,11 @@ crisis = {
 
 		#Fail trigger
 		available = {
-			num_faction_members > 1
+			OR = {
+				num_faction_members > 1
+				is_faction_leader = no
+			}
+			
 		}
 
 		days_mission_timeout = 365
@@ -119,6 +123,8 @@ political_actions = {
 		allowed = {
 			always = yes
 		}
+
+		fire_only_once = yes
 
 		available = {
 				has_war_support > 0.30

@@ -13,7 +13,7 @@
  AHV_fascism_ADJ:0 "Ålandic"
  AHV_communism_ADJ:0 "Ålandic"
  AHV_neutrality_ADJ:0 "Ålandic"
- AHV_subject:0 "$OVERLORDADJ$ autonomous territory of Åland"
+ AHV_subject:0 "Autonomous territory of Åland"
 
  #ALG
  ALG_fascism:0 "Kingdom of Algeria"
@@ -922,6 +922,29 @@
  KOF_fascism:0 "Kingdom of Finland"
  KOF_fascism_DEF:0 "The Kingdom of Finland"
 
+ #KSV
+ KSV_fascism:0 "Kosovar State"
+ KSV_fascism_DEF:0 "Kosovar State"
+ KSV_democratic:0 "Republic of Kosovo"
+ KSV_democratic_DEF:0 "Republic of Kosovo"
+ KSV_neutrality:0 "Kosovo"
+ KSV_neutrality_DEF:0 "Kosovo"
+ KSV_communism:0 "Socialist Republic of Kosovo"
+ KSV_communism_DEF:0 "Socialist Republic of Kosovo"
+ KSV_fascism_ADJ:0 "Kosovar"
+ KSV_democratic_ADJ:0 "Kosovar"
+ KSV_neutrality_ADJ:0 "Kosovar"
+ KSV_communism_ADJ:0 "Kosovar"
+ KSV_SER_autonomy_puppet:0 "Autonomous Kosovo"
+ KSV_YUG_autonomy_puppet:0 "Autonomous Kosovo"
+ KSV_SER_communism_autonomy_puppet:0 "Autonomous Socialist Kosovo"
+ KSV_YUG_communism_autonomy_puppet:0 "Autonomous Socialist Kosovo"
+ KSV_SER_fascism_autonomy_puppet:0 "Autonomous Kosovar State"
+ KSV_YUG_fascism_autonomy_puppet:0 "Autonomous Kosovar State"
+ KSV_SOV_communism_autonomy_puppet:0 "Kosovo SSR"
+
+
+
  #LBA
  LBA_neutrality:0 "Libya"
  LBA_neutrality_DEF:0 "Libya"
@@ -1205,14 +1228,14 @@
 
 
  #PAR
- PAR_fascism:0 "Febrerista Paraguay"
- PAR_fascism_DEF:0 "Feberrista Paraguay"
+ PAR_fascism:0 "Paraguay Febrerista"
+ PAR_fascism_DEF:0 "Paraguay Febrerista"
  PAR_democratic:0 "Republic of Paraguay"
  PAR_democratic_DEF:0 "The Republic of Paraguay"
  PAR_neutrality:0 "Paraguay"
  PAR_neutrality_DEF:0 "Paraguay"
- PAR_communism:0 "Paraguay"
- PAR_communism_DEF:0 "Paraguay"
+ PAR_communism:0 "Paraguay Revolucionario"
+ PAR_communism_DEF:0 "Paraguay Revolucionario"
  PAR_fascism_ADJ:0 "Paraguayan"
  PAR_democratic_ADJ:0 "Paraguayan"
  PAR_neutrality_ADJ:0 "Paraguayan"
@@ -1326,6 +1349,23 @@
  SAD:0 "Sardinia"
  SAD_DEF:0 "Sardinia"
  SAD_ADJ:0 "Sardinian"
+ 
+ #SER
+ SER_fascism:0 "Serbian State"
+ SER_fascism_DEF:0 "the Serbian State"
+ SER_democratic:0 "Serbia"
+ SER_democratic_DEF:0 "Serbia"
+ SER_neutrality:0 "Kingdom of Serbia"
+ SER_neutrality_DEF:0 "the Kingdom of Serbia"
+ SER_communism:0 "Socialist Republic of Serbia"
+ SER_communism_DEF:0 "the Socialist Republic of Serbia"
+ SER_fascism_ADJ:0 "Serbian"
+ SER_democratic_ADJ:0 "Serbian"
+ SER_neutrality_ADJ:0 "Serbian"
+ SER_communism_ADJ:0 "Serbian"
+ SER:0 "Serbia"
+ SER_DEF:0 "Serbia"
+ SER_ADJ:0 "Serbian"
 
  #SAU -missing line base game
  SAU_neutrality_ADJ:0 "Saudi"

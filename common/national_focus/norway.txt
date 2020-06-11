@@ -3803,6 +3803,14 @@ focus_tree = {
 						unlock_national_focus = GER_weserubung
 					}
 				}
+				hidden_effect = {
+					if = {
+						limit = {
+							focus_progress = { focus = GER_weserubung_vanilla progress > 0 }
+						}
+						unlock_national_focus = GER_weserubung_vanilla
+					}
+				}
 				#unlock_national_focus = GER_denmark_friend
 				#unlock_national_focus = GER_norway_friend
 				#unlock_national_focus = GER_sweden_friend
@@ -5109,6 +5117,7 @@ focus_tree = {
 					unlock_national_focus = GER_denmark_friend
 					unlock_national_focus = GER_norway_friend
 					unlock_national_focus = GER_sweden_friend
+					unlock_national_focus = GER_sweden_friend_vanilla
 				}
 			}
 			custom_effect_tooltip = NOR_foreign_relations_tt
@@ -6435,6 +6444,12 @@ focus_tree = {
 							focus_progress = { focus = GER_weserubung progress > 0 }
 						}
 						unlock_national_focus = GER_weserubung
+					}
+					if = {
+						limit = {
+							focus_progress = { focus = GER_weserubung_vanilla progress > 0 }
+						}
+						unlock_national_focus = GER_weserubung_vanilla
 					}
 					#unlock_national_focus = GER_denmark_friend
 				}

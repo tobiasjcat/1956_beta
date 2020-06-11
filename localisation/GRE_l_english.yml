@@ -1,8 +1,8 @@
 ﻿l_english:
 
  # Politics
- GRE_despotism_desc:0 "§YMetaxism§! is a totalitarian nationalist ideology associated with Greek politician §WIoannis Metaxas§!. It calls for the §YRegeneration§! of the Greek nation and the establishment of a §HModern, Culturally Homogenous Greece§!. Metaxism disparages liberalism, and holds individual interests to be subordinate to those of the nation, seeking to mobilize the Greek people as a disciplined mass in service to the creation of a §MNew Greece§!."
- GRE_absolute_monarchism_desc:0 "The §YHouse of Schleswig Holstein Sonderburg Glücksburg§! is a Dano-German branch of the House of Oldenburg. It acquired the throne of Greece in 1863 when George I became §MKing of the Hellenes§!."
+ GRE_despotism_desc:0 "Metaxism is a totalitarian nationalist ideology associated with Greek politician Ioannis Metaxas. It calls for the Regeneration of the Greek nation and the establishment of a Modern, Culturally Homogenous Greece. Metaxism disparages liberalism, and holds individual interests to be subordinate to those of the nation, seeking to mobilize the Greek people as a disciplined mass in service to the creation of a New Greece."
+ GRE_absolute_monarchism_desc:0 "The §YHouse of Schleswig Holstein Sonderburg Glücksburg§! is a Dano-German branch of the House of Oldenburg. It acquired the throne of Greece in 1863 when George I became King of the Hellenes."
 
 
  #Focus
@@ -67,6 +67,8 @@
  GRE_join_comintern_desc:0 "We should join the Comintern to strengthen our place in the world."
  GRE_ally_the_balkans:0 "Unite The Balkans"
  GRE_ally_the_balkans_desc:0 "We are the first country in the Balkans where the proletariat took power and created a socialist utopia,but the people can still be liberated! We must create a new alliance and spread communism to the balkans."
+ GRE_join_the_balkanic_revolution:0 "Join the Balkanic Revolution"
+ GRE_join_the_balkanic_revolution_desc:0 "As the socialist revolution has already been prepared in neighboring balkanic countries, let's join them and transform the region into a bulwark against reactionary bourgeois fascist forces."
  GRE_invite_bulgaria:0 "Support Georgi Dimitrov"
  GRE_invite_bulgaria_desc:0 "The BCP (Bulgarian Communist Party) led by Georgi Dimitrov Is the most powerful communist party in bulgaria,we should try to ally them."
  GRE_invite_albania:0 "Overthrow Zog"
@@ -243,7 +245,7 @@
 
  #Custom Tooltips
  GRE_org_x_divisions_tt:0 "Gain four units with Infantry battalions."
- GRE_civil_guard_divisions_tt:0 "Gain Six units with §Y4 Infantry§! battalions."
+ GRE_civil_guard_divisions_tt:0 "Gain Six units with 4 Infantry battalions."
  GRE_security_battalions_divisions_tt:0 "Gain Three units with Infantry and a recon team battalions."
  GRE_1:0 "Unlocks Fascist Path!"
  GRE_2:0 "Unlocks Communist Path!"
@@ -321,6 +323,11 @@
  greece.5.b:0 "Appoint Panagis Tsaldaris Prime Minister"
  greece.5.c:0 "The Venizelists Reorganize And Orchestrate A Coup"
  greece.5.d:0 "The People's Party Will Lead The New Government"
+ greece.5.d:0 "Our prime minister Konstantinos Demertzis has passed away from a heart attack. During his service as a prime minister he helped the nation's economy grow and was especially popular amongst the people. His replacement is the aging general Ioannis Metaxas who is tasked with continuing Demertzis' legacy and preserving Greece in these troubled times.\n\n(To go §RCommunist§!, pick any Prime Minister, but don't progress through their focuses. Instead, wait for Strikes to occur.)"
+ greece.5.a:0 "Metaxas Is Appointed Prime Minister."
+ greece.5.b:0 "The King Seizes Power."
+ greece.5.c:0 "We need more...Radical Leadership"
+ greece.5.e:0 "The People's Party Will Lead The New Government"
  greece.6.t:0 "Italy refused"
  greece.6.d:0 " The Italians have refused our claims over the Dodecanese and characterized them as outrageous. We are faced with two options now since politcs have failed to solve the issue, either we declare war on Mussolini or we stand down."
  greece.6.a:0 "The Dodecanese islands are Greek!"
@@ -562,7 +569,7 @@
  greece.80.d:0 "After the recent agrarian and industrial strikes in the north prime minister Ioannis Metaxás has decided to suspend parliament and parts of the constitution and after a speech on national radio he has declared an anti-democratic dictatorship, all power rests on him now."
  greece.80.a:0 "There Is No Going Back Now."
  greece.81.t:0 "Unions Strike!"
- greece.81.d:0 "The new government of Ioannis Metaxas has been faced with an angry lower class, specifically strikes in north Greece, a solution should be brought up and used."
+ greece.81.d:0 "Workers along the northern cities of the country have been assembled by the KKE to protest the new political developments the country has faced."
  greece.81.a:0 "They are our biggest threat right now."
  greece.81.b:0 "This is a time for the proletariat to unite!"
  greece.82.t:0 "Greece Offers Protection"

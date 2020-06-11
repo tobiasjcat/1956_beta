@@ -676,7 +676,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = GRE_asphaleia
 			custom_effect_tooltip = available_political_advisor
-		  show_ideas_tooltip = GRE_konstantinos_maniadakis
+		  	show_ideas_tooltip = GRE_konstantinos_maniadakis
 		}
 		search_filters = {  FOCUS_FILTER_POLITICAL }
 	}
@@ -1188,9 +1188,9 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	  ENG = {
-		  country_event = generic.2
-	  }
+		ENG = {
+			country_event = generic.2
+	  	}
 	}
 }
 
@@ -1301,7 +1301,7 @@ focus = {
 			}
 		}
 
-    completion_reward = {
+    	completion_reward = {
 		  set_country_flag = GRE_venizelist_purge
 		  remove_unit_leader = 75000
 			remove_unit_leader = 75001
@@ -1874,8 +1874,6 @@ focus = {
       	
 	}
 
-	available_if_capitulated = no
-
     completion_reward = {
 	
 	}
@@ -1895,13 +1893,14 @@ focus = {
 	}
 
 	available = {
-      	
+			
+			
 	}
 
-	available_if_capitulated = no
-
+    
     completion_reward = {
-	
+
+			
 	}
 }
 
@@ -1942,7 +1941,7 @@ focus = {
 	}
 
 	available = {
-      	
+      	  
 	}
 
 	available_if_capitulated = no
@@ -1998,6 +1997,7 @@ focus = {
 	}
 }
 
+
 focus = {
 	id = GRE_reduce_public_services
 	icon = GFX_focus_GRE_Combat_depression
@@ -2016,10 +2016,12 @@ focus = {
 
 	available_if_capitulated = no
 
+
     completion_reward = {
 	
 	}
 }
+
 
 focus = {
 	id = GRE_modernize_judiciary_system
@@ -2037,12 +2039,11 @@ focus = {
       	
 	}
 
-	available_if_capitulated = no
-
     completion_reward = {
 	
 	}
 }
+
 
 focus = {
 	id = GRE_direct_taxes
@@ -2060,6 +2061,11 @@ focus = {
 	available = {
       	
 	}
+		
+	bypass = {
+			
+	}
+
 
 	available_if_capitulated = no
 
@@ -2091,6 +2097,7 @@ focus = {
 	}
 }
 
+
 focus = {
 	id = GRE_proportional_elections
 	icon = GFX_goal_generic_election
@@ -2102,6 +2109,10 @@ focus = {
 	cost = 10
 	ai_will_do = {
 		factor = 3
+	}
+
+	bypass = {
+		
 	}
 
 	available = {
@@ -2179,7 +2190,27 @@ focus = {
 			factor = 60
 		}
 
+
 		available_if_capitulated = no
+
+		available = {
+			controls_state = 44
+			controls_state = 800
+			controls_state = 806
+
+			controls_state = 48
+			controls_state = 212
+			controls_state = 211
+
+			controls_state = 106
+			controls_state = 813
+			controls_state = 814
+			controls_state = 108
+			controls_state = 812
+			controls_state = 816
+			controls_state = 105
+			controls_state = 826
+		}
 
 
 		ai_will_do = {
@@ -2190,6 +2221,7 @@ focus = {
 			custom_effect_tooltip = GRE_restaff_the_army_command_tt
 			IF = {
 				limit = { has_country_flag = GRE_klaras_recruited }
+			}
 				country_event = { id = greece.64 }
 				custom_effect_tooltip = available_military_high_command
 				show_ideas_tooltip = GRE_markos_vafiadis
@@ -2217,135 +2249,67 @@ focus = {
 					defense_skill = 2
 					planning_skill = 2
 					logistics_skill = 1
-
-				}
-				create_corps_commander = {
-					name = "Neokosmos Grigoriadis"
-					portrait_path = "gfx/leaders/GRE/r56_portrait_GRE_neokosmos_grigoriadis.tga"
-					traits = { old_guard inflexible_strategist  JAP_communist_sympathizer }
-					skill = 1
-					attack_skill = 1
-					defense_skill = 2
-					planning_skill = 1
-					logistics_skill = 1
-
-				}
-				create_corps_commander = {
-					name = "Theodoros Makridis"
-					portrait_path = "gfx/leaders/GRE/r56_portrait_GRE_theodoros_makridis.dds"
-					traits = { brilliant_strategist trait_cautious organizer  JAP_communist_sympathizer }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 2
 				}
 			}
+		}
+	
+focus = {
+		id = GRE_liberate_the_straits
+		icon = GFX_goal_italy_attack_turkey
+		prerequisite = { focus = GRE_ally_the_balkans focus = GRE_join_the_balkanic_revolution focus = GRE_befriend_sov }
+		x = 4
+		y = 2
+		relative_position_id = GRE_ally_the_balkans
 
-			IF = {
-			limit = { has_country_flag = GRE_klaras_dismissed }
-				country_event = { id = greece.74 }
-				add_ideas = GRE_restaffed_army
-				custom_effect_tooltip = available_military_high_command
-				show_ideas_tooltip = GRE_markos_vafiadis
-				custom_effect_tooltip = available_army_chief
-				show_ideas_tooltip = GRE_manolis_mantakas
-
-				create_corps_commander = {
-					name = "Manolis Mantakas"
-					portrait_path = "gfx/leaders/GRE/Portrait_GRE_Manolis_Mantakas.dds"
-					traits = {  inspirational_leader career_officer  JAP_communist_sympathizer  }
-					skill = 3
-					attack_skill = 3
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 3
+		available = {
+			has_war = no
+			has_war_support > 0.6
+			any_other_country = {
+				owns_state = 341
+				NOT = {
+					is_in_faction_with = ROOT
 				}
+			}
+		}
 
-				create_corps_commander = {
-					name = "Evripidis Bakirtzis"
-					portrait_path = "gfx/leaders/GRE/r56_portrait_GRE_evripidis_bakirtzis.tga"
-					traits = { trait_mountaineer  JAP_communist_sympathizer }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
-
-				}
-				create_corps_commander = {
-					name = "Neokosmos Grigoriadis"
-					portrait_path = "gfx/leaders/GRE/r56_portrait_GRE_neokosmos_grigoriadis.tga"
-					traits = { harsh_leader war_hero  JAP_communist_sympathizer  }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
-
-				}
-				create_corps_commander = {
-					name = "Theodoros Makridis"
-					portrait_path = "gfx/leaders/GRE/r56_portrait_GRE_theodoros_makridis.dds"
-					traits = { hill_fighter  JAP_communist_sympathizer }
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 1
+		completion_reward = {
+			341 = {
+				OWNER = {
+					ROOT = {
+						create_wargoal = {
+							target = PREV
+							expire = 0
+							type = take_state_focus
+							generator = { 341 }
+						}
+					}
 				}
 			}
 		}
 	}
 
-		focus = {
-			id = GRE_deal_with_klaras
-			icon = GFX_focus_GRE_aris_velouchiotis
-			prerequisite = { focus = GRE_restaff_the_army_command }
-			x = 0
-			y = 1
-			relative_position_id = GRE_restaff_the_army_command
-			cost = 5
+	
 
-			ai_will_do = {
-				factor = 60
-			}
-			available = {
-				has_country_flag = GRE_klaras_recruited
-			}
-
-			available_if_capitulated = no
-
-			bypass = {
-				NOT = {
-					has_country_flag = GRE_klaras_recruited
-				}
-			}
-
-			completion_reward = {
-				country_event = { id = greece.52 }
-			}
+	focus = {
+		id = GRE_international_socialist_volunteers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GRE_deal_with_klaras }
+		relative_position_id = GRE_deal_with_klaras
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
 		}
 
-		focus = {
-			id = GRE_international_socialist_volunteers
-			icon = GFX_focus_generic_military_mission
-			prerequisite = { focus = GRE_deal_with_klaras }
-			relative_position_id = GRE_deal_with_klaras
-			x = -2
-			y = 1
-			cost = 5
-			ai_will_do = {
-				factor = 50
-			}
+		available_if_capitulated = no
 
-			available_if_capitulated = no
-
-			completion_reward = {
-				add_ideas = GRE_volunteer_corps
-			}
-			search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_ideas = GRE_volunteer_corps
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+
 
 		focus = {
 			id = GRE_create_the_civil_guard
@@ -2364,10 +2328,6 @@ focus = {
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-
-			complete_tooltip = {
-
-			}
 
 			completion_reward = {
 			add_ideas = GRE_politophylaki
@@ -2564,7 +2524,7 @@ focus = {
             		show_ideas_tooltip = GRE_Alexandros_Svolos
 
 					custom_effect_tooltip = available_political_advisor
-								show_ideas_tooltip = GRE_nikos_belogiannis
+					show_ideas_tooltip = GRE_nikos_belogiannis
                 }
             }
 
@@ -2598,9 +2558,6 @@ focus = {
 			x = -1
 			y = 1
 			cost = 5
-			ai_will_do = {
-				factor = 60
-			}
 
 			available_if_capitulated = no
 
@@ -2753,14 +2710,14 @@ focus = {
 				}
 			}
 
-		bypass = {
-			OR = {
-				BUL = {
-					is_in_faction_with = GRE
-					exists = no
+			bypass = {
+				OR = {
+					BUL = {
+						is_in_faction_with = GRE
+						exists = no
+					}
 				}
 			}
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2958,44 +2915,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
-	focus = {
-		id = GRE_aid_the_pcr
-		icon = GFX_goal_generic_aid_pcr
-		prerequisite = { focus = GRE_liberate_the_straits }
-		x = 4
-		y = 3
-		relative_position_id = GRE_ally_the_balkans
 
-		cost = 7.2
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			has_war = no
-			has_war_support > 0.6
-			country_exists = ROM
-			NOT = {
-				ROM = {
-					has_government = communism
-					is_puppet = yes
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_political_power = 100
-			ROM = {
-				add_ideas = internationalism
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
 
 
 		focus = {
