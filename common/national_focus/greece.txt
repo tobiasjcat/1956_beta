@@ -55,7 +55,7 @@ focus_tree = {
 		id = GRE_declare_a_national_emergency
 		icon = GFX_goal_centralize_power
 		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_aftermath_of_the_victory_of_the_people focus = GRE_national_security_concerns}
-		x = 35
+		x = 29
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -364,7 +364,7 @@ focus_tree = {
 		id = GRE_national_security_concerns
 		icon = GFX_focus_GRE_metaxas
 		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_aftermath_of_the_victory_of_the_people focus = GRE_declare_a_national_emergency}
-		x = 43
+		x = 37
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1272,7 +1272,7 @@ focus = {
 	focus = {
 		id = GRE_safeguard_democracy
 		icon = GFX_goal_democracy_people
-		x = 17
+		x = 15
 		y = 0
 		mutually_exclusive = { focus = GRE_national_security_concerns focus = GRE_aftermath_of_the_victory_of_the_people focus = GRE_declare_a_national_emergency}
 		cost = 5
@@ -1538,7 +1538,6 @@ focus = {
 
 		available = {
 		  has_government = democratic
-      	  has_country_flag = GRE_democratic_party_appointed
 		}
 
 		available_if_capitulated = no
@@ -1612,7 +1611,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-    	add_political_power = 200
+    	add_war_support = 0.1
 		add_ideas = GRE_idionimo
  	}
 }
@@ -1635,7 +1634,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-    	add_ideas = GRE_bolster_republicanism_in_the_military
+    	add_ideas = GRE_eliminate_radical_wings
 		add_war_support = 0.1
  	}
 }
@@ -1659,7 +1658,21 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	  add_ideas = GRE_liberalize_economy
+	  	custom_effect_tooltip = GRE_swap_tt
+	  	IF = {
+	  		limit = { has_completetd_focus = GRE_enosi_kentrou}
+	  		swap_ideas = {
+	  			remove_idea = GRE_enosi_kentrou
+	  			add_idea = GRE_readopt_1927_constituion_1
+	  		}
+	  	}
+	  	IF = {
+	  		limit = { has_completetd_focus = GRE_idionimo}
+	  		swap_ideas = {
+	  			remove_idea = GRE_idionimo
+	  			add_idea = GRE_readopt_1927_constituion_2
+	  		}
+	  	}
  	}
 }
 
@@ -1682,7 +1695,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	  add_ideas = GRE_republican_education
+	  	add_ideas = GRE_reintroduce_gold_sytem
 	}
 }
 
@@ -1707,8 +1720,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	 add_ideas = GRE_venizelos_legacy
-	 add_stability = 0.1
+	 	add_stability = 0.1
+	 	add_political_power = 250
 	}
 }
 
@@ -1742,7 +1755,7 @@ focus = {
 	icon = GFX_focus_generic_support_the_left_right
 	prerequisite = { focus = GRE_laikon_komma_supremacy }
 	mutually_exclusive = { focus = GRE_restoration_of_old_policies}
-	x = 6
+	x = 5
 	y = 1
 	relative_position_id = GRE_laikon_komma_supremacy
 	cost = 10
