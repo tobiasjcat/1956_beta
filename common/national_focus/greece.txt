@@ -72,7 +72,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	custome_effect_tooltip = GRE_bypass_tt
 		}
 	}
 
@@ -95,7 +95,11 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	swap_ideas = {
+		  		remove_idea = GRE_divided_nation
+		  		add_idea = GRE_divided_nation_2
+		  	}
+		  	add_stability = 0.1
 		}
 	}
 
@@ -112,20 +116,43 @@ focus_tree = {
 		}
 
 		available = {
-      		
+      		country_exists = ITA
+      		ITA = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = ITA
+				NOT = { country_exists = ITA }
+				ITA = { is_puppet_of = GRE }
+			}
 		}
 
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			diplomatic_relation = {
+				country = ITA
+				relation = non_aggression_pact
+				active = yes
+			}
 		}
 	}
 
 	focus = {
 		id = GRE_communal_traditions
 		icon = GFX_r56_goal_generic_uprising
-		prerequisite = { focus = GRE_the_italian_model focus = GRE_disband_parliment}
+		prerequisite = { focus = GRE_the_italian_model}
+		prerequisite = { focus = focus = GRE_disband_parliment}
 		relative_position_id = GRE_the_italian_model
 		x = 1
 		y = 1
@@ -141,7 +168,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_ideas = GRE_communal_traditions
 		}
 	}
 
@@ -152,7 +179,7 @@ focus_tree = {
 		relative_position_id = GRE_the_italian_model
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -164,18 +191,59 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_ideas = GRE_protection_services
+		  	hidden_effect = {
+				division_template = {
+					name = "Security Battalions"
+					priority = 2
+					division_names_group = GRE_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+		
+		        		infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 47 }
+					create_unit = {
+						division = "name = \"Security Battalions\" division_template = \"Security Battalions\" start_experience_factor = 0.0"
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"Security Battalions\" division_template = \"Security Battalions\" start_experience_factor = 0.0"
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"Security Battalions\" division_template = \"Security Battalions\" start_experience_factor = 0.0"
+						owner = GRE
+					}
+					create_unit = {
+						division = "name = \"Security Battalions\" division_template = \"Security Battalions\" start_experience_factor = 0.0"
+						owner = GRE
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = GRE_assembly_of_delegates
 		icon = GFX_focus_generic_self_management
-		prerequisite = { focus = GRE_the_italian_model focus = GRE_disband_parliment}
+		prerequisite = { focus = GRE_the_italian_model}
+		prerequisite = { focus = GRE_disband_parliment}
 		relative_position_id = GRE_disband_parliment
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -187,7 +255,8 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	remove_ideas = GRE_divided_nation_2
+		  	add_ideas = GRE_assembly_of_delegates
 		}
 	}
 
@@ -195,11 +264,10 @@ focus_tree = {
 		id = GRE_labour_for_the_state
 		icon = GFX_goal_generic_citizens
 		prerequisite = { focus = GRE_assembly_of_delegates }
-		prerequisite = { focus = focus = GRE_protection_services}
 		relative_position_id = GRE_protection_services
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -211,7 +279,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_ideas = GRE_labour_for_the_state
 		}
 	}
 
@@ -223,7 +291,7 @@ focus_tree = {
 		relative_position_id = GRE_assembly_of_delegates
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -235,7 +303,28 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	remove_idea = GRE_doomed_economy
+		  	add_timed_idea = {
+		  		idea = GRE_doomed_economy_2
+				days = 60
+		  	}
+
+		  	random_owned_controlled_state = {
+            	add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                  	type = industrial_complex
+                  	level = 2
+                  	instant_build = yes
+              	}
+         	 }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }	
 		}
 	}
 
@@ -259,7 +348,13 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_tech_bonus = {
+				name = GRE_exploit_natural_wealth
+				bonus = 1.0
+				uses = 2
+				category = excavation_tech
+			}
+			add_ideas = GRE_exploit_natural_wealth
 		}
 	}
 
@@ -271,7 +366,7 @@ focus_tree = {
 		relative_position_id = GRE_communal_traditions
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -283,7 +378,8 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_political_power = 250
+		  	add_popularity = { ideology = fascism popularity = 0.15 }
 		}
 	}
 
@@ -291,11 +387,10 @@ focus_tree = {
 		id = GRE_tradional_education
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GRE_communal_traditions}
-		prerequisite = { focus = GRE_protection_services}
 		relative_position_id = GRE_communal_traditions
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -307,7 +402,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	add_research_slot = 1
 		}
 	}
 
@@ -319,7 +414,7 @@ focus_tree = {
 		relative_position_id = GRE_tradional_education
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -331,7 +426,12 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	army_experience = 15
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 
@@ -349,13 +449,37 @@ focus_tree = {
 		}
 
 		available = {
-      		
+      		is_in_faction = no
+			has_government = fascism	
+			GER	= { 
+				exists = yes
+				is_faction_leader = yes
+				has_capitulated = no
+				NOT = { has_war_with = ROOT }
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		bypass = {
+			is_in_faction = yes
+			GER	= { 
+				exists = no
+				has_capitulated = yes
+				has_war_with = ROOT 
+			}
 		}
 
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	
+		  	GER = {
+				country_event = { id = generic.2 hours = 4 }
+			}
 		}
 	}
 
@@ -616,8 +740,8 @@ focus_tree = {
                   type = industrial_complex
                   level = 1
                   instant_build = yes
-              }
-          }
+              	}
+         	 }
             random_owned_controlled_state = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
