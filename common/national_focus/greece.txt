@@ -385,7 +385,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_tradional_education
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_goal_christianity_and_education
 		prerequisite = { focus = GRE_communal_traditions}
 		relative_position_id = GRE_communal_traditions
 		x = 0

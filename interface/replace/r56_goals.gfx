@@ -221,6 +221,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_christianity_and_state.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_christianity_and_education"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_christianity_and_education.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_generic_russian_deal"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_russian_deal.dds"
 	}
