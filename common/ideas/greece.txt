@@ -27,6 +27,54 @@ ideas = {
 		}
 	}
 
+	GRE_doomed_economy_2 = {
+
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = chi_hyper_inflation5
+
+		modifier = {
+			consumer_goods_factor = 0.1
+        	economy_cost_factor = 0.15
+			trade_laws_cost_factor = 0.15
+			min_export = 0.1
+			production_speed_buildings_factor = -0.15
+		}
+	}
+
+	GRE_doomed_economy_3 = {
+
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = chi_hyper_inflation5
+
+		modifier = {
+			consumer_goods_factor = 0.03
+        	economy_cost_factor = 0.05
+			trade_laws_cost_factor = 0.05
+			min_export = 0.05
+			production_speed_buildings_factor = -0.05
+		}
+	}
+
 	GRE_desperate_need_of_reform  = {
 
 		allowed = {
@@ -280,6 +328,24 @@ ideas = {
             }
 		}
 
+		GRE_divided_nation_2 = {
+            picture = GRE_national_schism
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.15
+                drift_defence_factor = -0.1
+            }
+		}
+
 		GRE_divided_nation_1 = {
 		    picture = generic_disjointed_gov
 		    allowed = {
@@ -478,7 +544,6 @@ ideas = {
 				NOT = {
 					has_government = neutrality
 				}
-				
 			}
 
 		    removal_cost = -1
@@ -561,24 +626,23 @@ ideas = {
 				}
 				NOT = {
 					has_government = neutrality
-				}
-				
+				}	
 			}
 		}
 
 		GRE_metaxas_plan = {
 
-        picture = generic_local_self_management
+        	picture = generic_local_self_management
 
-        allowed = {
-            always = no
-        }
+        	allowed = {
+            	always = no
+        	}
 
-        modifier = {
-			consumer_goods_factor = -0.05
-            political_power_factor = 0.1
-       }
-  }
+        	modifier = {
+				consumer_goods_factor = -0.05
+            	political_power_factor = 0.1
+        	}
+  		}
 
 
 		GRE_olive_export = {
@@ -872,8 +936,28 @@ ideas = {
 			}
 		}
 
-	GRE_klaras_army_grip = {
-		picture = generic_war_preparation
+		GRE_klaras_army_grip = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = -0.05
+				conscription = -0.005
+			}
+		}
+
+	GRE_civil_war_exhaustion = {
+		picture = generic_disjointed_gov
+
 		allowed = {
 			always = no
 		}
@@ -885,739 +969,813 @@ ideas = {
 		removal_cost = -1
 
 		modifier = {
-		army_morale_factor = -0.05
-		conscription = -0.005
+			conscription = -0.015
+			war_support_factor = -0.15
 		}
-}
-
-GRE_civil_war_exhaustion = {
-	picture = generic_disjointed_gov
-
-	allowed = {
-		always = no
 	}
 
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	modifier = {
-	conscription = -0.015
-	war_support_factor = -0.15
-	}
-}
-
-GRE_securing_the_government = {
-	picture = generic_disjointed_gov
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	cancel = {
-				OR = {
-					is_subject = yes
-					is_puppet = yes
-				}
-				NOT = {
-					has_government = communism
-				}
-				
-			}
-
-	modifier = {
-	neutrality_drift = -0.1
-	democratic_drift = -0.1
-	fascism_drift = -0.1
-	}
-}
-
-GRE_securing_the_government_fascism = {
-	picture = generic_disjointed_gov
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	cancel = {
-				OR = {
-					is_subject = yes
-					is_puppet = yes
-				}
-				NOT = {
-					has_government = fascism
-				}
-				
-			}
-
-	removal_cost = -1
-
-	modifier = {
-	neutrality_drift = -0.1
-	democratic_drift = -0.1
-	communism_drift = -0.1
-	}
-}
-
-GRE_victory_of_the_people = {
-	picture = GFX_idea_GRE_communist_victory
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = no
-	}
-
-	removal_cost = -1
-
-	cancel = {
-				OR = {
-					is_subject = yes
-					is_puppet = yes
-				}
-				NOT = {
-					has_government = communism
-				}
-				
-			}
-
-	modifier = {
-	industrial_capacity_factory = 0.1
-	communism_drift = 0.1
-	political_power_gain = 0.10
-	}
-}
-
-GRE_restaffed_army = {
-	picture = GFX_idea_general_staff
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = no
-	}
-
-	removal_cost = -1
-
-	modifier = {
-  command_power_gain_mult = 0.1
-	max_command_power = 10
-	}
-}
-
-GRE_strengthened_klaras = {
-	picture = generic_disjointed_gov
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	modifier = {
-	army_morale_factor = 0.05
-	conscription = -0.004
-
-	}
-}
-
-GRE_volunteer_corps = {
-
-	allowed = {
-		always = no
-	}
-
-	removal_cost = -1
-
-	picture = generic_volunteer_expedition_bonus
-
-	rule = {
-		can_send_volunteers = yes
-	}
-
-	modifier = {
-		send_volunteers_tension = -0.75
-		send_volunteer_divisions_required = -0.75
-		send_volunteer_size = 3
-	}
-}
-
-
-
-GRE_politophylaki = {
-	picture = generic_disjointed_gov
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	modifier = {
-  	conscription = 0.03
-	}
-}
-
-GRE_opla = {
-	picture = generic_secret_police
-	allowed = {
-		always = no
-	}
-
-	allowed_civil_war = {
-		always = yes
-	}
-
-	removal_cost = -1
-
-	modifier = {
-	  foreign_subversive_activites = -0.25
-	  resistance_damage_to_garrison_on_our_occupied_states = 0.10
-  	resistance_target_on_our_occupied_states = -0.10
-  	stability_factor = -0.05
-	}
- }
-
- GRE_reformed_agrarian_economy = {
- 	picture = generic_central_management
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	modifier = {
-	  economy_cost_factor = -0.20
-	  production_speed_buildings_factor = 0.05
-    consumer_goods_factor = -0.05
-		global_building_slots_factor = 0.05
- 	}
- }
-
- GRE_controlled_stocks = {
- 	picture = generic_central_management
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	modifier = {
-	  economy_cost_factor = -0.20
-	  production_speed_buildings_factor = 0.05
-	  consumer_goods_factor = -0.05
-	  global_building_slots_factor = 0.05
-    industrial_capacity_factory = 0.05
-  	line_change_production_efficiency_factor = 0.05
-		production_factory_efficiency_gain_factor = 0.05
-
+	GRE_securing_the_government = {
+		picture = generic_disjointed_gov
+		
+		allowed = {
+			always = no
 		}
- }
 
- GRE_enforced_nationalization = {
- 	picture = generic_central_management
- 	allowed = {
- 		always = no
- 	}
+		allowed_civil_war = {
+			always = yes
+		}
 
- 	allowed_civil_war = {
- 		always = yes
- 	}
+		removal_cost = -1
 
- 	removal_cost = -1
-
- 	modifier = {
-	  economy_cost_factor = -0.20
-	  production_speed_buildings_factor = 0.05
-	  consumer_goods_factor = -0.05
-	  global_building_slots_factor = 0.05
-	  industrial_capacity_factory = 0.05
-	  line_change_production_efficiency_factor = 0.05
-	  production_factory_efficiency_gain_factor = 0.05
-    local_resources_factor = 0.10
-		min_export = -0.10
- 	}
- }
-
- GRE_com_support = {
- 	picture = generic_disjointed_gov
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	cancel = {
-				OR = {
-					is_subject = yes
-					is_puppet = yes
-				}
-				NOT = {
-					has_government = communism
-				}
-				
+		cancel = {
+			OR = {
+				is_subject = yes
+				is_puppet = yes
 			}
-
- 	modifier = {
-	  communism_drift = 0.3
- 	}
- }
-
- GRE_renewed_economic_plan = {
- 	picture = generic_central_management
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	modifier = {
-	  economy_cost_factor = -0.20
-		production_speed_buildings_factor = 0.05
- 	}
- }
-
- GRE_protected_northern_minorities = {
- 	picture = generic_goods_red_bonus
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	modifier = {
-	  conscription_factor = 0.02
-		MONTHLY_POPULATION = 0.15
- 	}
- }
-
- GRE_utopia = {
- 	picture = generic_goods_red_bonus
- 	allowed = {
- 		always = no
- 	}
-
- 	allowed_civil_war = {
- 		always = yes
- 	}
-
- 	removal_cost = -1
-
- 	cancel = {
-				OR = {
-					is_subject = yes
-					is_puppet = yes
-				}
-				NOT = {
-					has_government = communism
-				}
-				
+			NOT = {
+				has_government = communism
 			}
+				
+		}
 
- 	modifier = {
-    communism_drift = 0.2
-		opinion_gain_monthly_same_ideology_factor = 0.1
-		political_power_factor = 0.05
-		stability_factor = 0.05
-		war_support_factor 0.05
+		modifier = {
+			neutrality_drift = -0.1
+			democratic_drift = -0.1
+			fascism_drift = -0.1
+		}
+	}
+
+	GRE_securing_the_government_fascism = {
+		picture = generic_disjointed_gov
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		cancel = {
+			OR = {
+				is_subject = yes
+				is_puppet = yes
+			}
+			NOT = {
+				has_government = fascism
+			}	
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			neutrality_drift = -0.1
+			democratic_drift = -0.1
+			communism_drift = -0.1
+		}
+	}
+
+	GRE_victory_of_the_people = {
+		picture = GFX_idea_GRE_communist_victory
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		cancel = {
+			OR = {
+				is_subject = yes
+				is_puppet = yes
+			}
+			NOT = {
+				has_government = communism
+			}	
+		}
+
+		modifier = {
+			industrial_capacity_factory = 0.1
+			communism_drift = 0.1
+			political_power_gain = 0.10
+		}
+	}
+
+	GRE_restaffed_army = {
+		picture = GFX_idea_general_staff
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		modifier = {
+  			command_power_gain_mult = 0.1
+			max_command_power = 10
+		}
+	}
+
+	GRE_strengthened_klaras = {
+		
+		picture = generic_disjointed_gov
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			army_morale_factor = 0.05
+			conscription = -0.004
+		}
+	}
+
+	GRE_volunteer_corps = {
+
+		allowed = {
+			always = no
+		}
+
+		removal_cost = -1
+
+		picture = generic_volunteer_expedition_bonus
+
+		rule = {
+			can_send_volunteers = yes
+		}
+
+		modifier = {
+			send_volunteers_tension = -0.75
+			send_volunteer_divisions_required = -0.75
+			send_volunteer_size = 3
+		}
+	}
+
+
+
+	GRE_politophylaki = {
+		picture = generic_disjointed_gov
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+  			conscription = 0.03
+		}
+	}
+
+	GRE_opla = {
+		picture = generic_secret_police
+		
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+	  		foreign_subversive_activites = -0.25
+	  		resistance_damage_to_garrison_on_our_occupied_states = 0.10
+  			resistance_target_on_our_occupied_states = -0.10
+  			stability_factor = -0.05
+		}
  	}
- }
 
- GRE_strikes = {
- 	picture = generic_goods_red_bonus
- 	allowed = {
- 		always = no
+ 	GRE_reformed_agrarian_economy = {
+ 		picture = generic_central_management
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+	 		economy_cost_factor = -0.20
+	  		production_speed_buildings_factor = 0.05
+    		consumer_goods_factor = -0.05
+			global_building_slots_factor = 0.05
+ 		}
  	}
 
- 	allowed_civil_war = {
- 		always = yes
+ 	GRE_controlled_stocks = {
+ 		picture = generic_central_management
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+	  		economy_cost_factor = -0.20
+	  		production_speed_buildings_factor = 0.05
+	  		consumer_goods_factor = -0.05
+	  		global_building_slots_factor = 0.05
+    		industrial_capacity_factory = 0.05
+  			line_change_production_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+		}
  	}
 
- 	removal_cost = -1
+ 	GRE_enforced_nationalization = {
+ 		picture = generic_central_management
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
 
- 	modifier = {
-    production_speed_buildings_factor = -0.1
-		stability_factor = -0.1
-		communism_drift = 0.02
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+	  		economy_cost_factor = -0.20
+	  		production_speed_buildings_factor = 0.05
+	  		consumer_goods_factor = -0.05
+	  		global_building_slots_factor = 0.05
+	  		industrial_capacity_factory = 0.05
+	  		line_change_production_efficiency_factor = 0.05
+	  		production_factory_efficiency_gain_factor = 0.05
+    		local_resources_factor = 0.10
+			min_export = -0.10
+ 		}
  	}
- }
 
- GRE_strikes_2 = {
- 	picture = generic_goods_red_bonus
- 	allowed = {
- 		always = no
+ 	GRE_com_support = {
+ 		picture = generic_disjointed_gov
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		cancel = {
+			OR = {
+				is_subject = yes
+				is_puppet = yes
+			}
+			NOT = {
+				has_government = communism
+			}	
+		}
+
+ 		modifier = {
+	  		communism_drift = 0.3
+ 		}
  	}
 
- 	allowed_civil_war = {
- 		always = yes
+ 	GRE_renewed_economic_plan = {
+ 		picture = generic_central_management
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+	  		economy_cost_factor = -0.20
+			production_speed_buildings_factor = 0.05
+ 		}
  	}
 
- 	removal_cost = -1
+ 	GRE_protected_northern_minorities = {
+ 		picture = generic_goods_red_bonus
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
 
- 	modifier = {
-    production_speed_buildings_factor = -0.1
-		stability_factor = -0.1
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+	  		conscription_factor = 0.02
+			MONTHLY_POPULATION = 0.15
+ 		}
  	}
- }
 
- GRE_strikes_3 = {
-	 picture = generic_goods_red_bonus
-	 allowed = {
-		 always = no
-	 }
+ 	GRE_utopia = {
+ 		picture = generic_goods_red_bonus
+ 	
+ 		allowed = {
+ 			always = no
+ 		}
 
-	 allowed_civil_war = {
-		 always = yes
-	 }
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
 
-	 removal_cost = -1
+ 		removal_cost = -1
 
-	 modifier = {
-	   communism_drift = 0.02
-	 }
- }
+ 		cancel = {
+			OR = {
+				is_subject = yes
+				is_puppet = yes
+			}
+			NOT = {
+				has_government = communism
+			}
+		}
 
-GRE_eliminate_radical_wings = {
+ 		modifier = {
+    		communism_drift = 0.2
+			opinion_gain_monthly_same_ideology_factor = 0.1
+			political_power_factor = 0.05
+			stability_factor = 0.05
+			war_support_factor 0.05
+ 		}
+ 	}
+
+ 	GRE_strikes = {
+ 		picture = generic_goods_red_bonus
+ 		
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+    		production_speed_buildings_factor = -0.1
+			stability_factor = -0.1
+			communism_drift = 0.02
+ 		}
+ 	}
+
+ 
+ 	GRE_strikes_2 = {
+ 		picture = generic_goods_red_bonus
+ 		allowed = {
+ 			always = no
+ 		}
+
+ 		allowed_civil_war = {
+ 			always = yes
+ 		}
+
+ 		removal_cost = -1
+
+ 		modifier = {
+    		production_speed_buildings_factor = -0.1
+			stability_factor = -0.1
+ 		}
+ 	}
+
+ 	GRE_strikes_3 = {
+	 	picture = generic_goods_red_bonus
+	 	allowed = {
+		 	always = no
+	 	}
+
+	 	allowed_civil_war = {
+		 	always = yes
+	 	}
+
+	 	removal_cost = -1
+
+	 	modifier = {
+	   	communism_drift = 0.02
+	 	}
+ 	}
+
+	GRE_eliminate_radical_wings = {
 	
-	picture = FRA_scw_intervention_republicans_focus
+		picture = FRA_scw_intervention_republicans_focus
 	
-	name = GRE_eliminate_radical_wings
+		name = GRE_eliminate_radical_wings
   	
-  	allowed = {
- 	 	always = no
-  	}
+  		allowed = {
+ 	 		always = no
+  		}
 
-  	allowed_civil_war = {
- 	 	always = yes
-  	}
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
- 	 	army_core_defence_factor = 0.1
- 	 	army_morale_factor = 0.05
-  	}
-}
+  		modifier = {
+ 	 		army_core_defence_factor = 0.1
+ 	 		army_morale_factor = 0.05
+  		}
+	}
 
-GRE_reintroduce_gold_sytem = {
-	picture = new_deal
+	GRE_reintroduce_gold_sytem = {
+		picture = new_deal
 
-	name = GRE_reintroduce_gold_sytem
+		name = GRE_reintroduce_gold_sytem
   	
-  	allowed = {
- 	 	always = no
-  	}
+  		allowed = {
+ 	 		always = no
+  		}
 
-  	allowed_civil_war = {
- 	 	always = yes
-  	}
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-		consumer_goods_factor = 0.05
-		production_speed_buildings_factor = 0.15
-		industrial_capacity_factory = 0.15
-  	}
-}
+  		modifier = {
+			consumer_goods_factor = 0.03
+			production_speed_buildings_factor = 0.15
+			industrial_capacity_factory = 0.15
+  		}
+	}
 
-GRE_readopt_1927_constituion_1 = { 
-	picture = generic_pp_unity_bonus
+	GRE_parliment_over_king = {
+		
+		picture = generic_victors_of_ww1
 
-	name = GRE_readopt_1927_constituion_1
+		name = GRE_parliment_over_king
   	
-  	allowed = {
- 	 	always = no
-  	}
+  		allowed = {
+ 	 		always = no
+  		}
 
-  	allowed_civil_war = {
- 	 	always = yes
-  	}
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-		political_power_gain = 0.2
-    	drift_defence_factor = 0.15
-    	conscription_factor = 0.05
-    	conscription = 0.05
-  	}
-}
+  		modifier = {
+			democratic_drift = 0.05
+			political_power_gain = 0.15
+			political_advisor_cost_factor = -0.15
+			economy_cost_factor = -0.15
+  		}
+	}
 
-GRE_readopt_1927_constituion_2 = { 
-	picture = generic_pp_unity_bonus
+	GRE_negotiate_with_trade_unions = {
+		
+		picture = generic_production_bonus
 
-	name = GRE_readopt_1927_constituion_2
+		name = GRE_negotiate_with_trade_unions
   	
-  	allowed = {
- 	 	always = no
-  	}
+  		allowed = {
+ 	 		always = no
+  		}
 
-  	allowed_civil_war = {
- 	 	always = yes
-  	}
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-		communism_drift = -0.05
-		communism_acceptance = -50
-		political_advisor_cost_factor = -0.15
-		resistance_damage_to_garrison_on_our_occupied_states = 0.15
-  	}
-}
+  		modifier = {
+			production_factory_efficiency_gain_factor = 0.15
+			local_building_slots_factor = 0.05
+			production_factory_max_efficiency_factor = 0.1
+  		}
+	}
 
-GRE_metaxism = {
-	picture = ast_abandon_the_westminster_system
+	GRE_instituion_of_womens_sufferage = {
+		
+		picture = generic_production_bonus
 
-	name = GRE_metaxism
+		name = GRE_instituion_of_womens_sufferage
+  	
+  		allowed = {
+ 	 		always = no
+  		}
+
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+			conscription_factor = 0.05
+			mobilization_speed = 0.1
+			war_support_factor = 0.15
+  		}
+	}
+
+
+	GRE_readopt_1927_constituion_1 = { 
+		picture = generic_pp_unity_bonus
+
+		name = GRE_readopt_1927_constituion_1
+  	
+  		allowed = {
+ 	 		always = no
+  		}
+
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+			political_power_gain = 0.2
+    		drift_defence_factor = 0.15
+    		conscription_factor = 0.05
+    		conscription = 0.05
+  		}
+	}
+
+	GRE_readopt_1927_constituion_2 = { 
+		picture = generic_pp_unity_bonus
+
+		name = GRE_readopt_1927_constituion_2
+  	
+  		allowed = {
+ 	 		always = no
+  		}
+
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+			communism_drift = -0.05
+			communism_acceptance = -50
+			political_advisor_cost_factor = -0.15
+			resistance_damage_to_garrison_on_our_occupied_states = 0.15
+  		}
+	}
+
+	GRE_metaxism = {
+		picture = ast_abandon_the_westminster_system
+
+		name = GRE_metaxism
   
-	allowed = {
-		always = no
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+ 			always = yes
+  		}
+
+  		removal_cost = -1
+
+    	modifier = {
+	  		join_faction_tension = 1.00
+	  		send_volunteers_tension = 0.20
+	  		guarantee_tension = 1.0
+	  		ai_badass_factor = 0.05
+	  		ai_get_ally_desire_factor = -60
+	  		surrender_limit = 0.1
+	  		drift_defence_factor = 0.1
+    	}
 	}
 
-	allowed_civil_war = {
- 		always = yes
-  	}
+	GRE_metaxism_2 = {
+		picture = ast_abandon_the_westminster_system
 
-  	removal_cost = -1
-
-    modifier = {
-	  join_faction_tension = 1.00
-	  send_volunteers_tension = 0.20
-	  guarantee_tension = 1.0
-	  ai_badass_factor = 0.05
-	  ai_get_ally_desire_factor = -60
-	  surrender_limit = 0.1
-	  drift_defence_factor = 0.1
-    }
-}
-
-GRE_metaxism_2 = {
-	picture = ast_abandon_the_westminster_system
-
-	name = GRE_metaxism_2
+		name = GRE_metaxism_2
   	
-  	allowed = {
- 	 	always = no
-  	}
+  		allowed = {
+ 	 		always = no
+  		}
 
-  	allowed_civil_war = {
- 		 always = yes
-  	}
+  		allowed_civil_war = {
+ 			always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-	  	join_faction_tension = 1.00
-		send_volunteers_tension = 0.20
-	  	guarantee_tension = 1.0
-	  	ai_badass_factor = 0.05
-	  	ai_get_ally_desire_factor = -60
-		drift_defence_factor = 0.1
-		opinion_gain_monthly_factor = 0.20
-    	improve_relations_maintain_cost_factor = -0.50
-   	}
-}
+  		modifier = {
+	  		join_faction_tension = 1.00
+			send_volunteers_tension = 0.20
+	  		guarantee_tension = 1.0
+	  		ai_badass_factor = 0.05
+	  		ai_get_ally_desire_factor = -60
+			drift_defence_factor = 0.1
+			opinion_gain_monthly_factor = 0.20
+    		improve_relations_maintain_cost_factor = -0.50
+   		}
+	}
 
- GRE_royalist_influence = {
-  picture = generic_king_handled
-  allowed = {
- 	 always = no
-  }
+ 	GRE_royalist_influence = {
+  		picture = generic_king_handled
+  		
+  		allowed = {
+ 	 		always = no
+  		}
 
-  allowed_civil_war = {
- 	 always = yes
-  }
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  removal_cost = -1
+  		removal_cost = -1
 
-  modifier = {
-    consumer_goods_factor = 0.05
-		political_power_cost = 0.05
-		command_power_gain_mult = -0.4
-		max_command_power = -40
-   }
- }
- GRE_royalist_influence_2 = {
-  picture = generic_king_handled
-  allowed = {
- 	 always = no
-  }
+  		modifier = {
+    		consumer_goods_factor = 0.05
+			political_power_cost = 0.05
+			command_power_gain_mult = -0.4
+			max_command_power = -40
+   		}
+ 	}
+ 
+ 	GRE_royalist_influence_2 = {
+ 		picture = generic_king_handled
+  		
+  		allowed = {
+ 	 		always = no
+  		}
 
-  allowed_civil_war = {
- 	 always = yes
-  }
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  removal_cost = -1
+ 		removal_cost = -1
 
-  modifier = {
-    consumer_goods_factor = 0.05
-		political_power_cost = 0.05
-  }
- }
+  		modifier = {
+    		consumer_goods_factor = 0.05
+			political_power_cost = 0.05
+  		}
+ 	}
 
- GRE_royalist_influence_3 = {
-  picture = generic_king_handled
-  allowed = {
- 	 always = no
-  }
+ 	GRE_royalist_influence_3 = {
+  		
+  		picture = generic_king_handled
+  		
+  		allowed = {
+ 			always = no
+  		}
 
-  allowed_civil_war = {
- 	 always = yes
-  }
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  removal_cost = -1
+  		removal_cost = -1
 
-  modifier = {
-		command_power_gain_mult = -0.4
-		max_command_power = -40
-   }
- }
+  		modifier = {
+			command_power_gain_mult = -0.4
+			max_command_power = -40
+   		}
+ 	}
 
-GRE_enosi_kentrou = {
+	GRE_enosi_kentrou = {
 	
-	picture = generic_pp_unity_bonus
-  	allowed = {
- 		always = no
-  	}
+		picture = generic_pp_unity_bonus
+  		
+  		allowed = {
+ 			always = no
+  		}
 
-  	allowed_civil_war = {
- 	 	always = yes
-  	}
+  		allowed_civil_war = {
+ 	 		always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-    	political_power_gain = 0.15
-    	drift_defence_factor = 0.15
-   	}
-}
+  		modifier = {
+    		political_power_gain = 0.15
+    		drift_defence_factor = 0.15
+   		}	
+	}
 
-GRE_idionimo = {
-	picture = generic_pp_unity_bonus
-  	allowed = {
- 		always = no
-  	}
+	GRE_idionimo = {
+		
+		picture = generic_pp_unity_bonus
+  		
+  		allowed = {
+ 			always = no
+  		}
 
-  	allowed_civil_war = {
- 		always = yes
-  	}
+  		allowed_civil_war = {
+ 			always = yes
+  		}
 
-  	removal_cost = -1
+  		removal_cost = -1
 
-  	modifier = {
-	  	communism_drift = -0.03
-		communism_acceptance = -50
+  		modifier = {
+	  		communism_drift = -0.03
+			communism_acceptance = -50
+ 		}
+	}
+
+ 	GRE_security_battalions = {
+ 		 picture = generic_reserve_divisions
+  
+  		allowed = {
+ 			always = no
+  		}
+
+  		allowed_civil_war = {
+ 			always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+	  		conscription = 0.02
+ 		}
+ 	}
+
+ 	GRE_authoritarian_economy = {
+  	
+  		picture = generic_goods_red_bonus
+  		
+  		allowed = {
+ 			always = no
+  		}
+
+  		allowed_civil_war = {
+ 			always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+	  		production_speed_buildings_factor = 0.05
+			consumer_goods_factor = -0.05
+ 		}
+ 	}
+
+ 	GRE_repressive_laws = {
+  		picture = generic_king_handled
+  		
+  		allowed = {
+ 			always = no
+  		}
+
+  		allowed_civil_war = {
+ 			always = yes
+  		}
+
+  		removal_cost = -1
+
+  		modifier = {
+	  		drift_defence_factor = 0.2
+			stability_factor = 0.1
+ 		}
  	}
 }
 
- GRE_security_battalions = {
-  picture = generic_reserve_divisions
-  allowed = {
- 	always = no
-  }
+political_advisor = {
 
-  allowed_civil_war = {
- 	always = yes
-  }
+  	GRE_georgios_papandreou = {
 
-  removal_cost = -1
+	  	picture = GRE_georgios_papandreou
 
-  modifier = {
-	  conscription = 0.02
- 	}
- }
-
- GRE_authoritarian_economy = {
-  picture = generic_goods_red_bonus
-  allowed = {
- 	always = no
-  }
-
-  allowed_civil_war = {
- 	always = yes
-  }
-
-  removal_cost = -1
-
-  modifier = {
-	  production_speed_buildings_factor = 0.05
-		consumer_goods_factor = -0.05
- 	}
- }
-
- GRE_repressive_laws = {
-  picture = generic_king_handled
-  allowed = {
- 	always = no
-  }
-
-  allowed_civil_war = {
- 	always = yes
-  }
-
-  removal_cost = -1
-
-  modifier = {
-	  drift_defence_factor = 0.2
-		stability_factor = 0.1
-
- 	}
- }
-}
-
-	political_advisor = {
-
-  GRE_georgios_papandreou = {
-
-	  picture = GRE_georgios_papandreou
-
-	  allowed = {
+	  	allowed = {
 		  original_tag = GRE
-  	}
+  		}
 
-	  available = {
+	  	available = {
 		  has_completed_focus = GRE_consolidate_republican_government
-      has_government = democratic
+      		has_government = democratic
 	  }
 
 	 traits = { silent_workhorse }
@@ -1625,15 +1783,15 @@ GRE_idionimo = {
 
 	GRE_panagiotis_kanelopoulos = {
 
-	  picture = GRE_panagiotis_kanelopoulos
+	  	picture = GRE_panagiotis_kanelopoulos
 
-	  allowed = {
+	  	allowed = {
 		  original_tag = GRE
-  	}
+  		}
 
-	  available = {
+	  	available = {
 		  has_completed_focus = GRE_consolidate_republican_government
-      has_government = democratic
+      		has_government = democratic
 	  }
 
 	 traits = { editor }
@@ -1641,48 +1799,48 @@ GRE_idionimo = {
 
 	GRE_sofoklis_venizelos = {
 
-	  picture = GRE_sofoklis_venizelos
+	  	picture = GRE_sofoklis_venizelos
 
-	  allowed = {
+	  	allowed = {
 		  original_tag = GRE
-  	}
+  		}
 
-	  available = {
+	 	available = {
 		  has_completed_focus = GRE_consolidate_republican_government
-      has_government = democratic
-	  }
+      	  has_government = democratic
+	  	}
 
 	 traits = { GRE_venizelos_heir }
 	}
 
 	GRE_theodoros_pangalos = {
 
-	  picture = GRE_theodoros_pangalos
+	  	picture = GRE_theodoros_pangalos
 
-	  allowed = {
+	  	allowed = {
 		  original_tag = GRE
-  	}
+  		}
 
-	  available = {
-		  has_completed_focus = GRE_consolidate_republican_government
-      has_government = democratic
-	  }
+	  	available = {
+		 	has_completed_focus = GRE_consolidate_republican_government
+      		has_government = democratic
+	  	}
 
 	 traits = { prince_of_terror  }
 	}
 
 	GRE_nikolaos_plastiras = {
 
-	  picture = GRE_nikolaos_plastiras
+	  	picture = GRE_nikolaos_plastiras
 
-	  allowed = {
+	  	allowed = {
 		  original_tag = GRE
-  	}
+  		}
 
-	  available = {
-		has_completed_focus = GRE_consolidate_republican_government
-      has_government = democratic
-	  }
+	  	available = {
+			has_completed_focus = GRE_consolidate_republican_government
+     	 has_government = democratic
+	  	}
 
 	 traits = { GRE_the_black_rider }
 	}
@@ -1696,15 +1854,15 @@ GRE_idionimo = {
 		}
 
 		available = {
-		NOT = {
+			NOT = {
 				has_government = communism
 			}
-	}
+		}
 
 		traits = { peace_proponent }
 	}
 
-	GRE_ioannis_rallis	 = {
+	GRE_ioannis_rallis = {
 
 		picture = GRE_ioannis_rallis
 
@@ -1715,12 +1873,10 @@ GRE_idionimo = {
 		available = {
 			has_completed_focus = GRE_national_union
 		}
-
-
 		traits = { fascist_demagogue }
 	}
 
-	GRE_nikos_Zachariadis	 = {
+	GRE_nikos_Zachariadis = {
 
 		picture = gre_nikos
 
@@ -1735,7 +1891,7 @@ GRE_idionimo = {
 		traits = { communist_revolutionary }
 	}
 
-	GRE_themistoklis_sofoulis	 = {
+	GRE_themistoklis_sofoulis = {
 
 		picture = gre_sophoulis
 
@@ -1759,9 +1915,9 @@ GRE_idionimo = {
 		}
 
 		available = {
-		  has_country_flag = GRE_metaxas_pm
-		  NOT = {
-        has_government = communism
+		  	has_country_flag = GRE_metaxas_pm
+		  	NOT = {
+        		has_government = communism
 			}
 	 	}
 
@@ -1781,12 +1937,12 @@ GRE_idionimo = {
 		}
 
 		available = {
-		  NOT = {
+		  	NOT = {
 			  has_country_flag = GRE_metaxas_pm
 			  has_government = communism
 				has_country_flag = GRE_venizelist_purge
 			}
-	  }
+	  	}
 
 		traits = { hard_working_politician }
 	}
@@ -1868,9 +2024,9 @@ GRE_idionimo = {
 		cost = 75
 
 		available = {
-      has_completed_focus = GRE_Reinforce_the_hierarchy
-		  has_government = communism
-    }
+      		has_completed_focus = GRE_Reinforce_the_hierarchy
+		  	has_government = communism
+    	}
 
 		allowed = {
 			original_tag = GRE
@@ -1887,8 +2043,8 @@ GRE_idionimo = {
 		cost = 100
 
 		available = {
-      has_completed_focus = GRE_political_opposition
-    }
+      		has_completed_focus = GRE_political_opposition
+    	}
 
 		allowed = {
 			original_tag = GRE
@@ -1913,37 +2069,35 @@ GRE_idionimo = {
     }
 
 
-GRE_prodomos_bodosakis_athanasiadis = {
+	GRE_prodomos_bodosakis_athanasiadis = {
 
-	picture = GRE_bodosakis_athanasiadis
+		picture = GRE_bodosakis_athanasiadis
 
-	allowed = {
-		original_tag = GRE
-	}
+		allowed = {
+			original_tag = GRE
+		}
 
-	available = {
-		NOT = {
+		available = {
+			NOT = {
 				has_government = communism
 			}
+		}
+		traits = { war_industrialist }
 	}
 
+	GRE_kyriakos_varvaresos = {
 
-	traits = { war_industrialist }
-}
+		picture = GRE_varvaresos
 
-GRE_kyriakos_varvaresos = {
+		allowed = {
+			original_tag = GRE
+		}
 
-	picture = GRE_varvaresos
+		available = {
+		}
 
-	allowed = {
-		original_tag = GRE
-	}
-
-	available = {
-	}
-
-	traits = { captain_of_industry }
-  }
+		traits = { captain_of_industry }
+  	}
 
 	GRE_emmanouil_tsouderos = {
 
@@ -1955,13 +2109,13 @@ GRE_kyriakos_varvaresos = {
 
 		available = {
 			NOT = {
-					has_government = communism
-					has_country_flag = GRE_venizelist_purge
-				}
+				has_government = communism
+				has_country_flag = GRE_venizelist_purge
+			}
 		}
 
 		traits = { smooth_talking_charmer }
-	  }
+    }
 
 	GRE_ioannis_theotokis = {
 
@@ -1972,11 +2126,11 @@ GRE_kyriakos_varvaresos = {
 		}
 
 		available = {
-		  OR = {
-		    has_country_flag = GRE_royal_dictatorship
-        has_country_flag = GRE_metaxas_pm
+		  	OR = {
+		    	has_country_flag = GRE_royal_dictatorship
+        		has_country_flag = GRE_metaxas_pm
 				has_completed_focus = GRE_laikon_komma_supremacy
-		  }
+		  	}
 			NOT = {
 			  OR = {
 				  has_government = communism
@@ -1989,10 +2143,11 @@ GRE_kyriakos_varvaresos = {
 	}
 }
 
-	theorist = {
+theorist = {
 
 	GRE_haralambos_katsimitros = {
-			ledger = army
+		
+		ledger = army
 
 		picture = GRE_katsimitros
 
@@ -2004,7 +2159,7 @@ GRE_kyriakos_varvaresos = {
 		available = {
 			NOT = {
 				has_government = communism
-		  }
+		  	}
 		}
 
 		research_bonus = {
@@ -2015,7 +2170,8 @@ GRE_kyriakos_varvaresos = {
 	}
 
 	GRE_neokosmos_grigoriadis = {
-			ledger = army
+		
+		ledger = army
 
 		picture = GRE_neokosmos
 
@@ -2025,7 +2181,7 @@ GRE_kyriakos_varvaresos = {
 		}
 
 		available = {
-      has_completed_focus = GRE_restaff_the_army_command
+      		has_completed_focus = GRE_restaff_the_army_command
 		}
 
 		research_bonus = {
@@ -2036,7 +2192,8 @@ GRE_kyriakos_varvaresos = {
 	}
 
 	GRE_panagiotis_gazis_theorist = {
-			ledger = air
+		
+		ledger = air
 
 		picture = GRE_gazis
 
@@ -2052,7 +2209,8 @@ GRE_kyriakos_varvaresos = {
 	}
 
 	GRE_ioannis_toumbas = {
-			ledger = navy
+		
+		ledger = navy
 
 		picture = GRE_toumbas
 
@@ -2071,132 +2229,133 @@ GRE_kyriakos_varvaresos = {
 	}
 }
 	# MILITARY
-	army_chief = {
+army_chief = {
 
-		GRE_alexander_papagos = {
+	GRE_alexander_papagos = {
 
-			picture = generic_army_europe_3
+		picture = generic_army_europe_3
 
-			allowed = {
-				original_tag = GRE
-			}
+		allowed = {
+			original_tag = GRE
+		}
 
-			available = {
-			  NOT = {
-				  OR = {
-            has_government = communism
-			      has_country_flag = GRE_venizelist_purge
-					}
+		available = {
+			NOT = {
+				OR = {
+            		has_government = communism
+			      	has_country_flag = GRE_venizelist_purge
 				}
-			}
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 1
 			}
 		}
 
-		GRE_tsalakoglou = {
+		traits = { army_chief_offensive_2 }
 
-			picture = GRE_tsalakoglou
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-			allowed = {
-				original_tag = GRE
-			}
+	GRE_tsalakoglou = {
 
-			available = {
-			  NOT = {
-			    has_government = communism
-				}
-			}
+		picture = GRE_tsalakoglou
 
-			traits = { army_chief_defensive_2 }
+		allowed = {
+			original_tag = GRE
+		}
 
-			ai_will_do = {
-				factor = 1
+		available = {
+			NOT = {
+			   	has_government = communism
 			}
 		}
 
-		GRE_aris_velouchiotis = {
+		traits = { army_chief_defensive_2 }
 
-			picture = generic_army_europe_3
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
-			allowed = {
-				original_tag = GRE
-			}
+	GRE_aris_velouchiotis = {
 
-			available = {
+		picture = generic_army_europe_3
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
 			has_government = communism
 			has_country_flag = GRE_klaras_recruited
 			has_completed_focus = GRE_restaff_the_army_command
-			}
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 40
-			}
 		}
 
-		GRE_manolis_mantakas = {
+		traits = { army_chief_offensive_2 }
 
-			picture = GRE_mantakas
+		ai_will_do = {
+			factor = 40
+		}
+	}
 
-			allowed = {
-				original_tag = GRE
-			}
+	GRE_manolis_mantakas = {
 
-			available = {
-			  has_government = communism
-			  has_completed_focus = GRE_restaff_the_army_command
-			}
+		picture = GRE_mantakas
 
-			traits = { army_chief_maneuver_2 }
-
-			ai_will_do = {
-				factor = 40
-			}
+		allowed = {
+			original_tag = GRE
 		}
 
-		GRE_stefanos_sarafis = {
-
-			picture = GRE_sarafis
-
-			allowed = {
-				original_tag = GRE
-			}
-
-			available = {
-      			has_government = communism
-				has_completed_focus = GRE_restaff_the_army_command
-			}
-
-			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 40
-			}
+		available = {
+			has_government = communism
+			has_completed_focus = GRE_restaff_the_army_command
 		}
 
-		GRE_theodoros_pangalos_chief = {
+		traits = { army_chief_maneuver_2 }
 
-			picture = GRE_theodoros_pangalos
+		ai_will_do = {
+			factor = 40
+		}
+	}
 
-			allowed = {
-				original_tag = GRE
-			}
+	GRE_stefanos_sarafis = {
 
-			available = {
+		picture = GRE_sarafis
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+      		has_government = communism
+			has_completed_focus = GRE_restaff_the_army_command
+		}
+
+		traits = { army_chief_defensive_2 }
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+
+	GRE_theodoros_pangalos_chief = {
+
+		picture = GRE_theodoros_pangalos
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
 	      has_completed_focus = GRE_recall_republican_officers
-			}
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 40
-			}
 		}
+
+		traits = { army_chief_offensive_2 }
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+		
 		GRE_theodoros_manetas = {
 
 			picture = GRE_theodoros_manetas
@@ -2206,7 +2365,7 @@ GRE_kyriakos_varvaresos = {
 			}
 
 			available = {
-	      has_completed_focus = GRE_recall_republican_officers
+	      		has_completed_focus = GRE_recall_republican_officers
 			}
 
 			traits = { army_chief_morale_2  }
@@ -2228,8 +2387,6 @@ GRE_kyriakos_varvaresos = {
 				original_tag = GRE
 			}
 
-
-
 			traits = { air_chief_reform_2 }
 
 			ai_will_do = {
@@ -2244,8 +2401,6 @@ GRE_kyriakos_varvaresos = {
 			allowed = {
 				original_tag = GRE
 			}
-
-
 
 			traits = { air_chief_safety_2 }
 
@@ -2305,7 +2460,7 @@ GRE_kyriakos_varvaresos = {
 			}
 
 			available = {
-        has_government = communism
+        		has_government = communism
 				has_completed_focus = GRE_restaff_the_army_command
 			}
 
@@ -2349,9 +2504,9 @@ GRE_kyriakos_varvaresos = {
 
 			available = {
 			  NOT = {
-				  OR = {
-            has_government = communism
-			      has_country_flag = GRE_venizelist_purge
+				  	OR = {
+            			has_government = communism
+			     		has_country_flag = GRE_venizelist_purge
 					}
 				}
 			}

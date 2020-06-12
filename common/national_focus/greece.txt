@@ -1747,6 +1747,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
+		custom_effect_tooltip = GRE_bypass_tt 
 	}
 }
 
@@ -1758,19 +1759,19 @@ focus = {
 	x = 5
 	y = 1
 	relative_position_id = GRE_laikon_komma_supremacy
-	cost = 10
+	cost = 5
 	ai_will_do = {
 		factor = 3
 	}
 
 	available = {
-      	
+      	has_country_flag = GRE_panagis_tsaldaris_pm
 	}
 
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		custom_effect_tooltip = GRE_bypass_tt  
 	}
 }
 
@@ -1794,7 +1795,11 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		add_ideas = GRE_parliment_over_king
+		swap_ideas = {
+			remove_idea = GRE_divided_nation
+			add_idea = GRE_divided_nation_2
+		}
 	}
 }
 
@@ -1818,7 +1823,36 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -1842,7 +1876,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		add_research_slot = 1
 	}
 }
 
@@ -1853,7 +1887,7 @@ focus = {
 	x = 0
 	y = 2
 	relative_position_id = GRE_parliment_over_king
-	cost = 10
+	cost = 5
 	ai_will_do = {
 		factor = 3
 	}
@@ -1865,7 +1899,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		add_ideas = GRE_negotiate_with_trade_unions
 	}
 }
 
@@ -1886,10 +1920,36 @@ focus = {
       	
 	}
 
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = infrastructure_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+			}
+		}
+	}
+
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		remove_ideas = GRE_doomed_economy
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -1912,7 +1972,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		add_ideas = GRE_instituion_of_womens_sufferage
 	}
 }
 
@@ -1938,7 +1998,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		remove_ideas = GRE_divided_nation_2
 	}
 }
 

@@ -8,6 +8,8 @@
  #Focus
  GRE_divided_nation:0 "Memories Of The National Schism"
  GRE_divided_nation_desc:0 "The national schism between monarchists and republicans almost plunged the country into civil war during the Great War. In its aftermath it proved disastrous condemning Greece into a series of coup d' etats, purges and executions, fracturing politics and society alike."
+ GRE_divided_nation_2:0 "Memories Of The National Schism"
+ GRE_divided_nation_2_desc:0 "The national schism between monarchists and republicans almost plunged the country into civil war during the Great War. In its aftermath it proved disastrous condemning Greece into a series of coup d' etats, purges and executions, fracturing politics and society alike."
  GRE_reinforce_4th_of_august_regime:0 "Reinforce The 4th of August Regime"
  GRE_reinforce_4th_of_august_regime_desc:0 "Metaxas has proved himself to the Greek people as a capable and tactful leader. His desires to enshrine neutrality, enhance our armed forces and kickstart our economy will see us into a bright future. We must ensure that his Regime is reinforced politically, and oust any potential threat to its' stability."
  GRE_begin_reconstruction:0 "Corporatism"
@@ -729,3 +731,4 @@ GRE_the_black_rider:0 "The Black Rider"
 GRE_the_black_rider_2:0 "The Black Rider"
 ardent_venizelist:0 "Ardent Venizelist"
 GRE_swap_tt:0 "We Will Modify Either The Enosi Kentrou Or Extend Idionimon's Outreach Ideas"
+GRE_bypass_tt:0 "This Focus Will Be Bypassed"
