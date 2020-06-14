@@ -2653,24 +2653,272 @@ country_event = {
 		     		}
 		   		}
 			 
-			 hidden_effect = {
-			   	set_politics = {
-				  	ruling_party = neutrality
-				   	elections_allowed = no
-			   	}
-		 	}
-		}
-	
-		option = {
-			#war
-			name = greece.84.b
-			ai_chance = {
-				factor = 10
+			 	hidden_effect = {
+			   		set_politics = {
+				  		ruling_party = neutrality
+				   		elections_allowed = no
+			   		}
+		 		}
 			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = ALB
-			}
-		}
-	}	
+		}	
 
+country_event = {
+	id = greece.89
+	title = greece.89.t
+	desc = greece.89.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.89.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				FRA = {
+					has_opinion = {
+						target = GRE
+						value > 1
+					}
+				}
+				factor = 55
+			}
+		}
+		FRA = {
+			give_guarantee = GRE
+			add_opinion_modifier = {
+				target = GRE
+				modifier = medium_increase
+			}
+		}
+
+		GRE = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			country_event = { id = greece.90 days = 1}
+		}
+	}
+	option = {
+		name = greece.89.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				FRA = {
+					has_opinion = {
+						target = GRE
+						value < 1
+					}
+				}
+				factor = 65
+			}
+		}
+		GRE = {
+			country_event = { id = greece.91 days = 1}
+		}
+	}
+}
+
+country_event = {
+	id = greece.90
+	title = greece.90.t
+	desc = greece.90.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.90.a
+	}
+}
+
+country_event = {
+	id = greece.91
+	title = greece.91.t
+	desc = greece.91.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.91.a
+	}
+}
+
+country_event = {
+	id = greece.92
+	title = greece.92.t
+	desc = greece.92.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.92.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				ENG = {
+					has_opinion = {
+						target = GRE
+						value > 1
+					}
+				}
+				factor = 55
+			}
+		}
+		ENG = {
+			add_opinion_modifier = {
+				target = GRE
+				modifier = medium_increase
+			}
+
+			diplomatic_relation = {
+				country = GRE
+				relation = non_aggression_pact
+				active = yes
+			}
+			
+			custom_effect_tooltip = GRE_eng_sale_tt
+
+			hidden_effect = {	
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = -3000
+					producer = ENG
+				}
+			}
+		}
+
+		GRE = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 3000
+				producer = ENG
+			}
+			country_event = { id = greece.93 days = 1}
+		}
+	}
+	option = {
+		name = greece.92.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				ENG = {
+					has_opinion = {
+						target = GRE
+						value < 1
+					}
+				}
+				factor = 65
+			}
+		}
+		GRE = {
+			country_event = { id = greece.94 days = 1}
+		}
+	}
+}
+
+country_event = {
+	id = greece.93
+	title = greece.93.t
+	desc = greece.93.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.93.a
+	}
+}
+
+country_event = {
+	id = greece.94
+	title = greece.94.t
+	desc = greece.94.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.94.a
+	}
+}
+
+country_event = {
+	id = greece.95
+	title = greece.95.t
+	desc = greece.95.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.95.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				USA = {
+					has_opinion = {
+						target = GRE
+						value > 1
+					}
+				}
+				factor = 55
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = GRE
+				modifier = medium_increase
+			}
+		}
+
+		GRE = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			country_event = { id = greece.96 days = 1}
+		}
+	}
+	option = {
+		name = greece.95.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				USA = {
+					has_opinion = {
+						target = GRE
+						value < 1
+					}
+				}
+				factor = 65
+			}
+		}
+		GRE = {
+			country_event = { id = greece.97 days = 1}
+		}
+	}
+}
+
+country_event = {
+	id = greece.96
+	title = greece.96.t
+	desc = greece.96.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.96.a
+	}
+}
+
+country_event = {
+	id = greece.97
+	title = greece.97.t
+	desc = greece.97.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.97.a
+	}
+}

@@ -432,6 +432,11 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+                bonus = 1
+                uses = 2
+                category = armor
+            }
 		}
 	}
 
@@ -2472,13 +2477,32 @@ focus = {
 	}
 
 	available = {
-      	
+      	country_exists = FRA
+		FRA = {
+			NOT = { has_war_with = ROOT }
+			has_government = democratic
+			has_capitulated = no
+		}
+	}
+
+	bypass = {
+      	NOT = {country_exists = FRA}
+		FRA = {
+			OR = {
+				has_war_with = ROOT 
+				has_government = democratic
+				has_capitulated = yes
+			}
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		FRA = {
+			country_event = { id = greece.89 hours = 4}
+		}
 	}
 }
 
@@ -2495,13 +2519,32 @@ focus = {
 	}
 
 	available = {
-      	
+      	country_exists = ENG
+		ENG = {
+			NOT = { has_war_with = ROOT }
+			has_government = democratic
+			has_capitulated = no
+		}
+	}
+
+	bypass = {
+      	NOT = {country_exists = ENG}
+		ENG = {
+			OR = {
+				has_war_with = ROOT 
+				has_government = democratic
+				has_capitulated = yes
+			}
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		ENG = {
+			country_event = { id = greece.92 hours = 4}
+		}
 	}
 }
 
@@ -2518,13 +2561,32 @@ focus = {
 	}
 
 	available = {
-      	
+      	country_exists = USA
+		USA = {
+			NOT = { has_war_with = ROOT }
+			has_government = democratic
+			has_capitulated = no
+		}
+	}
+
+	bypass = {
+      	NOT = {country_exists = USA}
+		USA = {
+			OR = {
+				has_war_with = ROOT 
+				has_government = democratic
+				has_capitulated = yes
+			}
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		USA = {
+			country_event = { id = greece.95hours = 4}
+		}
 	}
 }
 
@@ -2543,13 +2605,34 @@ focus = {
 	}
 
 	available = {
-      	
+		country_exists = FRA
+		FRA = {
+			NOT = { has_war_with = ROOT }
+			has_capitulated = no
+			has_opinion = {
+				target = ROOT
+				value > 0
+			}	
+		}
+	}
+
+	bypass = {
+		OR = {
+			has_war_with = FRA
+			NOT = { country_exists = FRA }
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		army_experience = 5
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = land_doctrine
+		}
 	}
 }
 
@@ -2566,13 +2649,35 @@ focus = {
 	}
 
 	available = {
-      	
+		country_exists = ENG
+		ENG = {
+			NOT = { has_war_with = ROOT }
+			has_capitulated = no
+			has_opinion = {
+				target = ROOT
+				value > 0
+			}	
+		}
+	}
+
+	bypass = {
+		OR = {
+			has_war_with = ENG
+			NOT = { country_exists = ENG }
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		navy_experience = 25
+		add_tech_bonus = {
+			name = GRE_british_naval_cooperation
+			bonus = 1.0
+			uses = 2
+			category = naval_doctrine
+		}
 	}
 }
 
@@ -2586,17 +2691,54 @@ focus = {
 	relative_position_id = GRE_french_investments
 	cost = 10
 	ai_will_do = {
-		factor = 3
+		factor = 5
+		modifier = {
+			has_completed_focus = FRA_little_entente
+			factor = 50
+		}
 	}
 
 	available = {
-      	
+      	country_exists = FRA
+      	is_in_faction = no
+		FRA = {
+			has_completed_focus = FRA_little_entente
+			NOT = { has_war_with = ROOT }
+			has_capitulated = no
+			has_opinion = {
+				target = ROOT
+				value > 0
+			}	
+		}
+		NOT = {
+			any_other_country = {
+				is_in_faction_with = FRA
+				has_war_with = GRE
+			}
+		}
+	}
+
+	bypass = {
+			OR = {
+				is_in_faction_with = FRA
+			AND = {
+				is_in_faction = yes
+				any_other_country = {
+					is_faction_leader = yes
+					is_in_faction_with = ROOT
+					has_government = democratic
+				}
+			}
+		}
 	}
 
 	available_if_capitulated = no
+	cancel_if_invalid = yes
 
     completion_reward = {
-	
+		FRA = {
+			country_event = { id = generic.2 hours = 4 }
+		}
 	}
 }
 
@@ -2637,13 +2779,45 @@ focus = {
 	}
 
 	available = {
-      	
+      	country_exists = ENG
+   		is_in_faction = no
+		ENG = {
+			NOT = { has_war_with = ROOT }
+			has_capitulated = no
+			has_opinion = {
+				target = ROOT
+				value > 0
+			}	
+		}
+		NOT = {
+			any_other_country = {
+				is_in_faction_with = ENG
+				has_war_with = GRE
+			}
+		}
+	}
+
+	bypass = {
+			OR = {
+				is_in_faction_with = ENG
+			AND = {
+				is_in_faction = yes
+				any_other_country = {
+					is_faction_leader = yes
+					is_in_faction_with = ROOT
+					has_government = democratic
+				}
+			}
+		}
 	}
 
 	available_if_capitulated = no
+    cancel_if_invalid = yes
 
     completion_reward = {
-	
+		ENG = {
+			country_event = { id = generic.2 hours = 4 }
+		}
 	}
 }
 
