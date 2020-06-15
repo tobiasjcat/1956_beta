@@ -55,7 +55,7 @@ focus_tree = {
 		id = GRE_declare_a_national_emergency
 		icon = GFX_goal_centralize_power
 		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_aftermath_of_the_victory_of_the_people focus = GRE_national_security_concerns}
-		x = 29
+		x = 30
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -420,7 +420,10 @@ focus_tree = {
 		}
 
 		available = {
-      		
+      		GER = {
+      			NOT = { has_war_with = ROOT }
+      			country_exists = GER
+      		}
 		}
 
 		available_if_capitulated = no
@@ -493,7 +496,7 @@ focus_tree = {
 		id = GRE_national_security_concerns
 		icon = GFX_focus_GRE_metaxas
 		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_aftermath_of_the_victory_of_the_people focus = GRE_declare_a_national_emergency}
-		x = 37
+		x = 38
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1772,7 +1775,7 @@ focus = {
 	id = GRE_readopt_1927_constituion
 	icon = GFX_goal_consitution
 	prerequisite = { focus = GRE_enosi_kentrou focus = GRE_idionimo }
-	x = 2
+	x = 0
 	y = 2
 	relative_position_id = GRE_restart_politics
 	cost = 10
@@ -1809,7 +1812,7 @@ focus = {
 	id = GRE_reintroduce_gold_sytem
 	icon = GFX_focus_usa_reestablish_the_gold_standard
 	prerequisite = { focus = GRE_enosi_kentrou focus = GRE_idionimo }
-	x = 0
+	x = 2
 	y = 2
 	relative_position_id = GRE_restart_politics
 	cost = 10
@@ -2585,7 +2588,7 @@ focus = {
 
     completion_reward = {
 		USA = {
-			country_event = { id = greece.95hours = 4}
+			country_event = { id = greece.95 hours = 4}
 		}
 	}
 }
@@ -2755,13 +2758,42 @@ focus = {
 	}
 
 	available = {
-      	
+      	ROM = {
+      		NOT = { has_war_with = ROOT }
+      		NOT = { has_war_with = TUR }
+      		NOT = { has_war_with = YUG }
+      		country_exists = ROM
+      		is_subject = no
+      	}
+      	TUR = {
+      		NOT = { has_war_with = ROOT }
+      		NOT = { has_war_with = ROM }
+      		NOT = { has_war_with = YUG }
+      		country_exists = TUR
+      		is_subject = no
+      	}
+      	YUG = {
+      		NOT = { has_war_with = ROOT }
+      		NOT = { has_war_with = ROM }
+      		NOT = { has_war_with = TUR }
+      		country_exists = YUG
+      		is_subject = no
+      	}
 	}
 
 	available_if_capitulated = no
 
     completion_reward = {
-	
+		custom_effect_tooltip = GRE_balkan_pact_tt
+
+		hidden_effect_tooltip = {
+			give_guarantee = TUR
+			give_guarantee = YUG
+			give_guarantee = ROM
+			YUG = { country_event = { id = greece.102 hours = 1}}
+			ROM = { country_event = { id = greece.101 hours = 1}}
+			TUR = { country_event = { id = greece.98 hours = 1}}
+		}
 	}
 }
 
