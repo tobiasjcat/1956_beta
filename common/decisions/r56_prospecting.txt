@@ -7545,13 +7545,13 @@ economy_decisions = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 5
 		days_remove = 60
 
 		complete_effect = {
 			add_timed_idea = {
 				idea = generic_resource_extraction_effort
-				days = 80
+				days = 70
 			}
 		}
 
@@ -13223,11 +13223,11 @@ prospect_for_resources = {
 
 		fire_only_once = yes
 
-		cost = 25
+		cost = 5
 		days_remove = 60
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 4
 		}
 
 		ai_will_do = {
