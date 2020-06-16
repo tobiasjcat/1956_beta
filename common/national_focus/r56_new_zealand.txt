@@ -244,7 +244,6 @@ focus = {
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = NZL_expand_devonport_naval_base_DY
 			}
 			284 = {
 				add_building_construction = {
@@ -1270,26 +1269,41 @@ focus = {
 	y = 2
 	relative_position_id = NZL_new_zealand_steel_works
 
-	cost = 5
+	cost = 10
 
 	ai_will_do = {
-			factor = 25
-		}
+		factor = 25
+	}
 
-		available = {
-			controls_state = 284 
-		}
+	available = {
+		
+	}
 
-		bypass = {
+	bypass = {
 
-		}
+	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = NZL_resource_imports
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -1320,37 +1334,22 @@ focus = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = NZL_bureau_of_industry_IC1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 284 723 }
 				limit = {				
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = NZL_bureau_of_industry_IC1
 			}
 		}
 	}
@@ -1383,21 +1382,6 @@ focus = {
 
 		completion_reward = {
 			add_ideas = NZL_the_wairarapa_sheep_farms
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
-				}
-			}
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1428,12 +1412,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = NZL_industrial_awakening
 			random_owned_controlled_state = {	
 				limit = {				
 					free_building_slots = {
 						building = industrial_complex
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
@@ -1479,7 +1462,7 @@ focus = {
 				limit = {
 					free_building_slots = {
 					building = arms_factory
-					size > 1
+					size > 2
 					include_locked = yes
 				}
 			}
@@ -1694,7 +1677,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = NZL_respect_maori_culture
+		add_stability = 0.1
+		add_political_power = 150
 	}
 }
 
@@ -1759,10 +1743,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = NZL_respect_maori_culture
-			add_idea = NZL_protect_maori_land
-		}
+		add_idea = NZL_protect_maori_land
 	}
 }
 

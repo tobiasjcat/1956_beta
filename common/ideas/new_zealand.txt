@@ -787,8 +787,8 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				non_core_manpower = 0.15
-				global_building_slots_factor = 0.1
+				non_core_manpower = 0.025
+				global_building_slots_factor = 0.05
 			}
 		}
 		
