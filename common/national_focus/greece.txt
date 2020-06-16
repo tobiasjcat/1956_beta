@@ -69,6 +69,13 @@ focus_tree = {
 			}
 		}
 
+		bypass = {
+      		has_country_flag = GRE_fascist_path
+			OR = {
+			    has_government = fascism
+			}
+		}
+
 		available_if_capitulated = no
 
    		completion_reward = {
@@ -1623,7 +1630,26 @@ focus = {
 		}
 
 		available = {
-		  has_government = democratic
+		  	has_government = democratic
+      		country_exists = TUR
+      		TUR = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+			}
+			country_exists = ENG
+      		ENG = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_war_with = ENG
+				has_war_with = TUR
+				NOT = { country_exists = ITA }
+				NOT = { country_exists = ENG }
+			}
 		}
 
     
@@ -1876,6 +1902,10 @@ focus = {
       	has_country_flag = GRE_panagis_tsaldaris_pm
 	}
 
+	bypass = {
+		has_country_flag = GRE_panagis_tsaldaris_pm
+	}
+
 	available_if_capitulated = no
 
     completion_reward = {
@@ -1897,6 +1927,10 @@ focus = {
 	}
 
 	available = {
+      	has_country_flag = GRE_panagis_tsaldaris_pm
+	}
+
+	bypass = {
       	has_country_flag = GRE_panagis_tsaldaris_pm
 	}
 
@@ -2148,6 +2182,10 @@ focus = {
 	}
 
 	available = {
+      	has_country_flag = GRE_panagis_tsaldaris_pm
+	}
+
+	bypass = {
       	has_country_flag = GRE_panagis_tsaldaris_pm
 	}
 

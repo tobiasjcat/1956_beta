@@ -1,18 +1,4 @@
 
-GRE_honor_byzantium_category = {
-
-
-    icon = byzantine_decision_icon
-
-    allowed = {
-		original_tag = GRE
-	}
-
-    visible = {
-        has_completed_focus = GRE_honor_byzantium
-	}
-}
-
 GRE_army_reform_category = {
 
 
