@@ -1423,63 +1423,63 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-      	GRE_bypass_tt  
+      	custom_effect_tooltip = GRE_bypass_tt  
 	}
 }
 
-	focus = {
-		id = GRE_consolidate_republican_government
-		icon = GFX_r56_goal_GRE_flag
-		prerequisite = { focus = GRE_safeguard_democracy }
-		x = -3
-		y = 1
-		mutually_exclusive = { focus = GRE_laikon_komma_supremacy }
-		relative_position_id = GRE_safeguard_democracy
-		cost = 10
-		ai_will_do = {
-			factor = 9
-		}
-
-		available = {
-		  has_country_flag = GRE_venizelists_in_power
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-		  	add_stability = 0.05
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = GRE_georgios_papandreou
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = GRE_sofoklis_venizelos
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = GRE_theodoros_pangalos
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = GRE_nikolaos_plastiras
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = GRE_panagiotis_kanelopoulos
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
+focus = {
+	id = GRE_consolidate_republican_government
+	icon = GFX_r56_goal_GRE_flag
+	prerequisite = { focus = GRE_safeguard_democracy }
+	x = -3
+	y = 1
+	mutually_exclusive = { focus = GRE_laikon_komma_supremacy }
+	relative_position_id = GRE_safeguard_democracy
+	cost = 10
+	ai_will_do = {
+		factor = 9
 	}
 
-	focus = {
-		id = GRE_purge_royalist_officers
-		icon = GFX_goal_generic_purge_royalist_officers
-		prerequisite = { focus = GRE_consolidate_republican_government }
-		x = -1
-		y = 1
-		relative_position_id = GRE_consolidate_republican_government
-		cost = 10
-		ai_will_do = {
-			factor = 9
-		}
+	available = {
+		 has_country_flag = GRE_venizelists_in_power
+	}
 
-		available = {
-			OR = {
-				has_idea = GRE_royalist_influence
-				has_idea = GRE_royalist_influence_3
-			}
+	available_if_capitulated = no
+
+   	completion_reward = {
+		 add_stability = 0.05
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRE_georgios_papandreou
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRE_sofoklis_venizelos
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRE_theodoros_pangalos
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRE_nikolaos_plastiras
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = GRE_panagiotis_kanelopoulos
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+}
+
+focus = {
+	id = GRE_purge_royalist_officers
+	icon = GFX_goal_generic_purge_royalist_officers
+	prerequisite = { focus = GRE_consolidate_republican_government }
+	x = -1
+	y = 1
+	relative_position_id = GRE_consolidate_republican_government
+	cost = 10
+	ai_will_do = {
+		factor = 9
+	}
+
+	available = {
+		OR = {
+			has_idea = GRE_royalist_influence
+			has_idea = GRE_royalist_influence_3
 		}
+	}
 
     completion_reward = {
 		  set_country_flag = GRE_venizelist_purge
@@ -1487,18 +1487,18 @@ focus = {
 			remove_unit_leader = 75001
 			remove_unit_leader = 75005
 			remove_unit_leader = 75011
-				IF = {
-					limit = { has_idea = GRE_royalist_influence_3 }
-					remove_ideas = GRE_royalist_influence_3
-				}
-				else = {
-					swap_ideas = {
-						remove_idea = GRE_royalist_influence
-						add_idea = GRE_royalist_influence_2
-					}
+			IF = {
+				limit = { has_idea = GRE_royalist_influence_3 }
+				remove_ideas = GRE_royalist_influence_3
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = GRE_royalist_influence
+					add_idea = GRE_royalist_influence_2
 				}
 			}
-	  }
+		}
+	}
 
 	focus = {
 		id = GRE_recall_republican_officers
@@ -3012,78 +3012,78 @@ focus = {
 		}
 	}
 
-		focus = {
-			id = GRE_deal_with_klaras
-			icon = GFX_focus_GRE_aris_velouchiotis
-			prerequisite = { focus = GRE_restaff_the_army_command }
-			x = 0
-			y = 1
-			relative_position_id = GRE_restaff_the_army_command
-			cost = 5
+	focus = {
+		id = GRE_deal_with_klaras
+		icon = GFX_focus_GRE_aris_velouchiotis
+		prerequisite = { focus = GRE_restaff_the_army_command }
+		x = 0
+		y = 1
+		relative_position_id = GRE_restaff_the_army_command
+		cost = 5
 
-			ai_will_do = {
-				factor = 60
-			}
-			available = {
+		ai_will_do = {
+			factor = 60
+		}
+		available = {
+			has_country_flag = GRE_klaras_recruited
+		}
+
+		available_if_capitulated = no
+
+		bypass = {
+			NOT = {
 				has_country_flag = GRE_klaras_recruited
 			}
-
-			available_if_capitulated = no
-
-			bypass = {
-				NOT = {
-					has_country_flag = GRE_klaras_recruited
-				}
-			}
-
-			completion_reward = {
-				country_event = { id = greece.52 }
-			}
 		}
 
-		focus = {
-			id = GRE_international_socialist_volunteers
-			icon = GFX_focus_generic_military_mission
-			prerequisite = { focus = GRE_deal_with_klaras }
-			relative_position_id = GRE_deal_with_klaras
-			x = -2
-			y = 1
-			cost = 5
-			ai_will_do = {
-				factor = 50
-			}
+		completion_reward = {
+			country_event = { id = greece.52 }
+		}
+	}
 
-			available_if_capitulated = no
-
-			completion_reward = {
-				add_ideas = GRE_volunteer_corps
-			}
-			search_filters = { FOCUS_FILTER_ANNEXATION }
+	focus = {
+		id = GRE_international_socialist_volunteers
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = GRE_deal_with_klaras }
+		relative_position_id = GRE_deal_with_klaras
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 50
 		}
 
-		focus = {
-			id = GRE_create_the_civil_guard
-			icon = GFX_goal_BRA_second_communist_putsch
-			prerequisite = { focus = GRE_international_socialist_volunteers }
-			x = -2
-			y = 2
-			relative_position_id = GRE_deal_with_klaras
+		available_if_capitulated = no
 
-			cost = 10
+		completion_reward = {
+			add_ideas = GRE_volunteer_corps
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
 
-			ai_will_do = {
-				factor = 10
-			}
+	focus = {
+		id = GRE_create_the_civil_guard
+		icon = GFX_goal_BRA_second_communist_putsch
+		prerequisite = { focus = GRE_international_socialist_volunteers }
+		x = -2
+		y = 2
+		relative_position_id = GRE_deal_with_klaras
 
-			cancel_if_invalid = yes
-			continue_if_invalid = no
-			available_if_capitulated = no
+		cost = 10
 
-			complete_tooltip = {
+		ai_will_do = {
+			factor = 10
+		}
 
-			}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-			completion_reward = {
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
 			add_ideas = GRE_politophylaki
 			custom_effect_tooltip = GRE_civil_guard_divisions_tt
 			hidden_effect = {
@@ -3278,7 +3278,7 @@ focus = {
             		show_ideas_tooltip = GRE_Alexandros_Svolos
 
 					custom_effect_tooltip = available_political_advisor
-								show_ideas_tooltip = GRE_nikos_belogiannis
+					show_ideas_tooltip = GRE_nikos_belogiannis
                 }
             }
 
@@ -3406,9 +3406,9 @@ focus = {
 
 			completion_reward = {
 			swap_ideas = { remove_idea = GRE_controlled_stocks add_idea = GRE_enforced_nationalization }
-			IF = {
-				limit = { has_idea = GRE_civil_war_exhaustion }
-					modify_timed_idea = {
+				IF = {	
+					limit = { has_idea = GRE_civil_war_exhaustion }
+						modify_timed_idea = {
 						idea = GRE_civil_war_exhaustion
 						days = -70
 					}
@@ -3467,26 +3467,26 @@ focus = {
 				}
 			}
 
-		bypass = {
-			OR = {
-				BUL = {
-					is_in_faction_with = GRE
-					exists = no
+			bypass = {
+				OR = {
+					BUL = {
+						is_in_faction_with = GRE
+						exists = no
+					}
 				}
 			}
-		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+			cancel_if_invalid = yes
+			continue_if_invalid = no
+			available_if_capitulated = no
 
-		completion_reward = {
-			create_wargoal = {
-   	 			type = puppet_wargoal_focus
-    			target = BUL
-				expire = 0
+			completion_reward = {
+				create_wargoal = {
+   	 				type = puppet_wargoal_focus
+    				target = BUL
+					expire = 0
+				}
 			}
-		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
@@ -3526,17 +3526,17 @@ focus = {
 		}
 
 
-	cancel_if_invalid = yes
-	continue_if_invalid = no
-	available_if_capitulated = no
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
-	completion_reward = {
-		create_wargoal = {
-   	 		type = puppet_wargoal_focus
-    		target = ALB
-			expire = 0
+		completion_reward = {
+			create_wargoal = {
+   	 			type = puppet_wargoal_focus
+    			target = ALB
+				expire = 0
+			}
 		}
-	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 }
 
@@ -3712,29 +3712,29 @@ focus = {
 	}
 
 
-		focus = {
-			id = GRE_invite_bulgaria
-			icon = GFX_goal_befriend_communist_BUL
-			prerequisite = { focus = GRE_ally_the_balkans }
-			x = -3
-			y = 1
-			relative_position_id = GRE_ally_the_balkans
+	focus = {
+		id = GRE_invite_bulgaria
+		icon = GFX_goal_befriend_communist_BUL
+		prerequisite = { focus = GRE_ally_the_balkans }
+		x = -3
+		y = 1
+		relative_position_id = GRE_ally_the_balkans
 
-			cost = 5
+		cost = 5
 
-			ai_will_do = {
-				factor = 80
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			has_country_flag = GRE_balkan_friends
+			BUL = {
+				NOT = { has_war_with = GRE }
+				exists = yes
+				is_puppet = no
+				is_in_faction = no
 			}
-
-			available = {
-				has_country_flag = GRE_balkan_friends
-				BUL = {
-					NOT = { has_war_with = GRE }
-					exists = yes
-					is_puppet = no
-					is_in_faction = no
-				}
-			}
+		}
 
 		bypass = {
 			OR = {
@@ -3757,7 +3757,8 @@ focus = {
 				country_event = greece.63
 			}
 		}
-			BUL = {
+		
+		BUL = {
 				add_timed_idea = {
 					idea = GRE_com_support
 					days = 365
@@ -3866,15 +3867,15 @@ focus = {
 				YUG = {
 					country_event = greece.63
 					}
-			}
+				}
 				YUG = {
 					add_timed_idea = {
 						idea = GRE_com_support
 						days = 365
 					}
 				}
-		}
-	}
+			}
+		}	
 
 		focus = {
 			id = GRE_befriend_sov
@@ -3937,11 +3938,11 @@ focus = {
 
 
 			completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 1
-				category = infantry_weapons
-			}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = infantry_weapons
+				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
 					amount = 700
@@ -3971,10 +3972,10 @@ focus = {
 			}
 
 			completion_reward = {
-			  SOV = {
-			    country_event = generic.2
+			  	SOV = {
+			   		country_event = generic.2
 				}
-		  }
+		  	}
 		}
 
 		focus = {

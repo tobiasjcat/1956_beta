@@ -79,7 +79,8 @@ country_event = {
 			name = GRE_laikon_komma
 		}
 		hidden_effect = {
-	  	GRE = { country_event = { days = 32 id = greece.41 } }
+	  		GRE = { country_event = { days = 32 id = greece.41 } }
+	  		GRE = { country_event = { days = 32 id = greece.103 } }
 		}
 		create_country_leader = {
 			name = "Panagis Tsaldaris"
@@ -118,6 +119,7 @@ country_event = {
 		set_country_flag = GRE_fascist_path
 		add_ideas = low_economic_mobilisation
 		kill_country_leader = yes
+		complete_national_focus = GRE_declare_a_national_emergency
 		country_event = {
 			id = greece.33
 		}
@@ -3159,3 +3161,21 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = greece.103
+	title = greece.103.t
+	desc = greece.103.d
+	picture = GFX_report_event_polish_army
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = greece.103.a
+		complete_national_focus = GRE_modernize_the_policy_program
+	}
+	option = {
+		name = greece.103.b
+		complete_national_focus = GRE_restoration_of_old_policies
+	}
+}
+
