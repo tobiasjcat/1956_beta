@@ -1263,9 +1263,7 @@ country_event = {
 		name = greece.43.a
 		ai_chance = {
 
-			factor = 33
-
-			factor = 80
+			factor = 30
 
 			modifier = {
 				is_historical_focus_on = yes
@@ -1379,11 +1377,11 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-		  set_party_name = {
-			  ideology = democratic
-			  long_name = GRE_laikon_komma_long
-			  name = GRE_laikon_komma
-		  }
+		  	set_party_name = {
+			 	ideology = democratic
+			  	long_name = GRE_laikon_komma_long
+			  	name = GRE_laikon_komma
+		 	 }
 		  
 			set_party_name = {
 				ideology = democratic
@@ -2563,104 +2561,104 @@ country_event = {
 	}
 }
 
-		country_event = {
-			id = greece.86
-			title = greece.86.t
-			desc = greece.86.d
-			picture = GFX_report_event_GRE_officers
+country_event = {
+	id = greece.86
+	title = greece.86.t
+	desc = greece.86.d
+	picture = GFX_report_event_GRE_officers
 
-			is_triggered_only = yes
+	is_triggered_only = yes
 
-			option = {
-				name = greece.86.a #theodoros pangalos
-				add_ideas = GRE_theodoros_pangalos_chief
-				random_unit_leader = {
-				   limit = {
-				     has_id = 750012
-				   }
-				   promote_leader = yes
+	option = {
+		name = greece.86.a #theodoros pangalos
+		add_ideas = GRE_theodoros_pangalos_chief
+		random_unit_leader = {
+				limit = {
+					has_id = 750012
 				}
-				GRE = { country_event = { days = 1 id = greece.87 } }
-			}
-			option = {
-				name = greece.86.b #theodoros manetas
-				add_ideas = GRE_theodoros_manetas
-				random_unit_leader = {
-				   limit = {
-				     has_id = 750013
-				   }
-				   promote_leader = yes
+				promote_leader = yes
+		}
+			GRE = { country_event = { days = 1 id = greece.87 } }
+		}
+		option = {
+			name = greece.86.b #theodoros manetas
+			add_ideas = GRE_theodoros_manetas
+			random_unit_leader = {
+				limit = {
+				    has_id = 750013
 				}
-			}
-			option = {
-				name = greece.86.c # georgios tsolakoglou
-				add_ideas = GRE_tsalakoglou
-				random_unit_leader = {
-				   limit = {
-					   has_id = 75003
-				   }
 				   promote_leader = yes
-				}
 			}
 		}
-
-		country_event = {
-			id = greece.87
-			title = greece.87.t
-			desc = greece.87.d
-			picture = GFX_report_event_GRE_officers
-
-			is_triggered_only = yes
-
-			option = {
-				name = greece.87.a
-        		custom_effect_tooltip = GRE_11
-				hidden_effect = {
-				  GRE = { country_event = { days = 7 id = greece.88 } }
+		option = {
+			name = greece.86.c # georgios tsolakoglou
+			add_ideas = GRE_tsalakoglou
+			random_unit_leader = {
+				limit = {
+					has_id = 75003
 				}
-			}
-			option = {
-				name = greece.87.b
+				   promote_leader = yes
 			}
 		}
+	}
 
-		country_event = {
-			id = greece.88
-			title = greece.88.t
-			desc = greece.88.d
-			picture = GFX_report_GRE_venizelist_coup
+	country_event = {
+		id = greece.87
+		title = greece.87.t
+		desc = greece.87.d
+		picture = GFX_report_event_GRE_officers
 
-			is_triggered_only = yes
+		is_triggered_only = yes
 
-			option = {
-				name = greece.88.a
+		option = {
+			name = greece.87.a
+        	custom_effect_tooltip = GRE_11
+			hidden_effect = {
+				 GRE = { country_event = { days = 7 id = greece.88 } }
+			}
+		}
+		option = {
+			name = greece.87.b
+		}
+	}
 
-				set_country_flag = GRE_pangalos_in_power
-				set_party_name = {
-					ideology = neutrality
-					long_name = GRE_neutrality_party_pangalos_long
-					name = GRE_neutrality_party_pangalos
-				}
+	country_event = {
+		id = greece.88
+		title = greece.88.t
+		desc = greece.88.d
+		picture = GFX_report_GRE_venizelist_coup
 
-				 create_country_leader = {
-		    		 name = "Theodoros Pangalos"
-		     		 desc = "POLITICS_THEODOROS_PANGALOS_DESC"
-		     		 picture = "r56_portrait_GRE_theodoros_pangalos.tga"
-		     		 expire = "1965.1.1"
-		    		 ideology = despotism
-		    		 traits = {
-						 army_connections
-		     		}
-		   		}
+		is_triggered_only = yes
+
+		option = {
+			name = greece.88.a
+
+			set_country_flag = GRE_pangalos_in_power
+			set_party_name = {
+				ideology = neutrality
+				long_name = GRE_neutrality_party_pangalos_long
+				name = GRE_neutrality_party_pangalos
+			}
+
+			create_country_leader = {
+		    	name = "Theodoros Pangalos"
+		     	desc = "POLITICS_THEODOROS_PANGALOS_DESC"
+		     	picture = "r56_portrait_GRE_theodoros_pangalos.tga"
+		     	expire = "1965.1.1"
+		    	ideology = despotism
+		    	traits = {
+					army_connections
+		     	}
+		   	}
 			 
-			 	hidden_effect = {
-			   		set_politics = {
-				  		ruling_party = neutrality
-				   		elections_allowed = no
-			   		}
-		 		}
-			}
-		}	
+			hidden_effect = {
+			   	set_politics = {
+				  	ruling_party = neutrality
+				   	elections_allowed = no
+			   	}
+		 	}
+		}
+	}	
 
 country_event = {
 	id = greece.89
