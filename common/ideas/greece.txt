@@ -2916,6 +2916,7 @@ army_chief = {
 
 		tangalakis_temax = {
 			allowed = { original_tag = GRE }
+			available = { has_completed_focus = GRE_indegenious_desgins }
 			traits = { motorised_equipment_producer_offense_0 }
 			modifier = {}
 			research_bonus = {
@@ -2939,6 +2940,7 @@ army_chief = {
 
 		aekkea_raab = {
 			allowed = { original_tag = GRE }
+			available = { has_completed_focus = GRE_focus_on_ground_support_tactics}
 			traits = { bomber_producer_offense_1 }
 			modifier = {}
 			research_bonus = {
@@ -2970,12 +2972,14 @@ army_chief = {
 			traits = { cruiser_producer_mass_1
 			}
 		}
+	
 		Neorion = {
 
-    available = {
-		}
+    		available = {
+				has_completed_focus = GRE_provide_artillery_ship_support
+			}
 
-		allowed = {
+			allowed = {
 				original_tag = GRE
 			}
 			research_bonus = {

@@ -17,6 +17,7 @@ country_event = {
 		}
 		set_country_flag = pmd_over
 		custom_effect_tooltip = GRE_4
+		custom_effect_tooltip = GRE_ignore_strikes
 		set_party_name = {
 			ideology = democratic
 			long_name = GRE_democratic_metaxas_long
@@ -1312,6 +1313,7 @@ country_event = {
 			factor = 33
 		}
 		custom_effect_tooltip = GRE_1
+		set_country_flag = GRE_fascist_path
 		set_country_flag = GRE_kondylis_pm
 	    set_party_name = {
 		   ideology = fascism
