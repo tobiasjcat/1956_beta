@@ -9,7 +9,10 @@ GRE_army_reform_category = {
 	}
 
     visible = {
-      has_completed_focus = GRE_army_reform
+        OR = { 
+            has_idea = GRE_desperate_need_of_reform
+            has_idea = GRE_desperate_need_of_reform_2
+        }
 	}
 }
 

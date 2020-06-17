@@ -198,7 +198,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	add_ideas = GRE_protection_services
+		  	custom_effect_tooltip = GRE_security_tt
 		  	hidden_effect = {
 				division_template = {
 					name = "Security Battalions"
@@ -286,7 +286,22 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	add_ideas = GRE_labour_for_the_state
+		  	random_owned_controlled_state = {
+            	add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                  	type = arms_factory
+                  	level = 2
+                  	instant_build = yes
+              	}
+         	}
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }	
 		}
 	}
 
@@ -323,7 +338,7 @@ focus_tree = {
                   	level = 2
                   	instant_build = yes
               	}
-         	 }
+         	}
             random_owned_controlled_state = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
@@ -453,8 +468,7 @@ focus_tree = {
 	focus = {
 		id = GRE_join_axis
 		icon = GFX_goal_generic_german_assistance
-		prerequisite = { focus = GRE_german_military_mission}
-		prerequisite = { focus = GRE_exploit_natural_wealth}
+		prerequisite = { focus = GRE_german_military_mission focus = GRE_exploit_natural_wealth}
 		relative_position_id = GRE_german_military_mission
 		x = -1
 		y = 1
@@ -791,8 +805,8 @@ focus_tree = {
                   type = arms_factory
                   level = 1
                   instant_build = yes
-              }
-          }
+              	}
+          	}
             random_owned_controlled_state = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
@@ -1792,8 +1806,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-    	add_ideas = GRE_eliminate_radical_wings
-		add_war_support = 0.1
+    	add_popularity = { ideology = democratic popularity = 0.15 }
+		add_war_support = 0.15
  	}
 }
 
@@ -1853,7 +1867,23 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	  	add_ideas = GRE_reintroduce_gold_sytem
+	  	add_political_power = 150
+	  	random_owned_controlled_state = {
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+     	}
+     	random_owned_controlled_state = {
+        	add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = arms_factory
+                level = 1
+                instant_build = yes
+            }
+        }
 	}
 }
 
@@ -1878,8 +1908,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	 	add_stability = 0.1
-	 	add_political_power = 250
+	 	add_stability = 0.15
 	}
 }
 
@@ -2065,7 +2094,36 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_ideas = GRE_negotiate_with_trade_unions
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -2146,9 +2204,7 @@ focus = {
 focus = {
 	id = GRE_constituional_revisage
 	icon = GFX_goal_consitution
-	prerequisite = { focus = GRE_instituion_of_womens_sufferage}
-	prerequisite = { focus = GRE_education_reform}
-	prerequisite = { focus = GRE_negotiate_with_trade_unions}
+	prerequisite = { focus = GRE_instituion_of_womens_sufferage focus = GRE_negotiate_with_trade_unions focus = GRE_education_reform}
 	x = 1
 	y = 1
 	relative_position_id = GRE_instituion_of_womens_sufferage
@@ -2288,7 +2344,12 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_ideas = GRE_worker_protection
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+		}
 	}
 }
 
@@ -2346,7 +2407,6 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_war_support = 0.15
 		random_owned_controlled_state = {
     		add_extra_state_shared_building_slots = 1
     		add_building_construction = {
@@ -2386,7 +2446,6 @@ focus = {
 
     completion_reward = {
 		add_political_power = 250
-		add_stability = 0.05
 		swap_ideas = {
 			remove_idea = GRE_divided_nation
 			add_idea = GRE_divided_nation_2
@@ -2414,7 +2473,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_ideas = GRE_direct_taxes
+		add_stability = 0.15
 	}
 }
 
@@ -2437,15 +2496,15 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_ideas = GRE_womens_sufferage
+		add_popularity = { ideology = democracy popularity = 0.1 }
+		add_war_support = 0.1
 	}
 }
 
 focus = {
 	id = GRE_proportional_elections
 	icon = GFX_goal_generic_election
-	prerequisite = { focus = GRE_womens_sufferage }
-	prerequisite = { focus = GRE_modernize_judiciary_system}
+	prerequisite = { focus = GRE_womens_sufferage focus = GRE_modernize_judiciary_system}
 	x = -1
 	y = 1
 	relative_position_id = GRE_womens_sufferage
@@ -2468,8 +2527,7 @@ focus = {
 focus = {
 	id = GRE_develope_wealth_producing_factors
 	icon = GFX_focus_generic_industry_3
-	prerequisite = { focus = GRE_worker_protection }
-	prerequisite = { focus = GRE_micro_ownership }
+	prerequisite = { focus = GRE_worker_protection focus = GRE_micro_ownership}
 	x = 0
 	y = 1
 	relative_position_id = GRE_micro_ownership

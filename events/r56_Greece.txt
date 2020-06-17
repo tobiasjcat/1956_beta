@@ -71,6 +71,7 @@ country_event = {
 		}
 		set_country_flag = pmd_over
 		custom_effect_tooltip = GRE_6
+		complete_national_focus = GRE_laikon_komma_supremacy
 		set_country_flag = GRE_panagis_tsaldaris_pm
 		kill_country_leader = yes
 		set_party_name = {
@@ -1281,12 +1282,17 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
+		complete_national_focus = GRE_laikon_komma_supremacy
 		set_country_flag = GRE_panagis_tsaldaris_pm
 	    set_party_name = {
 		   ideology = democratic
 		    long_name = GRE_laikon_komma_long
 		    name = GRE_laikon_komma
 	    }
+	    hidden_effect = {
+	  		GRE = { country_event = { days = 32 id = greece.41 } }
+	  		GRE = { country_event = { days = 32 id = greece.103 } }
+		}
 		create_country_leader = {
 			name = "Panagis Tsaldaris"
 			desc = "POLITICS_PANAGIS_TSALDARIS_DESC"
