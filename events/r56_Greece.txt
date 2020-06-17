@@ -1311,9 +1311,10 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
+		custom_effect_tooltip = GRE_1
 		set_country_flag = GRE_kondylis_pm
 	    set_party_name = {
-		   ideology = democratic
+		   ideology = fascism
 		    long_name = GRE_kondylis_long
 		    name = GRE_kondylis
 	    }
@@ -1322,17 +1323,23 @@ country_event = {
 			desc = "POLITICS_GEORGIOS_KONDYLIS_DESC"
 			picture = "r56_portrait_GRE_georgios_kondylis.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = fascism_ideology
 			traits = {
 				GRE_keravnos
 			}
 	    }
 
 	    hidden_effect = {
-			GRE = {
-				country_event = {
-					days = 77
-					id = greece.5
+			complete_national_focus = GRE_declare_a_national_emergency
+			if = {
+				limit = {
+					NOT = {
+						has_government = fascism
+					}
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
 				}
 			}
 		}

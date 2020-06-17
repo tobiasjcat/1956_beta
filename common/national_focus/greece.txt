@@ -64,16 +64,6 @@ focus_tree = {
 
 		available = {
       		has_country_flag = GRE_fascist_path
-			OR = {
-			    has_government = fascism
-			}
-		}
-
-		bypass = {
-      		has_country_flag = GRE_fascist_path
-			OR = {
-			    has_government = fascism
-			}
 		}
 
 		available_if_capitulated = no
@@ -2287,7 +2277,7 @@ focus = {
 	id = GRE_micro_ownership
 	icon = GFX_goal_generic_business_bills
 	prerequisite = { focus = GRE_shipping_banks }
-	prerequisite = { focus = GRE_direct_taxes }
+	prerequisite = { focus = GRE_direct_taxes focus = GRE_worker_protection}
 	x = 0
 	y = 2
 	relative_position_id = GRE_shipping_banks
@@ -2520,7 +2510,7 @@ focus = {
 focus = {
 	id = GRE_develope_wealth_producing_factors
 	icon = GFX_focus_generic_industry_3
-	prerequisite = { focus = GRE_worker_protection focus = GRE_micro_ownership}
+	prerequisite = { focus = GRE_micro_ownership}
 	x = 0
 	y = 1
 	relative_position_id = GRE_micro_ownership

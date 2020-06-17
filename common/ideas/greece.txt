@@ -2031,6 +2031,50 @@ ideas = {
 
 political_advisor = {
 
+	GRE_ioannis_rallis = {
+
+		picture = GRE_ioannis_rallis
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			has_completed_focus = GRE_declare_a_national_emergency
+		}
+		traits = { fascist_demagogue }
+	}
+
+	GRE_nikos_Zachariadis = {
+
+		picture = gre_nikos
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			has_completed_focus = GRE_aftermath_of_the_victory_of_the_people
+		}
+
+		traits = { communist_revolutionary }
+	}
+
+	GRE_themistoklis_sofoulis = {
+
+		picture = gre_sophoulis
+
+		allowed = {
+			original_tag = GRE
+		}
+
+		available = {
+			has_government = democratic
+		}
+
+		traits = { democratic_reformer }
+	}
+
   	GRE_georgios_papandreou = {
 
 	  	picture = GRE_georgios_papandreou
@@ -2104,11 +2148,11 @@ political_advisor = {
   		}
 
 	  	available = {
-			has_completed_focus = GRE_consolidate_republican_government
-     	 has_government = democratic
+			has_completed_focus = GRE_restart_politics
+     	 	has_government = democratic
 	  	}
 
-	 traits = { GRE_the_black_rider }
+	 	traits = { GRE_the_black_rider }
 	}
 
 	GRE_damaskinos = {
@@ -2126,50 +2170,6 @@ political_advisor = {
 		}
 
 		traits = { peace_proponent }
-	}
-
-	GRE_ioannis_rallis = {
-
-		picture = GRE_ioannis_rallis
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			has_completed_focus = GRE_national_union
-		}
-		traits = { fascist_demagogue }
-	}
-
-	GRE_nikos_Zachariadis = {
-
-		picture = gre_nikos
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			has_completed_focus = GRE_aftermath_of_the_victory_of_the_people
-		}
-
-		traits = { communist_revolutionary }
-	}
-
-	GRE_themistoklis_sofoulis = {
-
-		picture = gre_sophoulis
-
-		allowed = {
-			original_tag = GRE
-		}
-
-		available = {
-			has_completed_focus = GRE_democratic_approach
-		}
-
-		traits = { democratic_reformer }
 	}
 
 	GRE_kostas_kotzias = {
@@ -2219,7 +2219,7 @@ political_advisor = {
 		picture = GRE_grivas
 
 		available = {
-          has_completed_focus = GRE_royal_guards
+          has_completed_focus = GRE_monarchist_fervour
         }
 
 		allowed = {
