@@ -157,7 +157,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_communal_traditions
-		icon = GFX_r56_goal_generic_uprising
+		icon = GFX_r56_goal_generic_freedom
 		prerequisite = { focus = GRE_the_italian_model}
 		prerequisite = { focus = focus = GRE_disband_parliment}
 		relative_position_id = GRE_the_italian_model
@@ -287,18 +287,18 @@ focus_tree = {
 
    		completion_reward = {
 		  	random_owned_controlled_state = {
-            	add_extra_state_shared_building_slots = 2
+            	add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                   	type = arms_factory
-                  	level = 2
+                  	level = 1
                   	instant_build = yes
               	}
          	}
             random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = arms_factory
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
             }	
@@ -332,18 +332,18 @@ focus_tree = {
 		  	}
 
 		  	random_owned_controlled_state = {
-            	add_extra_state_shared_building_slots = 2
+            	add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                   	type = industrial_complex
-                  	level = 2
+                  	level = 1
                   	instant_build = yes
               	}
          	}
             random_owned_controlled_state = {
-                add_extra_state_shared_building_slots = 2
+                add_extra_state_shared_building_slots = 1
                 add_building_construction = {
                     type = industrial_complex
-                    level = 2
+                    level = 1
                     instant_build = yes
                 }
             }	
@@ -445,6 +445,13 @@ focus_tree = {
       		GER = {
       			NOT = { has_war_with = ROOT }
       			country_exists = GER
+      		}
+		}
+
+		bypass = {
+      		GER = {
+      		    has_war_with = ROOT 
+      			NOT = {country_exists = GER}
       		}
 		}
 
@@ -1957,10 +1964,7 @@ focus = {
 
 	available = {
       	has_country_flag = GRE_panagis_tsaldaris_pm
-	}
-
-	bypass = {
-      	has_country_flag = GRE_panagis_tsaldaris_pm
+      	has_country_flag = GRE_modern_flag
 	}
 
 	available_if_capitulated = no
@@ -2022,14 +2026,14 @@ focus = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
-					size > 2
+					size > 1
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2037,14 +2041,14 @@ focus = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
-					size > 2
+					size > 1
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2098,14 +2102,14 @@ focus = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
-					size > 2
+					size > 1
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2113,14 +2117,14 @@ focus = {
 			limit = {
 				free_building_slots = {
 					building = industrial_complex
-					size > 2
+					size > 1
 					include_locked = yes
 				}
 			}
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2196,7 +2200,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_ideas = GRE_instituion_of_womens_sufferage
+		add_ideas = GRE_womens_sufferage
 	}
 }
 
@@ -2239,10 +2243,7 @@ focus = {
 
 	available = {
       	has_country_flag = GRE_panagis_tsaldaris_pm
-	}
-
-	bypass = {
-      	has_country_flag = GRE_panagis_tsaldaris_pm
+      	has_country_flag = GRE_old_flag
 	}
 
 	available_if_capitulated = no
@@ -2314,14 +2315,6 @@ focus = {
                 instant_build = yes
             }
         }
-        random_owned_controlled_state = {
-            add_extra_state_shared_building_slots = 2
-            add_building_construction = {
-                type = arms_factory
-                level = 2
-                instant_build = yes
-            }
-        }	
 	}
 }
 
@@ -2496,7 +2489,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_popularity = { ideology = democracy popularity = 0.1 }
+		add_popularity = { ideology = democratic popularity = 0.1 }
 		add_war_support = 0.1
 	}
 }
@@ -2545,18 +2538,18 @@ focus = {
     completion_reward = {
 		remove_ideas = GRE_doomed_economy_3
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
 		random_owned_controlled_state = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = dockyard
-				level = 2
+				level = 1
 				instant_build = yes
 			}
 		}
@@ -2599,8 +2592,11 @@ focus = {
 	cancel_if_invalid = yes
 
     completion_reward = {
-		FRA = {
-			country_event = { id = greece.89 hours = 4}
+		custom_effect_tooltip = GRE_french_investment_tt
+		hidden_effect = {
+			FRA = {
+				country_event = { id = greece.89 hours = 4}
+			}
 		}
 	}
 }
@@ -2641,8 +2637,11 @@ focus = {
 	cancel_if_invalid = yes
 
     completion_reward = {
-		ENG = {
-			country_event = { id = greece.92 hours = 4}
+		custom_effect_tooltip = GRE_british_investment_tt
+		hidden_effect = {
+			ENG = {
+				country_event = { id = greece.92 hours = 4}
+			}
 		}
 	}
 }
@@ -2683,8 +2682,11 @@ focus = {
 	cancel_if_invalid = yes
 
     completion_reward = {
-		USA = {
-			country_event = { id = greece.95 hours = 4}
+		custom_effect_tooltip = GRE_american_investment_tt
+		hidden_effect = {
+			USA = {
+				country_event = { id = greece.95 hours = 4}
+			}
 		}
 	}
 }
