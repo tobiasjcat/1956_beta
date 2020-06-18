@@ -73,28 +73,17 @@ focus_tree = {
 					has_capitulated = no
 					country_exists = yes
 				}
-				SOV = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-					country_exists = yes
-				}
 			}
 		}
 
 		bypass = {
 			OR = {
-      			has_completed_focus = GRE_buy_sov_guns
       			ENG = {
 				    has_war_with = ROOT 
 					has_capitulated = no
 					country_exists = no
 				}
       			GER = {
-				    has_war_with = ROOT 
-					has_capitulated = no
-					country_exists = no
-				}
-				SOV = {
 				    has_war_with = ROOT 
 					has_capitulated = no
 					country_exists = no
@@ -121,14 +110,6 @@ focus_tree = {
 					producer = ENG
 				}
 			}
-			if = {
-		  		limit = { has_government = communism}
-		  		add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 3000
-					producer = SOV
-				}
-		  	}
 		}
 	}
 
@@ -247,7 +228,7 @@ focus_tree = {
 		  	add_tech_bonus = {
 				name = GRE_international_pilot_training
 				bonus = 1
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -552,7 +533,7 @@ focus_tree = {
             add_tech_bonus = {
                 name = GRE_doctrine_modernization
                 bonus = 1
-                uses = 1
+                uses = 2
                 category = land_doctrine
             }
 		}
@@ -583,13 +564,7 @@ focus_tree = {
 				name = GRE_protectionist_policies
 				category = industry
 				uses = 2
-				bonus = 1.5
-			}	
-			add_tech_bonus = {
-				name = GRE_protectionist_policies
-				category = construction_tech
-				uses = 2
-				bonus = 1.5
+				bonus = 1
 			}	
 		}
 	}
@@ -793,7 +768,7 @@ focus_tree = {
 				name = GRE_dabble_in_telecommunications
 				category = electronics
 				uses = 2
-				bonus = 1.5
+				bonus = 1
 			}
 			random_owned_controlled_state = {
     			add_extra_state_shared_building_slots = 1
@@ -904,7 +879,7 @@ focus_tree = {
 		prerequisite = { focus = GRE_continue_agricultural_developements }
 		prerequisite = { focus = GRE_war_loans }
 		relative_position_id = GRE_continue_agricultural_developements
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 10
@@ -955,17 +930,6 @@ focus_tree = {
 						}
 						set_state_flag = GRE_polymer_corporation_1
 					}
-					random_owned_controlled_state = {
-						prioritize = { 186 }
-						limit = {
-						}
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-							type = synthetic_refinery
-							level = 1
-							instant_build = yes
-						}
-					}
 				}
 				else = {
 					add_tech_bonus = {
@@ -992,23 +956,38 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			random_owned_controlled_state = {
-				prioritize = { 186 }
-				limit = {
-					free_building_slots = {
-						building = synthetic_refinery
-						size > 0
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = GRE_school_for_industrial_studies
+		icon = GFX_goal_research_silver
+		prerequisite = { focus = GRE_continue_agricultural_developements }
+		prerequisite = { focus = GRE_war_loans }
+		relative_position_id = GRE_war_loans
+		x = 0
+		y = 1
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		  	add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {
@@ -1374,7 +1353,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	add_research_slot = 1
+		  	add_ideas = GRE_tradional_education
 		}
 	}
 
@@ -2677,6 +2656,11 @@ focus = {
 			  	name = GRE_democratic_party_liberal
 		  	}
 
+		  	swap_ideas = {
+		  		remove_idea = GRE_doomed_economy
+		  		add_idea = GRE_doomed_economy_2
+		  	}
+
 		  	custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = GRE_nikolaos_plastiras
 		 
@@ -2825,7 +2809,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-	  	remove_ideas = GRE_doomed_economy
+	  	remove_ideas = GRE_doomed_economy_2
 	  	random_owned_controlled_state = {
             add_extra_state_shared_building_slots = 1
             add_building_construction = {
@@ -3026,7 +3010,7 @@ focus = {
 	available_if_capitulated = no
 
     completion_reward = {
-		add_research_slot = 1
+		add_ideas = GRE_education_reform
 	}
 }
 
@@ -3237,7 +3221,6 @@ focus = {
 focus = {
 	id = GRE_micro_ownership
 	icon = GFX_goal_generic_business_bills
-	prerequisite = { focus = GRE_shipping_banks }
 	prerequisite = { focus = GRE_direct_taxes focus = GRE_worker_protection}
 	x = 0
 	y = 2

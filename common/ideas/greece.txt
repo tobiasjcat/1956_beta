@@ -143,6 +143,50 @@ ideas = {
 		}
 	}
 
+	GRE_tradional_education = {
+
+		name = GRE_tradional_education
+
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_local_self_management
+
+		modifier = {
+			research_speed_factor = 0.02
+		}
+	}
+
+	GRE_education_reform = {
+
+		name = GRE_education_reform
+
+		allowed = {
+			original_tag = GRE
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		picture = generic_local_self_management
+
+		modifier = {
+			research_speed_factor = 0.025
+		}
+	}
+
 	GRE_teacher_slaries = {
 
 		name = GRE_teacher_slaries
@@ -161,7 +205,7 @@ ideas = {
 		picture = generic_local_self_management
 
 		modifier = {
-			research_speed_factor = 0.03
+			political_power_gain = 0.1
 			drift_defence_factor = 0.15
 		}
 	}
