@@ -50,48 +50,38 @@ focus_tree = {
 #
 #		}
 #	}
-
+	
 	focus = {
-		id = GRE_import_foreign_weaponry
-		icon = GFX_goal_generic_gun_purchase
-		prerequisite = { focus = GRE_doctrine_modernization}
-		relative_position_id = GRE_doctrine_modernization
-		x = 1
-		y = 1
+		id = GRE_doctrine_modernization
+		icon = GFX_focus_GRE_stratiotiko_epitelio
+		x = 51
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
 
 		available = {
-      		CZE = {
-				NOT = { has_war_with = ROOT }
-				has_capitulated = no
-			}
-			country_exists = CZE
+      		
 		}
 
 		bypass = {
-      		OR = {
-      			CZE = {
-					has_war_with = ROOT 
-					has_capitulated = no
-				}
-				NOT = {country_exists = CZE}
-			}	
+			
 		}
 
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 3000
-				producer = CZE
-			}
+		  	army_experience = 15
+            add_tech_bonus = {
+                name = GRE_doctrine_modernization
+                bonus = 1
+                uses = 2
+                category = land_doctrine
+            }
 		}
 	}
-
+	
 	focus = {
 		id = GRE_focus_on_ground_support_tactics
 		icon = GFX_focus_usa_escort_fighters
@@ -187,8 +177,8 @@ focus_tree = {
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = GRE_focus_on_ground_support_tactics}
 		relative_position_id = GRE_focus_on_ground_support_tactics
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -214,14 +204,87 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GRE_import_foreign_weaponry
+		icon = GFX_goal_generic_gun_purchase
+		prerequisite = { focus = GRE_doctrine_modernization}
+		relative_position_id = GRE_doctrine_modernization
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		CZE = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
+			}
+			country_exists = CZE
+		}
+
+		bypass = {
+      		OR = {
+      			CZE = {
+					has_war_with = ROOT 
+					has_capitulated = no
+				}
+				NOT = {country_exists = CZE }
+			}	
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 3000
+				producer = CZE
+			}
+		}
+	}
+	
+	focus = {
+		id = GRE_standardize_artillery
+		icon = GFX_goal_generic_army_mobilization2
+		prerequisite = { focus = GRE_import_foreign_weaponry }
+		relative_position_id = GRE_import_foreign_weaponry
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_tech_bonus = {
+                name = GRE_standardize_artillery
+                bonus = 1
+                uses = 2
+                category = artillery
+            }
+		}
+	}
 
 	focus = {
 		id = GRE_provide_artillery_ship_support
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = GRE_doctrine_modernization}
 		relative_position_id = GRE_doctrine_modernization
-		x = 3
-		y = 1
+		x = 4
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -261,7 +324,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GRE_provide_artillery_ship_support}
 		relative_position_id = GRE_provide_artillery_ship_support
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -294,7 +357,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = GRE_provide_artillery_ship_support}
 		relative_position_id = GRE_provide_artillery_ship_support
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -380,9 +443,9 @@ focus_tree = {
 	focus = {
 		id = GRE_desert_equipment
 		icon = GFX_goal_r56_generic_desert_warfare
-		prerequisite = { focus = GRE_costal_protection focus = GRE_international_pilot_training focus = GRE_doctrine_modernization}
-		relative_position_id = GRE_international_pilot_training
-		x = 1
+		prerequisite = {  focus = GRE_uniform_standardization }
+		relative_position_id = GRE_uniform_standardization
+		x = -1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -418,9 +481,9 @@ focus_tree = {
 	focus = {
 		id = GRE_mountaineers
 		icon = GFX_goal_r56_generic_mountain_warfare
-		prerequisite = { focus = GRE_uniform_standardization}
+		prerequisite = { focus = GRE_uniform_standardization }
 		relative_position_id = GRE_uniform_standardization
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -482,42 +545,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRE_doctrine_modernization
-		icon = GFX_focus_GRE_stratiotiko_epitelio
-		x = 51
-		y = 0
-		cost = 10
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-      		
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-		  	army_experience = 15
-            add_tech_bonus = {
-                name = GRE_doctrine_modernization
-                bonus = 1
-                uses = 2
-                category = land_doctrine
-            }
-		}
-	}
-
-	focus = {
 		id = GRE_uniform_standardization
 		icon = GFX_goal_manpower
-		prerequisite = { focus = GRE_provide_artillery_ship_support}
-		relative_position_id = GRE_provide_artillery_ship_support
-		x = -1
+		prerequisite = { focus = GRE_import_foreign_weaponry }
+		relative_position_id = GRE_import_foreign_weaponry
+		x = 0
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -547,9 +579,9 @@ focus_tree = {
 	focus = {
 		id = GRE_attempt_at_mechanization
 		icon = GFX_goal_generic_modernizing_the_cavalry
-		prerequisite = { focus = GRE_international_pilot_training focus = GRE_signal_corp}
-		relative_position_id = GRE_international_pilot_training
-		x = -1
+		prerequisite = {  focus = GRE_signal_corp }
+		relative_position_id = GRE_signal_corp
+		x = 1
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -572,38 +604,6 @@ focus_tree = {
                 bonus = 1
                 uses = 2
                 category = motorized_equipment
-            }
-		}
-	}
-
-	focus = {
-		id = GRE_standardize_artillery
-		icon = GFX_goal_generic_army_mobilization2
-		prerequisite = { focus = GRE_uniform_standardization }
-		relative_position_id = GRE_uniform_standardization
-		x = 2
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-      		
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-		  	add_tech_bonus = {
-                name = GRE_standardize_artillery
-                bonus = 1
-                uses = 2
-                category = artillery
             }
 		}
 	}
