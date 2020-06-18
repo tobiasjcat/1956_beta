@@ -54,61 +54,38 @@ focus_tree = {
 	focus = {
 		id = GRE_import_foreign_weaponry
 		icon = GFX_goal_generic_gun_purchase
-		x = 51
-		y = 0
+		prerequisite = { focus = GRE_doctrine_modernization focus = GRE_provide_artillery_ship_support focus = GRE_focus_on_ground_support_tactics}
+		relative_position_id = GRE_doctrine_modernization
+		x = 0
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
 
 		available = {
-      		OR = {
-      			ENG = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-					country_exists = yes
-				}
-      			GER = {
-					NOT = { has_war_with = ROOT }
-					has_capitulated = no
-					country_exists = yes
-				}
+      		CZE = {
+				NOT = { has_war_with = ROOT }
+				has_capitulated = no
 			}
+			country_exists = CZE
 		}
 
 		bypass = {
-			OR = {
-      			ENG = {
-				    has_war_with = ROOT 
-					has_capitulated = no
-					country_exists = no
-				}
-      			GER = {
-				    has_war_with = ROOT 
-					has_capitulated = no
-					country_exists = no
-				}
+      		CZE = {
+				has_war_with = ROOT 
+				has_capitulated = no
 			}
+			NOT = {country_exists = CZE}
 		}
 
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	if = {
-		  		limit = { has_government = fascism}
-		  		add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 3000
-					producer = GER
-				}
-		  	}
-			if = {
-		  		limit = { OR = {has_government = democratic has_government = neutrality}}
-		  		add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 3000
-					producer = ENG
-				}
+		  	add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 3000
+				producer = CZE
 			}
 		}
 	}
@@ -116,8 +93,8 @@ focus_tree = {
 	focus = {
 		id = GRE_focus_on_ground_support_tactics
 		icon = GFX_focus_usa_escort_fighters
-		prerequisite = { focus = GRE_import_foreign_weaponry}
-		relative_position_id = GRE_import_foreign_weaponry
+		prerequisite = { focus = GRE_doctrine_modernization}
+		relative_position_id = GRE_doctrine_modernization
 		x = -1
 		y = 1
 		cost = 5
@@ -161,16 +138,16 @@ focus_tree = {
       		ENG = {
 				NOT = { has_war_with = ROOT }
 				has_capitulated = no
-				country_exists = yes
 			}
+			country_exists = ENG
 		}
 
 		bypass = {
       		ENG = {
 				has_war_with = ROOT 
 				has_capitulated = no
-				country_exists = no
 			}
+			NOT = {country_exists = ENG}
 		}
 
 		available_if_capitulated = no
@@ -237,8 +214,8 @@ focus_tree = {
 	focus = {
 		id = GRE_provide_artillery_ship_support
 		icon = GFX_focus_generic_destroyer
-		prerequisite = { focus = GRE_import_foreign_weaponry}
-		relative_position_id = GRE_import_foreign_weaponry
+		prerequisite = { focus = GRE_doctrine_modernization}
+		relative_position_id = GRE_doctrine_modernization
 		x = 1
 		y = 1
 		cost = 10
@@ -437,7 +414,7 @@ focus_tree = {
 	focus = {
 		id = GRE_mountaineers
 		icon = GFX_goal_r56_generic_mountain_warfare
-		prerequisite = { focus = GRE_desert_equipment }
+		prerequisite = { focus = GRE_desert_equipment focus = GRE_uniform_standardization}
 		relative_position_id = GRE_desert_equipment
 		x = 1
 		y = 1
@@ -469,7 +446,7 @@ focus_tree = {
 	focus = {
 		id = GRE_indegenious_desgins
 		icon = GFX_goal_generic_foreign_diplomacy
-		prerequisite = { focus = GRE_desert_equipment }
+		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization}
 		relative_position_id = GRE_desert_equipment
 		x = -1
 		y = 1
@@ -495,7 +472,7 @@ focus_tree = {
                 name = GRE_indegenious_desgins
                 bonus = 1
                 uses = 1
-                category = infantry_weapons
+                category = anti_tank_infantry_weapons
             }
             add_tech_bonus = {
                 name = GRE_indegenious_desgins
@@ -509,10 +486,8 @@ focus_tree = {
 	focus = {
 		id = GRE_doctrine_modernization
 		icon = GFX_focus_GRE_stratiotiko_epitelio
-		prerequisite = { focus = GRE_import_foreign_weaponry focus = GRE_provide_artillery_ship_support focus = GRE_focus_on_ground_support_tactics}
-		relative_position_id = GRE_import_foreign_weaponry
-		x = 0
-		y = 2
+		x = 51
+		y = 0
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -538,6 +513,142 @@ focus_tree = {
             }
 		}
 	}
+
+	focus = {
+		id = GRE_uniform_standardization
+		icon = GFX_goal_manpower
+		prerequisite = { focus = GRE_costal_protection focus = GRE_standardize_artillery}
+		relative_position_id = GRE_costal_protection
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+   			add_tech_bonus = {
+                name = GRE_uniform_standardization
+                bonus = 1
+                uses = 2
+                category = infantry_weapons
+            }
+		}
+	}
+
+	focus = {
+		id = GRE_attempt_at_mechanization
+		icon = GFX_goal_mechanized_offensive
+		prerequisite = { focus = GRE_international_pilot_training focus = GRE_signal_corp}
+		relative_position_id = GRE_international_pilot_training
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_tech_bonus = {
+                name = GRE_attempt_at_mechanization
+                bonus = 1
+                uses = 2
+                category = cat_mechanized_equipment
+            }
+		}
+	}
+
+	focus = {
+		id = GRE_standardize_artillery
+		icon = GFX_goal_generic_army_mobilization2
+		prerequisite = { focus = GRE_convoy_tactics }
+		relative_position_id = GRE_convoy_tactics
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_tech_bonus = {
+                name = GRE_standardize_artillery
+                bonus = 1
+                uses = 2
+                category = artillery
+            }
+		}
+	}
+
+	focus = {
+		id = GRE_signal_corp
+		icon = GFX_goal_generic_radio_development
+		prerequisite = { focus = GRE_plane_purchase}
+		relative_position_id = GRE_plane_purchase
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_tech_bonus = {
+                name = GRE_signal_corp
+                bonus = 1
+                uses = 1
+                category = signal_company_tech
+            }
+            add_tech_bonus = {
+                name = GRE_signal_corp
+                bonus = 1
+                uses = 1
+                category = engineers_tech
+            }
+		}
+	}
+
+
 
 	focus = {
 		id = GRE_protectionist_policies

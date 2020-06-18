@@ -274,6 +274,10 @@
  GRE_continue_agricultural_developements:0 "Continue Agricultural Developements"
  GRE_war_loans:0 "Withdraw Defense Loans"
  GRE_school_for_industrial_studies:0 "Fund the School for Industrial Studies"
+ GRE_attempt_at_mechanization:0 "Attempt at Mechanization"
+ GRE_standardize_artillery:0 "Standardize Artillery"
+ GRE_signal_corp:0 "Found the Signal Corp"
+ GRE_uniform_standardization:0 "Uniform Standardization"
 
 
 
