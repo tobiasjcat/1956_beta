@@ -54,10 +54,10 @@ focus_tree = {
 	focus = {
 		id = GRE_import_foreign_weaponry
 		icon = GFX_goal_generic_gun_purchase
-		prerequisite = { focus = GRE_doctrine_modernization focus = GRE_provide_artillery_ship_support focus = GRE_focus_on_ground_support_tactics}
+		prerequisite = { focus = GRE_doctrine_modernization}
 		relative_position_id = GRE_doctrine_modernization
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -220,7 +220,7 @@ focus_tree = {
 		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = GRE_doctrine_modernization}
 		relative_position_id = GRE_doctrine_modernization
-		x = 1
+		x = 3
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -261,7 +261,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GRE_provide_artillery_ship_support}
 		relative_position_id = GRE_provide_artillery_ship_support
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -294,8 +294,8 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = GRE_provide_artillery_ship_support}
 		relative_position_id = GRE_provide_artillery_ship_support
-		x = 0
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -351,8 +351,8 @@ focus_tree = {
 	focus = {
 		id = GRE_coordinate_the_army_and_navy_air_service
 		icon = GFX_goal_GRE_royal_air_force
-		prerequisite = { focus = GRE_indegenious_desgins focus = GRE_mountaineers}
-		relative_position_id = GRE_indegenious_desgins
+		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization focus = GRE_mountaineers}
+		relative_position_id = GRE_desert_equipment
 		x = 1
 		y = 1
 		cost = 5
@@ -418,9 +418,9 @@ focus_tree = {
 	focus = {
 		id = GRE_mountaineers
 		icon = GFX_goal_r56_generic_mountain_warfare
-		prerequisite = { focus = GRE_desert_equipment focus = GRE_uniform_standardization}
-		relative_position_id = GRE_desert_equipment
-		x = 1
+		prerequisite = { focus = GRE_uniform_standardization}
+		relative_position_id = GRE_uniform_standardization
+		x = 0
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -450,7 +450,7 @@ focus_tree = {
 	focus = {
 		id = GRE_indegenious_desgins
 		icon = GFX_goal_generic_foreign_diplomacy
-		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization}
+		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization focus = GRE_mountaineers}
 		relative_position_id = GRE_desert_equipment
 		x = -1
 		y = 1
@@ -515,10 +515,10 @@ focus_tree = {
 	focus = {
 		id = GRE_uniform_standardization
 		icon = GFX_goal_manpower
-		prerequisite = { focus = GRE_costal_protection}
-		relative_position_id = GRE_costal_protection
-		x = 1
-		y = 1
+		prerequisite = { focus = GRE_provide_artillery_ship_support}
+		relative_position_id = GRE_provide_artillery_ship_support
+		x = -1
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 15
@@ -581,7 +581,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_mobilization2
 		prerequisite = { focus = GRE_uniform_standardization }
 		relative_position_id = GRE_uniform_standardization
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -651,7 +651,7 @@ focus_tree = {
 	focus = {
 		id = GRE_protectionist_policies
 		icon = GFX_goal_generic_state_economy
-		x = 58
+		x = 60
 		y = 0
 		cost = 10
 		ai_will_do = {
