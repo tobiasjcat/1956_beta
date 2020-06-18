@@ -1076,3 +1076,26 @@ defined_text = {
 		localization_key = pak_neutral
 	}
 }
+
+defined_text = { # Country
+	name = GetPlanePurchaseName
+	text = {
+		trigger = {
+			ENG = {
+				has_government = communism
+			}
+		}
+		localization_key = GRE_COMMUNIST_PLANE_PURCHASE_NAME
+	}
+	text = {
+		trigger = {
+			ENG = {
+				has_government = democratic
+			}
+		}
+		localization_key = GRE_DEMOCRATIC_PLANE_PURCHASE_NAME
+	}
+	text = {
+		localization_key = GRE_PLANE_PURCHASE_NAME
+	}
+}

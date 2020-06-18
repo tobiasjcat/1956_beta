@@ -72,11 +72,13 @@ focus_tree = {
 		}
 
 		bypass = {
-      		CZE = {
-				has_war_with = ROOT 
-				has_capitulated = no
-			}
-			NOT = {country_exists = CZE}
+      		OR = {
+      			CZE = {
+					has_war_with = ROOT 
+					has_capitulated = no
+				}
+				NOT = {country_exists = CZE}
+			}	
 		}
 
 		available_if_capitulated = no
@@ -143,11 +145,13 @@ focus_tree = {
 		}
 
 		bypass = {
-      		ENG = {
-				has_war_with = ROOT 
-				has_capitulated = no
+      		OR = {
+      			ENG = {
+					has_war_with = ROOT 
+					has_capitulated = no
+				}
+				NOT = {country_exists = ENG}
 			}
-			NOT = {country_exists = ENG}
 		}
 
 		available_if_capitulated = no
@@ -474,12 +478,6 @@ focus_tree = {
                 uses = 1
                 category = anti_tank_infantry_weapons
             }
-            add_tech_bonus = {
-                name = GRE_indegenious_desgins
-                bonus = 1
-                uses = 2
-                category = motorized_equipment
-            }
 		}
 	}
 
@@ -517,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = GRE_uniform_standardization
 		icon = GFX_goal_manpower
-		prerequisite = { focus = GRE_costal_protection focus = GRE_standardize_artillery}
+		prerequisite = { focus = GRE_costal_protection}
 		relative_position_id = GRE_costal_protection
 		x = 1
 		y = 1
@@ -548,7 +546,7 @@ focus_tree = {
 
 	focus = {
 		id = GRE_attempt_at_mechanization
-		icon = GFX_goal_mechanized_offensive
+		icon = GFX_goal_generic_modernizing_the_cavalry
 		prerequisite = { focus = GRE_international_pilot_training focus = GRE_signal_corp}
 		relative_position_id = GRE_international_pilot_training
 		x = -1
@@ -569,11 +567,11 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	add_tech_bonus = {
+		  	 add_tech_bonus = {
                 name = GRE_attempt_at_mechanization
                 bonus = 1
                 uses = 2
-                category = cat_mechanized_equipment
+                category = motorized_equipment
             }
 		}
 	}
@@ -581,8 +579,8 @@ focus_tree = {
 	focus = {
 		id = GRE_standardize_artillery
 		icon = GFX_goal_generic_army_mobilization2
-		prerequisite = { focus = GRE_convoy_tactics }
-		relative_position_id = GRE_convoy_tactics
+		prerequisite = { focus = GRE_uniform_standardization }
+		relative_position_id = GRE_uniform_standardization
 		x = 1
 		y = 1
 		cost = 10
