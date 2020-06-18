@@ -3023,6 +3023,7 @@ army_chief = {
 		chropei = {
 			allowed = { original_tag = GRE }
 			traits = { refinery_concern }
+			available = { has_completed_focus = GRE_polymer_effort}
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.1
 			}
