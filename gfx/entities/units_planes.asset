@@ -421,11 +421,7 @@ entity = {
 }
 
 # France
-entity = {
-	name = "FRA_fighter_equipment_0_entity"
-	clone = "fighter_equipment_0_entity"
-	version = 2
-}
+
 
 entity = {
 	name = "FRA_light_plane_entity"
