@@ -2831,7 +2831,7 @@ army_chief = {
 		}
 
 		GRE_konstantinos_davakis = {
-
+			ledger = army
 
 			allowed = {
 				original_tag = GRE

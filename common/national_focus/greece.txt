@@ -411,14 +411,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GRE_coordinate_the_army_and_navy_air_service
-		icon = GFX_goal_GRE_royal_air_force
-		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization focus = GRE_mountaineers}
-		relative_position_id = GRE_desert_equipment
-		x = 1
-		y = 1
-		cost = 5
+		focus = {
+		id = GRE_uniform_standardization
+		icon = GFX_goal_manpower
+		prerequisite = { focus = GRE_import_foreign_weaponry }
+		relative_position_id = GRE_import_foreign_weaponry
+		x = 0
+		y = 2
+		cost = 10
 		ai_will_do = {
 			factor = 15
 		}
@@ -434,9 +434,82 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	navy_experience = 5
-		  	army_experience = 10
-		  	air_experience = 5
+   			add_tech_bonus = {
+                name = GRE_uniform_standardization
+                bonus = 1
+                uses = 2
+                category = infantry_weapons
+            }
+		}
+	}
+
+	focus = {
+		id = GRE_signal_corp
+		icon = GFX_goal_generic_radio_development
+		prerequisite = { focus = GRE_plane_purchase}
+		relative_position_id = GRE_plane_purchase
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	add_tech_bonus = {
+                name = GRE_signal_corp
+                bonus = 1
+                uses = 1
+                category = signal_company_tech
+            }
+            add_tech_bonus = {
+                name = GRE_signal_corp
+                bonus = 1
+                uses = 1
+                category = engineers_tech
+            }
+		}
+	}
+
+	focus = {
+		id = GRE_attempt_at_mechanization
+		icon = GFX_goal_generic_modernizing_the_cavalry
+		prerequisite = {  focus = GRE_signal_corp }
+		relative_position_id = GRE_signal_corp
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	 add_tech_bonus = {
+                name = GRE_attempt_at_mechanization
+                bonus = 1
+                uses = 2
+                category = motorized_equipment
+            }
 		}
 	}
 
@@ -511,6 +584,35 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRE_coordinate_the_army_and_navy_air_service
+		icon = GFX_goal_GRE_royal_air_force
+		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization focus = GRE_mountaineers}
+		relative_position_id = GRE_desert_equipment
+		x = 1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+      		
+		}
+
+		bypass = {
+			
+		}
+
+		available_if_capitulated = no
+
+   		completion_reward = {
+		  	navy_experience = 5
+		  	army_experience = 10
+		  	air_experience = 5
+		}
+	}
+
+	focus = {
 		id = GRE_indegenious_desgins
 		icon = GFX_goal_generic_foreign_diplomacy
 		prerequisite = { focus = GRE_desert_equipment focus = GRE_attempt_at_mechanization focus = GRE_mountaineers}
@@ -543,110 +645,6 @@ focus_tree = {
             }
 		}
 	}
-
-	focus = {
-		id = GRE_uniform_standardization
-		icon = GFX_goal_manpower
-		prerequisite = { focus = GRE_import_foreign_weaponry }
-		relative_position_id = GRE_import_foreign_weaponry
-		x = 0
-		y = 2
-		cost = 10
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-      		
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-   			add_tech_bonus = {
-                name = GRE_uniform_standardization
-                bonus = 1
-                uses = 2
-                category = infantry_weapons
-            }
-		}
-	}
-
-	focus = {
-		id = GRE_attempt_at_mechanization
-		icon = GFX_goal_generic_modernizing_the_cavalry
-		prerequisite = {  focus = GRE_signal_corp }
-		relative_position_id = GRE_signal_corp
-		x = 1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-      		
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-		  	 add_tech_bonus = {
-                name = GRE_attempt_at_mechanization
-                bonus = 1
-                uses = 2
-                category = motorized_equipment
-            }
-		}
-	}
-
-	focus = {
-		id = GRE_signal_corp
-		icon = GFX_goal_generic_radio_development
-		prerequisite = { focus = GRE_plane_purchase}
-		relative_position_id = GRE_plane_purchase
-		x = -1
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-      		
-		}
-
-		bypass = {
-			
-		}
-
-		available_if_capitulated = no
-
-   		completion_reward = {
-		  	add_tech_bonus = {
-                name = GRE_signal_corp
-                bonus = 1
-                uses = 1
-                category = signal_company_tech
-            }
-            add_tech_bonus = {
-                name = GRE_signal_corp
-                bonus = 1
-                uses = 1
-                category = engineers_tech
-            }
-		}
-	}
-
-
 
 	focus = {
 		id = GRE_protectionist_policies
@@ -1117,7 +1115,7 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	custome_effect_tooltip = GRE_bypass_tt
+		  	custom_effect_tooltip = GRE_bypass_tt
 		}
 	}
 
@@ -1197,7 +1195,7 @@ focus_tree = {
 		id = GRE_communal_traditions
 		icon = GFX_r56_goal_generic_freedom
 		prerequisite = { focus = GRE_the_italian_model}
-		prerequisite = { focus = focus = GRE_disband_parliment}
+		prerequisite = { focus = GRE_disband_parliment}
 		relative_position_id = GRE_the_italian_model
 		x = 1
 		y = 1
@@ -1241,7 +1239,7 @@ focus_tree = {
 				division_template = {
 					name = "Security Battalions"
 					priority = 2
-					division_names_group = GRE_INF_02
+					division_names_group = GRE_INF_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1347,7 +1345,7 @@ focus_tree = {
 		id = GRE_captial_and_industry
 		icon = GFX_r56_goal_FRA_alliance_with_industrialists
 		prerequisite = { focus = GRE_assembly_of_delegates}
-		prerequisite = { focus = focus = GRE_protection_services}
+		prerequisite = { focus = GRE_protection_services}
 		relative_position_id = GRE_assembly_of_delegates
 		x = 0
 		y = 2
@@ -1363,7 +1361,10 @@ focus_tree = {
 		available_if_capitulated = no
 
    		completion_reward = {
-		  	remove_idea = GRE_doomed_economy
+		  	hidden_effect = {
+		  		remove_ideas = GRE_doomed_economy
+		  	}
+
 		  	add_timed_idea = {
 		  		idea = GRE_doomed_economy_2
 				days = 60
@@ -1422,7 +1423,7 @@ focus_tree = {
 		id = GRE_safeguard_the_working_class
 		icon = GFX_goal_GRE_Safeguard_Workers
 		prerequisite = { focus = GRE_communal_traditions }
-		prerequisite = { focus = focus = GRE_protection_services}
+		prerequisite = { focus = GRE_protection_services}
 		relative_position_id = GRE_communal_traditions
 		x = -1
 		y = 1
@@ -2462,7 +2463,7 @@ focus = {
 		country_event = { id = greece.32 }
 		add_political_power = 100
 		set_rule = {
-            an_create_factions = yes
+            can_create_factions = yes
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -2842,7 +2843,7 @@ focus = {
 focus = {
 	id = GRE_eliminate_radical_wings
 	icon = GFX_goal_centralize_power
-	prerequisite = { focus = GRE_enosi_kentrou focus = GRE_idionimo focus = GRE_pangalos_dictatorship }
+	prerequisite = { focus = GRE_enosi_kentrou focus = GRE_idionimo }
 	x = -2
 	y = 2
 	relative_position_id = GRE_restart_politics
@@ -2883,14 +2884,14 @@ focus = {
 	completion_reward = {
 	  	custom_effect_tooltip = GRE_swap_tt
 	  	IF = {
-	  		limit = { has_completetd_focus = GRE_enosi_kentrou}
+	  		limit = { has_completed_focus = GRE_enosi_kentrou}
 	  		swap_ideas = {
 	  			remove_idea = GRE_enosi_kentrou
 	  			add_idea = GRE_readopt_1927_constituion_1
 	  		}
 	  	}
 	  	IF = {
-	  		limit = { has_completetd_focus = GRE_idionimo}
+	  		limit = { has_completed_focus = GRE_idionimo}
 	  		swap_ideas = {
 	  			remove_idea = GRE_idionimo
 	  			add_idea = GRE_readopt_1927_constituion_2
@@ -3927,7 +3928,7 @@ focus = {
     completion_reward = {
 		custom_effect_tooltip = GRE_balkan_pact_tt
 
-		hidden_effect_tooltip = {
+		hidden_effect = {
 			give_guarantee = TUR
 			give_guarantee = YUG
 			give_guarantee = ROM
@@ -3942,7 +3943,7 @@ focus = {
 	id = GRE_allied_membership
 	icon = GFX_focus_hol_the_fourth_ally
 	prerequisite = { focus = GRE_british_naval_cooperation }
-	mutually_exclusive = { focus = GRE_militarize_the_balkan_pact focus = GRE_join_entente}
+	mutually_exclusive = { focus = GRE_join_entente}
 	x = 1
 	y = 1
 	relative_position_id = GRE_british_naval_cooperation
@@ -3997,7 +3998,7 @@ focus = {
 focus = {
         id = GRE_aftermath_of_the_victory_of_the_people
         icon = GFX_focus_GRE_red_victory
-		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_national_security_concerns  focus = focus = GRE_declare_a_national_emergency}
+		mutually_exclusive = { focus = GRE_safeguard_democracy focus = GRE_national_security_concerns   focus = GRE_declare_a_national_emergency }
         x = 4
         y = 0
         cost = 10

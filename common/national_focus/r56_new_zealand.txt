@@ -1718,7 +1718,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_idea = NZL_protect_maori_land
+		add_ideas = NZL_protect_maori_land
 	}
 }
 

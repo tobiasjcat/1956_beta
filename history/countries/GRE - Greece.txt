@@ -18,7 +18,7 @@ add_ideas = {
 
 
 add_ideas = {
-  GRE_doomed_economy
+  	GRE_doomed_economy
 	GRE_desperate_need_of_reform
 	GRE_divided_nation
 }
