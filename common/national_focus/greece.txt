@@ -1704,6 +1704,10 @@ focus_tree = {
 
       	completion_reward = {
 		    add_ideas = GRE_metaxas_plan
+		    swap_ideas = {
+		    	remove_idea = GRE_doomed_economy
+		    	add_idea = GRE_doomed_economy_2
+		    }
 		}
 	}
 
@@ -1883,6 +1887,7 @@ focus_tree = {
       	completion_reward = {
 			add_stability = 0.05
 			add_ideas = GRE_popular_economic_measures
+			remove_ideas = GRE_doomed_economy_2
 			random_owned_controlled_state = {
 				limit = {
 					industrial_complex > 0
@@ -2638,7 +2643,7 @@ focus = {
 	            logistics_skill = 2
 				id = 750016
 	        }
-			country_event = { id = greece.86 }
+	        country_event = { id = greece.86 }
 	    }
     }
 
@@ -2942,9 +2947,7 @@ focus = {
 focus = {
 	id = GRE_venizelos_legacy
 	icon = GFX_goal_GRE_venizelos
-	prerequisite = { focus = GRE_eliminate_radical_wings }
-	prerequisite = { focus = GRE_reintroduce_gold_sytem }
-	prerequisite = { focus = GRE_readopt_1927_constituion }
+	prerequisite = { focus = GRE_eliminate_radical_wings focus = GRE_reintroduce_gold_sytem focus = GRE_readopt_1927_constituion}
 	x = 0
 	y = 1
 	relative_position_id = GRE_readopt_1927_constituion
@@ -4462,6 +4465,10 @@ focus = {
 
 			completion_reward = {
 				add_ideas = GRE_renewed_economic_plan
+				swap_ideas = {
+					remove_idea = GRE_doomed_economy
+					add_idea = GRE_doomed_economy_2
+				}
 				add_tech_bonus = {
 					name = industrial_bonus
 					bonus = 1
@@ -4548,6 +4555,7 @@ focus = {
 
 			completion_reward = {
 			swap_ideas = { remove_idea = GRE_controlled_stocks add_idea = GRE_enforced_nationalization }
+			remove_ideas = GRE_doomed_economy_2
 				IF = {	
 					limit = { has_idea = GRE_civil_war_exhaustion }
 						modify_timed_idea = {
