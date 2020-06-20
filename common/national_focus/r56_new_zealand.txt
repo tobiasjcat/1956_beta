@@ -1749,8 +1749,6 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_political_power = 150
-		
 		custom_effect_tooltip = available_political_advisor
         show_ideas_tooltip = NZL_walter_nash
 	}

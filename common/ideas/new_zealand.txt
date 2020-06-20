@@ -1242,8 +1242,8 @@ ideas = {
 			picture = generic_infantry_bonus
 
 			modifier = {
-				stability_factor = -0.08
-				political_power_gain = -0.08
+				stability_factor = -0.1
+				political_power_gain = -0.15
 			}
 		}
 		
