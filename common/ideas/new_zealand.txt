@@ -533,9 +533,7 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
-				consumer_goods_factor = -0.05
-				war_support_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
 		
@@ -833,7 +831,7 @@ ideas = {
 			modifier = {
 				democratic_drift = 0.05
 				democratic_acceptance = 10
-				conscription_factor = 0.1
+				conscription_factor = 0.025
 			}
 		}
 	
@@ -1311,7 +1309,7 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-				conscription_factor = 0.12
+				conscription_factor = 0.05
 			}
 		}
 		

@@ -111,6 +111,7 @@ country_event = {
 			long_name = NZL_democratic_national_long
 			name = NZL_democartic_Nzational
 		}
+		complete_national_focus = NZL_national_party_triumphant
 		create_country_leader = {
 				name = "Adam Hamilton"
 				desc = "POLITICS_Adam_Hamilton"
