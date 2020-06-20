@@ -281,7 +281,8 @@
  GRE_standardize_artillery:0 "Standardize Artillery"
  GRE_signal_corp:0 "Found the Signal Corp"
  GRE_uniform_standardization:0 "Uniform Standardization"
-
+ GRE_join_the_balkanic_revolution:0 "Join the Balkanic Revolution"
+ GRE_join_the_balkanic_revolution_desc:0 "As the socialist revolution has already been prepared in neighboring balkanic countries, let's join them and transform the region into a bulwark against reactionary bourgeois fascist forces."
 
 
  #Custom Tooltips

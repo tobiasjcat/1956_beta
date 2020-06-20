@@ -4570,13 +4570,22 @@ focus = {
 			id = GRE_ally_the_balkans
 			icon = GFX_goal_GRE_balkan_union
 			prerequisite = { focus = GRE_marxs_dream }
-			mutually_exclusive = { focus = GRE_befriend_sov }
+			mutually_exclusive = { focus = GRE_befriend_sov focus = GRE_join_the_balkanic_revolution}
 			relative_position_id = GRE_deal_with_klaras
 			x = -2
 			y = 3
 			cost = 10
 			ai_will_do = {
 				factor = 60
+				modifier = {
+					factor = 0
+					any_country = {
+						original_tag = YUG
+						has_government = communism
+						is_faction_leader = yes
+						has_capitulated = no
+					}
+				}				
 			}
 
 			available_if_capitulated = no
@@ -4585,6 +4594,108 @@ focus = {
 				set_rule = { can_create_factions = yes }
 				create_faction = communist_balkan_faction
 				country_event = greece.79
+			}
+			search_filters = { FOCUS_FILTER_POLITICAL }
+		}
+
+		focus = {
+			id = GRE_join_the_balkanic_revolution
+			icon = GFX_goal_GRE_balkan_union
+			prerequisite = { focus = GRE_marxs_dream }
+			mutually_exclusive = { focus = GRE_befriend_sov focus = GRE_ally_the_balkans }
+			relative_position_id = GRE_deal_with_klaras
+			x = -4
+			y = 3
+			cost = 10
+			ai_will_do = {
+				factor = 60
+			}
+
+			available = {
+				any_country = {
+					OR = {
+						original_tag = YUG
+						original_tag = TUR
+						original_tag = BUL
+						original_tag = ROM
+						original_tag = ALB
+					}
+					
+					has_government = communism
+					is_faction_leader = yes
+					has_capitulated = no
+				}				
+			}
+
+			available_if_capitulated = no
+
+			completion_reward = {
+				set_rule = { can_create_factions = yes }
+				if = {
+					limit = {
+						any_country = {
+							original_tag = YUG
+							has_government = communism
+							is_faction_leader = yes
+							has_capitulated = no
+						}						
+					}
+					YUG = {
+						country_event = generic.2
+					}					
+				}
+				else_if = {
+					limit = {
+						any_country = {
+							original_tag = ROM
+							has_government = communism
+							is_faction_leader = yes
+							has_capitulated = no
+						}						
+					}
+					ROM = {
+						country_event = generic.2
+					}					
+				}
+				else_if = {
+					limit = {
+						any_country = {
+							original_tag = BUL
+							has_government = communism
+							is_faction_leader = yes
+							has_capitulated = no
+						}						
+					}
+					BUL = {
+						country_event = generic.2
+					}					
+				}
+				else_if = {
+					limit = {
+						any_country = {
+							original_tag = TUR
+							has_government = communism
+							is_faction_leader = yes
+							has_capitulated = no
+						}						
+					}
+					TUR = {
+						country_event = generic.2
+					}					
+				}
+				else_if = {
+					limit = {
+						any_country = {
+							original_tag = ALB
+							has_government = communism
+							is_faction_leader = yes
+							has_capitulated = no
+						}						
+					}
+					ALB = {
+						country_event = generic.2
+					}					
+				}											
 			}
 			search_filters = { FOCUS_FILTER_POLITICAL }
 		}
@@ -5031,7 +5142,7 @@ focus = {
 			id = GRE_befriend_sov
 			icon = GFX_focus_chi_mission_to_the_soviet_union
 			prerequisite = { focus = GRE_marxs_dream }
-			mutually_exclusive = { focus = GRE_ally_the_balkans }
+			mutually_exclusive = { focus = GRE_ally_the_balkans focus = GRE_join_the_balkanic_revolution}
 			relative_position_id = GRE_deal_with_klaras
 			x = 4
 			y = 3
