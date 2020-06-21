@@ -1566,6 +1566,10 @@ focus_tree = {
 				y = 3
 				cost = 10
 
+				ai_will_do = {
+					factor = 150		
+				}				
+
 				completion_reward = {
 					add_research_slot = 1
 				}
@@ -1844,6 +1848,14 @@ focus_tree = {
 				x = 33
 				y = 4
 				cost = 10
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						num_of_factories > 50
+						factor = 100
+					}		
+				}
+
 
 				completion_reward = {
 					add_tech_bonus = {
@@ -1864,7 +1876,7 @@ focus_tree = {
 				cost = 10
 
 				ai_will_do = {
-					factor = 30		
+					factor = 150		
 				}
 
 				available = {
