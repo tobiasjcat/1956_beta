@@ -793,11 +793,15 @@ country_event = {
 		start_civil_war = {
 			ideology = fascism
 			capital = 279
+			size = 0.01
 			states = {
 				279
 			}
 		}
 		hidden_effect = {
+			ROOT = {
+				load_oob = "r56_chile_uprising_compensation_unit"
+			}
 			random_other_country = {
 				limit = {
 					original_tag = CHL
@@ -817,6 +821,28 @@ country_event = {
 					amount = 10
 					producer = CHL
 				}
+				create_field_marshal = {
+					name = "Jorge González von Marées"
+					portrait_path = "gfx/leaders/CHL/r56_Portrait_CHL_Jorge_Von_Marees.dds"
+					traits = { harsh_leader politically_connected media_personality }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
+				create_corps_commander = {
+					name = "José Luis Salazar Aedo"
+					portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+					traits = { politically_connected trait_cautious old_guard }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
 				delete_unit_template_and_units = {
 					division_template = "División de Infanteria"
 				}
@@ -862,7 +888,8 @@ country_event = {
 		hidden_effect = {
 			CHL = {
 				set_capital = 817
-				load_oob = r56_chile_major_uprising_counter
+				load_oob = "r56_chile_major_uprising_counter"
+				load_oob = "r56_chile_uprising_compensation_unit"
 				add_manpower = 4250
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
@@ -874,6 +901,7 @@ country_event = {
 		start_civil_war = {
 			ideology = fascism
 			capital = 279
+			size = 0.1
 			states = {
 				279
 			}
@@ -884,6 +912,8 @@ country_event = {
 					original_tag = CHL
 					has_government = fascism
 				}
+				#Only major uprising is given tag, not a mistake - SpicyAlfredo
+				set_country_flag = R56_chile_fascist_scw_given_tag 
 				set_technology = {
 					r56_militia_tech = 1
 				}
@@ -898,6 +928,28 @@ country_event = {
 					amount = 250
 					producer = CHL
 				}
+				create_field_marshal = {
+					name = "Jorge González von Marées"
+					portrait_path = "gfx/leaders/CHL/r56_Portrait_CHL_Jorge_Von_Marees.dds"
+					traits = { harsh_leader politically_connected media_personality }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
+				create_corps_commander = {
+					name = "José Luis Salazar Aedo"
+					portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+					traits = { politically_connected trait_cautious old_guard }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				}
+
 				delete_unit_template_and_units = {
 					division_template = "División de Infanteria"
 				}
@@ -923,14 +975,80 @@ country_event = {
 	id = chile.41
 	title = chile.41.t
 	desc = chile.41.d
-	picture = GFX_report_event_ger_civil_war
-	
-	is_triggered_only = yes
+	picture = GFX_military_coup_report
 
-	immediate = {
-		set_country_flag = r56_new_democratic_leader
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1941.11.25
+		ROOT = {
+			original_tag = CHL
+			exists = yes
+			has_government = democratic
+			NOT = {
+				has_country_flag = r56_chile_new_democratic_leader
+			}
+		}
 	}
+
+	immediate = { #The guys fucking dies, so funny :0
+		set_country_flag = r56_chile_new_democratic_leader
+	}
+
 	option = {
 		name = chile.41.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Juan Antonio Rios" #1941 democratic
+			desc = "POLITICS_CHILE_CERDA_DESC"
+			picture = "gfx/leaders/CHL/r56_Portrait_CHL_Juan_Antonio_Rios.dds"
+			expire = "1962.10.26"
+			ideology = socialism
+			traits = {
+				
+			}
+		}
+	}	
+}
+
+country_event = { #Same as above but hidden if not democratic 
+	id = chile.42
+	title = chile.42.t
+	desc = chile.42.d
+	picture = GFX_report_event_bul_kyoseivanov
+
+	fire_only_once = yes
+
+	hidden = yes
+	
+	trigger = {
+		date > 1941.11.25
+		ROOT = {
+			original_tag = CHL
+			exists = yes
+			NOT = {
+				has_government = democratic
+				has_country_flag = r56_chile_new_democratic_leader
+			}
+		}
+	}
+
+	immediate = { #The guys fucking dies but this time no one cares
+		set_country_flag = r56_chile_new_democratic_leader
+	}
+
+	option = {
+		name = chile.41.a
+		retire_ideology_leader = democratic
+		create_country_leader = {
+			name = "Juan Antonio Rios" #1941 democratic
+			desc = "POLITICS_CHILE_CERDA_DESC"
+			picture = "gfx/leaders/CHL/r56_Portrait_CHL_Juan_Antonio_Rios.dds"
+			expire = "1962.10.26"
+			ideology = socialism
+			traits = {
+				
+			}
+		}
 	}	
 }

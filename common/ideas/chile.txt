@@ -72,6 +72,12 @@ ideas = {
 				always = no
 			}
 
+		
+			available = {
+				has_war = no
+				NOT = { has_global_flag = r56_scw_our_own_ending_check }
+			}
+
 			removal_cost = -1
 			
 			modifier = {
@@ -110,7 +116,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.1
-				production_speed_buildings_factor = -0.15
+				production_speed_buildings_factor = -0.10
 				industrial_capacity_factory = -0.10
 			}
 			
@@ -126,8 +132,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
-				industrial_capacity_factory = -0.10
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
 			}
 			
 			picture = great_depression
@@ -142,7 +149,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.01
+				industrial_capacity_factory = -0.01
+				production_speed_buildings_factor = -0.01
 			}
 			
 			picture = great_depression
@@ -514,8 +523,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				fascism_drift = 0.05
-				drift_defence_factor = -0.05
+				fascism_drift = 0.10
+				drift_defence_factor = -0.10
 				stability_weekly = -0.001
 			}
 			
@@ -822,6 +831,17 @@ ideas = {
 	
 	political_advisor = {
 
+		CHL_generic_propaganda = {
+
+			picture = generic_political_advisor_europe_2
+				
+			allowed = {
+				original_tag = CHL
+			}
+			
+			traits = { propaganda_expert }
+		}
+
 		CHL_carlos_keller = {
 			picture = generic_political_advisor_europe_3
 			
@@ -833,9 +853,9 @@ ideas = {
 			}
 
 			ai_will_do = {
-				factor = 0
+				factor = 10
 				modifier = {
-					factor = 100
+					add = 200
 					has_completed_focus = CHL_the_spread_of_fascism
 				}
 			}
@@ -867,6 +887,10 @@ ideas = {
 	
 			ai_will_do = {
 				factor = 0
+				modifier = {
+					add = 50
+					is_historical_focus_on = no
+				}
 			}
 		}
 
@@ -893,7 +917,11 @@ ideas = {
 			}
 	
 			ai_will_do = {
-				factor = 0
+				factor = 50
+				modifier = {
+					add = 50
+					is_historical_focus_on = yes
+				}
 			}
 		}
 
