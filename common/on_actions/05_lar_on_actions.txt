@@ -1587,8 +1587,20 @@ on_actions = {
 					}
 					8 = { 
 						add_nationality = WLS
-					}				
-					64 = { 
+					}
+					2 = { 
+						add_nationality = AST
+					}
+					2 = { 
+						add_nationality = SAF
+					}
+					2 = { 
+						add_nationality = CAN
+					}					
+					1 = { 
+						add_nationality = NZL
+					}																			
+					57 = { 
 					
 					}
 				}																															
@@ -1719,7 +1731,7 @@ on_actions = {
 						add_nationality = SIC
 					}
 					75 = { 
-						add_nationality = SIC
+
 					}										
 				}																															
 			}
