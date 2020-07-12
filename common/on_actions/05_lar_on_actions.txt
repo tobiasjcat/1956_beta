@@ -1755,13 +1755,13 @@ on_actions = {
 					3 = {
 						add_nationality = ENG
 					}
-					5 = {
+					6 = {
 						add_nationality = GER
 					}
-					6 = {
+					8 = {
 						add_nationality = POL
 					}
-					3 = {
+					4 = {
 						add_nationality = BLR
 					}
 					3 = {
@@ -1776,10 +1776,10 @@ on_actions = {
 					1 = {
 						add_nationality = BEL
 					}
-					3 = {
+					4 = {
 						add_nationality = UKR
 					}
-					2 = {
+					3 = {
 						add_nationality = SOV
 					}
 					1 = {
@@ -1792,6 +1792,12 @@ on_actions = {
 						add_nationality = GRE
 					}
 					1 = {
+						add_nationality = SWE
+					}
+					1 = {
+						add_nationality = SWI
+					}										
+					1 = {
 						add_nationality = MOR
 					}
 					1 = {
@@ -1803,11 +1809,52 @@ on_actions = {
 					1 = {
 						add_nationality = ALG
 					}																																																																																					
-					63 = { 
+					55 = { 
 						
 					}
 				}																															
-			}																				
+			}
+			if = {
+				#add target nationality
+				limit = {
+					FROM = {
+						original_tag = GER
+					}					
+					has_nationality = GER
+				}
+				random_list = {
+					80 = {
+						
+					}
+					1 = { 
+						add_nationality = SLV
+					}
+					1 = { 
+						add_nationality = HUN
+					}
+					1 = { 
+						add_nationality = ROM
+					}
+					1 = { 
+						add_nationality = LIT
+					}
+					1 = { 
+						add_nationality = LAT
+					}
+					1 = { 
+						add_nationality = EST
+					}
+					1 = { 
+						add_nationality = POL
+					}
+					2 = { 
+						add_nationality = CZE
+					}																													
+					12 = { 
+						add_nationality = AUS
+					}					
+				}																															
+			}																							
 			if = {
 				#add target nationality
 				limit = {
