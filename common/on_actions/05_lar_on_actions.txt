@@ -2077,7 +2077,24 @@ on_actions = {
 
 					}
 				}																															
-			}																																												   						
+			}
+			if = {
+				#add target nationality
+				limit = {
+					has_nationality = NAV
+				}
+				random_list = {
+					20 = {
+						add_nationality = OCC
+					}
+					40 = {
+						add_nationality = SPR
+					}													
+					40 = { 
+
+					}
+				}																															
+			}																																																   						
 		}
 	}
 }
