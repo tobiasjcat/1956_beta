@@ -63,6 +63,7 @@
  exploit_derna_shale_mine:0 "Exploit the Derna Shale Mine"
  exploit_ticleni_oil_field:0 "Exploit the Ticleni Oil Field"
  exploit_sacel_oil_field:0 "Exploit the Sacel Oil Field"
+ exploit_yumen_oil_field:0 "Exploit Yumen's Oil Field"
  expand_yumen_oil_field:0 "Expand Yumen's Oil Field"
  develop_paraiba_tungsten_deposits:0 "Develop Paraïba Tungsten Deposists"
  develop_rio_grande_do_norte_tungsten_deposits:0 "Develop Rio Grande do Norte Tungsten Deposists"
@@ -94,6 +95,10 @@
  exploit_orenoque_iron:0 "Exploit Orenoque's Iron"
  exploit_cerro_san_isidro_iron:0 "Exploit Cerro San Isidro's Iron"
  stimulate_colorado_tungsten_production:0 "Stimulate Colorado Tungsten Production"
+ exploit_virginia_oil_field:0 "Exploit Lee County's oil"
+ exploit_dobrich_oil_field:0 "Exploit Dobrich Oil Field"
+ exploit_alaouite_mountains_chromium:0 "Exploit Alaouite Mountains Chromium"
+ exploit_damascene_iron:0 "Exploit Damascene Iron"
 
  open_kajaran_mine_wtt:0 "Open the Kajaran Mine" #change effect if copper is added
  extract_northern_armenia_deposits_wtt:0 "Exploit Northern Armenia's Aluminium"
@@ -132,7 +137,7 @@
  expand_trinidad_oil_wtt:0 "Expand Trinidad Oil"
  exploit_angolan_oil_fields_wtt:0 "Exploit Angolan Oil Fields"
  exploit_tuymazi_oil_field_wtt:0 "Exploit the Tuymazi Oil Field"
- exploit_romashkino_oil_field_wtt:0 "Exploit the Romashkino Oil ield"
+ exploit_romashkino_oil_field_wtt:0 "Exploit the Romashkino Oil Field"
  exploit_volga_ural_basin_orenburg_wtt:0 "Exploit the Volga-Ural Basin near Orenburg"
  exploit_volga_ural_basin_magnitogorsk_wtt:0 "Exploit the Volga-Ural Basin near Magnitogorsk"
  exploit_the_lena_angara_plateau_wtt:0 "Exploit the Lena-Angara Plateau"
@@ -151,6 +156,7 @@
  exploit_ticleni_oil_field_wtt:0 "Exploit the Ticleni Oil Field"
  exploit_sacel_oil_field_wtt:0 "Exploit the Sacel Oil Field"
  exploit_yumen_oil_field_wtt:0 "Exploit Yumen's Oil Field"
+ expand_yumen_oil_field_wtt:0 "Expand Yumen's Oil Field"
  develop_paraiba_tungsten_deposits_wtt:0 "Develop Paraïba Tungsten Deposists"
  develop_rio_grande_do_norte_tungsten_deposits_wtt:0 "Develop Rio Grande do Norte Tungsten Deposists"
  develop_karamay_oil_field_wtt:0 "Develop Karamay Oil Field"
@@ -181,7 +187,10 @@
  exploit_orenoque_iron_wtt:0 "Exploit Orenoque's Iron"
  exploit_cerro_san_isidro_iron_wtt:0 "Exploit Cerro San Isidro's Iron"
  stimulate_colorado_tungsten_production_wtt:0 "Stimulate Colorado Tungsten Production"
-
+ exploit_virginia_oil_field_wtt:0 "Exploit Lee County's oil"
+ exploit_dobrich_oil_field_wtt:0 "Exploit Dobrich Oil Field"
+ exploit_alaouite_mountains_chromium_wtt:0 "Exploit Alaouite Mountains Chromium"
+ exploit_damascene_iron_wtt:0 "Exploit Damascene Iron"
 
  expand_basque_steel_works_wtt:0 "Expand Basque Steel Works"
  expand_western_aragon_steel_works_wtt:0 "Expand Western Aragon Steel Works"
@@ -193,6 +202,7 @@
  expand_madrid_bauxite_mines_wtt:0 "Expand Madrid Bauxite Mines"
  exploit_togolese_chromium_wtt:0 "Exploit Togolese Chromium"
  build_sibenik_aluminium_plant:0 "Build the Sibenik Aluminium Plant"
+
 
  #ADAPTATION OF wtt
  r56_develop_north_sakhalin_oil_deposits:0 "Develop North Sakhalin Oil Deposits"

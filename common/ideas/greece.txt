@@ -1125,7 +1125,7 @@ ideas = {
 		}
 
 		GRE_british_exchange = {
-			picture = generic_consumer_goods_icon
+			picture = GRE_british_exchange
 			allowed = {
 				always = no
 			}
@@ -2531,7 +2531,7 @@ theorist = {
 		}
 
 		research_bonus = {
-			air_doctrine = 0.10
+			naval_doctrine = 0.10
 		}
 
 		traits = { naval_theorist }

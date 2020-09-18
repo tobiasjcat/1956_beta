@@ -94,7 +94,7 @@ ideas = {
 			}
 			
 			modifier = {
-				democratic_drift = 0.02
+				democratic_drift = 0.05
 				stability_factor = 0.1
 			}
 		}
@@ -433,6 +433,16 @@ ideas = {
 					build_cost_ic = -0.03	
 				}												
 			}
+		}
+		
+		HUN_balkan_pact_preparation = {
+
+			picture = generic_war_preparation
+
+			modifier = {
+				defensive_war_stability_factor = 0.5
+				mobilization_speed = 0.1 
+			}
 		}		
 		
 	}
@@ -528,6 +538,14 @@ ideas = {
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
+
+			ai_will_do = {
+				factor = 0.1
+				modifier = {
+					add = 200
+					has_completed_focus = HUN_council_of_peoples_commissars
+				}
+			}
 			
 			traits = { communist_revolutionary }
 		}
@@ -556,6 +574,14 @@ ideas = {
 			
 			allowed = {
 				original_tag = HUN
+			}
+
+			ai_will_do = {
+				factor = 0.1
+				modifier = {
+					add = 200
+					has_completed_focus = HUN_strengthen_fascists
+				}
 			}
 			
 			available = {

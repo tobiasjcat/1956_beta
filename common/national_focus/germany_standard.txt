@@ -166,6 +166,7 @@ focus_tree = {
 				has_full_control_of_state = 6
 				has_full_control_of_state = 7
 				has_full_control_of_state = 36
+				has_full_control_of_state = 827
 				has_full_control_of_state = 99
 				has_full_control_of_state = 110
 				has_full_control_of_state = 142
@@ -595,6 +596,38 @@ focus_tree = {
 						}
 					}		
 					99 = {
+						#Fortify naval bases
+						add_building_construction = {
+							type = coastal_bunker
+							province = {
+								all_provinces = yes
+								limit_to_naval_base = yes
+							}
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+            	    	    type = coastal_bunker
+            	    	    province = {
+            	    	        all_provinces = yes
+            	    	        limit_to_coastal = yes
+            	    	    }
+            	    	    level = 1
+            	    	    instant_build = yes
+            	    	}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							OR = {
+								tag = GER
+								is_in_faction_with = GER
+							}
+							has_full_control_of_state = 827
+						}
+					}		
+					827 = {
 						#Fortify naval bases
 						add_building_construction = {
 							type = coastal_bunker
@@ -2054,7 +2087,16 @@ focus_tree = {
 		relative_position_id = GER_integrate_war_economies
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 1		
+			modifier = {
+				factor = 0
+				date < 1940.06.06
+			}						
+					
+		}
+		available = {
+			has_government = fascism
+			is_puppet = no
 		}
 		
 		completion_reward = {
@@ -2632,6 +2674,17 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				create_operative_leader = {
+					name = "Eleysa Bazna"
+					GFX = GFX_portrait_eleysa_bazna
+					traits = { operative_infiltrator }
+					bypass_recruitment = no
+					available_to_spy_master = yes
+					nationalities = { TUR ALB YUG KSV }
+				}						
+			}			
 			TUR = { country_event = { id = germany.79 days = 1 } }
 		}
 	}
@@ -2976,6 +3029,17 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				create_operative_leader = {
+					name = "Eleysa Bazna"
+					GFX = GFX_portrait_eleysa_bazna
+					traits = { operative_infiltrator }
+					bypass_recruitment = no
+					available_to_spy_master = yes
+					nationalities = { TUR ALB YUG KSV }
+				}						
+			}			
 			TUR = {
 				add_opinion_modifier = { target = GER modifier = ger_tur_diplomacy_focus }
 				if = {
@@ -4370,7 +4434,59 @@ focus_tree = {
  			}
 		}
 	}	
-
+	focus = {
+		id = GER_operation_bolivar_vanilla
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4.00
+		prerequisite = {
+			focus = GER_war_with_france_vanilla
+		}
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}		
+		relative_position_id = GER_war_with_france_vanilla
+		text = GER_operation_bolivar
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0.5
+			}
+		}
+		available = {
+			has_intelligence_agency = yes
+		}
+		completion_reward = {
+			add_ideas = GER_abwehr_contacts
+			create_operative_leader = {
+				name = "Johannes Siegfried Becker"
+				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_6.dds 
+				traits = { operative_demolition_expert }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { GER ARG }
+			}
+			create_operative_leader = {
+				name = "Bruno Dittman"
+				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_24.dds 
+				traits = { operative_demolition_expert }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { GER CHL }
+			}	
+			create_operative_leader = {
+				name = "George Nicolaus"
+				portrait_path = gfx/leaders/Europe/portrait_europe_generic_operative_male_25.dds 
+				traits = { operative_demolition_expert }
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = { GER MEX }
+			}				
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = GER_operation_tannenbaum
 		icon = GFX_focus_attack_switzerland
@@ -4414,6 +4530,7 @@ focus_tree = {
 			is_puppet = no
 			has_full_control_of_state = 8
 			has_full_control_of_state = 28
+			has_full_control_of_state = 828
 			OR = {
 				FRA = { has_capitulated = yes }
 				FRA = { is_subject_of = GER }
@@ -4434,6 +4551,15 @@ focus_tree = {
 					}
 				}
 			}
+			OR = {
+				BEL = { has_capitulated = yes }
+				NOT = {
+					any_country = {
+						original_tag = BEL
+						exists = yes
+					}
+				}
+			}
 		}
 		bypass = {
 		}
@@ -4449,11 +4575,18 @@ focus_tree = {
 		completion_reward = {
 			add_state_core = 8
 			add_state_core = 28
+			add_state_core = 828
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
 				}
 				transfer_state = 28
+			}
+			if = {
+				limit = {
+					NOT = { owns_state = 828 }
+				}
+				transfer_state = 828
 			}
 			28 = { set_state_name = "Elsass-Lothringen" }
 			set_province_name = { id = 9503 name = "Strassburg" }
@@ -4463,6 +4596,9 @@ focus_tree = {
 			}
 			LUX = {
 				country_event = { id = wtt_germany.64 }
+			}
+			BEL = {
+				country_event = { id = wtt_germany.641 }
 			}
 		}
 	}
@@ -5674,8 +5810,14 @@ focus_tree = {
 			GRE = { 
 				exists = yes
 				has_war = yes
+
 			}
-			NOT = { is_in_faction_with = GRE }
+			NOT = { 
+				OR = {
+					is_in_faction_with = GRE
+					has_war_with = ROOT 
+				}
+			}
 		}
 		x = 2
 		y = 1
@@ -6970,16 +7112,24 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_full_control_of_state = 28
+			has_full_control_of_state = 828
 			OR = {
 				FRA = { has_capitulated = yes }
 				FRA = { is_subject_of = GER }
-				NOT = {
-					any_country = {
-						original_tag = FRA
-						exists = yes
-					}
+				any_country = {
+					original_tag = FRA
+					exists = no
 				}
 				owns_state = 28
+			}
+			OR = {
+				BEL = { has_capitulated = yes }
+				BEL = { is_subject_of = GER }
+				any_country = {
+					original_tag = BEL
+					exists = no
+				}
+				owns_state = 828
 			}
 		}
 		bypass = {
@@ -6995,17 +7145,72 @@ focus_tree = {
 		
 		completion_reward = {
 			add_state_core = 28
+			add_state_core = 828
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
 				}
 				transfer_state = 28
 			}
+			if = {
+				limit = {
+					NOT = { owns_state = 828 }
+				}
+				transfer_state = 828
+			}
 			28 = { set_state_name = "Elsass-Lothringen" }
 			set_province_name = { id = 9503 name = "Strassburg" }
 			set_province_name = { id = 678 name = "Mulhausen" }
 			FRA = {
 				country_event = { id = wtt_germany.63 }
+			}
+		}
+	}
+	focus = {
+		id = GER_demmand_northern_schleswig
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = GER_schlieffen_once_more focus = GER_bypass_maginot_in_the_south }
+		available = {
+			is_subject = no
+			OR = {
+				has_full_control_of_state = 827
+				DEN = {
+					has_full_control_of_state = 827
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		will_lead_to_war_with = DEN
+		x = 2
+		y = 1
+		relative_position_id = GER_schlieffen_once_more
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_full_control_of_state = 827
+				}
+				add_state_core = 827
+				if = {
+					limit = {
+						NOT = { owns_state = 827 }
+					}
+					transfer_state = 827
+				}
+				827 = { set_state_name = "Nordschleswig" }
+				set_province_name = { id = 11251 name = "Apenrade" }
+			}
+			else = {
+				DEN = {
+					country_event = {
+						id = wtt_germany.80
+						hours = 4
+					}
+				}
 			}
 		}
 	}

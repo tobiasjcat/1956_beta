@@ -58,7 +58,7 @@ focus_tree = {
 	}
 	focus = {
 		id = bra_modernizacao_armadas
-		icon = GFX_goal_generic_amphibious_assault
+		icon = GFX_goal_BRA_coa_army
 		prerequisite = { focus = bra_a_voz_do_brasil }
 		x = 9
 		y = 1
@@ -288,7 +288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = bra_dreams_of_an_empire
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_BRA_coa_fascism
 		prerequisite = { focus = bra_brazilian_action }
 		x = 0
 		y = 1
@@ -641,6 +641,7 @@ focus_tree = {
 				set_country_flag = bra_nobody_elected_flag
 			}
 			set_capital = 505
+            set_province_name = { id = 5208 name = "Brasília"}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}	
@@ -919,7 +920,7 @@ focus = {
 ###-----> Navy Branch <><> <><> <><> <><> 
 	focus = {
 		id = bra_belem_porto
-		icon = GFX_focus_generic_destroyer
+		icon = GFX_goal_BRA_coa_navy
 		prerequisite = { focus = bra_consegnac }
 		relative_position_id = bra_consegnac
 		x = -3
@@ -1279,7 +1280,7 @@ focus = {
 ###-----> Air Branch <><> <><> <><> <><> 
 	focus = {
 		id = bra_modernizacao_aerea
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_goal_BRA_coa_air_force
 		prerequisite = {focus = bra_consegnac}
 		relative_position_id = bra_consegnac
 		x = 0
@@ -2521,7 +2522,7 @@ focus = {
 			hidden_effect = {
 				set_rule = { can_create_factions = yes }
 			}
-			create_faction = " Transatlantic Pact"
+			create_faction = "Transatlantic Pact"
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -2920,7 +2921,7 @@ focus = {
 	
 	focus = {
 		id = bra_pan_americano
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_CHL_liberate_south_america
 		prerequisite = { focus = bra_sem_urss focus = bra_amigo_urss }
 		available = { has_government = communism }
 		relative_position_id = bra_amigo_urss

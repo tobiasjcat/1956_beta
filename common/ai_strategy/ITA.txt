@@ -177,35 +177,64 @@ crush_ethiopia = {
 		tag = ITA
 		country_exists = ETH
 		ITA = { has_war_with = ETH }
-		date < 1941.1.1
+		date < 1940.1.1
 	}
 	abort = {
 		NOT = { ITA = { has_war_with = ETH } }
-	}
-
-	ai_strategy = {
-		type = consider_weak
-		id = "FRA"			
-		value = 10
-	}
-
-	ai_strategy = {
-		type = invade
-		id = "ETH"			
-		value = 800
 	}
 	
 	ai_strategy = {
 		type = area_priority
 		id = africa
-		value = 800
+		value = 500
 	}
 	ai_strategy = {
         type = area_priority
         id = suez
         value = 500
-    }
+	}
+	ai_strategy = {
+        type = garrison
+        id = ITA
+        value = -300
+	}		
+	
 }
+
+#crush_ethiopia = {
+#	enable = {
+#		tag = ITA
+#		country_exists = ETH
+#		ITA = { has_war_with = ETH }
+#		date < 1941.1.1
+#	}
+#	abort = {
+#		NOT = { ITA = { has_war_with = ETH } }
+#	}
+#
+#	ai_strategy = {
+#		type = consider_weak
+#		id = "FRA"			
+#		value = 10
+#	}
+#
+#	ai_strategy = {
+#		type = invade
+#		id = "ETH"			
+#		value = 800
+#	}
+#	
+#	ai_strategy = {
+#		type = area_priority
+#		id = africa
+#		value = 800
+#	}
+#	ai_strategy = {
+#        type = area_priority
+#        id = suez
+#        value = 500
+#    }
+#}
 
 ITA_hold_africa = {
 	enable = {
@@ -227,6 +256,12 @@ ITA_hold_africa = {
 		any_owned_state = { is_core_of = ITA NOT = { is_controlled_by = ITA } }
 		date > 1941.1.1
 	}
+
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -1
+	}
 	
 	ai_strategy = {
 		type = area_priority
@@ -237,19 +272,19 @@ ITA_hold_africa = {
 	ai_strategy = {
         type = area_priority
         id = suez
-        value = 150
+        value = 180
     }
 
     ai_strategy = {
 		type = front_unit_request
 		area = africa
-		value = 25
+		value = 30
 	}
 
 	ai_strategy = {
 		type = front_unit_request
 		area = suez
-		value = 25
+		value = 50
 	}
 }
 

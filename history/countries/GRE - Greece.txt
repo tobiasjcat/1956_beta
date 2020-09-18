@@ -225,6 +225,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = absolute_monarchism
 	traits = {
+		r56_trait_opposed_to_communism
   }
 }
 
@@ -257,7 +258,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
-		#
+		r56_trait_opposed_to_communism
 	}
 }
 

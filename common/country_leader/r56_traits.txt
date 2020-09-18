@@ -1,6 +1,18 @@
 leader_traits = {
 
 ###------> NEW GENERICS <><> <><> <><> <><> <><>
+	voluntaryism = {
+		random = no
+
+		conscription_factor = 0.1
+		industrial_capacity_factory = 0.1
+
+		ai_strategy = { #daddy UwU
+			type = befriend       
+			id = "USA"       
+			value = 999
+		}
+	}
 
 	all_business = { #Used to make Zemurray sane
 		random = no
@@ -13,13 +25,13 @@ leader_traits = {
 		ai_strategy = {
 			type = befriend       
 			id = "GER"       
-			value = -50
+			value = -500
 		}
 
 		ai_strategy = {
 			type = befriend       
 			id = "JAP"      
-			value = -50
+			value = -500
 		}
 
 		ai_strategy = {
@@ -74,7 +86,7 @@ leader_traits = {
 		mobilization_speed = 0.05
 		resistance_damage_to_garrison = -0.05
 		army_core_defence_factor = 0.05
-
+		army_core_attack_factor = 0.05
 	}
 
 	intervention_advocate  = {
@@ -82,6 +94,8 @@ leader_traits = {
 		random = no
 
 		generate_wargoal_tension = -0.05
+		send_volunteers_tension = -0.05
+		lend_lease_tension = -0.05
 		war_support_factor = 0.05
 		production_speed_arms_factory_factor = 0.05
 		production_speed_dockyard_factor = 0.05
@@ -97,6 +111,12 @@ leader_traits = {
 		random = no
 		fascism_acceptance = 10
 		neutrality_acceptance = 10
+
+		ai_strategy = {
+			type = support
+			id = "GER"
+			value = 1
+		}
 	}	
 	undecided = {
 		random = yes
@@ -137,22 +157,22 @@ leader_traits = {
 		
 		ai_strategy = {
 			type = occupation_policy
-			id = ISR        
+			id = "ISR"        
 			value = 3				
 		}
 		ai_strategy = {
 			type = antagonize       
-			id = ISR        
+			id = "ISR"        
 			value = 200
 		}
 		ai_strategy = {
 			type = antagonize       
-			id = POL        
+			id = "POL"        
 			value = 200
 		}
 		ai_strategy = {
 			type = occupation_policy
-			id = POL        
+			id = "POL"        
 			value = 3				
 		}							
 	}	
@@ -2822,6 +2842,19 @@ LAT_ulmanis = {
 		}
 	}
 
+	fondatore_dell_impero = {
+		random = no
+
+		mobilization_speed = 0.1
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		political_power_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
 	hapsburg_emperor = {
 		random = no
 
@@ -2909,7 +2942,7 @@ LAT_ulmanis = {
 
 	r56_trait_anti_fascist = {
 		random = no
-		fascism_acceptance = -50
+		fascism_acceptance = -80
 		fascism_drift = -0.01
 
 		ai_will_do = {
@@ -2919,16 +2952,32 @@ LAT_ulmanis = {
 
 	r56_trait_anti_democratic = {
 		random = no
-		democratic_acceptance = -50
+		democratic_acceptance = -80
 		democratic_drift = -0.01
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	r56_trait_opposed_to_fascism = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		fascism_acceptance = -80
+	}		
+	r56_trait_opposed_to_democracy = {
+		random = no
+		ai_will_do = {
+			factor = 1
+		}
+		democratic_acceptance = -80
+	}		
 	r56_trait_opposed_to_communism = {
 		random = no
-
+		ai_will_do = {
+			factor = 1
+		}
 		communism_acceptance = -80
 	}	
 ###------> Manufacturers <><> <><> <><> <><> <><>
@@ -3119,7 +3168,23 @@ LAT_ulmanis = {
 		ai_will_do = {
 			factor = 1
 		}
-	}	
+	}
+	
+	guerilla_expert = {
+		random = no
+		sprite = 14
+		experience_gain_army = 0.05
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				NOT = {
+					has_tech = r56_guerilla_warfare
+				}
+				factor = 0
+			}
+		}		
+	}
 }
 
 

@@ -480,6 +480,23 @@ allow_paratroopers = {
 	}
 }
 
+allow_r56_techs = {
+	name = "RULE_ALLOW_EXTENDED_TECHS"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_military_access_docking_rights"
+	option = {
+		name = yes
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_R56_TECHS_ALLOWED_DESC"
+	}
+	option = {
+		name = no
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_R56_TECHS_BLOCKED_DESC"
+	}
+}
+
+
 #minimum_division_width = {
 #	name = "RULE_MINIMUM_WIDTH"
 #	group = "RULE_GROUP_DIVISION_TEMPLATES"
@@ -1385,6 +1402,26 @@ SIA_ai_behavior = {
 	}
 }
 
+SOV_ai_behavior = {
+	name = "SOV_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = HISTORICAL
+		text = "RULE_OPTION_HISTORICAL"
+		desc = "RULE_OPTION_HISTORICAL_SOV_AI_DESC"
+	}
+	option = {
+		name = ANTI_CAPITALIST_DIPLOMACY
+		text = "RULE_OPTION_ANTI_CAPITALIST_DIPLOMACY"
+		desc = "RULE_OPTION_ANTI_CAPITALIST_DIPLOMACY_SOV_AI_DESC"
+	}
+}
+
 SPR_ai_behavior = {
 	name = "SPR_AI_BEHAVIOR"
 	required_dlc = "La Resistance"
@@ -1674,6 +1711,11 @@ eng_fragmentation_status = {
 		text = "RULE_OPTION_ENG_FRAGMENTED_IRE_UNITED"
 		desc = "RULE_OPTION_ENG_FRAGMENTED_IRE_UNITED_DESC"
 	}
+	option = {
+		name = ENG_FRAGMENTED_CELTIC_UNION
+		text = "RULE_OPTION_ENG_FRAGMENTED_CELTIC_UNION"
+		desc = "RULE_OPTION_ENG_FRAGMENTED_CELTIC_UNION_DESC"
+	}	
 }
 yug_fragmentation_status = {
 	name = "YUG_FRAGMENTATION_STATUS"
@@ -2009,11 +2051,11 @@ ideology_join_faction = {
 	name = "RULE_IDEOLOGY_JOIN_FACTION"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_boosting_party_popularity"
-	default = {
-		name = "SAME_IDEOLOGY_EXCEPT_NON_ALIGNED"
-		text = "RULE_OPTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED"
-		desc = "RULE_IDEOLOGY_JOIN_FACTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED_DESC"
-	}		
+#	default = {
+#		name = "SAME_IDEOLOGY_EXCEPT_NON_ALIGNED"
+#		text = "RULE_OPTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED"
+#		desc = "RULE_IDEOLOGY_JOIN_FACTION_SAME_IDEOLOGY_EXCEPT_NON_ALIGNED_DESC"
+#	}		
 	option = {
 		name = "ALLOWED"
 		text = "RULE_OPTION_ALLOWED"

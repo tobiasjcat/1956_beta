@@ -211,7 +211,7 @@
 		y = 0
 		available_if_capitulated = no
 		ai_will_do = {
-			factor = 5
+			factor = 4.9
 		}
 		completion_reward = {
 			add_stability = 0.05
@@ -283,9 +283,21 @@
 		y = 0
 		available_if_capitulated = no
 		ai_will_do = {
-			factor = 2.5
+			factor = 2.4
+			modifier = {
+				factor = 2
+				OR = {
+					LUX = {
+						is_ai = no
+					}
+					BEL = {
+						is_ai = no
+					}
+				}
+			}
 		}
 		completion_reward = {
+			add_stability = -0.10
 			custom_effect_tooltip = new_advisors_tt
 			add_timed_idea = {
 				idea = FRA_support_monarchy_focus
@@ -2810,6 +2822,10 @@
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_war = yes
+			}			
 		}
 		completion_reward = {
 			set_rule = {
@@ -3480,7 +3496,18 @@
 		}
 		bypass = {
 			is_in_faction_with = CZE
-			is_faction_leader = yes
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction = yes
+					ENG = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+			
 		}
 		ai_will_do = {
 			factor = 1
@@ -4059,7 +4086,7 @@
 						tag = ROM
 						tag = HUN
 						tag = BEL
-						tag = NED
+						tag = HOL
 					}
 					is_guaranteed_by = ROOT
 				}
@@ -4080,7 +4107,7 @@
 						tag = ROM
 						tag = HUN
 						tag = BEL
-						tag = NED
+						tag = HOL
 					}
 					is_guaranteed_by = ROOT
 				}
@@ -4410,7 +4437,7 @@
 				ideology = neutrality
 				popularity = 0.05
 			}
-			add_stability = 0.1
+			add_stability = 0.05
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
@@ -4458,7 +4485,18 @@
 		y = 1
 		relative_position_id = FRA_papal_rehabilitation
 		ai_will_do = {
-			factor = 2
+			factor = 1.9
+			modifier = {
+				factor = 0
+				OR = {
+					LUX = {
+						is_ai = no
+					}
+					BEL = {
+						is_ai = no
+					}
+				}
+			}
 		}
 		completion_reward = {
 			if = {
@@ -4783,6 +4821,7 @@
 			}
 			add_stability = 0.1
 			add_political_power = 150
+			set_rule = { can_create_factions = yes }
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -4912,6 +4951,7 @@
 					}
 				}
 			}
+			set_rule = { can_create_factions = yes }
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
@@ -5018,6 +5058,9 @@
 		}
 		ai_will_do = {
 			factor = 6
+		}
+		allow_branch = {
+			has_dlc = "La Resistance"
 		}
 		completion_reward = {
 			SPB = {
@@ -5411,6 +5454,16 @@
 					modifier = FRA_anti_german_front
 				}
 			}
+			add_opinion_modifier = {
+				target = PRE
+				modifier = FRA_anti_german_front
+			}
+			PRE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = FRA_anti_german_front
+				}
+			}			
 			add_war_support = 0.2
 			add_ai_strategy = {
 				type = antagonize
@@ -5422,6 +5475,16 @@
 				id = GER
 				value = 50
 			}
+			add_ai_strategy = {
+				type = antagonize
+				id = PRE
+				value = 50
+			}
+			add_ai_strategy = {
+				type = contain
+				id = PRE
+				value = 50
+			}			
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
@@ -5730,6 +5793,7 @@
 		will_lead_to_war_with = HOL
 		completion_reward = {
 			add_state_claim = 34
+			add_state_claim = 828
 			add_state_claim = 6
 			add_state_claim = 8
 			add_state_claim = 51
@@ -6079,7 +6143,7 @@
 		}
 
 		allow_branch = {
-			has_dlc = "La Resistance"
+			#has_dlc = "La Resistance"
 		}
 
 		available = {
@@ -6130,7 +6194,7 @@
 		}
 
 		allow_branch = {
-			has_dlc = "La Resistance"
+			#has_dlc = "La Resistance"
 		}
 
 		available = {
@@ -6427,7 +6491,7 @@
 	}
 	focus = {
 		id = FRA_take_back_north_america
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_spa_the_war_of_vengeance
 		x = 1
 		y = 1
 		prerequisite = {
@@ -7453,6 +7517,10 @@
 		available = {
 			is_in_faction = yes
 			is_subject = no
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
 		}
 		bypass = {
 			ROM = {
@@ -7463,6 +7531,10 @@
 					is_in_faction_with = FRA
 					is_in_faction = yes
 					
+				}
+				OR = {
+					has_government = communism
+					has_government = fascism
 				}
 			}
 		}
@@ -7509,7 +7581,7 @@
 	}
 	focus = {
 		id = FRA_foreign_guest_workers
-		icon = GFX_focus_generic_manpower
+		icon = GFX_goal_indochina_plan_mandel
 		x = -1
 		y = 1
 		prerequisite = {
@@ -8196,7 +8268,12 @@
 		
 		cost = 5
 		allow_branch = {
-			has_cosmetic_tag = FRA_FREE
+			OR = {
+				has_cosmetic_tag = FRA_KINGDOM
+				has_cosmetic_tag = FRA_FREE
+				has_cosmetic_tag = FRAEMPIRE
+			}
+			
 			has_capitulated = yes
 		}
 		ai_will_do = {

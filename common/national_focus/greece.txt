@@ -1795,7 +1795,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = GRE_metaxas_industry
 		icon = GFX_focus_generic_decrease_unemployment
@@ -1832,7 +1831,50 @@ focus_tree = {
         }
         search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 	}
+	focus = {
+		id = GRE_dodecanese_for_membership
+		icon = GFX_focus_generic_italy_first
+		prerequisite = { focus = GRE_befriend_italy }
+		x = 0
+		y = 1
+		available = {
+			is_in_faction = no
+			is_puppet = no
+			has_government = fascism
+			ITA = {
+				is_major = yes
+				has_government = fascism
+				OR = {
+					is_faction_leader = yes
+					AND = {
+						is_in_faction_with = HUN
+						HUN = {
+							is_faction_leader = yes
+						}
+					}
+				}
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 0
+				}					
+			}
+		}
+		
+		relative_position_id = GRE_befriend_italy
+		cost = 10
+		ai_will_do = {
+			factor = 40
+		}
 
+		available_if_capitulated = no
+
+		completion_reward = {
+			ITA = {
+				country_event = greece.88
+			}
+		}
+	}
 	focus = {
 		id = GRE_metaxas_bullet_industry
 		icon = GFX_focus_GRE_pyrkal
@@ -2790,6 +2832,9 @@ focus = {
 			  traits = {
 				ardent_venizelist
 			}
+			NOT = {
+				has_war_with = ROOT
+			}	
 		}
 	}
 }
@@ -2834,7 +2879,6 @@ focus = {
 	}
 
 	available = {
-
 	}
 
 	available_if_capitulated = no
@@ -2860,7 +2904,9 @@ focus = {
 	available = {
 	}
 
-	available_if_capitulated = no
+		bypass = {
+			is_in_faction_with = ENG
+		}
 
 	completion_reward = {
     	add_popularity = { ideology = democratic popularity = 0.15 }
