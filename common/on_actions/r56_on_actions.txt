@@ -3453,6 +3453,16 @@ on_actions = {
 	on_startup = {
 	
 		effect = {
+			#Insane AI Option 
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = rt56_ai_behavior
+						option = OLD_SCHOOL
+					}
+				}
+				set_global_flag = rt56_old_school
+			}
 								
 			# Add the Darien Gap
 			304 = {
@@ -8361,9 +8371,30 @@ on_actions = {
 		}
 	}
 ###---> On State Control Changed <><> <><> <><>
-	on_state_control_changed = {
+#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {		
 		effect = {
-		
+
+			#instead of revolt use resistance against our enemies to ensure total liberation
+		#	if = {
+		#		limit = {
+		#			ROOT = {
+		#				has_war_with = FROM
+		#			}
+		#			FROM.FROM = {
+		#				has_resistance = yes
+		#				resistance > 60
+		#				NOT = {
+		#					OR = {
+		#						is_core_of = FROM
+		#						is_core_of = ROOT
+		#					}
+		#					
+		#				}
+		#			}
+		#		}				
+
+
 			if = {
 				limit = {
 					original_tag = JAP
@@ -8416,8 +8447,8 @@ on_actions = {
 						producer = DOU
 					}
 				}
-			}
-		
+			}			
+
 			#Danzig auto-annex workaround
 			if = {
 				limit = { 

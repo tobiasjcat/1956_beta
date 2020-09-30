@@ -201,6 +201,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_gun_purchase.dds"
 	}
 	SpriteType = {
+		name = "GFX_goal_generic_major_diplo"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_major_diplo.dds"
+	}
+	SpriteType = {
 		name = "GFX_goal_generic_farm_tractor"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_farm_tractor.dds"
 	}
@@ -368,6 +372,10 @@ spriteTypes = {
 		name = "GFX_r56_goal_generic_freedom"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_freedom.dds"
 	}
+	spriteType = {
+		name = "GFX_r56_goal_generic_spanish_civil_war_soldier"
+		texturefile = "gfx/interface/goals/generic/r56_goal_generic_spanish_civil_war_soldier.dds"
+	}	
 	spriteType = {
 		name = "GFX_goal_generic_secret_documents"
 		texturefile = "gfx/interface/goals/generic/r56_goal_generic_secret_documents.dds"
@@ -2062,27 +2070,23 @@ spriteTypes = {
 
 ###------> EST <><> <><> <><> <><> <><>
 	SpriteType = {
-		name = "GFX_goal_EST_air_force"
-		texturefile = "gfx/interface/goals/est/r56_goal_EST_air_force.dds"
+		name = "GFX_r56_goal_EST_flag"
+		texturefile = "gfx/interface/goals/est/r56_goal_EST_flag.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_EST_air_force_2"
-		texturefile = "gfx/interface/goals/est/r56_goal_EST_air_force_2.dds"
+		name = "GFX_r56_goal_EST_defense"
+		texturefile = "gfx/interface/goals/est/r56_goal_EST_defense.dds"
 	}
 	SpriteType = {
-		name = "GFX_goal_EST_coat_of_arms"
-		texturefile = "gfx/interface/goals/est/r56_goal_EST_coat_of_arms.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_EST_coa_air_force"
+		name = "GFX_r56_goal_EST_coa_air_force"
 		texturefile = "gfx/interface/goals/est/r56_goal_EST_coa_air_force.dds"
 	}	
 	SpriteType = {
-		name = "GFX_goal_EST_coa_army"
+		name = "GFX_r56_goal_EST_coa_army"
 		texturefile = "gfx/interface/goals/est/r56_goal_EST_coa_army.dds"
 	}	
 	SpriteType = {
-		name = "GFX_goal_EST_coa_navy"
+		name = "GFX_r56_goal_EST_coa_navy"
 		texturefile = "gfx/interface/goals/est/r56_goal_EST_coa_navy.dds"
 	}
 
@@ -5260,9 +5264,19 @@ spriteType = {
 	}
 
 ###------> USA <><> <><> <><> <><> <><>
+
+	SpriteType = {
+		name = "GFX_Goal_USA_washington"
+		texturefile = "gfx/interface/goals/usa/r56_goal_USA_washington.dds"
+	}
 	SpriteType = {
 		name = "GFX_Goal_USA_HUAC"
 		texturefile = "gfx/interface/goals/usa/Goal_USA_HUAC.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_marines"
+		texturefile = "gfx/interface/goals/usa/r56_goal_USA_marines.dds"
 	}
 
 	SpriteType = {
