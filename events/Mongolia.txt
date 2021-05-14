@@ -181,4 +181,474 @@ country_event = { #Amar is purged
 	}
 }
 
+country_event = { #Aftermath of Moscow visit
+	id = mongol.10
+	title = mongol.10.t
+	desc = mongol.10.d
+	picture = GFX_report_event_hungary_parliament
 
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.10.a
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 20
+		add_stability = 0.05
+		add_war_support = -0.05
+	}
+
+	option = {
+		name = mongol.10.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -10
+		add_war_support = 0.1
+	}
+
+	option = {
+		name = mongol.10.c
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -40
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = { #Second Plenum to decide the Fate of Genden
+	id = mongol.11
+	title = mongol.11.t
+	desc = mongol.11.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.11.a
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = 20
+		add_stability = 0.05
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
+	}
+
+	option = {
+		name = mongol.11.b
+		ai_chance = {
+			factor = 100
+		}
+		retire_country_leader = yes
+		remove_ideas = MON_unpopular_government
+		create_country_leader = {
+			name = "Amandyn Amar"
+			desc = "POLITICS_ANANDYN_AMAR_DESC"
+			picture = GFX_portrait_mon_anandyn_amar
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+
+	option = {
+		name = mongol.11.c
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -50
+		add_stability = -0.15
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}
+		kill_ideology_leader = communism
+		remove_ideas = MON_unpopular_government
+		create_country_leader = {
+			name = "Amandyn Amar"
+			desc = "POLITICS_ANANDYN_AMAR_DESC"
+			picture = GFX_portrait_mon_anandyn_amar
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				popular_figurehead2
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = small_increase
+			}
+		}
+	}
+}
+
+country_event = { #Mutual assistance treaty
+	id = mongol.12
+	title = mongol.12.t
+	desc = mongol.12.d
+	picture = GFX_report_event_chinese_japanese_handshake
+
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.12.a
+		ai_chance = {
+			factor = 100
+		}
+		SOV ={
+			add_political_power = 10
+		}
+		give_guarantee = MON
+		give_military_access = MON
+		MON = {
+			country_event = { id = mongol.13 }
+		}
+	}
+
+	option = {
+		name = mongol.12.b
+		ai_chance = {
+			factor = 0.1
+		}
+		SOV ={
+			add_political_power = -10
+		}
+		MON = {
+			country_event = { id = mongol.14 }
+		}
+	}
+}
+
+country_event = { #Mutual assistance treaty -YEEES
+	id = mongol.13
+	title = mongol.13.t
+	desc = mongol.13.d
+	picture = GFX_report_event_stalin_02
+
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.13.a
+		MON ={
+			add_political_power = 10
+		}
+		give_guarantee = SOV
+		give_military_access = SOV
+	}
+}
+
+country_event = { #Mutual assistance treaty - NOOOOO
+	id = mongol.14
+	title = mongol.14.t
+	desc = mongol.14.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.14.a
+		MON ={
+			add_political_power = -10
+		}
+	}
+}
+
+# The Great Terror - Purge Intellectuals
+country_event = {
+	id = mongol.15
+	title = mongol.15.t
+	desc = mongol.15.d
+	picture = GFX_report_event_tur_industry
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MON
+		NOT = { has_completed_focus = MON_the_great_terror }
+		focus_progress = {
+			focus = MON_the_great_terror
+			progress > 0.25
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 70
+		}
+		name = mongol.15.a
+		set_country_flag = mon_purged_intellectuals_flag
+		custom_effect_tooltip = mongol.15_tt
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = mongol.15.b
+		add_political_power = -50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.07
+		}
+	}
+}
+
+# The Great Terror - Purge party
+country_event = {
+	id = mongol.16
+	title = mongol.16.t
+	desc = mongol.16.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MON
+		NOT = { has_completed_focus = MON_the_great_terror }
+		focus_progress = {
+			focus = MON_the_great_terror
+			progress > 0.50
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 70
+		}
+		name = mongol.16.a
+		set_country_flag = mon_purged_party_flag
+		custom_effect_tooltip = mongol.16_tt
+	}
+	option = {
+		ai_chance = {
+			factor = 30
+		}
+		name = mongol.16.b
+		add_political_power = 150
+	}
+}
+
+# The Great Terror - Purge lamas
+country_event = {
+	id = mongol.17
+	title = mongol.17.t
+	desc = mongol.17.d
+	picture = GFX_report_event_dalai_lama_family
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MON
+		NOT = { has_completed_focus = MON_the_great_terror }
+		focus_progress = {
+			focus = MON_the_great_terror
+			progress > 0.75
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = mongol.17.a
+		set_country_flag = mon_purged_lamas_flag
+		custom_effect_tooltip = mongol.17_tt
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = mongol.17.b
+		add_political_power = -100
+	}
+}
+
+
+
+country_event = { #Genden: Remove/purge soviet sympatisers
+	id = mongol.40
+	title = mongol.40.t
+	desc = mongol.40.d
+	picture = GFX_report_event_china_politicians_captured
+
+	fire_only_once = yes
+		
+	option = {
+		name = mongol.40.a
+		add_political_power = 40
+		add_stability = -0.1
+		custom_effect_tooltip = mongolia_anti_genden_civil_war_tt
+	}
+
+	option = {
+		name = mongol.40.b
+		add_political_power = -20
+		add_stability = 0.05
+		set_country_flag = purged_by_genden_small_flag
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = MON_dorjjavyn_luvsansharov
+		show_ideas_tooltip = MON_dansranbilegiin_dogsom
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = MON_horloogiyn_choibalsan
+		hidden_effect = {
+			remove_ideas = MON_dorjjavyn_luvsansharov
+			remove_ideas = MON_dansranbilegiin_dogsom
+			remove_ideas = MON_horloogiyn_choibalsan
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = small_decrease
+			}
+		}
+	}
+
+	option = {
+		name = mongol.40.c
+		add_political_power = -50
+		add_stability = 0.10
+		set_country_flag = purged_by_genden_big_flag
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = MON_dorjjavyn_luvsansharov
+		show_ideas_tooltip = MON_dansranbilegiin_dogsom
+		show_ideas_tooltip = MON_amandyn_amar
+		show_ideas_tooltip = MON_khas_ochiryn_luvsan_dorj
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = MON_horloogiyn_choibalsan
+		hidden_effect = {
+			remove_ideas = MON_dorjjavyn_luvsansharov
+			remove_ideas = MON_dansranbilegiin_dogsom
+			remove_ideas = MON_amandyn_amar
+			remove_ideas = MON_khas_ochiryn_luvsan_dorj
+			remove_ideas = MON_horloogiyn_choibalsan
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = medium_decrease
+			}
+		}
+	}
+}
+
+
+
+country_event = {   #taken from the polish tree and adopted for the needs -> becoming soviet puppet cause why not?
+	id = mongol.100
+	title = mongol.100.t
+	desc = mongol.100.d
+	picture = GFX_report_event_josef_beck
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mongol.100.a
+		ai_chance = {
+			factor = 80
+		}
+		every_other_country = {
+			limit = {
+				has_war_with = MON
+				NOT = { is_in_faction_with = SOV }
+			}
+			SOV = {
+				declare_war_on = {
+					type = puppet_wargoal_focus
+					target = PREV
+				}
+			}
+		}
+		if = {
+			limit = { has_dlc = "Together for Victory"}
+			custom_effect_tooltip = MON_soviet_puppet_tooltip_TFV
+			hidden_effect = {
+				SOV = { 
+					set_autonomy = {
+						target = MON
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.55
+					}
+				}
+			}
+			else = {
+				custom_effect_tooltip = MON_soviet_puppet_tooltip
+				hidden_effect = {
+					SOV = { puppet = MON }
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { SOV = { has_government = communism } }
+				MON = {
+					set_politics = {
+						ruling_party = communism #game will crash if this part isn't included
+						elections_allowed = no
+					}
+				}
+			}
+		}
+		MON = { country_event = mongol.101 }
+	}
+	
+	option = {
+		name = mongol.100.b
+		ai_chance = {
+			factor = 20
+		}
+		MON = { country_event = mongol.102 }
+	}
+}
+
+#Soviet Accepts
+country_event = {
+	id = mongol.101
+	title = mongol.101.t
+	desc = mongol.101.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mongol.101.a
+	}
+}
+
+#Soviet Declines
+country_event = {
+	id = mongol.102
+	title = mongol.102.t
+	desc = mongol.102.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mongol.102.a
+	}
+}

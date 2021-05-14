@@ -13,6 +13,12 @@ set_technology = {
 set_country_flag = started_out_as_landlocked
 add_ideas = {
 	limited_conscription
+	MON_ill_educated_population
+	MON_new_course_policy
+	MON_weak_currency
+	MON_dominanted_animal_husbandry
+	MON_unpopular_government
+	MON_soviet_NKVD_agents
 }
 
 1939.1.1 = {

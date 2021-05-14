@@ -28,3 +28,308 @@ TAN_seren_kuzhuget:0 "Seren Kuzhuget"
 
 GEN_tuva_annex_ussr:0 "Soviet What?"
 GEN_tuva_annex_ussr_desc:0 "CongratulationS! You found the secret focus suggested by someone on the rt56 discord. He thought that his plea was ignored but against all odds, his call was heard. A gracious Waffle listened his prayer and made his vow a reality under a moonless sky. Have fun enjoying your easy Tuvan world conquest."
+
+
+
+### flags ###
+mon_purged_intellectuals_flag:0 "Intellectuals Purged"
+mon_purged_party_flag:0 "Party Members Purged"
+mon_purged_lamas_flag:0 "Lamas Purged"
+mon_new_party_elite_formed_flag:0 "New Party Elite Established"
+purged_by_genden_small_flag:0 "Purged by Genden"
+purged_by_genden_big_flag:0 "Purged by Genden"
+
+### ideas ###
+#political advisors#
+MON_amandyn_amar:0 "Amandyn Amar"
+MON_davaagijn_namsrai:0 "Davaagijn Namsrai"
+MON_dorjjavyn_luvsansharov:0 "Dorjjavyn Luvsansharov"
+MON_dansranbilegiin_dogsom:0 "Dansranbilegiin Dogsom"
+MON_khas_ochiryn_luvsan_dorj:0 "Khas-Ochiryn Luvsan-Dorj"
+MON_gelegdorjiin_demid:0 "Gelegdorjiin Demid"
+MON_demberel_damchaa:0 "Demberel Damchaa"
+MON_yumjaagiin_tsedenbal:0 "Yumjaagiin Tsedenbal"
+MON_solomyn_luvsan:0 "Sonomyn Luvsan"
+MON_gonchigiin_bumtsend:0 "Gonchigiin Bumtsend"
+MON_dashhin_damba:0 "Dashiin Damba"
+
+MON_shirnengiin_ayuush:0 "Shirmemgiin Ayuush"
+MON_jamtsangiin_damdinsueren:0 "Jamtsangiin Damdisueren"
+MON_suekhbaataryn_yanjmaa:0 "Suekhbaataryn Yanjmaa"
+
+#army high command#
+MON_tsendiin_olzvoy:0 "Tsendiin Olzvoy"
+MON_lodongiin_dandar:0 "Lodongiin Dandar"
+MON_butochiyn_tsog:0 "Butochiyn Tsog"
+MON_horloogiyn_choibalsan:0 "Horloogiyn Choibalsan"
+
+
+#industrial concern#
+MON_academy_of_science:0 "Mongolian Academy of Science"
+MON_Mongolbank:0 "Mongolbank"
+
+
+mongolia_anti_genden_civil_war_tt:0 "§RThis will lead to a civil war!§!"
+
+#ideas themselves#
+MON_ill_educated_population:0 "Ill-Educated Population"
+MON_ill_educated_population_desc:0 "The overall quality of our people's education remains on extremely low level. Fixing it will surely require much time and effort."
+MON_population_learning:0 "Education Reform in Progress"
+MON_population_learning_desc:0 "The governments program has been implemented to improve the overall quality of studies."
+Mon_elementary_schools:0 "Elementary Schools Expanded"
+Mon_elementary_schools_desc:0 "Government funds were dedicated to greatly expand the current education standards across country."
+MON_changed_script:0 "Adopted New Script"
+MON_changed_script_desc:0 "Old Mongolian script did has different writing forms, which severely hampered he study progress of our children. New changes allow our population to learn more efficiently."
+MON_script_reform_in_progress:0 "Script Reform in Progress"
+MON_script_reform_in_progress_desc:0 "Rewriting and printing books in the new manner is costly and time-consuming affair. "
+MON_new_course_policy:0 "New Course Policy"
+MON_new_course_policy_desc:0 "After devastation caused by forced collectivization in 1928-1932 we are working on our own industrial plan with national specific."
+MON_weak_currency:0 "Weak Currency"
+MON_weak_currency_desc:0 "Established as an independent currency in 1925 with a bounded exchange course of one to one to the [SOV.getAdjective] ruble, our country's national currency is in an extemely weak state."
+MON_dominanted_animal_husbandry:0 "Domination of Animal Husbandry"
+MON_dominanted_animal_husbandry_desc:0 "Our country's economic system is extremely reliant on animal husbandry. If we want to enter the world stag as a modern nation, we should improve or drastically change our industry."
+MON_encourage_trade:0 "Encouraged Foreign Trade"
+MON_animal_husbandry_prioritised:0 "Focus on Animal Husbandry"
+MON_industrial_growth_prioritised:0 "Prioritised Industrial Growth"
+MON_supported_the_arats:0 "Support of Arats"
+MON_promcombinat_new_facilities:0 "Industrial Expansion in Progress"
+MON_improved_mining_facilities:0 "Improved Mining Facilities"
+
+
+
+
+MON_unpopular_government:0 "Unpopular Government"
+MON_unpopular_government_desc:0 "The current party leader is especially unpopular among other party members."
+MON_soviet_NKVD_agents:0 "Soviet NKVD Agents"
+MON_soviet_NKVD_agents_desc:0 "Many [SOV.GetAdjective] diplomats, military advisors and NKVD agents are present in our country. "
+MON_soviet_advisors:0 "Soviet Military Advisors"
+MON_soviet_advisors_desc:0 "[SOV.GetAdjective] military specialists were dispatched to our country as a part of our mutual assistance treaty."
+nkvd_desc:0 "NKVD has been drastically increased to improve the performance of country's Tatnuulhim fenhij Gazar (General Intelligence Agency of Mongolia)."
+MON_more_border_patrols:0 "Extended Border Patrols"
+MON_more_border_patrols_desc:0 "The security of our land border was given the highest priority. We need everything and everyone available to preserve our state!"
+MON_powerful_choibalsan:0 "Powerful Choibalsan"
+MON_powerful_choibalsan_desc:0 "One of the seven people who negotiated Mongolian independence with China and Russia in 1921, Choibalsan is now extremely representative in the government."
+MON_incoming_militarist_uprising:0 "Incoming Military Uprising"
+MON_incoming_militarist_uprising_desc:0 "Understanding that they are being ousted from power, militarists will try to overthrow the government and establish military dictatorship."
+MON_incoming_militarist_uprising_tt:0 "If we don't switch the governmental orientation within a year after completing this focus, the civil war will start!"
+MON_troika_organized:0 "Organized "Troika""
+MON_troika_organized_desc:0 "Following an example of the Stalinists revolutionary troikas, we have established our own troika which is led by Choibalsan to bring the law and order to the state."
+MON_buddhist_opposition:0 "Buddhist Opposition"
+MON_buddhist_opposition_desc:0 "Our anti-religious campaign has delivered its first results which are negatively impacting our government's positions. "
+
+
+MON_consolidated_power_1:0 "Consolidated Power in One Area"
+MON_consolidated_power_1_desc:0 "The power is now in a firm grip of one leader, and this being Choibalsan operating behind the back of Amandyn Amar."
+MON_consolidated_power_2:0 "Consolidated Power in Most Areas"
+MON_consolidated_power_2_desc:0 "The power is now in a firm grip of one leader, and this being Choibalsan operating behind the back of Amandyn Amar."
+MON_consolidated_power_3:0 "Completely Consolidated Power"
+MON_consolidated_power_3_desc:0 "The power is now in a firm grip of one leader, and this being Choibalsan operating behind the back of Amandyn Amar."
+MON_great_terror_tt:0 "Troika will start dealing with §YIntelligentsia§!, §YParty Members§! and §YLamas§!. \nEach purge has its own §Rpenalty§! and the number of purges will affect the scale of effect of §Gconsolidated power§!."
+MON_great_terror_tt_2:0 "If no purges are conducted, Choilbalsan will §Rlose§! his influence in the government and loyality in eyes of [SOV.GetLeader]."
+mongol.15_tt:0 "Will receive a §Rpenalty§! due to the purge."
+mongol.16_tt:0 "Will receive a §Rpenalty§! due to the purge."
+mongol.17_tt:0 "Will receive a §Rpenalty§! due to the purge."
+Mon_intellectuals_purged:0 "Intellectuals Purged"
+Mon_intellectuals_purged_desc:0 "Seen as "untruthworthy", several intellectuals were purged."
+Mon_party_purged:0 "Party Purged"
+Mon_party_purged_desc:0 "Reshuffle and arrests were conducted, leaving great scares in the current party structure."
+Mon_lamas_purged:0 "Lamas Purged"
+Mon_lamas_purged_desc:0 "Many members of the religious institutions have fled the country or were forced into hiding due to the recent government purges."
+MON_atheism_propaganda:0 "Atheism Propaganda"
+MON_cult_of_choibalsan_idea:0 "Cult of Choibalsan"
+
+
+Mongolbank_very_high_funds:0 "Mongolbank: §GVery high funds§!"
+Mongolbank_very_high_funds_desc:0 "Hard to operate properly, yet the economy is booming!"
+Mongolbank_high_funds:0 "Mongolbank: §GHigh funds§!"
+Mongolbank_high_funds_desc:0 "Operating is still hard, yet the industry benefiting greatly from it."
+Mongolbank_moderate_funds:0 "Mongolbank: §YModerate funds§!"
+Mongolbank_moderate_funds_desc:0 "Balanced approach regarding the governence and support of industry."
+Mongolbank_low_funds:0 "Mongolbank: §RLow funds§! "
+Mongolbank_low_funds_desc:0 "Little amount of money and potential loans stagnates economic growth."
+Mongolbank_bankrupt:0 "Mongolbank: §RBankrupt§!"
+Mongolbank_bankrupt_desc:0 "Bankrupt and can't issue loans anymore. Direct government involvement is required here!"
+MON_reduced_scientists_funding:0 "Reduced Scientist Funding"
+MON_buying_currency_abroad:0 "Buying Currency Abroad"
+MON_production_quotas_increased:0 "Forced Production Quotas"
+
+#pro-genden ideas #
+MON_hudonets_empowered:0 "Hudonets Empowered"
+MON_incorporated_buddhism:0 "Incorporated Buddhism"
+MON_get_rich_idea:0 "Get Rich"
+MON_new_course_genden:0 "New Course with Hudonets Specifics"
+
+MON_fully_empower_hudenists:0 "Fully Empower Hudonets"
+MON_incorporate_buddhism:0 "Incorporate Buddhism"
+MON_get_rich:0 ""Get Rich" Policy"
+MON_seek_alliances:0 "Seek Alliances"
+MON_cooperation_with_prc:0 "Cooperation with PRC"
+MON_Sinkiang_ties:0 "Sinkiang Ties"
+MON_tibetian_bonds:0 "Tibetian Bonds"
+MON_unlikely_chinese_alliance:0 "Assist Chinese Struggle"
+
+MON_assist_communist_expeditions:0 "Assist Communist Expeditions"
+MON_split_sinkiang:0 "Split Sinkiang"
+
+#### FACTIONS ####
+MON_asian_communist_solidarity:0 "Asian Communist Solidarity"
+MON_asian_neutrality_pact:0 "Asian Neutrality Pact"
+MON_asian_communist_solidarity_tt:0 "Invite [PRC.getName] to our faction."
+
+
+
+### focuses ###
+MON_aftermath_of_visit_to_moscow:0 " Aftermath of Visit to Moscow "
+MON_aftermath_of_visit_to_moscow_desc:0 "The delegation consisting of party leader [Root.GetLeader] together with prominent general and minister of war Gelegdorjiin Demid was paying an official visit to Moscow since December 1935. The main topics of interest for our ambassadors were the recent provocations conducted by Manchurian and Japanese forces in order to destabilize our yet fragile defences and see if any sort of Northern aggression against us our ally is possible. What news will our delegators bring home?"
+MON_hold_the_plenum_of_central_committee:0 "Second Plenum of Central Committee"
+MON_hold_the_plenum_of_central_committee_desc:0 "The analysis of the [MON.GetLeader]s report suggest that a meeting of the party leadership in Ulaanbaatar should be organized to discuss the results of the talks with [SOV.GetLeader]. The [SOV.GetAdjective] assistance is needed more then ever in this uncertain times. An additional talk will be held regarding the behaviour of Genden."
+MON_remove_soviet_agents:0 "Expatriate Soviet Agents"
+MON_remove_soviet_agents_desc:0 "It is unacceptable that our politics, economy, education and military strength are depended on the foreign powers. [SOV.GetAdjective] advances endanger security of our nation and our personal interests in the region. Removing any sort of the Soviet influence shall be our first priority."
+MON_reinforce_the_borders:0 "Reinforce the Border Patrols"
+MON_reinforce_the_borders_desc:0 "Considering the Genden's recent report, it becomes obvious that  we are on our own for now. We shall reinforce the borders while expanding the duties and inviting more and more volunteers to join the border patrols if we are to protect Mongolia from outer dangers!"
+
+#choibalsans Mongolia#
+MON_appoint_choibalsan_as_interior_minister:0 "Appoint Choibalsan as an Interior Minister"
+MON_appoint_choibalsan_as_interior_minister_desc:0 "Having the whole power situated in one hands, the country will surely descend into the civil unrest and tyrannical dictatorship. Amandyn Amar has no reason to become a dictator and therefore the promising revolutionary and general Khorloogiin Choibalsan can be promoted to the rank of the interior minister. His contacts with NKVD will ensure security across the country."
+MON_oppose_military_involvement:0 "Oppose Military Involvment"
+MON_oppose_military_involvement_desc:0 "Considering the recent increase of popularity of Choibalsan among the military and NKVD, he become a too dangerous person with too many contacts to be kept in government. Amandyn Amar is suspecting that the young general might be Stalin's protege and if the situation is not resolved quickly, an unthinkable might happen and many people might suffer of this."
+MON_invite_soviet_advisors:0 "Invite Soviet Advisors"
+MON_invite_soviet_advisors_desc:0 "As a part of the Mutual Assistance Treaty, several [SOV.GetAdjective] generals were dispatched to Mongolia. We shall grant them proper living and working conditions and introduce them to our troops. Such assistance will drastically improve the standards, tactics and overall performance of our military."
+MON_invite_frinovsky:0 "Invite Frinovsky"
+MON_invite_frinovsky_desc:0 "In a preparation for the great plan of consolidating [MON.GetAdjective] bureaucratic structure and government officials around the new head of state, being the head of state security department, head of the ministery of interior and a prominent general Khorloogiin Choibalsan has invited the conductor of [SOV.GetAdjective] purges, Michail Frinovsky, to visit and enrich the local officials with his vast experience."
+MON_the_revolutionary_centre:0 "Destroy the Counter - Revolutionary Centre"
+MON_the_revolutionary_centre_desc:0 "Religious obstacles have been hanging on the shoulders of our people for far too long! The time has come to start the campaign of implementing Stalin's revolutionary plan. 23 members of the Buddhist church will be its first target, as they are seen to be members of the Counterrevolutionary Centre."
+MON_the_great_terror:0 "The Great Terror"
+MON_the_great_terror_desc:0 "The newly established Troika has proven to be extremely effective in liquidating any sort of the political opposition to the current regime. Many traitors and potential collaborators are present across the country, in military and maybe even in the government. If we want to appease Stalin and show him our loyalty we must do what must be done."
+MON_form_new_party_elite:0 "Form New Party Elite"
+MON_appease_loyal_intelligentsia:0 "Appease Loyal Intelligentsia"
+MON_spread_atheist_propaganda:0 "Spread Atheist Propaganda"
+
+MON_remove_nominal_leadership:0 "Remove Nominal Leadership"
+MON_redraw_the_constitution:0 "Redraw the Constitution"
+
+MON_reinforce_eastern_border:0 "Reinforce Eastern Border"
+MON_cult_of_choibalsan:0 "Stalin of Mongolia"
+
+#shared between communists#
+MON_sign_protocol_of_mutual_assistance:0 "Sign Protocol of Mutual Assistance"
+MON_sign_protocol_of_mutual_assistance_desc:0 "Our recent visit to the [SOV.GetNameDef] has clearly shown our best intensions of bringing hope and prosperity to our nations with pursuing friendly and mutually benefitial relations together. Expanding our mutual support with this treaty will benefit us both greatly!"
+MON_student_exchange_programs:0 "Student Exchange Programs"
+MON_joint_technological_development:0 "Joint Technological Development"
+MON_soviet_industrial_cooperation:0 "Industrial Cooperation with [SOV.GetAdjective]s"
+MON_soviet_mongolian_exchange_program:0 "[SOV.GetAdjective]-[MON.GetAdjective] Student Exchange"
+MON_soviet_mongolian_exchange_program_desc:0 "Lacking proper funds and installations, we cannot afford any sort a massive education reform with our current economy. Our benefactors in face of Great Powers, however, have everything our youngest generation can only dream about. We shall contact them and establish the student exchange program if we are to properly educate our population."
+MON_replace_old_script:0 "Replace Old Script"
+MON_ulaanbator_national_university:0 "Ulaanbaatar National University"
+
+# pro-Genden #
+MON_proudly_alone:0 "Proudly Alone"
+MON_proudly_alone_desc:0 "Genden's concern of growing Soviet influence over our contry has lead to a precarious situation in which our current leadership openly opposes any sort of alliance with Soviets, fearing to become a satellite state of latter. Our border patrols are reassigned to the new locations with government officialy proclaiming its neutral foreign policy."
+MON_strengthten_genden:0 "Strengthen Genden's Positions"
+MON_remove_stalinist_sympathisers:0 "Issue with Stalinist Sympathisers"
+
+# trotskyist Mongolia #
+MON_invite_chen_duxiu:0 "Invite Chen Duxiu"
+
+
+#pro-Soviet puppet #
+MON_empower_eldev_ochir:0 "Empower Eldev-Ochir"
+MON_show_loyalty_to_the_cause:0 "Show Loyalty to the Cause"
+MON_join_soviet_big_brother:0 "Join Soviet Big Brother"
+
+MON_soviet_puppet_tooltip:0 "§RMongolia will become a§! §HPuppet§! §Rof [SOV.GetNameDef]§!\n"
+MON_soviet_puppet_tooltip_TFV:0 "§RMongolia will become a§! §HDominion§! §Rof [SOV.GetNameDef]§!\n"
+
+
+# industrial focuses #
+MON_transfer_the_funds_of_mongolbank:0 "Transfer the Funds of Mongolbank"
+MON_transfer_the_funds_of_mongolbank_desc:0 "Founded in 1924 as a part of cooperation between [SOV.GetNameDef] and [MON.GetNameDef], the central bank of Mongolia, also Mongolbank, oversees the course of national currency tugrik, which has replaced Chinese silvers as well as Mexican and American dollars after the Revolution. [SOV.GetAdjective]s have agreed to transfer all their funds and investments to us on the gratis basis. We should start investing our newly aquired finances immediately! "
+MON_expand_the_railroads:0 "Expand the Railroads"
+MON_expand_elementary_schools:0 "Expand Elementary Schools"
+MON_strenghten_tugrik:0 "Strenghten Tugrik"
+MON_encourage_foreign_trade:0 "Encourage Foreign Trade"
+MON_improve_machine_tools:0 "Improve Machine Tools"
+MON_study_foreign_radio_equipment:0 "Study Foreign Radio Equipment"
+MON_expand_elementary_schools_desc:0 "Started originally in 1936, an expansion of the elementary schools is directed as a first step to battle the illiteracy across the population. By 1934 only 10% of the population could read and write, while the basic learning program was only two years long. Considering the quality of education abroad, the length and availability of the education must be increased."
+
+End_reliance_on_animal_husbandry:0 "End Reliance on Animal Husbandry"
+Pastures_into_farms:0 "Prioritize Agriculture"
+
+MON_support_arats:0 "Support Arats"
+MON_expand_woolwashing_facilities:0 "Expand Woolwashing Facilities"
+MON_build_energokombinat:0 "Construct Energocombinat"
+MON_build_mechanical_factory:0 "Build Mechanical Factory"
+MON_industrial_expansion:0 "Industrial Facilities Expansion Program"
+
+MON_new_veterinary_facilities:0 "New Veterinary Facilities"
+MON_ulan_bator_promcombinat:0 "Support Ulaan-Bator Promcombinat"
+MON_improve_mining_facilities:0 "Improved Mining Industry"
+MON_armament_expansion:0 "Armament Expansion"
+
+MON_new_research_centres:0 "New Research Centres"
+
+
+
+
+
+### events ###
+mongol.10.t:0 "The delegation returns to Ulaanbaatar"
+mongol.10.d:0 "[SOV.GetLeader] understanding the importance of the Eastern frontier, has gladly agree to increase the presence of [SOV.GetAdjective] troops in our country. This will also imply a higher presence of [SOV.GetAdjective] agents and intelligence specialists, which was acceptable to Demid, yet caused an anger of Genden, at which he stated that "[MON.GetAdjective] politics is considered [MON.GetAdjective] and not [SOV.GetAdjective] for a reason." \n\n The fierce debate ended with Dengen openly opposing and critizing Stalin for his interference of the inner affairs of the sovereign nation. According to rumors, he also broke the Stalin's pipe! \n\nConfronting Stalin is a dangerous adventure and Genden, understanding this, is not sure, whether this should be included in the official report to the Committee in Ulaanbaatar. "
+mongol.10.a:0 "Everything is fine. Report about whole meeting accordingly."
+mongol.10.b:0 "Report about the border security problem, say no more [SOV.GetAdjective] troops will be granted."
+mongol.10.c:0 "Discuss instead the "new proposal" of implementing communism in Mongolia."
+
+mongol.11.t:0 "The Second Plenum announces its decision"
+mongol.11.d:0 "The Second Plenum has met today to discuss the Stalin's proposal of the rapid increase of the [SOV.GetAdjective] military contigent on our territory. The vote concluded discussion in a clear favor of [SOV.GetAdjective] assistance. Even Genden voted in favor of the resolution, after which he was highly criticised by Dorjjavyn Lucsansharav and Khas-Ochiryn Luvsan-Dorj of his actions in Moscow. \n\nSuch behaviour of the prominent politician cannot be tolerated under any circunstances! Stating that "Sabotaging [SOV.GetAdjective]-[MON.GetAdjective] cooperation is a treason against our country" he shall be punished for his actions. \n\nThe Committe announced that Genden...  "
+mongol.11.a:0 "...will remain in office. Everyone makes mistakes."
+mongol.11.b:0 "...will be removed from his office and set under house arrest."
+mongol.11.c:0 "...will be promptly executed due to the treason and pro-Japanese spionage."
+
+mongol.12.t:0 "Protocol of Mutual Assistance"
+mongol.12.d:0 "Our [SOV.GetAdjective] ambassador in Ulaanbaatar has received a note from the Mongolian governemnt stating "that it will be vital as a mean of the cooperation to extend the duration and jurisdiction of the Protocol of Mutual Assistance signed in 1934", \n\nSigning this agreement will officially bond our countries to support each other in case of aggresion. In addition Mongolia shall enjoy the benefits of [SOV.GetAdjective] socialism in terms of scientists, engineers and military specialists. \n\nThe agreement is valid for 10 years, yet we well know that we are the major force in this alliance. What shall we do? "
+mongol.12.a:0 "We will gladly support our [MON.GetAdjective] brothers and sisters!"
+mongol.12.b:0 "Tell them we are not interested."
+
+mongol.13.t:0 "[SOV.GetAdjective]s agreed"
+mongol.13.d:0 "Stating that "...it will greatly improve our cooperation and further the deep historic [SOV.GetAdjective]-[MON.GetAdjective] ties between our two nations", the soviet ambassador presented a signed document to [MON.GetAdjective] representatives. The first echelons of the military specialists are already on their way to us. "
+mongol.13.a:0 "Good for both of us."
+
+mongol.14.t:0 "[SOV.GetAdjective]s declined"
+mongol.14.d:0 "[SOV.GetAdjective] ambassador in a secret meeting with our delegation today stated that upon seeing the handed request, [SOV.GetLeader] has turned red in face and shouted at the secretary that "Who do they think they are to request even more?!" \n\nThe paper was then shred apart and thrown away with [SOV.GetAdjective] diplomat stating that any sort of further agreement will be met only if additional concessions from Mongolia are to be delivered."
+mongol.14.a:0 "That's not what we expected from them..."
+
+mongol.15.t:0 "The Issue of Intelligentsia"
+mongol.15.d:0 "The education of our population is progressing better then ever before, yet new books and learning materials have potentially planted capitalistic or nationalistic ideas into heads of our citizens. \nMany young specialists who came back from student exchange programs with [SOV.GetNameDef] have enriched our schools, institutes and research centres. Yet the question remains, how trustworthy are they? \n\nHow many of them carry the potential seeds of the revolution and can be trusted? We need to know for sure and the methods are well known..."
+mongol.15.a:0 "Conduct massive troikas inspections."
+mongol.15.b:0 "We have other issues to worry about."
+
+mongol.16.t:0 "Party Reshuffle"
+mongol.16.d:0 "Our party is divided between leftists like Choibalsan, rightists such as Amandyn Amar and hudonets, such as former prime minister Peljidiin Genden. Extreme division of a party has lead to rightists capitalistic reforms of 1926-1928 and to devastation caused by the far-leftist approach to collectivization of 1928-1932. \n\nDrastic government changes are having a negative impact on lifes of our people. Constant shift of political compass might be explained by many factors, yet the main reason is clear: our party is infiltrated by the foreign agents and collaborators of [JAP.GetNameDef] or [CHI.GetNameDef]. This can't be tolerated and few suspicius members might need to removed from the government in one way or another."
+mongol.16.a:0 "Set everyone in scope and check loyality carefully."
+mongol.16.b:0 "Maybe the problem is our point of view?"
+
+mongol.17.t:0 "Problem with Llama"
+mongol.17.d:0 "Buddhism is deeply entrenched in minds and hearts of our citizens with 10% of our countries population being llamas and monks. Such massive power block cannot be neglected: rebellions of 1932 and Lhumbe plot of 1933 clearly indicate the need of intervention before the situation becomes too tense. Luckily, we already have an experience with limiting llama's power since Choibalsan rise to power. \n\nStaying loyal to the [SOV.GetAdjective]s, their leader [SOV.GetLeader] and principles of communism implies that we shall conduct this operation as soon as possible."
+mongol.17.a:0 "We have no other choice."
+mongol.17.b:0 "The buddhism carries the true spirit of [MON.GetAdjective] people!"
+
+mongol.40.t:0 "Dealing with Soviet Sympathisers"
+mongol.40.d:0 "Even though [MON.GetLeader] has managed to escape the direct [SOV.GetAdjective] involvement into the internal affairs of the [MON.GetName], it remains uncertain whether the [SOV.GetAdjective] leadeship won't try to overthrow the reckless free-thinker [MON.GetLeader]. \n\nIf we want to ensure that [MON.GetName] will follow into the bright communist future without any sort of political or military insurrection, it might be wise to get rid of pro-[SOV.GetAdjective] agitators and propagandists within the government. "
+mongol.40.a:0 "We have other issues at our hands now. This can wait."
+mongol.40.b:0 "Remove those who openly opposed Genden."
+mongol.40.c:0 "Arrest the entire inner party leadership!"
+
+
+
+mongol.100.t:0 "Mongolia Requests Our Protection"
+mongol.100.d:0 "Realising the mistakes of the previous government and adopting our collectivization policies together with strong persecution of religious institutions, [MON.GetName] is seeking to return under the banner of the socialism. [MON.GetLeader] has arrived in person to Moscow last night and is now avaiting an audience with [SOV.GetLeader] to inform his of what our spies have already known for far too long: \n\nThey are willing to submit to our consultation of foreign policy and allow our troops to enter their borders in exchange for our close cooperation. \n\nHow shall we respond?"
+mongol.100.a:0 "This is an interesting opportunity."
+mongol.100.b:0 "We are not interested."
+
+mongol.101.t:0 "[SOV.GetName] Accepts"
+mongol.101.d:0 "[SOV.GetLeader] has agreed to our plea for assistance. [MON.GetLeader] is currently in Moscow, and the signing of the treaty is well underway. For the greater good and further cooperation of the [SOV.GetAdjective] and [MON.GetAdjective] people!"
+mongol.101.a:0 "We are more then happy to follow Soviet assistance!"
+
+mongol.102.t:0 "[SOV.GetName] Declines"
+mongol.102.d:0 "[SOV.GetLeader] has expressed little interest in our pleas for assistance. It seems that we must turn elsewhere for help."
+mongol.102.a:0 "Maybe its for our own good."

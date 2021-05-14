@@ -1,0 +1,4705 @@
+focus_tree = {
+	id = MON_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MON
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 0
+		y = 1800
+	}
+
+	####### INDUSTRY #########
+
+	focus = {
+		id = MON_transfer_the_funds_of_mongolbank
+		icon = GFX_focus_mex_privatisation
+		x = -26
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = MON_Mongolbank
+			add_ideas = Mongolbank_very_high_funds
+		}
+	}
+
+	focus = {
+		id = MON_expand_the_railroads
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -5	
+		y = 1
+		cost = 10.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 330 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 849 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 850 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_expand_elementary_schools
+		icon = GFX_goal_research_silver_cooperation
+		x = -3
+		y = 1
+		cost = 7.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}		
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_ideas = Mon_elementary_schools
+		}
+	}
+
+	focus = {
+		id = MON_strenghten_tugrik
+		icon = GFX_goal_generic_economics_reform
+		x = -1
+		y = 1
+		cost = 10.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_political_power = 50
+			remove_ideas = MON_weak_currency
+			unlock_decision_category_tooltip = MON_strenghten_mongolbank_category
+		}
+	}
+
+	focus = {
+		id = MON_encourage_foreign_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 1
+		y = 1
+		cost = 5.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = MON_encourage_trade
+			add_ideas = free_trade
+		}
+	}
+
+	focus = {
+		id = MON_improve_machine_tools
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 1
+		cost = 10.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = MON_study_foreign_radio_equipment
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 1
+		cost = 7.00
+		relative_position_id = MON_transfer_the_funds_of_mongolbank
+		prerequisite = { focus = MON_transfer_the_funds_of_mongolbank }
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = Pastures_into_farms
+		icon = GFX_goal_generic_agriculture2
+		x = -1
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = MON_expand_the_railroads }
+		prerequisite = { focus = MON_expand_elementary_schools }
+		mutually_exclusive = { focus = End_reliance_on_animal_husbandry }
+
+		relative_position_id = MON_expand_elementary_schools
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_dominanted_animal_husbandry add_idea = MON_animal_husbandry_prioritised }
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = End_reliance_on_animal_husbandry
+		icon = GFX_goal_stock_exchange
+		x = -1
+		y = 1
+		cost = 10
+		prerequisite = { focus = MON_improve_machine_tools }
+		prerequisite = { focus = MON_study_foreign_radio_equipment }
+		mutually_exclusive = { focus = Pastures_into_farms }
+
+		relative_position_id = MON_study_foreign_radio_equipment 
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_dominanted_animal_husbandry add_idea = MON_industrial_growth_prioritised }
+			add_stability = -0.15
+		}
+	}
+
+
+	focus = {
+		id = MON_support_arats
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = Pastures_into_farms
+		prerequisite = { focus = Pastures_into_farms }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_ideas = MON_supported_the_arats
+			random_owned_controlled_state = {
+			prioritize = { 848 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+			prioritize = { 849 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+			prioritize = { 850 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = MON_expand_woolwashing_facilities 
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 1
+		cost = 8.00
+		relative_position_id = Pastures_into_farms
+		prerequisite = { focus = Pastures_into_farms focus = End_reliance_on_animal_husbandry }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 850 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_build_energokombinat
+		icon = GFX_goal_generic_consumer_goods
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = Pastures_into_farms
+		prerequisite = { focus = Pastures_into_farms focus = End_reliance_on_animal_husbandry }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 330 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_build_mechanical_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		cost = 8.00
+		relative_position_id = End_reliance_on_animal_husbandry
+		prerequisite = { focus = Pastures_into_farms focus = End_reliance_on_animal_husbandry }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 850 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_industrial_expansion
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = End_reliance_on_animal_husbandry
+		prerequisite = { focus = End_reliance_on_animal_husbandry }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_ideas = MON_promcombinat_new_facilities
+		}
+	}
+
+	focus = {
+		id = MON_new_veterinary_facilities
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_support_arats
+		prerequisite = { focus = MON_support_arats }
+		prerequisite = { focus = MON_expand_woolwashing_facilities }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 849 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 850 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_ulan_bator_promcombinat
+		icon = GFX_goal_generic_small_arms
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_build_energokombinat
+		prerequisite = { focus = MON_build_energokombinat }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 330 }
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 330 }
+				limit = {
+				is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_improve_mining_facilities
+		icon = GFX_focus_generic_steel
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_build_energokombinat
+		prerequisite = { focus = MON_build_energokombinat }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_ideas = MON_improved_mining_facilities
+			add_tech_bonus = {
+                name = industrial_bonus
+                bonus = 1
+                uses = 1
+                category = steel_tech
+            }			
+			add_resource = {
+				type = steel
+				amount = 3
+				state = 848
+			}
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 849
+			}
+		}
+	}
+
+	focus = {
+		id = MON_armament_expansion
+		icon = GFX_goal_generic_war_factory
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_build_mechanical_factory
+		prerequisite = { focus = MON_build_mechanical_factory }
+		prerequisite = { focus = MON_industrial_expansion }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 850 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 849 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_new_research_centres
+		icon = GFX_goal_research_silver
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_new_veterinary_facilities
+		prerequisite = { focus = MON_armament_expansion focus = MON_new_veterinary_facilities }
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = Mongolbank_bankrupt
+			}
+			ROOT = {
+				num_of_factories > 35
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = Mongolbank_very_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_very_high_funds add_idea = Mongolbank_high_funds }
+				else = {
+					if = {
+						limit = { has_idea = Mongolbank_high_funds }
+						swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_moderate_funds }
+						else = {
+							if = {
+								limit = { has_idea = Mongolbank_moderate_funds }
+								swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_low_funds }
+								else = {
+									if = {
+										limit = { has_idea = Mongolbank_low_funds }
+										swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_bankrupt }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_research_slot = 1
+		}
+	}
+
+
+	###POLITICS#####
+	focus = {
+		id = MON_aftermath_of_visit_to_moscow
+		icon = GFX_goal_stalin
+		x = 10
+		y = 0
+		cost = 5
+
+		available_if_capitulated = yes
+
+		available = {
+		  	date < 1936.01.20
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+
+
+		completion_reward = {
+			add_political_power = 20
+			country_event = { id = mongol.10 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = MON_hold_the_plenum_of_central_committee
+		icon = GFX_goal_FRA_pcf_sfio_coalition
+		x = -25
+		y = 1
+		cost = 10
+		relative_position_id = MON_aftermath_of_visit_to_moscow
+		mutually_exclusive = { 
+			focus = MON_remove_soviet_agents
+			focus = MON_reinforce_the_borders
+		}
+		prerequisite = { focus = MON_aftermath_of_visit_to_moscow }
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism	
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+
+
+		completion_reward = {
+			add_political_power = 50
+			country_event = { id = mongol.11 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = MON_reinforce_the_borders
+		icon = gfx_postive_heroism
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_aftermath_of_visit_to_moscow
+		mutually_exclusive = { 
+			focus = MON_remove_soviet_agents
+			focus = MON_hold_the_plenum_of_central_committee
+		}
+		prerequisite = { focus = MON_aftermath_of_visit_to_moscow }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_ideas = MON_more_border_patrols
+		}
+	}
+
+	focus = {
+		id = MON_remove_soviet_agents
+		icon = GFX_goal_anti_comintern_pact
+		x = 30
+		y = 1
+		cost = 5
+		relative_position_id = MON_aftermath_of_visit_to_moscow
+
+		mutually_exclusive = { 
+			focus = MON_hold_the_plenum_of_central_committee
+			focus = MON_reinforce_the_borders
+		}
+		prerequisite = { focus = MON_aftermath_of_visit_to_moscow }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_decrease
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_sign_protocol_of_mutual_assistance
+		icon = GFX_generic_goal_communist_reforms
+		x = 3
+		y = 1
+		cost = 2
+		relative_position_id = MON_hold_the_plenum_of_central_committee
+		prerequisite = { 
+			focus = MON_hold_the_plenum_of_central_committee
+			focus = MON_reinforce_the_borders
+		}
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			SOV = {
+				country_event = { id = mongol.12 }
+			}
+		}
+	}
+
+	focus = {
+		id = MON_appoint_choibalsan_as_interior_minister
+		icon = GFX_focus_generic_military_mission
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_hold_the_plenum_of_central_committee
+		mutually_exclusive = { 
+			focus = MON_oppose_military_involvement
+		}
+
+		available = {
+			has_government = communism
+			NOT = {
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}
+		}
+
+		prerequisite = { 
+			focus = MON_hold_the_plenum_of_central_committee
+		}
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_ideas = MON_powerful_choibalsan
+		}
+	}
+
+	focus = {
+		id = MON_soviet_industrial_cooperation
+		icon = GFX_goal_generic_construct_civilian
+		x = 7
+		y = 1
+		cost = 10
+		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
+		available_if_capitulated = yes
+
+		available = {
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 9
+				}	
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = MON_soviet_mongolian_exchange_program
+		icon = GFX_goal_communist_brain
+		x = 5
+		y = 1
+		cost = 10
+		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
+		available_if_capitulated = yes
+
+		available = {
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 29
+				}	
+			}
+			ROOT = {
+				num_of_factories > 7
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_ill_educated_population add_idea = MON_population_learning }
+			add_research_slot = 1
+		}
+	search_filters = { FOCUS_FILTER_RESEARCH  }
+	}
+
+	focus = {
+		id = MON_joint_technological_development
+		icon = gfx_socialist_science
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_soviet_mongolian_exchange_program
+		prerequisite = { focus = MON_soviet_mongolian_exchange_program }
+		prerequisite = { focus = MON_soviet_industrial_cooperation }
+		available_if_capitulated = yes
+
+		available = {
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 29
+				}	
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.05
+			}
+			add_to_tech_sharing_group = spr_research
+			SOV = { add_to_tech_sharing_group = spr_research }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = UK_secret_focus
+				bonus = 1
+				uses = 1
+				category = electronics
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+	}
+
+	focus = {
+		id = MON_replace_old_script
+		icon = GFX_goal_generic_secret_documents
+		x = -1
+		y = 2
+		cost = 10
+		relative_position_id = MON_joint_technological_development
+		prerequisite = { focus = MON_joint_technological_development }
+		available_if_capitulated = no
+
+		available = {
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 49
+				}	
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_timed_idea = {
+			    idea = MON_script_reform_in_progress
+				days = 180
+			}
+			add_ideas = MON_changed_script
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+	}
+
+	focus = {
+		id = MON_ulaanbator_national_university
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_joint_technological_development
+		prerequisite = { focus = MON_joint_technological_development }
+		available_if_capitulated = yes
+
+		available = {
+			has_idea = MON_population_learning
+			ROOT = {
+				num_of_factories > 15
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			remove_ideas = MON_population_learning 
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+	}
+
+
+	focus = {
+		id = MON_invite_soviet_advisors
+		icon = GFX_goal_soviet_military_advisors
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		prerequisite = { focus = MON_appoint_choibalsan_as_interior_minister }
+		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
+		available_if_capitulated = yes
+
+		available = {
+			SOV = {
+				NOT = { has_war_with = ROOT }
+				has_opinion = {
+					target = ROOT
+					value > 29
+				}	
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_ideas = MON_soviet_advisors
+			SOV = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 9000  #was deployed actually				
+						}
+					}
+					set_nationality = ROOT
+				}				
+			}
+			create_corps_commander = {
+				name = "Ivan Nikitin"
+				portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Generic_land_2.dds"
+				traits = { cavalry_leader }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 1						
+			}
+
+			create_corps_commander = {
+				name = "Michail Tikhonov"
+				portrait_path = "gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds"
+				traits = { cavalry_leader }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3						
+			}
+		}
+	}
+
+	focus = {
+		id = MON_reinforce_eastern_border
+		icon = GFX_goal_JAP_defence
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_invite_soviet_advisors
+		prerequisite = { focus = MON_invite_soviet_advisors }
+		available_if_capitulated = yes
+
+		bypass = {
+			has_war_with = JAP
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_invite_frinovsky
+		icon = GFX_goal_HON_nkvd_assistance
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		prerequisite = { focus = MON_appoint_choibalsan_as_interior_minister }
+		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
+		available_if_capitulated = yes
+
+		
+		available = {
+			has_government = communism
+			SOV = {
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					NOT = {
+						has_intelligence_agency = yes
+					}
+				}
+				create_intelligence_agency = yes				
+			}			
+			add_ideas = MON_troika_organized
+		}
+	}
+
+	focus = {
+		id = MON_the_revolutionary_centre
+		icon = GFX_goal_TIB_monasteries_crushed
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		prerequisite = { focus = MON_appoint_choibalsan_as_interior_minister }
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism
+			NOT = {
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {	
+			add_political_power = 120	
+			add_ideas = MON_buddhist_opposition
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL}
+	}
+
+	focus = {
+		id = MON_the_great_terror
+		icon = GFX_goal_generic_armed_protest
+		x = 1
+		y = 1
+		cost = 15
+		relative_position_id = MON_the_revolutionary_centre
+		prerequisite = { focus = MON_invite_frinovsky }
+		prerequisite = { focus = MON_the_revolutionary_centre }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		available = {
+			has_government = communism
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = MON_great_terror_tt
+			custom_effect_tooltip = MON_great_terror_tt_2
+			#only debuffs#
+			if = {
+				limit = {
+					has_country_flag = mon_purged_intellectuals_flag
+				}
+				add_timed_idea = {
+					idea = Mon_intellectuals_purged
+					days = 730
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = mon_purged_party_flag
+				}
+				add_timed_idea = {
+					idea = Mon_party_purged
+					days = 730
+				}
+			}
+
+			if = {
+				limit = {
+					has_country_flag = mon_purged_lamas_flag
+				}
+				remove_ideas = MON_buddhist_opposition
+				add_timed_idea = {
+					idea = Mon_lamas_purged
+					days = 730
+				}
+			}
+
+			# all three purged - get maximum buff #
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = mon_purged_intellectuals_flag
+						has_country_flag = mon_purged_party_flag
+						has_country_flag = mon_purged_lamas_flag
+					}
+					
+				}
+				add_ideas = MON_consolidated_power_3
+			}
+
+			# only two purged - medium buff #
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							NOT = {
+								has_country_flag = mon_purged_intellectuals_flag
+							}
+							has_country_flag = mon_purged_party_flag
+							has_country_flag = mon_purged_lamas_flag
+						}
+						AND = {
+							NOT = {
+								has_country_flag = mon_purged_party_flag
+							}
+							has_country_flag = mon_purged_intellectuals_flag
+							has_country_flag = mon_purged_lamas_flag
+						}
+						AND = {
+							NOT = {
+								has_country_flag = mon_purged_lamas_flag
+							}
+							has_country_flag = mon_purged_intellectuals_flag
+							has_country_flag = mon_purged_party_flag
+						}
+					}
+				}
+				add_ideas = MON_consolidated_power_2
+			}
+
+			# only one purged - small buff #
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							NOT = { has_country_flag = mon_purged_intellectuals_flag }
+							NOT = { has_country_flag = mon_purged_party_flag }
+							has_country_flag = mon_purged_lamas_flag
+						}
+						AND = {
+							NOT = { has_country_flag = mon_purged_intellectuals_flag }
+							NOT = { has_country_flag = mon_purged_lamas_flag }
+							has_country_flag = mon_purged_party_flag
+						}
+						AND = {
+							NOT = { has_country_flag = mon_purged_party_flag }
+							NOT = { has_country_flag = mon_purged_lamas_flag }
+							has_country_flag = mon_purged_intellectuals_flag
+						}
+					}
+				}
+				add_ideas = MON_consolidated_power_1
+			}
+
+			# no purges - small buff soviets disappointed in choibalsan #
+			if = {
+				limit = {
+					AND = {
+						NOT = { has_country_flag = mon_purged_intellectuals_flag }
+						NOT = { has_country_flag = mon_purged_party_flag }
+						NOT = { has_country_flag = mon_purged_lamas_flag}
+						}
+					}
+				remove_ideas = MON_powerful_choibalsan
+				SOV = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = medium_decrease
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+	}
+
+	focus = {
+		id = MON_form_new_party_elite
+		icon = GFX_focus_generic_self_management
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_the_great_terror
+		prerequisite = { 
+			focus = MON_the_great_terror
+		}
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+
+		bypass = {
+			NOT = {
+				has_idea = Mon_party_purged
+			}
+		}
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.05
+			}
+			if = {
+				limit = {
+					has_idea = Mon_party_purged
+				}
+				modify_timed_idea = {
+					idea = Mon_party_purged
+					days = -240
+				}
+			}
+			set_country_flag = mon_new_party_elite_formed_flag
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = MON_spread_atheist_propaganda
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_the_great_terror
+		prerequisite = { 
+			focus = MON_the_great_terror
+		}
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		bypass = {
+			NOT = {
+				has_idea = Mon_lamas_purged
+			}
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			add_ideas = MON_atheism_propaganda
+			if = {
+				limit = {
+					has_idea = Mon_lamas_purged
+				}
+				modify_timed_idea = {
+					idea = Mon_lamas_purged
+					days = -240
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_appease_loyal_intelligentsia
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_the_great_terror
+		prerequisite = { 
+			focus = MON_the_great_terror
+		}
+		available_if_capitulated = yes
+
+		bypass = {
+			NOT = {
+				has_idea = Mon_intellectuals_purged
+			}
+		}
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+			if = {
+				limit = {
+					has_idea = Mon_intellectuals_purged
+				}
+				modify_timed_idea = {
+					idea = Mon_intellectuals_purged
+					days = -240
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
+	}
+
+	focus = {
+		id = MON_remove_nominal_leadership
+		icon = GFX_goal_generic_war_with_comintern
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_spread_atheist_propaganda
+		prerequisite = { focus = MON_form_new_party_elite }
+		prerequisite = { focus = MON_spread_atheist_propaganda }
+		prerequisite = { focus = MON_appease_loyal_intelligentsia }
+		available_if_capitulated = no
+		
+		available = {
+			OR ={
+				AND = {
+					has_government = communism
+					has_country_leader = {
+						name = "Peljidiin Genden"
+						ruling_only = yes
+					}
+				}
+				AND = {
+					has_government = communism
+					has_country_leader = {
+						name = "Amandyn Amar"
+						ruling_only = yes
+					}
+				}
+			}
+		}
+
+		bypass = {
+			has_country_leader = {
+				name = "Khorloogiin Choibalsan"
+				ruling_only = yes
+			}
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			if = {
+				limit = { 
+					has_idea = MON_consolidated_power_1 
+				}
+				remove_ideas = MON_consolidated_power_1
+			}
+			if = {
+				limit = { 
+					has_idea = MON_consolidated_power_2 
+				}
+				remove_ideas = MON_consolidated_power_2
+			}
+			if = {
+				limit = { 
+					has_idea = MON_consolidated_power_3 
+				}
+				remove_ideas = MON_consolidated_power_3
+			}
+			country_event = mongol.7
+		}
+	}
+
+	focus = {
+		id = MON_redraw_the_constitution
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_remove_nominal_leadership
+		prerequisite = { focus = MON_remove_nominal_leadership }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+		}
+	}
+
+	focus = {
+		id = MON_cult_of_choibalsan
+		icon = GFX_goal_extensive_conscription_communism
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = MON_remove_nominal_leadership
+		prerequisite = { focus = MON_remove_nominal_leadership }
+		prerequisite = { focus = MON_reinforce_eastern_border }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_ideas = MON_cult_of_choibalsan_idea
+		}
+	}
+
+	focus = {
+		id = MON_looking_outwards
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_cult_of_choibalsan
+		prerequisite = { focus = MON_cult_of_choibalsan }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+		}
+	}
+
+	focus = {
+		id = MON_support_the_red_army
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_cult_of_choibalsan
+		prerequisite = { focus = MON_cult_of_choibalsan }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+		}
+	}
+
+	focus = {
+		id = MON_dreams_of_greater_mongolia
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_cult_of_choibalsan
+		prerequisite = { focus = MON_cult_of_choibalsan }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+		}
+	}
+
+	focus = {
+		id = MON_appeal_for_international_recognition
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_cult_of_choibalsan
+		prerequisite = { focus = MON_cult_of_choibalsan }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+		}
+	}
+
+
+	focus = {
+		id = MON_oppose_military_involvement
+		icon = GFX_goal_arrests
+		x = -3
+		y = 1
+		cost = 15
+		relative_position_id = MON_hold_the_plenum_of_central_committee
+		mutually_exclusive = { 
+			focus = MON_appoint_choibalsan_as_interior_minister
+		}
+		prerequisite = { 
+			focus = MON_hold_the_plenum_of_central_committee
+		}
+		available_if_capitulated = yes
+
+		available = {
+			is_puppet = no	
+		}
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			custom_effect_tooltip = MON_incoming_militarist_uprising_tt
+			add_timed_idea = {
+				idea = MON_incoming_militarist_uprising
+    			days = 365
+			}
+		}
+	}
+
+
+	focus = {
+		id = MON_proudly_alone
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_reinforce_the_borders
+		prerequisite = { focus = MON_reinforce_the_borders }
+		available_if_capitulated = yes
+
+		available = {
+			is_puppet = no
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			SOV = {
+				remove_from_faction = MON
+			}
+			if = {
+                limit = { NOT = { has_idea = neutrality_idea } }
+                add_ideas = neutrality_idea
+            }
+			MON = {
+				set_rule = {
+				    can_join_factions = no
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_strengthten_genden
+		icon = GFX_focus_prc_maoism	
+		x = -16
+		y = 1
+		cost = 5
+		relative_position_id = MON_proudly_alone
+		prerequisite = { focus = MON_proudly_alone }
+		mutually_exclusive = {
+			focus = MON_invite_exiles_of_1932
+			focus = MON_support_right_movement_of_1926
+			focus = MON_legacy_of_bogd_khanate
+		}
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 80
+			remove_ideas = MON_unpopular_government
+		}
+	}
+
+	focus = {
+		id = MON_remove_stalinist_sympathisers
+		icon = GFX_goal_lenin3
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_strengthten_genden
+		prerequisite = { focus = MON_strengthten_genden }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			country_event = { id = mongol.40 }
+		}
+	}
+
+	focus = {
+		id = MON_fully_empower_hudenists
+		icon = GFX_goal_generic_state_economy
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_strengthten_genden
+		prerequisite = { focus = MON_strengthten_genden }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = MON_hudonets_empowered
+		}
+	}
+
+	focus = {
+		id = MON_get_rich
+		icon = GFX_goal_state_intervention_economy_democracy
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_strengthten_genden
+		prerequisite = { focus = MON_strengthten_genden }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = MON_get_rich_idea
+				days = 180
+			}
+			swap_ideas = { remove_idea = MON_new_course_policy add_idea = MON_new_course_genden }
+		}
+	}
+
+	focus = {
+		id = MON_incorporate_buddhism
+		icon = GFX_goal_red_monasteries
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_remove_stalinist_sympathisers
+		prerequisite = { focus = MON_fully_empower_hudenists }
+		prerequisite = { focus = MON_remove_stalinist_sympathisers }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = MON_incorporated_buddhism
+			random_owned_controlled_state = {
+			prioritize = { 848 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+			prioritize = { 849 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_seek_alliances
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_remove_stalinist_sympathisers
+		prerequisite = { focus = MON_remove_stalinist_sympathisers }
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism	
+		}
+		ai_will_do = {
+			factor = 1		
+		}
+
+		completion_reward = {
+			add_political_power = 120
+			if = {
+				limit = {
+					has_completed_focus = MON_proudly_alone
+				}
+				set_rule = { can_join_factions = yes }
+			}
+			MON = {	
+				set_rule = { can_create_factions = yes }
+			}
+		}
+	}
+
+	focus = {
+		id = MON_cooperation_with_prc
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_seek_alliances
+		prerequisite = { focus = MON_seek_alliances }
+		mutually_exclusive = {
+			focus = MON_Sinkiang_ties
+			focus = MON_tibetian_bonds
+			focus = MON_unlikely_chinese_alliance
+		}
+		available_if_capitulated = no
+
+		available = {
+			is_subject = no
+			is_in_faction = no
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}
+			event_target:WTT_communist_china = {
+				has_government = communism
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}	
+		}
+		ai_will_do = {
+			factor = 1		
+		}
+
+		completion_reward = {
+			PRC = {
+				add_opinion_modifier = {
+					target = MON
+					modifier = huge_increase
+				}
+			}
+			MON = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = huge_increase
+				}
+			}
+			if = {
+				limit = {
+					event_target:WTT_communist_china = { is_faction_leader = yes }
+				}
+				event_target:WTT_communist_china = { country_event = generic.2 }
+			}
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				event_target:WTT_communist_china = { country_event = generic.5 }
+			}
+			else = {
+				create_faction = MON_asian_communist_solidarity
+				custom_effect_tooltip = MON_asian_communist_solidarity_tt
+				hidden_effect = {
+					event_target:WTT_communist_china = { country_event = generic.5 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_Sinkiang_ties
+		icon = GFX_goal_CHI_sinkiang
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_seek_alliances
+		prerequisite = { focus = MON_seek_alliances }
+		mutually_exclusive = {
+			focus = MON_cooperation_with_prc
+			focus = MON_tibetian_bonds
+			focus = MON_unlikely_chinese_alliance
+		}
+		available_if_capitulated = no
+
+		available = {
+			is_subject = no
+			is_in_faction = no
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}
+			SIK = {
+				exists = yes
+				has_government = communism
+				is_in_faction = no
+			}		
+		}
+		ai_will_do = {
+			factor = 1		
+		}
+
+		completion_reward = {
+			SIK = {
+				add_opinion_modifier = {
+					target = MON
+					modifier = medium_increase
+				}
+			}
+			MON = {
+				add_opinion_modifier = {
+					target = SIK
+					modifier = medium_increase
+				}
+			}
+			create_faction = MON_asian_neutrality_pact
+			SIK = { country_event = generic.5 }
+			add_ai_strategy = {
+				type = protect
+				id = "SIK"
+				value = 100
+			}
+		}
+	}
+
+	focus = {
+		id = MON_tibetian_bonds
+		icon = GFX_goal_TIB_monasteries
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_seek_alliances
+		prerequisite = { focus = MON_seek_alliances }
+		mutually_exclusive = {
+			focus = MON_cooperation_with_prc
+			focus = MON_Sinkiang_ties
+			focus = MON_unlikely_chinese_alliance
+		}
+		available_if_capitulated = no
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}
+			TIB = {
+				exists = yes
+				is_in_faction = no
+			}			
+		}
+		ai_will_do = {
+			factor = 5		
+		}
+
+		completion_reward = {
+			add_political_power = 50
+			TIB = {
+				add_opinion_modifier = {
+					target = MON
+					modifier = huge_increase
+				}
+			}
+			MON = {
+				add_opinion_modifier = {
+					target = TIB
+					modifier = huge_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_unlikely_chinese_alliance
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = MON_seek_alliances
+		prerequisite = { focus = MON_seek_alliances }
+		mutually_exclusive = {
+			focus = MON_cooperation_with_prc
+			focus = MON_Sinkiang_ties
+			focus = MON_tibetian_bonds
+		}
+		available_if_capitulated = no
+
+		available = {
+			is_puppet = no
+			is_in_faction = no
+			CHI = {
+				is_puppet = no
+				has_war = yes
+				OR = {
+					has_government = neutrality
+					has_government = democratic
+				}
+				is_faction_leader = yes
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			CHI = { country_event = { id = generic.2 days = 1 } }
+		}
+	}
+
+	focus = {
+		id = MON_affirm_our_claims
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_unlikely_chinese_alliance
+		prerequisite = { focus = MON_unlikely_chinese_alliance }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_strike_back
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_unlikely_chinese_alliance
+		prerequisite = { focus = MON_unlikely_chinese_alliance }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_hegemony_over_china
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_strike_back
+		prerequisite = { focus = MON_strike_back }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_assist_communist_expeditions
+		icon = GFX_goal_PRC_attack_ma_clique
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_cooperation_with_prc
+		prerequisite = { focus = MON_cooperation_with_prc }
+		available_if_capitulated = yes
+
+		available = {
+			is_in_faction_with = PRC
+			NOT = { has_war_with = XSM }
+			NOT = { has_war_with = SHX }				
+		}
+		bypass = {
+			XSM = {
+				r56_script_standard_bypass = yes
+			}
+			SHX = {
+				r56_script_standard_bypass = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = -20
+			add_state_claim = 756
+			add_state_claim = 616
+			add_state_claim = 621
+			add_state_claim = 746
+			create_wargoal = {
+				type = take_state_focus
+				target = XSM
+				expire = 0
+				generator = { 756 616 }
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = SHX
+				expire = 0
+				generator = { 621 746 }
+			}
+			PRC = {
+				create_wargoal = {
+					type = take_state_focus
+					target = XSM
+					expire = 0
+					generator = { 556 }
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = SHX
+					expire = 0
+					generator = { 615 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_split_sinkiang
+		icon = GFX_goal_PRC_retake_sinkiang
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_cooperation_with_prc
+		prerequisite = { focus = MON_cooperation_with_prc }
+		available_if_capitulated = yes
+
+		available = {
+			is_in_faction_with = PRC
+			NOT = { has_war_with = SIK }	
+		}
+		bypass = {
+			SIK = {
+				r56_script_standard_bypass = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_state_claim = 617
+			add_state_claim = 618
+			add_state_claim = 760
+			create_wargoal = {
+				type = take_state_focus
+				target = SIK
+				expire = 0
+				generator = { 617 618 760 }
+			}
+			PRC = {
+				create_wargoal = {
+					type = take_state_focus
+					target = SIK
+					expire = 0
+					generator = { 759 287 619 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_assure_save_passage_for_panchen_lama
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_tibetian_bonds
+		prerequisite = { focus = MON_tibetian_bonds }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_expand_mongolian_monasteries
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_assure_save_passage_for_panchen_lama
+		prerequisite = { focus = MON_assure_save_passage_for_panchen_lama }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_buddhist_union
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_assure_save_passage_for_panchen_lama
+		prerequisite = { focus = MON_assure_save_passage_for_panchen_lama }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_free_chinese_buddhists
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_buddhist_union
+		prerequisite = { focus = MON_buddhist_union }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+				has_country_leader = {
+					name = "Peljidiin Genden"
+					ruling_only = yes
+				}
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_invite_exiles_of_1932
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_proudly_alone
+		prerequisite = { focus = MON_proudly_alone }
+		mutually_exclusive = {
+			focus = MON_strengthten_genden
+			focus = MON_support_right_movement_of_1926
+			focus = MON_legacy_of_bogd_khanate
+		}
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_another_govenment_reshuffle
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_invite_exiles_of_1932
+		prerequisite = { focus = MON_invite_exiles_of_1932 }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_depose_genden
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_invite_exiles_of_1932
+		prerequisite = { focus = MON_invite_exiles_of_1932 }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_empower_eldev_ochir
+		icon = gfx_fifth_column
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_depose_genden
+		prerequisite = { focus = MON_depose_genden focus = MON_another_govenment_reshuffle }
+		mutually_exclusive = { focus = MON_invite_chen_duxiu }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_invite_chen_duxiu
+		icon = GFX_goal_support_fourth_int
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = MON_another_govenment_reshuffle
+		prerequisite = { focus = MON_depose_genden focus = MON_another_govenment_reshuffle }
+		mutually_exclusive = { focus = MON_empower_eldev_ochir }
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism	
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Chen Duxiu"
+				desc = "POLITICS_CHEN_DUXIU_DESC"
+				picture = "gfx/leaders/PRC/r56_portrait_PRC_Chen_Duxiu.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					PRC_trotskyist
+				}
+			}
+			PRC = {
+				add_opinion_modifier = {
+					target = MON
+					modifier = hostile_status
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = MON_two_principles_of_the_people
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_invite_chen_duxiu
+		prerequisite = { focus = MON_invite_chen_duxiu }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_welfare
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_two_principles_of_the_people
+		prerequisite = { focus = MON_two_principles_of_the_people }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_Reassure_the_peasants
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_welfare
+		prerequisite = { focus = MON_welfare }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_improve_the_life_of_workers
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_welfare
+		prerequisite = { focus = MON_welfare }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_no_chinese_mistakes
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_improve_the_life_of_workers
+		prerequisite = { focus = MON_improve_the_life_of_workers }
+		prerequisite = { focus = MON_Reassure_the_peasants }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_democracy
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_two_principles_of_the_people
+		prerequisite = { focus = MON_two_principles_of_the_people }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_export_values_to_the_west
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_democracy
+		prerequisite = { focus = MON_democracy }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_export_values_to_the_east
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_democracy
+		prerequisite = { focus = MON_democracy }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_oppose_stalinism_in_sinkiang
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_export_values_to_the_west
+		prerequisite = { focus = MON_export_values_to_the_west }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_deal_with_tuvan_communism
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_export_values_to_the_west
+		prerequisite = { focus = MON_export_values_to_the_west }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_depose_fascist_twin
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_deal_with_tuvan_communism
+		prerequisite = { focus = MON_deal_with_tuvan_communism }
+		prerequisite = { focus = MON_oppose_stalinism_in_sinkiang }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_expose_mao_weaknesses
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_export_values_to_the_east
+		prerequisite = { focus = MON_export_values_to_the_east }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_oppose_chinese_nationalism
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_export_values_to_the_east
+		prerequisite = { focus = MON_export_values_to_the_east }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_eliminate_japanese_threat
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_expose_mao_weaknesses
+		prerequisite = { focus = MON_oppose_chinese_nationalism }
+		prerequisite = { focus = MON_expose_mao_weaknesses }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_trotskyist_narrative
+		icon = gfx_fifth_column
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_invite_chen_duxiu
+		prerequisite = { focus = MON_invite_chen_duxiu }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_alliance_with_trotskyist_russia
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_trotskyist_narrative
+		prerequisite = { focus = MON_trotskyist_narrative }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_a_friend_across_the_ocean
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_trotskyist_narrative
+		prerequisite = { focus = MON_trotskyist_narrative }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_end_political_opportunism
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_empower_eldev_ochir
+		prerequisite = { focus = MON_empower_eldev_ochir  }
+
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_enforce_leftists_reforms
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_end_political_opportunism
+		prerequisite = { focus = MON_end_political_opportunism  }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_new_collectivisation
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_enforce_leftists_reforms
+		prerequisite = { focus = MON_enforce_leftists_reforms  }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_clarify_the_status_of_monasteries
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_end_political_opportunism
+		prerequisite = { focus = MON_end_political_opportunism  }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_goods_appropriation
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_clarify_the_status_of_monasteries
+		prerequisite = { focus = MON_clarify_the_status_of_monasteries  }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_soacialist_mongolia_with_new_face
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_goods_appropriation
+		prerequisite = { focus = MON_goods_appropriation  }
+		prerequisite = { focus = MON_new_collectivisation  }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_show_loyalty_to_the_cause
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_end_political_opportunism
+		prerequisite = { focus = MON_end_political_opportunism  }
+		available_if_capitulated = yes
+
+		available = {
+			has_government = communism
+			SOV = { is_faction_leader = yes }
+			is_puppet = no
+			is_in_faction = no
+			NOT = { has_war_with = SOV }
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = SOV
+					has_war_with = MON
+				}
+			}
+		}
+		bypass = {
+			is_in_faction_with = SOV
+		}
+
+		ai_will_do = {
+			factor = 1		
+		}
+
+		completion_reward = {
+			SOV = { country_event = generic.2 }
+		}
+	}
+
+	focus = {
+		id = MON_join_soviet_big_brother
+		icon = GFX_focus_CZE_german_puppet
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_show_loyalty_to_the_cause
+		prerequisite = { focus = MON_show_loyalty_to_the_cause  }
+		available_if_capitulated = yes
+
+		available = {
+			is_puppet = no
+			has_government = communism
+			SOV = {
+				has_government = communism
+			}	
+			is_in_faction_with = SOV
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			if = {
+				limit = { has_dlc = "Together for Victory"}
+				custom_effect_tooltip = MON_soviet_puppet_tooltip_TFV
+				else = {
+					custom_effect_tooltip = MON_soviet_puppet_tooltip
+				}
+			}
+			SOV = { country_event = mongol.100 }
+		}
+	}
+
+	focus = {
+		id = MON_support_right_movement_of_1926
+		icon = gfx_fifth_column
+		x = 11
+		y = 1
+		cost = 10
+		relative_position_id = MON_proudly_alone
+		prerequisite = { focus = MON_proudly_alone }
+		mutually_exclusive = {
+			focus = MON_strengthten_genden
+			focus = MON_invite_exiles_of_1932
+			focus = MON_legacy_of_bogd_khanate
+		}
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_remember_7th_party_congress
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_support_right_movement_of_1926
+		prerequisite = { focus = MON_support_right_movement_of_1926 }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_liberalize_the_current_regime
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_remember_7th_party_congress
+		prerequisite = { focus = MON_remember_7th_party_congress }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_consolidate_communist_opposition
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_liberalize_the_current_regime
+		prerequisite = { focus = MON_liberalize_the_current_regime }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_reduce_taxation_of_monasteries
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_remember_7th_party_congress
+		prerequisite = { focus = MON_remember_7th_party_congress }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_guarantee_religious_liberties
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_reduce_taxation_of_monasteries
+		prerequisite = { focus = MON_reduce_taxation_of_monasteries }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_social_democratic_economic_reforms
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_remember_7th_party_congress
+		prerequisite = { focus = MON_remember_7th_party_congress }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_support_small_businesses
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_social_democratic_economic_reforms
+		prerequisite = { focus = MON_social_democratic_economic_reforms }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_gather_unscheduled_party_congress
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_guarantee_religious_liberties
+		prerequisite = { focus = MON_consolidate_communist_opposition }
+		prerequisite = { focus = MON_guarantee_religious_liberties }
+		prerequisite = { focus = MON_support_small_businesses }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	
+	focus = {
+		id = MON_follow_tserendorj_politics
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_gather_unscheduled_party_congress
+		prerequisite = { focus = MON_gather_unscheduled_party_congress }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_look_to_the_west
+		icon = gfx_fifth_column
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = MON_follow_tserendorj_politics
+		prerequisite = { focus = MON_follow_tserendorj_politics }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_foreign_guarantees
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_look_to_the_west
+		prerequisite = { focus = MON_look_to_the_west }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_join_the_allies
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_foreign_guarantees
+		prerequisite = { focus = MON_foreign_guarantees }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_look_to_the_east
+		icon = gfx_fifth_column
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_follow_tserendorj_politics
+		prerequisite = { focus = MON_follow_tserendorj_politics }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_approach_china
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_look_to_the_east
+		prerequisite = { focus = MON_look_to_the_east }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_approach_japan
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_look_to_the_east
+		prerequisite = { focus = MON_look_to_the_east }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_the_switzerland_of_asia
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_approach_japan
+		prerequisite = { focus = MON_approach_japan }
+		prerequisite = { focus = MON_approach_china }
+
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+
+	focus = {
+		id = MON_legacy_of_bogd_khanate
+		icon = gfx_fifth_column
+		x = 20
+		y = 1
+		cost = 10
+		relative_position_id = MON_proudly_alone
+		prerequisite = { focus = MON_proudly_alone focus = MON_openly_renounce_soviet_protection }
+		mutually_exclusive = {
+			focus = MON_strengthten_genden
+			focus = MON_invite_exiles_of_1932
+			focus = MON_support_right_movement_of_1926
+		}
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_pay_official_visit_to_tibet
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_legacy_of_bogd_khanate
+		prerequisite = { focus = MON_legacy_of_bogd_khanate }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_search_khutughtu
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_pay_official_visit_to_tibet
+		prerequisite = { focus = MON_pay_official_visit_to_tibet }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_armed_return_of_young_bogd_khan
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_search_khutughtu
+		prerequisite = { focus = MON_search_khutughtu }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_oppose_chinese_interference
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_armed_return_of_young_bogd_khan
+		prerequisite = { focus = MON_armed_return_of_young_bogd_khan }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_secure_peaceful_return_of_young_bogd_khan
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_search_khutughtu
+		prerequisite = { focus = MON_search_khutughtu }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_spread_pro_khanate_ideas
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_secure_peaceful_return_of_young_bogd_khan
+		prerequisite = { focus = MON_secure_peaceful_return_of_young_bogd_khan }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_ploclaim_official_khanate_return
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_spread_pro_khanate_ideas
+		prerequisite = { focus = MON_spread_pro_khanate_ideas focus = MON_oppose_chinese_interference }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_new_constitution
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_ploclaim_official_khanate_return
+		prerequisite = { focus = MON_ploclaim_official_khanate_return }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_devotion_to_parlamentary_monarcy
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_new_constitution
+		prerequisite = { focus = MON_new_constitution }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_internal_policies
+		icon = gfx_fifth_column
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = MON_ploclaim_official_khanate_return
+		prerequisite = { focus = MON_ploclaim_official_khanate_return }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_modern_economic_policies
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_internal_policies
+		prerequisite = { focus = MON_internal_policies }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_status_of_education
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_internal_policies
+		prerequisite = { focus = MON_internal_policies }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_external_policies
+		icon = gfx_fifth_column
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = MON_ploclaim_official_khanate_return
+		prerequisite = { focus = MON_ploclaim_official_khanate_return }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_buddhist_unity
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_external_policies
+		prerequisite = { focus = MON_external_policies }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_appeal_to_pan_mongolism
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_external_policies
+		prerequisite = { focus = MON_external_policies }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_envoy_to_japan
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_appeal_to_pan_mongolism
+		prerequisite = { focus = MON_appeal_to_pan_mongolism }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_join_japan_for_promises
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_envoy_to_japan
+		prerequisite = { focus = MON_envoy_to_japan }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_ambassador_in_china
+		icon = gfx_fifth_column
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = MON_appeal_to_pan_mongolism
+		prerequisite = { focus = MON_appeal_to_pan_mongolism }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_join_chinese_for_territories
+		icon = gfx_fifth_column
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = MON_ambassador_in_china
+		prerequisite = { focus = MON_ambassador_in_china }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = MON_greater_mongolia_restored
+		icon = gfx_fifth_column
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = MON_join_chinese_for_territories
+		prerequisite = { focus = MON_join_japan_for_promises focus = MON_join_chinese_for_territories }
+		available_if_capitulated = yes
+
+		available = {
+			AND = {
+				has_government = communism
+			}		
+		}
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	# pro-japan #
+	focus = {
+		id = MON_openly_renounce_soviet_protection
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_remove_soviet_agents
+
+		prerequisite = { focus = MON_remove_soviet_agents }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_appeal_to_japan
+		icon = GFX_goal_anti_comintern_pact
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = MON_openly_renounce_soviet_protection
+
+		prerequisite = { focus = MON_openly_renounce_soviet_protection }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_reconcile_with_mengukou
+		icon = GFX_goal_anti_comintern_pact
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = MON_openly_renounce_soviet_protection
+
+		prerequisite = { focus = MON_openly_renounce_soviet_protection }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_attend_manchukou_conference
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_appeal_to_japan
+
+		prerequisite = { focus = MON_appeal_to_japan }
+		prerequisite = { focus = MON_reconcile_with_mengukou }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_join_japanese_faction
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_attend_manchukou_conference
+
+		prerequisite = { focus = MON_attend_manchukou_conference }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_japanese_mongolian_tech_exchange
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_join_japanese_faction
+
+		prerequisite = { focus = MON_join_japanese_faction }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+	
+
+	focus = {
+		id = MON_great_mongolia_concept
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_reconcile_with_mengukou
+
+		prerequisite = { focus = MON_reconcile_with_mengukou }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_extend_frontline
+		icon = GFX_goal_anti_comintern_pact
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_southern_expedition
+		icon = GFX_goal_anti_comintern_pact
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_communist_threat_to_the_west
+		icon = GFX_goal_anti_comintern_pact
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_support_nationalism_in_tuva
+		icon = GFX_goal_anti_comintern_pact
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_buryat_protests
+		icon = GFX_goal_anti_comintern_pact
+		x = 1
+		y = 2
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_hulunbuir_issue
+		icon = GFX_goal_anti_comintern_pact
+		x = 3
+		y = 2
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+
+	focus = {
+		id = MON_affirm_chinese_suzereinity
+		icon = GFX_goal_anti_comintern_pact
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = MON_great_mongolia_concept
+
+		prerequisite = { focus = MON_great_mongolia_concept }
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0		
+		}
+
+		completion_reward = {
+			remove_ideas = MON_soviet_NKVD_agents
+		}
+	}
+}

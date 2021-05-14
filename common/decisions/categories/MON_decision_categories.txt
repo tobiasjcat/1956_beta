@@ -112,3 +112,16 @@ integration_mongolian_lands_category = {
 	}
 	icon = generic_independence
 }
+
+MON_strenghten_mongolbank_category  = {
+	picture = GFX_decision_cat_generic_mefo_bills
+	
+	allowed = {
+		tag = MON
+	}
+	priority = 90
+	visible = {
+		original_tag = MON
+		has_completed_focus = MON_strenghten_tugrik
+	}
+}

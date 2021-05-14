@@ -470,3 +470,261 @@ propaganda_efforts = {
 		}
 	}
 }
+
+MON_strenghten_mongolbank_category  = {
+	
+	MON_increase_production_quotas = {
+		
+		icon = generic_factory
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_strenghten_tugrik
+		}
+		
+		available = {
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+		}
+
+		days_remove = 30
+		days_re_enable = 120
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			add_ideas = MON_production_quotas_increased
+		}
+
+		remove_effect = {
+			remove_ideas = MON_production_quotas_increased
+			if = {
+				limit = { has_idea = Mongolbank_bankrupt }
+				swap_ideas = { remove_idea = Mongolbank_bankrupt add_idea = Mongolbank_low_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_low_funds }
+				swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_moderate_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_moderate_funds }
+				swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_high_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_very_high_funds }
+			}
+		}
+	}
+
+	MON_reduce_scientists_funding = {
+		
+		icon = generic_research
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_strenghten_tugrik
+		}
+		
+		available = {
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+		}
+
+		days_remove = 30
+		days_re_enable = 120
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		complete_effect = {
+			add_ideas = MON_reduced_scientists_funding
+		}
+
+		remove_effect = {
+			remove_ideas = MON_reduced_scientists_funding
+			if = {
+				limit = { has_idea = Mongolbank_bankrupt }
+				swap_ideas = { remove_idea = Mongolbank_bankrupt add_idea = Mongolbank_low_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_low_funds }
+				swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_moderate_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_moderate_funds }
+				swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_high_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_very_high_funds }
+			}
+		}
+	}
+
+	MON_appropriate_civilian_goods = {
+		
+		icon = generic_construction
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_strenghten_tugrik
+		}
+		
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+			has_stability > 0.10
+		}
+
+		days_re_enable = 90
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+			if = {
+				limit = { has_idea = Mongolbank_bankrupt }
+				swap_ideas = { remove_idea = Mongolbank_bankrupt add_idea = Mongolbank_low_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_low_funds }
+				swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_moderate_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_moderate_funds }
+				swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_high_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_very_high_funds }
+			}
+		}
+	}
+
+	MON_decrease_army_funding = {
+		
+		icon = generic_operation
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_strenghten_tugrik
+		}
+		
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+			has_war_support > 0.10
+		}
+
+		days_re_enable = 150
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_war_support = -0.07
+			if = {
+				limit = { has_idea = Mongolbank_bankrupt }
+				swap_ideas = { remove_idea = Mongolbank_bankrupt add_idea = Mongolbank_low_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_low_funds }
+				swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_moderate_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_moderate_funds }
+				swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_high_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_very_high_funds }
+			}
+		}
+	}
+
+	MON_buy_currency_abroad = {
+		
+		icon = ger_mefo_bills
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_strenghten_tugrik
+		}
+		
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = Mongolbank_very_high_funds
+			}
+		}
+
+		days_remove = 60
+		days_re_enable = 120
+
+		cost = 80
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			add_ideas = MON_buying_currency_abroad
+		}
+
+		remove_effect = {
+			remove_ideas = MON_buying_currency_abroad
+			if = {
+				limit = { has_idea = Mongolbank_bankrupt }
+				swap_ideas = { remove_idea = Mongolbank_bankrupt add_idea = Mongolbank_low_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_low_funds }
+				swap_ideas = { remove_idea = Mongolbank_low_funds add_idea = Mongolbank_moderate_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_moderate_funds }
+				swap_ideas = { remove_idea = Mongolbank_moderate_funds add_idea = Mongolbank_high_funds }
+			}
+			if = {
+				limit = { has_idea = Mongolbank_high_funds }
+				swap_ideas = { remove_idea = Mongolbank_high_funds add_idea = Mongolbank_very_high_funds }
+			}
+		}
+	}
+}
