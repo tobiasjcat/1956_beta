@@ -17,7 +17,13 @@ set_research_slots = 3
 add_ideas = ALG_provisional_government
 add_ideas = ALG_pieds_noir
 
-
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+	load_oob = camel_template
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"

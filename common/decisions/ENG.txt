@@ -2051,7 +2051,19 @@ ENG_appeal_to_imperial_loyalists = {
 			OR = {
 				AND = {
 					has_government = neutrality
-					FROM = { NOT = { has_government = neutrality } }
+					FROM = { 
+						OR = {
+							NOT = { has_government = neutrality }
+							AND = {
+								has_government = neutrality
+								OR = {
+									has_country_leader = { ruling_only = yes name = "Jan Smuts" }
+									has_country_leader = { ruling_only = yes name = "J. B. M. Hertzog" }
+								}
+								
+							}
+						}
+					}
 				}
 				AND = {
 					has_government = fascism
