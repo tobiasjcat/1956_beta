@@ -19,7 +19,7 @@ country_event = {
 	}
 	option = { # Refuse
 		name = mongol.1.b
-	  ai_chance = { factor = 0 }
+	  	ai_chance = { factor = 0 }
 		MON = {
 			country_event = { id = mongol.2 }
 		}
@@ -126,23 +126,7 @@ country_event = { #Amar is purged
 	desc = mongol.7.d
 	picture = GFX_report_event_hungary_parliament
 
-	trigger = {
-		original_tag = MON
-		date > 1941.7.10
-		MON = {
-			exists = yes
-			NOT = { has_country_flag = r56_mon_dancing_shadows }
-			has_government = communism
-			OR = {
-				is_in_faction_with = SOV
-				is_subject_of = SOV
-			}
-		}
-		SOV = {
-			exists = yes
-			has_government = communism
-		}
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 		
@@ -187,6 +171,7 @@ country_event = { #Aftermath of Moscow visit
 	desc = mongol.10.d
 	picture = GFX_report_event_hungary_parliament
 
+	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
@@ -228,6 +213,7 @@ country_event = { #Second Plenum to decide the Fate of Genden
 	desc = mongol.11.d
 	picture = GFX_report_event_soviet_purge_trial
 
+	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
@@ -302,6 +288,7 @@ country_event = { #Mutual assistance treaty
 	desc = mongol.12.d
 	picture = GFX_report_event_chinese_japanese_handshake
 
+	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
@@ -339,6 +326,7 @@ country_event = { #Mutual assistance treaty -YEEES
 	desc = mongol.13.d
 	picture = GFX_report_event_stalin_02
 
+	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
@@ -357,6 +345,7 @@ country_event = { #Mutual assistance treaty - NOOOOO
 	desc = mongol.14.d
 	picture = GFX_report_event_generic_read_write
 
+	is_triggered_only = yes
 	fire_only_once = yes
 		
 	option = {
@@ -487,8 +476,6 @@ country_event = {
 		add_political_power = -100
 	}
 }
-
-
 
 country_event = { #Genden: Remove/purge soviet sympatisers
 	id = mongol.40

@@ -640,10 +640,7 @@ ideas = {
 
 			allowed = {
 				original_tag = MON
-				NOT = {
-					has_government = democratic 
-					has_government = neutrality 
-				}
+				has_government = communism
 			}
 
 			allowed_civil_war = {
@@ -651,19 +648,17 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_factor = 0.05
+				political_power_factor = 0.15
 				communism_drift = 0.1
 			}
 		}
 
-		MON_incoming_militarist_uprising = {
-			picture = chi_war_of_resistance
+		MON_gathering_funds = {
+			picture = generic_intel_bonus
 
 			allowed = {
 				original_tag = MON
-				NOT = {
-					has_government = democratic 
-				}
+				has_government = communism
 			}
 
 			allowed_civil_war = {
@@ -671,9 +666,42 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_gain = -0.10
-				army_morale_factor = -0.1
-				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				consumer_goods_factor = 0.08
+			}
+		}
+
+		MON_supporting_allied_cause = {
+			picture = generic_intel_bonus
+
+			allowed = {
+				original_tag = MON
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.30
+			}
+		}
+
+		MON_support_to_our_cause = {
+			picture = generic_intel_bonus
+
+			allowed = {
+				has_war = yes
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.06
 			}
 		}
 
@@ -744,6 +772,24 @@ ideas = {
 				global_building_slots_factor = 0.15
 				industrial_capacity_factory = 0.15
 				consumer_goods_factor = -0.02
+			}
+		}
+
+		#democratic modifiers
+		MON_right_movement_on_the_rise  = {
+			picture = FRA_factory_strikes
+
+			allowed = {
+				original_tag = MON
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				communism_drift = -0.05
+				democratic_drift = 0.05
 			}
 		}
 
@@ -883,6 +929,9 @@ ideas = {
 				}
 				has_country_flag = mon_new_party_elite_formed_flag
 			}
+			visible = {
+				has_completed_focus = MON_form_new_party_elite
+			}
 			traits = { captain_of_industry }
 		}
 
@@ -894,6 +943,9 @@ ideas = {
 			}
 			available = {
 				has_country_flag = mon_new_party_elite_formed_flag
+			}
+			visible = {
+				has_completed_focus = MON_form_new_party_elite
 			}
 			traits = { financial_expert }
 		}
@@ -907,6 +959,9 @@ ideas = {
 			available = {
 				has_country_flag = mon_new_party_elite_formed_flag
 			}
+			visible = {
+				has_completed_focus = MON_form_new_party_elite
+			}
 			traits = { POL_Secretary_General }
 		}
 
@@ -918,6 +973,9 @@ ideas = {
 			}
 			available = {
 				has_country_flag = mon_new_party_elite_formed_flag
+			}
+			visible = {
+				has_completed_focus = MON_form_new_party_elite
 			}
 			traits = { prince_of_terror }
 		}

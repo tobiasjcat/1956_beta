@@ -77,9 +77,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Anandyn Amar"
-	desc = "POLITICS_ANANDYN_AMAR_DESC"
-	picture = GFX_portrait_mon_anandyn_amar
+	name = "Peljidiin Genden"
+	desc = "POLITICS_PELJIDIIN_GENDEN_DESC"
+	picture = "gfx/leaders/MON/r56_portrait_MON_Butochiyn_Tsog.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {

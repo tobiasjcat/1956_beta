@@ -29,6 +29,23 @@ TAN_seren_kuzhuget:0 "Seren Kuzhuget"
 GEN_tuva_annex_ussr:0 "Soviet What?"
 GEN_tuva_annex_ussr_desc:0 "CongratulationS! You found the secret focus suggested by someone on the rt56 discord. He thought that his plea was ignored but against all odds, his call was heard. A gracious Waffle listened his prayer and made his vow a reality under a moonless sky. Have fun enjoying your easy Tuvan world conquest."
 
+MON_strenghten_mongolbank_category:0 "Strenghten National Banking System"
+MON_strenghten_mongolbank_category_desc:0 "We have limited funds at our disposal which are being quickly used for various industrial projects across the country. Securing additional resources might be tedious, yet the long-time benefits are surely worth it."
+MON_reduce_scientists_funding:0 "Reduce scientists funding"
+MON_buy_currency_abroad:0 "Buy foreign currency"
+MON_increase_production_quotas:0 "Force an increase in production quotas"
+MON_appropriate_civilian_goods:0 "Appropriate civilian goods"
+MON_decrease_army_funding:0 "Decrease army financial support"
+
+MON_support_soviets_category:0 "Support USSR"
+MON_revolutionary_mongolia:0 "Form "Revolutionary Mongolia" Tank Division"
+MON_arat_squadron:0 "Support Formation of "Arat Squadron""
+MON_aid_allies_cause:0 "Aid Allies Cause"
+
+
+MON_revolutionary_tank_brigade_tt:0 "When the funds are gathered, you will receive a Mongolian tank division consisting of §Y2 light tank brigades§! and §Y2 motorized brigades§!"
+
+
 
 
 ### flags ###
@@ -116,8 +133,6 @@ MON_troika_organized:0 "Organized "Troika""
 MON_troika_organized_desc:0 "Following an example of the Stalinists revolutionary troikas, we have established our own troika which is led by Choibalsan to bring the law and order to the state."
 MON_buddhist_opposition:0 "Buddhist Opposition"
 MON_buddhist_opposition_desc:0 "Our anti-religious campaign has delivered its first results which are negatively impacting our government's positions. "
-
-
 MON_consolidated_power_1:0 "Consolidated Power in One Area"
 MON_consolidated_power_1_desc:0 "The power is now in a firm grip of one leader, and this being Choibalsan operating behind the back of Amandyn Amar."
 MON_consolidated_power_2:0 "Consolidated Power in Most Areas"
@@ -137,6 +152,9 @@ Mon_lamas_purged:0 "Lamas Purged"
 Mon_lamas_purged_desc:0 "Many members of the religious institutions have fled the country or were forced into hiding due to the recent government purges."
 MON_atheism_propaganda:0 "Atheism Propaganda"
 MON_cult_of_choibalsan_idea:0 "Cult of Choibalsan"
+MON_gathering_funds:0 "Gathering Funds"
+MON_supporting_allied_cause:0 "Supporting allied cause"
+MON_support_to_our_cause:0 "[MON.getAdjective] support"
 
 
 Mongolbank_very_high_funds:0 "Mongolbank: §GVery high funds§!"
@@ -170,6 +188,11 @@ MON_unlikely_chinese_alliance:0 "Assist Chinese Struggle"
 
 MON_assist_communist_expeditions:0 "Assist Communist Expeditions"
 MON_split_sinkiang:0 "Split Sinkiang"
+
+
+
+#democratic ideas#
+MON_right_movement_on_the_rise:0 "Rightists Empowered"
 
 #### FACTIONS ####
 MON_asian_communist_solidarity:0 "Asian Communist Solidarity"
@@ -209,7 +232,11 @@ MON_remove_nominal_leadership:0 "Remove Nominal Leadership"
 MON_redraw_the_constitution:0 "Redraw the Constitution"
 
 MON_reinforce_eastern_border:0 "Reinforce Eastern Border"
+MON_seize_state_enemies_assets:0 "Seize State Enemies Assets"
 MON_cult_of_choibalsan:0 "Stalin of Mongolia"
+MON_expansive_politics:0 "Expansive Politics"
+MON_embrace_neutrality:0 "Embrace Neutrality"
+MON_follow_soviet_lead:0 "Follow Soviet Lead"
 
 #shared between communists#
 MON_sign_protocol_of_mutual_assistance:0 "Sign Protocol of Mutual Assistance"

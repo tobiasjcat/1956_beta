@@ -728,3 +728,141 @@ MON_strenghten_mongolbank_category  = {
 		}
 	}
 }
+
+
+MON_support_soviets_category  = {
+
+	MON_revolutionary_mongolia = {
+		icon = generic_operation
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_follow_soviet_lead
+		}
+		
+		available = {
+			has_war = yes
+		}
+
+		days_remove = 60
+		days_re_enable = 320
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			add_ideas = MON_gathering_funds
+		}
+
+		remove_effect = {
+			remove_ideas = MON_gathering_funds
+			custom_effect_tooltip = MON_revolutionary_tank_brigade_tt
+			hidden_effect = {
+			    division_template = {
+					name = "Volunteer Tank Brigade"
+					priority = 0
+	
+					regiments = {
+						light_armor = { x = 0 y = 0 } #"tank brigade" is vaguely defined"
+						light_armor = { x = 0 y = 1 }
+                        motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+					}
+
+					support = {
+						engineer = { x = 0 y = 0 }
+						antitank = { x = 0 y = 1 }
+					}
+				}
+				330 = {
+					create_unit = {
+						division = "name = \"112th 'Revolutionary Mongolia' Tank Brigade\" division_template = \"Volunteer Tank Brigade\" start_experience_factor = 1.0 start_equipment_factor = 1.0 force_equipment_variants = { infantry_equipment_0 = { owner = MON } }"
+						owner = MON
+					}
+				}
+            }
+		}
+	}
+
+	MON_arat_squadron = {
+		icon = generic_air
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_follow_soviet_lead
+		}
+		
+		available = {
+			has_war = yes
+			SOV = {
+				has_war = yes
+			}
+		}
+
+		days_remove = 60
+		days_re_enable = 180
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			add_ideas = MON_gathering_funds
+		}
+
+		remove_effect = {
+			remove_ideas = MON_gathering_funds
+			add_equipment_to_stockpile = { type = fighter_equipment amount = 20 } #historically only 12 however
+		}
+	}
+
+	MON_aid_allies_cause = {
+		icon = ger_mefo_bills
+
+		allowed = { 
+			original_tag = MON
+		}
+
+		visible = {
+			has_completed_focus = MON_follow_soviet_lead
+		}
+		
+		available = {
+			has_war = yes
+			SOV = {
+				has_war = yes
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			add_ideas = MON_supporting_allied_cause
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+					NOT = { is_subject_of = ROOT }
+					check_variable = { num_of_military_factories > MON.num_of_military_factories }
+				}
+				add_ideas = MON_support_to_our_cause
+			}
+		}
+	}
+
+}
+

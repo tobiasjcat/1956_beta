@@ -119,9 +119,22 @@ MON_strenghten_mongolbank_category  = {
 	allowed = {
 		tag = MON
 	}
-	priority = 90
+	priority = 50
 	visible = {
 		original_tag = MON
 		has_completed_focus = MON_strenghten_tugrik
+	}
+}
+
+MON_support_soviets_category  = {
+	picture = GFX_decision_cat_picture_spr_civil_war_offensives
+	
+	allowed = {
+		tag = MON
+	}
+	priority = 90
+	visible = {
+		original_tag = MON
+		has_completed_focus = MON_follow_soviet_lead
 	}
 }

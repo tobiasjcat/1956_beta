@@ -1111,13 +1111,10 @@ focus_tree = {
 	focus = {
 		id = MON_appoint_choibalsan_as_interior_minister
 		icon = GFX_focus_generic_military_mission
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		relative_position_id = MON_hold_the_plenum_of_central_committee
-		mutually_exclusive = { 
-			focus = MON_oppose_military_involvement
-		}
 
 		available = {
 			has_government = communism
@@ -1145,10 +1142,10 @@ focus_tree = {
 	focus = {
 		id = MON_soviet_industrial_cooperation
 		icon = GFX_goal_generic_construct_civilian
-		x = 7
+		x = 3
 		y = 1
 		cost = 10
-		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		relative_position_id = MON_sign_protocol_of_mutual_assistance
 		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
 		available_if_capitulated = yes
 
@@ -1195,10 +1192,10 @@ focus_tree = {
 	focus = {
 		id = MON_soviet_mongolian_exchange_program
 		icon = GFX_goal_communist_brain
-		x = 5
+		x = 1
 		y = 1
 		cost = 10
-		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		relative_position_id = MON_sign_protocol_of_mutual_assistance
 		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
 		available_if_capitulated = yes
 
@@ -1276,7 +1273,7 @@ focus_tree = {
 		id = MON_replace_old_script
 		icon = GFX_goal_generic_secret_documents
 		x = -1
-		y = 2
+		y = 1
 		cost = 10
 		relative_position_id = MON_joint_technological_development
 		prerequisite = { focus = MON_joint_technological_development }
@@ -1308,7 +1305,7 @@ focus_tree = {
 	focus = {
 		id = MON_ulaanbator_national_university
 		icon = GFX_focus_research
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		relative_position_id = MON_joint_technological_development
@@ -1336,10 +1333,10 @@ focus_tree = {
 	focus = {
 		id = MON_invite_soviet_advisors
 		icon = GFX_goal_soviet_military_advisors
-		x = 3
+		x = -1
 		y = 1
 		cost = 10
-		relative_position_id = MON_appoint_choibalsan_as_interior_minister
+		relative_position_id = MON_sign_protocol_of_mutual_assistance
 		prerequisite = { focus = MON_appoint_choibalsan_as_interior_minister }
 		prerequisite = { focus = MON_sign_protocol_of_mutual_assistance }
 		available_if_capitulated = yes
@@ -1397,7 +1394,7 @@ focus_tree = {
 		id = MON_reinforce_eastern_border
 		icon = GFX_goal_JAP_defence
 		x = 0
-		y = 1
+		y = 3
 		cost = 10
 		relative_position_id = MON_invite_soviet_advisors
 		prerequisite = { focus = MON_invite_soviet_advisors }
@@ -1810,8 +1807,8 @@ focus_tree = {
 
 	focus = {
 		id = MON_redraw_the_constitution
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = -2
+		icon = GFX_goal_constitution
+		x = 0
 		y = 1
 		cost = 10
 		relative_position_id = MON_remove_nominal_leadership
@@ -1822,17 +1819,68 @@ focus_tree = {
 			factor = 50		
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = MON_seize_state_enemies_assets
+		icon = gfx_forced_urbanization
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = MON_remove_nominal_leadership
+		prerequisite = { focus = MON_remove_nominal_leadership }
+		prerequisite = { focus = MON_reinforce_eastern_border }
+		available_if_capitulated = no
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+			prioritize = { 848 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 849 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = MON_cult_of_choibalsan
 		icon = GFX_goal_extensive_conscription_communism
-		x = 3
+		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = MON_remove_nominal_leadership
+		relative_position_id = MON_reinforce_eastern_border
 		prerequisite = { focus = MON_remove_nominal_leadership }
 		prerequisite = { focus = MON_reinforce_eastern_border }
 		available_if_capitulated = yes
@@ -1846,108 +1894,110 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MON_looking_outwards
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 0
+		id = MON_expansive_politics
+		icon = GFX_goal_generic_territory_or_war
+		x = -1
 		y = 1
-		cost = 10
-		relative_position_id = MON_cult_of_choibalsan
-		prerequisite = { focus = MON_cult_of_choibalsan }
+		cost = 7
+		relative_position_id = MON_redraw_the_constitution
+		prerequisite = { focus = MON_redraw_the_constitution }
+		mutually_exclusive = { 
+			focus = MON_follow_soviet_lead
+			focus = MON_embrace_neutrality
+		}
 		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 50		
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+			add_war_support = 0.1
+			add_ideas = GEN_Conquer_I
 		}
 	}
 
 	focus = {
-		id = MON_support_the_red_army
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = MON_embrace_neutrality
+		icon = GFX_goal_generic_peaceful_diplomacy
 		x = -2
 		y = 1
-		cost = 10
+		cost = 7
 		relative_position_id = MON_cult_of_choibalsan
-		prerequisite = { focus = MON_cult_of_choibalsan }
+		prerequisite = { focus = MON_cult_of_choibalsan focus = MON_redraw_the_constitution }
+		mutually_exclusive = { 
+			focus = MON_follow_soviet_lead
+			focus = MON_expansive_politics
+		}
 		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 50		
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+			add_stability = 0.15
+			add_ideas = GEN_Intervene_I
+		}
+	}
+
+	focus = {
+		id = MON_follow_soviet_lead
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = MON_cult_of_choibalsan
+		prerequisite = { focus = MON_cult_of_choibalsan }
+		mutually_exclusive = {
+			focus = MON_embrace_neutrality
+			focus = MON_expansive_politics
+		}
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 50		
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = MON_support_soviets_category
 		}
 	}
 
 	focus = {
 		id = MON_dreams_of_greater_mongolia
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 0
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = -2
 		y = 1
 		cost = 10
-		relative_position_id = MON_cult_of_choibalsan
-		prerequisite = { focus = MON_cult_of_choibalsan }
-		available_if_capitulated = yes
+		relative_position_id = MON_follow_soviet_lead
+		prerequisite = { focus = MON_follow_soviet_lead focus = MON_expansive_politics }
+		mutually_exclusive = { focus = MON_reassert_our_claims }
+		available_if_capitulated = no
 
 		ai_will_do = {
 			factor = 50		
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+			unlock_decision_category_tooltip = MON_support_soviets_category
 		}
 	}
 
 	focus = {
-		id = MON_appeal_for_international_recognition
-		icon = GFX_goal_molotov_ribbentrop_pact
+		id = MON_reassert_our_claims
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = 2
 		y = 1
 		cost = 10
-		relative_position_id = MON_cult_of_choibalsan
-		prerequisite = { focus = MON_cult_of_choibalsan }
-		available_if_capitulated = yes
+		relative_position_id = MON_expansive_politics
+		prerequisite = { focus = MON_follow_soviet_lead focus = MON_expansive_politics }
+		mutually_exclusive = { focus = MON_dreams_of_greater_mongolia }
+		available_if_capitulated = no
 
 		ai_will_do = {
-			factor = 50		
+			factor = 5		
 		}
 		completion_reward = {
-			swap_ideas = { remove_idea = MON_soviet_NKVD_agents add_idea = MON_soviet_advisors }
+			unlock_decision_category_tooltip = MON_support_soviets_category
 		}
 	}
-
-
-	focus = {
-		id = MON_oppose_military_involvement
-		icon = GFX_goal_arrests
-		x = -3
-		y = 1
-		cost = 15
-		relative_position_id = MON_hold_the_plenum_of_central_committee
-		mutually_exclusive = { 
-			focus = MON_appoint_choibalsan_as_interior_minister
-		}
-		prerequisite = { 
-			focus = MON_hold_the_plenum_of_central_committee
-		}
-		available_if_capitulated = yes
-
-		available = {
-			is_puppet = no	
-		}
-		ai_will_do = {
-			factor = 50		
-		}
-		completion_reward = {
-			custom_effect_tooltip = MON_incoming_militarist_uprising_tt
-			add_timed_idea = {
-				idea = MON_incoming_militarist_uprising
-    			days = 365
-			}
-		}
-	}
-
 
 	focus = {
 		id = MON_proudly_alone
