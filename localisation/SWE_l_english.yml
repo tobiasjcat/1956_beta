@@ -489,6 +489,37 @@ SWE_establish_new_protectorates_desc:0 "To prevent any sort of the rising [GER.g
 SWE_polistrupper:0"Gain 2 Divisions of Police Troops in southern Sweden"
 SWE_balttrupper:0"1 Division escapes to Sweden"
 
+ ###
+ ### Election Branch
+ ###
+
+ r56_SWE_forsvarsbeslutet:0 "Försvarsbeslutet"
+ r56_SWE_forsvarsbeslutet_desc:0 ""
+ r56_SWE_hold_the_elections:0 "Hold the Elections"
+ r56_SWE_hold_the_elections_desc:0 ""
+ r56_SWE_hansson_ii_cabinet:0 "Hansson II Cabinet"
+ r56_SWE_hansson_ii_cabinet_desc:0 "Handsome Hansson takes charge of the nation!"
+ r56_SWE_bagge_cabinet:0 "Bagge Cabinet"
+ r56_SWE_bagge_cabinet_desc:0 ""
+ r56_SWE_cooperate_with_the_fascists:0 "Co-operate with the NSAP"
+ r56_SWE_cooperate_with_the_fascists_desc:0 ""
+ r56_SWE_german_prep_i:0 "German Thing #1"
+ r56_SWE_german_prep_ii:0 "German Thing #2"
+ r56_SWE_german_prep_iii:0 "German Thing #3"
+ r56_SWE_nsap_coup:0 "NSAP Coup"
+ r56_SWE_nsap_coup_desc:0 ""
+ r56_SWE_cooperate_with_the_communists:0 "Co-operate with the SKP"
+ r56_SWE_cooperate_with_the_communists_desc:0 ""
+ r56_SWE_soviet_prep_i:0 "Soviet Thing #1"
+ r56_SWE_soviet_prep_ii:0 "Soviet Thing #2"
+ r56_SWE_soviet_prep_iii:0 "Soviet Thing #3"
+ r56_SWE_for_the_people:0 "For the People!"
+ r56_SWE_for_the_people_desc:0 ""
+ r56_SWE_the_king_intervenes:0 "The King Intervenes!"
+ r56_SWE_the_king_intervenes_desc:0 ""
+ 
+ r56_SWE_king_intervenes_flag:0 "Communism or Fascism currently has significant influence on the government and may pose a threat to the nation's democracy and stability."
+
 ###########Events
 sweden.1.t:0"Sweden Demands Åland"
 sweden.1.d:0"Yesterday, the Swedish Government, having already restored their claim on Åland, made the next logical move- they demanded it outright. Representatives from Stockholm have a point when they say the islands are Swedish majority anyway, but our presence in the Baltic Sea would be vastly diminished. Still, the implication is that the alternative is war- and can we survive invasion?"
