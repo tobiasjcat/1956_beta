@@ -684,7 +684,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -701,7 +701,7 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1 
 			rear_1_custom_slot = empty
 		}
 	}
@@ -719,8 +719,9 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = empty
 			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
+			mid_2_custom_slot = ship_mine_layer_1
 			rear_1_custom_slot = ship_torpedo_1
 		}
 	}
@@ -741,7 +742,7 @@ if = {
 			front_1_custom_slot = ship_heavy_battery_1
 			mid_1_custom_slot = ship_secondaries_1
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_anti_air_1
 		}
 	}
 }

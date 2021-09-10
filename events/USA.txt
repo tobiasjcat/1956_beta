@@ -188,6 +188,15 @@ country_event = {
 	
 	option = { 
 		name = usa.5.a
+			if = {
+				limit = { not = { has_dlc = "Man the Guns" } }
+				USA = {	load_oob = "ENG_destroyers_for_bases" }
+				USA = { load_oob = "CAN_destroyers_for_bases" }
+			}
+			else = {
+				USA = {	load_oob = "ENG_destroyers_for_bases_mtg" }
+				USA = { load_oob = "CAN_destroyers_for_bases_mtg" }
+			}
 	}
 }
 
