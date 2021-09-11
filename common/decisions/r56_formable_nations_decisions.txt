@@ -145,19 +145,24 @@ form_prussia_category = {
         cost = 0
         fire_only_once = yes
 
-        allowed = { original_tag = DNZ }
+        allowed = {
+			original_tag = DNZ 
+		}
     
         available = {
-            controls_state = 64
-            controls_state = 68
-            controls_state = 63
-            controls_state = 66
-            controls_state = 67
-            controls_state = 810
-            controls_state = 86
-            controls_state = 762
-            controls_state = 85
-            controls_state = 62
+			controls_state = 188
+			controls_state = 763
+			controls_state = 5
+			controls_state = 85
+			controls_state = 810
+			controls_state = 63
+			controls_state = 68
+			controls_state = 66
+			controls_state = 86
+			controls_state = 64
+			controls_state = 67
+			controls_state = 762
+			controls_state = 62
         }
         
         ai_will_do = {
@@ -165,29 +170,32 @@ form_prussia_category = {
         }
         
         visible = {
-            OR = {
+				has_country_flag = DNZ_formed_prussia
                 controls_state = 64
                 controls_state = 5
                 controls_state = 63
-                controls_state = 810
-                has_completed_focus = DNZ_prussia_legacy
-            }
+                controls_state = 810	
+				controls_state = 68
+				controls_state = 66
+				controls_state = 67
+				controls_state = 86
+				controls_state = 762
+				controls_state = 85
+				controls_state = 62
         }
         
         modifier = { }
         
-        complete_effect = {
+		#removed some cores, since they are granted via focus.
+		
+        complete_effect = {	
             add_state_core = 64
             add_state_core = 68
             add_state_core = 63
             add_state_core = 66
             add_state_core = 67
-            add_state_core = 810
             add_state_core = 86
             add_state_core = 762
-            add_state_core = 763
-            add_state_core = 188
-            add_state_core = 85
             add_state_core = 62
             #set_cosmetic_tag = PRS
             add_ideas = generic_recent_political_unification

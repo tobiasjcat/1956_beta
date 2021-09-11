@@ -91,7 +91,16 @@ country = {
 				add_state_core = 810
 				add_state_core = 5
 				add_state_core = 763
-				add_state_core = 188 
+				add_state_core = 188 	
+				add_state_claim = 64
+				add_state_claim = 68
+				add_state_claim = 63
+				add_state_claim = 66
+				add_state_claim = 67
+				add_state_claim = 86
+				add_state_claim = 762
+				add_state_claim = 85
+				add_state_claim = 62
 			}
 			if = {
 				limit = {
@@ -123,6 +132,7 @@ country = {
 			}
 			hidden_effect = {
 				set_country_flag = r56_dnz_dont_lose_cores
+				set_country_flag = DNZ_formed_prussia
 				load_focus_tree = generic_focus	
 				every_country = { 
 					if = {
