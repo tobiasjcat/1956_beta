@@ -91,7 +91,7 @@ country = {
 				add_state_core = 810
 				add_state_core = 5
 				add_state_core = 763
-				add_state_core = 188 	
+				add_state_core = 188
 				add_state_claim = 64
 				add_state_claim = 68
 				add_state_claim = 63
@@ -129,6 +129,7 @@ country = {
 				POL = {
 					end_puppet = DNZ
 				}
+			custom_effect_tooltip = DNZ_Prussian_legacy
 			}
 			hidden_effect = {
 				set_country_flag = r56_dnz_dont_lose_cores

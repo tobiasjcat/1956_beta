@@ -161,3 +161,7 @@
  danzig.6.t:0 "The Danzig Government Joins [GER.GetNameDef]"
  danzig.6.desc:0 "[DNZ.Getleader] announced today that the city of Danzig is independent from [POL.Getname]. Instead they declared that the free city was planning to join [GER.GetNameDef]. He clearly invited [GER.GetLeader] to send troops to secure the territory."
  danzig.6.a:0 "What a surprise..."
+ 
+ #Focus tooltips
+ 
+ DNZ_Prussian_legacy:0 "§YAfter gaining full control of all Prussian states we will then be able to restablish our full control over them.§!"
