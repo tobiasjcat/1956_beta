@@ -881,7 +881,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SAU_western_alignment
-		icon = GFX_focus_attack_germany
+		icon = GFX_allies
 		cost = 5
 		prerequisite = {
 			focus = SAU_invite_western_advisors
@@ -898,14 +898,27 @@ focus_tree = {
 		available = {
 			is_in_faction = no
 			is_puppet = no
-			ENG = {
-				is_faction_leader = yes
-				exists = yes
-				NOT = {
-					has_government = communism
-					has_war_with = ROOT
+			if = {
+				limit = {
+					ENG = {
+						is_faction_leader = yes
+						exists = yes
+						NOT = {
+							has_government = communism
+							has_war_with = ROOT
+						}
+					}
 				}
 			}
+			else_if = {
+				any_other_country = {
+					NOT = { has_war_with = ROOT }
+					is_faction_leader = yes
+					is_major = yes
+					has_government = democratic
+				}
+			}
+			
 		}
 		ai_will_do = {
 			factor = 50
@@ -919,9 +932,32 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			ENG = {
-				country_event = generic.2
+			if = {
+				limit = {
+					ENG = {
+						has_government = democratic
+						is_faction_leader = yes
+						has_capitulated = no
+						NOT = { has_war_with = ROOT }
+					}
+					NOT = {
+						any_other_country = {
+							is_in_faction_with = ENG
+							has_war_with = ROOT
+						}
+					}
+				}
+				ENG = {
+					country_event = generic.2
+				}
 			}
+			else = {
+				get_best_alliance_match_democratic_effect = yes
+				var:best_leader = {
+					country_event = generic.2
+				}
+			}
+			
 		}
 		x = 0
 		y = 1

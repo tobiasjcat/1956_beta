@@ -1795,7 +1795,7 @@ focus = {
 		
 		prerequisite = { focus = HON_agricola }
 		prerequisite = { focus = HON_take_panama }
-		mutually_exclusive = { focus =  HON_fruitful_partnership focus = focus = HON_alliance_with_gran_colombia }
+		mutually_exclusive = { focus =  HON_fruitful_partnership focus = HON_alliance_with_gran_colombia }
 		relative_position_id = HON_take_panama
 		
 		x = 2
