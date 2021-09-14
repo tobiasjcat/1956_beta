@@ -14,7 +14,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = saudi.1.a
+		name = saudi.1.a
 		add_equipment_to_stockpile = {
 		    type = infantry_equipment_1
 		    amount = -3000
@@ -63,50 +63,48 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = saudi.2.a
+		name = saudi.2.a
 		custom_effect_tooltip = "Spawns 5 Infantry Divisions"
 			
-			hidden_effect = {
-				division_template = { 
-			name = "Saudi Korps"
-			is_locked = yes
-			regiments = { 
-				infantry = { x = 0 y = 0 }
-				infantry = { x = 1 y = 0 }
-				infantry = { x = 2 y = 0 }
-				infantry = { x = 3 y = 0 }
+		hidden_effect = {
+			division_template = { 
+				name = "Saudi Korps"
+				is_locked = yes
+				regiments = { 
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 3 y = 0 }
 
-				infantry = { x = 0 y = 1 }
-				infantry = { x = 1 y = 1 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 1 }
+				}
 			}
-		}
-		random_owned_controlled_state = {
-			create_unit = { 
-				division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
-				owner = ROOT
+			random_owned_controlled_state = {
+				create_unit = { 
+					division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
+					owner = ROOT
+				}
+				create_unit = { 
+					division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
+					owner = ROOT
+				}
 			}
-			create_unit = { 
-				division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
-				owner = ROOT
-			}
-			create_unit = { 
-				division = "name = \"1. Saudi Korps\" division_template = \"Saudi Korps\" start_experience_factor = 0.8 start_equipment_factor = 1" 
-				owner = ROOT
-			}
-		}
-			}
-
-
 		}
 	}
+}
 
 # Germany refuses to send troops
 country_event = {
