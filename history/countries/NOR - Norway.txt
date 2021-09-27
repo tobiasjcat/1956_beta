@@ -27,7 +27,7 @@ set_technology = {
 	etax_doctrine = 1
 	camo = 1
 	steel_production_1 = 1
-	
+
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
@@ -87,19 +87,19 @@ set_popularities = {
 	neutrality = 16
 }
 
-1939.1.1 = {	
-	set_politics = {	
-		ruling_party = democratic	
-		last_election = "1936.10.19"	
-		election_frequency = 48 ### Election cycle changed in 1938, and NaW also has an event for this. The war did postpone elections even more historically, though.	
-		elections_allowed = yes	
-	}	
-	set_popularities = {	
-		democratic = 84	
-		fascism = 2	
-		communism = 2	
-		neutrality = 12	
-	}	
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1936.10.19"
+		election_frequency = 48 ### Election cycle changed in 1938, and NaW also has an event for this. The war did postpone elections even more historically, though.
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 84
+		fascism = 2
+		communism = 2
+		neutrality = 12
+	}
 }
 
 create_country_leader = {
@@ -348,7 +348,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Henry Diesen"
 	picture = "r56_portrait_NOR_Henry_Diesen.dds" ### Probably the least "career officer-y" of the gang of starting admirals here. Naturally, he's the one who doesn't start with the personality trait.
-	traits = { gentlemanly spotter } ### Noted for having a nice personality, but did not do do anything very out of the ordinary in his time leading the Norwegian Navy.
+	traits = { gentlemanly spotter } ### Noted for having a nice personality, but did not do anything very out of the ordinary in his time leading the Norwegian Navy.
 	skill = 2
 	attack_skill = 2
 	defense_skill = 2
@@ -377,7 +377,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "A & B Class"						
+		name = "A & B Class"
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -388,7 +388,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Draug Class"							
+		name = "Draug Class"
 		type = ship_hull_light_1
 		name_group = NOR_DD_HISTORICAL
 		parent_version = 0
@@ -404,7 +404,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Frøya Class"								# minelayer		
+		name = "Frøya Class"								# minelayer
 		type = ship_hull_light_1
 		parent_version = 0
 		modules = {
@@ -420,7 +420,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Olaf Tryggvason Class"							# minelayer		
+		name = "Olaf Tryggvason Class"							# minelayer
 		type = ship_hull_light_2
 		parent_version = 0
 		modules = {
@@ -436,7 +436,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Norge Class"				
+		name = "Norge Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = NOR_CA_HISTORICAL
 		parent_version = 0

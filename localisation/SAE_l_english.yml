@@ -8,7 +8,7 @@
  ARG_inmigrant_wave:0 "Immigrant Wave"
  ARG_inmigrant_wave_desc:0 "With the looming threat of a new Great War and ever increasing German aggression, immigration has become a very attractive option for many Europeans. If we were to invest into becoming a beacon of hope for those that wish to avoid the ravages of war, we would be greatly benefited."
  ARG_infrastructure_development:0 "Infrastructure Development"
- ARG_infrastructure_development_desc:0 "If we want to pursue advanced projects or constructions we will need an infrastructure that that allow us to do so."
+ ARG_infrastructure_development_desc:0 "If we want to pursue advanced projects or constructions we will need an infrastructure that allows us to do so."
  ARG_infrastructure_development_2:0 "Infrastructure Development II"
  ARG_infrastructure_development_2_desc:0 "The need for better infrastructure is ever increasing, and the benefits are worth the investment."
  ARG_technological_initiative:0 "Technological Initiative"
@@ -736,7 +736,7 @@ BRA_estado_novo_desc:0 "Ever since 1889, Brazil has shown itself fragile to subv
  arg_inmigrant_wave_desc:0 "A great number of people are arriving to our country with the intention of staying"
  arg_political_repression:0 "Political Repression"
  arg_political_repression:0 "To keep order has a cost"
- 
+
  bra_national_stability_weekly:0 "Vinícius Facure"
  bra_matarazzo:0 "Indústrias Reunidas Fábricas Matarazzo"
  bra_ctef:0 "CTEF"
@@ -763,7 +763,7 @@ BRA_estado_novo_desc:0 "Ever since 1889, Brazil has shown itself fragile to subv
  bra_fed_uni_dlide:0 "Universidades Federais"
  bra_federalism:0 "Federalism"
  bra_national_security_law:0 "National Security Law"
- 
+
  latin_peace:0 "Latin Peace"
  latin_peace_desc:0 "It's hard but not impossible to find peace in this difficult times"
  argentina.1.t:0 "Seek External Military Advisors"
@@ -914,7 +914,7 @@ BRA_estado_novo_desc:0 "Ever since 1889, Brazil has shown itself fragile to subv
  argentina.47.t:0 "Great Britain says no"
  argentina.47.d:0 "Despite our relations with Britain they have decided that it is not the moment for us to join the Allies, perhaps later"
  argentina.47.a:0 "But if not now then when?"
- 
+
  latin.1.t:0 "Anti War treaty"
  latin.1.d:0 "In an attempt to promote peace and unity among Latin America, Argentina is hosting a series of meetings that set rules between our countries in order to avoid military confrontations"
  latin.1.a:0 "Sign the treaty"
@@ -923,4 +923,3 @@ BRA_estado_novo_desc:0 "Ever since 1889, Brazil has shown itself fragile to subv
  latin.2.d:0 "Argentina has decided that peace is not enough. To stand against an ever dangerous world and repel any would-be invader, Argentina proposes a large alliance between all Latin American Nations. Patria Grande."
  latin.2.a:0 "Join the Patria Grande"
  latin.2.b:0 "Don't join the Patria Grande"
- 
