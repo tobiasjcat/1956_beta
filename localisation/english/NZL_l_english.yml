@@ -10,7 +10,7 @@
 
 
 
- ### NATIONAL FOCUSES 
+ ### NATIONAL FOCUSES
  NZL_a_sustainable_army:0 "A Sustainable Army"
  NZL_a_sustainable_army_desc:0 "Our army is obviously not the strongest in the world, but with our increased investemnts and training we are better off."
  NZL_new_zealand_will_not_fall:0 "New Zealand Will Not Fall"
@@ -127,7 +127,7 @@
  NZL_minor_native_representation_in_gov:0 "Minor Native Representation"
  NZL_minor_native_representation_in_gov_desc:0 "We could allow some natives to have a say in New Zealand's governmental body. This could appease some protesters."
  NZL_the_maori_division:0 "The Maori Division"
- NZL_the_maori_division_desc:0 "We should pressure some Maori memebers of parliment to raise a division in case of conflict."
+ NZL_the_maori_division_desc:0 "We should pressure some Maori memebers of parliament to raise a division in case of conflict."
  NZL_begin_lobbying_for_reforms:0 "Assign the Proposal Comitees"
  NZL_begin_lobbying_for_reforms_desc:0 "In order for our nation to get the best aspects of social security, we need to assign specialized comitees to propose any revisions to the act."
  NZL_universal_medical_benefits:0 "Universal Medical Benefits"
@@ -219,7 +219,7 @@
  NZL_home_defence_desc:0 "We do not have the need to intervene in affairs that are not of our own. Defending our own shores is a much more important."
 
  NZL_increased_defense_spending:0 "Increased Defense Spending"
- NZL_increased_defense_spending_desc:0 "The war demands modern equipment and we can't rely only on the findings of our allies." 
+ NZL_increased_defense_spending_desc:0 "The war demands modern equipment and we can't rely only on the findings of our allies."
  NZL_central_research_planning:0 "Central Research Planning"
  NZL_central_research_planning_desc:0 "The planning of the economy also implies directing the scientists towards the technologies the state will need in the future, as if a great mind was seeing the future and picking the best options."
  NZL_national_research_grants:0 "National Research Grants"
@@ -252,7 +252,7 @@
  NZL_fight_for_authority_over_our_troops:0 "Introduce Conscription"
  NZL_commie_tt:0 "Completing This Focus WIll Unlock the Communist Path in the Election"
  NZL_legion_tt:0 "Completing This Focus WIll Unlock the Fascist Path in the Election"
- 
+
  new_zealand.1.t:0 "Michael Savage Grows Ill, New Prime Minister to be Appointed"
  new_zealand.1.d:0 "With the ever growing tension, the fragmented state of the Labour Party, we must look to choose a successor to the ever sickening Michael Joseph Savage. Peter Fraser has proven himself to be a more then capable leader, and has came highly endorsed by both Walter Nash as well as Prime Minister Savage. However, this does not stop Savage's opposition led by Gervan McMillan from trying to push their agenda even harder, McMillan, the more controversial choice, has expressed symapthies for extradited Labour memeber John A. Lee, making him profuesly unpopular."
  new_zealand.1.a:0 "Peter Fraser is the best soultion for the Labour's ailments."
@@ -291,7 +291,7 @@
  NZL_john_ormond:0 "John Ormond"
  NZL_elsie_locke:0 "Elsie Locke"
  NZL_peter_fraser:0 "Peter Fraser"
- 
+
  NZL_thomas_leech:0 "Thomas Leech"
  NZL_harold_barrowclough:0 "Harold Barrowclough"
  NZL_insecure_diplomatic_stance:0 "Insecure Diplomatic Stance"
@@ -313,6 +313,3 @@
  NZL_national_flag:0 "The National Party Has Won The 1938 Election"
  established_emmbassy:0 "Established an Embassy"
  anzac_agreement:0 "ANZAC Agreemment"
-
-
- 

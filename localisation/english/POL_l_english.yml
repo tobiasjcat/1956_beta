@@ -1,13 +1,13 @@
 ﻿l_english:
- POL_gamelin_convention_tooltip:0 "§YPoland§! will be invited to join §Y[FRA.getnameDef]§! and/or §Y[ENG.getnameDef]§! when attacked." 
+ POL_gamelin_convention_tooltip:0 "§YPoland§! will be invited to join §Y[FRA.getnameDef]§! and/or §Y[ENG.getnameDef]§! when attacked."
  anti_comintern_member:0 "Is a signatory member of the Anti-Comintern Pact"
- 
+
  ABILITY_ARMOURED_TRAINS:0 "Armoured Trains"
  ABILITY_ARMOURED_TRAINS_TOOLTIP:0 "Armoured Trains ($LEADER$)"
  ABILITY_ARMOURED_TRAINS_DESC:0 "Your armies will get a significant bonus to reinforce rate and a slight defensive bonus."
- 
+
  POL_invite_ukraine:0 "Invite Ukraine"
- POL_invite_ukraine_desc:0 "The Ukrainians are an essential buffer against [SOV.GetAdjective] ambitions." 
+ POL_invite_ukraine_desc:0 "The Ukrainians are an essential buffer against [SOV.GetAdjective] ambitions."
 
  POL_radicalize_the_front:0 "Radicalize the Front"
  POL_radicalize_the_front_desc:0 "It's time to get radical. Poland is on the brink. Radical action must be taken within our Politics!"
@@ -83,11 +83,11 @@
  prussia_poland_border_conflict.5.t:0 "Formal Declaration of War"
  prussia_poland_border_conflict.5.desc:0 "Calling the incursions of Polish forces onto German territory an act of war, [FROM.GetNameDef] has declared war on [POL.GetNameDef]. It would seem as if [FROM.GetNameDef] is confident that a war on two fronts can be won."
  prussia_poland_border_conflict.5.a:0 "We must hold the line."
- 
 
 
 
- 
+
+
  POL_central_region_strategy:0 "Central Industrial Region Strategy"
  POL_central_region_strategy_desc:0 "By centralizing factories far from any borders, especially in such key areas as Kielce, Skarzysko, Radom, Starachowice and Ostrowiec, we will be able to boost our production while also protecting them from any would-be conquerors."
 
@@ -338,7 +338,7 @@
  POL_Promethean_Sabotage_tooltip:0 "§REvery few months, we will be able to authorize§! §HIndustrial Sabotage Missions§! §Rin the§! §HSoviet Union.§!"
  POL_demands_rejected:0 "Demands Rejected"
  POL_demanded_zaolzie:0 "Demanded Zaolzie and Slovakia"
- 
+
  POL_Land_Mine_Detectors:0 "Land Mine Detectors"
  POL_Land_Mine_Detectors_desc:0 "Advancements in electronics might allow the development of a portable device to detect metal objects underground, whether they be the artillery shells, or perhaps even enemy land mines."
  POL_High_Frequency_Radio_Detection:0 "High Frequency Radio Detection"
@@ -349,7 +349,7 @@
  poland.109.a:0 "Polish Expertise"
  POL_artillery_equipment_1:0 " 75mm wz. 1902/26"
  POL_artillery_equipment_1_short:0 "75 mm wz. 1902/26"
- 
+
  #no Lar-DLC Polish resistance focuses
  POL_Polish_Cipher_Bureau_no_lar:0 "Expand the Polish Cipher Bureau"
  POL_Polish_Cipher_Bureau_no_lar_desc:0 "Military intelligence proved its worth in the Polish-Soviet war. Expanding the capabilities of our intelligence services will allow us to maintain an advantage over our adversaries."
@@ -496,7 +496,7 @@
  poland.125.d:0 "In a surprising and quick turn of events, the ONR-Falanga, the large extremist off-shoot of the Endecja Movement, has come to power guided by a new generation of Polish Nationalists. In an address before the Sejm, [POL.GetLeader] outlined his vision for a new economic model, a new system of governance, and a vision for a united Polish-speaking people following a single religion. The tenets of Falangism are about to take hold."
  poland.125.a:0 "Self-sufficiency is a top priority."
  can_create_puppets_tooltip:0 "Set the rule: Can Create Puppets"
- 
+
  POL_Witold_Pilecki:0 "Witold Pilecki"
  POL_paramilitary:0 "Paramilitary"
  POL_Prepare_For_The_upcoming_conflict:0 "Prepare For The Upcoming Conflicts"
@@ -612,7 +612,7 @@
  poland.147.t:0 "The Polish-Lithuanian-Ruthenian Commonwealth"
  poland.147.d:0 "The idea of a Polish-Lithuanian-Ruthenian Commonwealth consisting of three equal nations originated in the 17th century when the Polish Sejm debated the creation of a Duchy of Ruthenia. Although the measure failed to pass, the idea of a three-way commonwealth emerged once again during the doomed January Uprising in 1863-1864 against the Russian Empire. The underground Polish National Government adopted the colors and insignia of all three nations. In the 20th century, Józef Piłsudski had hoped that the Kiev offensive in the Polish-Soviet war would lead the creation of a union between Poland and Ukraine as part of his Intermarium project. The capture of the city on May 7, 1920 seemed to almost realize his dreams; however, the fortune of the war turned, and thus the project was never fully realized. However, with Kiev now officially under Polish proxy, the Sanacja government can finally bring the late Piłsudski's dream into reality."
  poland.147.a:0 "Si Deus Nobiscum quis contra nos."
- 
+
  POL_Draw_Closer_To_The_USSR_desc:0 "Close ties with the Soviet Union are necessary to fight our enemies to the West."
  POL_Seek_Autonomy_desc:0 "We must pursue a balanced path between friendship with the USSR and our own interests."
  POL_License_Soviet_Equipment_desc:0 "Close integration with the Soviet army is the next logical step for supplying our own forces."
@@ -710,14 +710,14 @@
  poland.157.t:0 "Liberia Acquired"
  poland.157.d:0 "Despite the protests of [USA.GetNameDef], the Liberian government has agreed to seek closer ties and offer additional concessions in exchange for our economic and military assistance."
  poland.157.a:0 "Poland can into colonies!"
- 
+
  POL_Airman:0 "§LAirmen's Hymn§!"
  POL_Airman2:0 "§LNo. 303 Polish Fighter Squadron§!"
  POL_Guard_March:0 "§LGuardsman March§!"
  POL_Natalia:0 "§LNatalia§!"
  POL_The_Internationale:0 "§RThe Internationale (in Polish)§!"
  POL_Education_Indoctrination:0 "Indoctrination & Education"
- 
+
  POL_Divided_Nation:0 "Divided Nation"
  POL_Divided_Nation_desc:0 "An aggressive policy of encouraging the Polonization of minorities has left a bitter feeling among a sizable portion of the population."
  POL_Segregated_Nation:0 "Segregated Nation"
@@ -745,7 +745,7 @@
  POL_Beloved_Country:0 "§RBeloved Country§!"
  POL_March_Peoples_Guard:0 "§RMarch of the People's Guard§!"
  POL_The_Barricades:0 "§ROn the Barricades§!"
- 
+
  POL_Synthetic_Rubber:0 "Synthetic Rubber"
  POL_Synthetic_Rubber_tt:0 "§WModify§! §HRubber Refinery§! §Woutput by:§! §G+2§!£resources_strip|3.\n"
  POL_Synthetic_Rubber_desc:0 "Polish scientists working under the Department of Rubber Synthesis within the Chemical Research Institute in Warsaw have managed to develop a fully artificial form of rubber derived from potatoes and other agricultural products. Tires and machine parts can be produced without need for naturally occurring rubber from overseas plantations.§!"
@@ -951,7 +951,7 @@
  POL_Japanese_Military_Intelligence_Cooperation:0 "Japanese Military Intelligence Cooperation"
  POL_Japanese_Military_Intelligence_Cooperation_desc:0 "Poland and Japan have a shared history of working together to undermine the Soviet Union. In exchange for training Japanese officers in cryptography, we could use Japan as a staging point for more Promethean Program operations."
  POL_Japanese_Military_Intelligence_Cooperation_tt:0 "Increases the effectiveness of §HSabotage Missions§! while we have friendly relations with Japan."
- 
+
  POL_develop_steel_industry_emphasis:0 "Steel Industry Emphasis"
  POL_develop_steel_industry_emphasis_desc:0 "Southwestern Poland is already the scene of large scale coal and iron ore mining. A lack of domestic demand should not prevent us from opening more steel mills. In a syndicalist economy, it is the state's job to put the people's fruits of labor to good use."
  POL_develop_aluminium_smelting_industry:0 "Experiments in Aluminum Smelting"
@@ -1004,7 +1004,7 @@
  POL_Sanacja_Influence:0 "Sanacja Influence"
  POL_The_Directorate_Of_Ukraine2:0 "The Directorate of Ukraine"
  POL_The_Directorate_Of_Ukraine2_desc:0 "At the end of the Polish-Soviet war, Józef Piłsudski and his allies were disappointed that the Treaty of Riga did not include the creation of an Independent Ukrainian state. In a bold step to ease ethnic tensions and realize the late marshal's Intermarium Project, the Directorate of Ukraine can be brought out of exile and reformed into its own polity (but under our close watch). A new Ukrainian army will be formed under Polish command."
- 
+
  POL_Austerity_Measures:0 "Austerity Measures"
  POL_Austerity_Measures_desc:0 "Luxury goods are for the weak-willed. The economy should focus solely on the production of goods and services that directly benefit the state and the advancement of progress."
  POL_The_Three_Year_Plan:0 "The Three Year Plan"
@@ -1017,7 +1017,7 @@
  POL_palace_of_culture_and_science:0 "Palace of Culture and Science"
  POL_palace_of_culture_and_science_desc:0 "To help shape public opinion, a new grand monument must be created to symbolize the friendship between Poland and the USSR. The many high-rise structures in the United States could serve as inspiration and prove the triumph of communist values."
  POL_submarine_manufacturer:0 "Submarine Manufacturer"
- 
+
  POL_Gain_Ministers_Tooltip:0 "\n\nNew government ministers will be available for hire.\n"
  POL_konstantin_rokossovsky:0 "Konstantin Rokossovsky"
  POL_Dislikes_Poland:0 "Dislikes Poland"
@@ -1068,7 +1068,7 @@
  POL_german_origins:0 "German Origins"
  POL_monarchist_debate_in_the_Sejm:0 "Monarchist Debate in the Sejm"
  POL_monarchist_debate_in_the_Sejm_desc:0 "Polish-German relations have a strained history. In order to cement the current alliance between the two countries, proposals are resurfacing for Fryderyk Krystian Wettyn, the Prince of Saxony, to serve as a figurehead monarch with President [POL.GetLeader] as his majesty's most loyal minister."
- 
+
  POL_Polish_Cipher_Bureau_Focus0:0 "The Polish Cipher Bureau"
  POL_Polish_Cipher_Bureau_Focus0_desc:0 "The Polish Cipher Bureau is tasked with counter-intelligence, radar detection, and cryptanalysis duties."
  POL_Polish_Cipher_Bureau_Focus1:0 "The Grill Method"
@@ -1100,7 +1100,7 @@
  UKR_neutrality_drift:0 "The Directorate"
  UKR_neutrality_drift_desc:0 "The directorate is a temporary executive governing body granted emergency wartime powers by the Central Rada of the Ukrainian People's Republic."
  POL_Head_of_State_Police:0 "Head of State Police"
- 
+
  POL_huta_zgoda:0 "Huta Zgoda"
  POL_Freighter_Manufacturer:0 "Freighter Manufacturer"
  POL_Steam_Turbines_and_Steelworks:0 "Steam Turbines & Steelworks"
@@ -1150,7 +1150,7 @@
  POL_Align_With_Japan_desc:0 "Joining a united front with Japan will allow us to strike a deathblow to the [SOV.GetName] on two fronts."
  POL_Invite_Sweden:0 "Invite Sweden"
  POL_Invite_Sweden_desc:0 "Across the Baltic Sea, socialism has firm roots and offers the potential for new allies."
- 
+
  POL_Pressure_Gdansk_Border_Conflict_tooltip:0 "Start a §HBorder Conflict§! with §H[DNZ.GetNameDef]§! or §H[GER.GetNameDef]§!.\n"
  POL_GER_Yes_Danzig_Intervention:0 "If fighting erupts in [DNZ.GetNameDef], then we may be drawn into a §HBorder Conflict§! with [POL.GetNameDef]."
  POL_GER_No_Danzig_Intervention:0 "We will leave [DNZ.GetNameDef] to their own fate in the event of hostilities."
@@ -1336,7 +1336,7 @@
  POL_God_Thou_Hast_Poland:0 "§LGod, Thou Hast Poland§!"
  POL_Grey_Infantry:0 "§LThe Grey Infantry§!"
  POL_State_Capitalism_tt:0 "Unlocks §HRural Development§! Decisions"
- 
+
  POL_Man_Portable_Land_Mine_Detectors:0 "Man-Portable Landmine Detectors"
  POL_Man_Portable_Land_Mine_Detectors_tt:0 " which grants\n   §HEntire Army§!: Division Attrition §G-2%§!\n§H   Infantry & Cav/Mot/Mech§!: §G+3%§! Land Fort Attack\n   §HEngineers§!: §G+10%§! Breakthrough\n\n"
  POL_Agriculture_Modernization_and_Education_Effort:0 "Agriculture Modernization & Education Effort"
@@ -1418,7 +1418,7 @@
  POL_Heavy_Weight_Bomb_Ejector:0 "Heavy Weight Bomb Ejector"
  Polish_Peoples_radio_TITLE:0 "Polish Communist Songs"
  HPL_radio_TITLE:0 "Songs of Poland"
- 
+
  POL_The_Great_Depression:0 "The Great Depression"
  POL_The_Great_Depression_desc:0 "Poland has been especially hard hit by the Great Depression. Investment, factory output, trade, and quality of life have seen sharp declines in recent years."
  POL_Rural_Unemployment:0 "Rural Unemployment"
@@ -1498,7 +1498,7 @@
  POL_Polish_Military_Mission:0 "Polish Military Advisors"
  POL_ideological_crusader:0 "Ideological Crusader"
  POL_armaments_organizer:0 "Armaments Organizer"
- 
+
  nationalism_on_the_rise:0 "Nationalism on the Rise"
  nationalism_on_the_rise_desc:0 "Vocal political elements have begun to speak up in favor of nationalistic values, finding support with an increasing number of the population. The nation's path to national democracy lies open, merely awaiting the choice of peaceful or violent transition."
  prepare_for_nationalist_civil_war:0 "Prepare for Civil War"
@@ -1607,7 +1607,7 @@
  hold_the_liberal_national_referendum:0 "Hold National Referendum"
  hold_the_liberal_national_referendum_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
  military_support_for_liberal_civil_war:0 "Has military support for the civil war.\n"
- 
+
  socialism_on_the_rise77:0 "Socialism on the Rise"
  socialism_on_the_rise77_desc:0 "Vocal political elements have begun to speak up in favor of socialist values, finding support with an increasing number of the population. The nation's path to socialism lies open, merely awaiting the choice of peaceful or violent transition."
  prepare_for_socialist_civil_war77:0 "§RUnited Front with the KPP§!: Prepare for Civil War"
@@ -1637,7 +1637,7 @@
  hold_the_socialist_national_referendum77:0 "Hold National Referendum"
  hold_the_socialist_national_referendum77_desc:0 "With sufficient support, we may now safely hold a referendum to affect a change of government, without bloodshed."
  military_support_for_socialist_civil_war77:0 "Has military support for the civil war.\n"
- 
+
  VICTORY_POINTS_9263:0 "Gdynia"
  VICTORY_POINTS_6464:0 "Katowice"
  VICTORY_POINTS_11399:0 "Lublin"
@@ -1646,9 +1646,9 @@
  VICTORY_POINTS_6580:0 "Zamość"
  VICTORY_POINTS_3483:0 "Tarnopol"
  VICTORY_POINTS_11550:0 "Kołomyja"
- 
+
  STATE_85:0 "Pomerania"
- 
+
  poland_r56.13.t:0 "Invitation to the Intermarium Project"
  poland_r56.13.d:0 "In an effort to ensure the continued independence of Eastern Europe against potential aggressors, Poland has requested that we join them in an alliance aiming to ensure our mutual safety and interests."
  poland_r56.13.a:0 "Gladly. Together we will weather the coming storm."
@@ -1808,7 +1808,7 @@
  poland.73.d:0 "In an emergency session addressing the Sejm, Edward Rydz-Śmigły announced before a jeering audience that the dissolution of the legistlative body would be imminent effectively ending the Second Republic. Edward Rydz-Śmigły proclaimed himself the Second Marshal of Poland and that he—like Józef Piłsudski—will safeguard the nation against all threats. Unlike Piłsudski though, Rydz-Śmigły claims that he will go all the way to ensure that the corruption of government cannot manifest itself under the guise of democratic bodies. The military, already heavily involved in government affairs, will now run the nation entirely. Although the general public is also shocked at the sudden turn of events, the state press is already drawing patriotic comparison's between Marshal Rydz-Śmigły's recent coup d'état against a corrupt elite and Józef Piłsudski's May Coup against a perceived corrupt system."
  poland.73.a:0 "The leader of the new Polish State."
  poland.74.t:0 "Diplomatic Report"
- poland.74.d:0 "Relations between the Polish government and the Free City of Danzig have long been tenuous. During the Polish-Soviet war in early 1920s and the German embargo against Poland in 1925, dockyard workers in Gdansk twice refused to unload supplies off of Polish ships. Such concerns over the economic security of Poland led to the impetus behind the creation of the nearby seaport of Gdynia. In 1933, the local branch of the National Socialist German Workers' Party (NDSAP) was elected into power. Tensions flared again over Danzig's seperation from Germany and over the city's oppressive treatment of the Polish minority within its borders.\n\nIn a recent diplomatic meeting between Józef Beck, Polish 'Minister of Foreign Affairs', and Joachim von Ribbentrop, German 'Reich Minister for Foreign Affairs', a mutual concensus was finally reached. Adolf Hitler has instructed the local Nazi government to cease anti-Polish actions. In return we have promised to not support the actions of the anti-Nazi opposition in Danzig. Though the issue of the cty's status remains far from settled, our recent rapprochement has yielded some positive results."
+ poland.74.d:0 "Relations between the Polish government and the Free City of Danzig have long been tenuous. During the Polish-Soviet war in early 1920s and the German embargo against Poland in 1925, dockyard workers in Gdansk twice refused to unload supplies off of Polish ships. Such concerns over the economic security of Poland led to the impetus behind the creation of the nearby seaport of Gdynia. In 1933, the local branch of the National Socialist German Workers' Party (NDSAP) was elected into power. Tensions flared again over Danzig's seperation from Germany and over the city's oppressive treatment of the Polish minority within its borders.\n\nIn a recent diplomatic meeting between Józef Beck, Polish 'Minister of Foreign Affairs', and Joachim von Ribbentrop, German 'Reich Minister for Foreign Affairs', a mutual consensus was finally reached. Adolf Hitler has instructed the local Nazi government to cease anti-Polish actions. In return we have promised to not support the actions of the anti-Nazi opposition in Danzig. Though the issue of the cty's status remains far from settled, our recent rapprochement has yielded some positive results."
  poland.74.a:0 "Its best to keep aloof from internal Danzig problems."
  poland.75.t:0 "Foreign Relations Report"
  poland.75.d:0 "Shortly after Adolf Hitler's rise to power in 1933, Józef Piłsudski entered Poland into a non-aggression pact with Germany on January 26, 1934. Germany agreed to recongize Poland's current borders and halt the damaging customs war that had lasted almost a decade. Józef Piłsudski correctly deduced that the French military would assume a purely defensive posture in the event of war and leave their eastern allies to their own fate. The French construction of the Maginot line starting in 1929 and subsequent French refusal to pressure Germany only reinforced his views.\n\nJózef Piłsudski, however, incorrectly believed that such a pact would eliminate the danger that Poland would be the first target of German aggression. German diplomatic efforts at the time often seemed to suggest favorability to Poland especially as a hegemonic partner against the Soviet Union. Józef Piłsudski still distrusted Hitler but thought that his Austrian ancestry would help mitigate Germany's past icy relations with Poland—contrary to what had been the previous 'Anti-Polish Prussian-sort' of politicians. An opening of trade relations followed, but such friendly offerings were secretly and purposely intended as a ruse to lure the Poles into a false sense of security."
@@ -1827,7 +1827,7 @@
  poland.79.d:0 "The German government has declined our offer stating that their demands are not negotiable, and that they are unwilling to sign a pact that binds them to come to our aid in times of war. It can only be concluded that we are an immediate target for their aggression."
  poland.79.a:0 "This is justifiable cause for the mobilization of our military."
  poland.80.t:0 "Polish-French Relations"
- poland.80.d:0 "During the Polish-Soviet war, France sent a military mission of 400 officers to Poland. The efforts of the French delegation yielded strong positive results for the organization and logistics of the fledgling Polish army. Shortly after the war's conclusion, a military pact was signed to contain the dual threats of Germany and the Soviet Union. France was obliged to help Poland economically, but was not required declare war if Poland found itself under attack. But with the threat of German rearmanent and aggression looming, the Kasprzycki-Gamelin Convention was signed on May 19, 1939 in Paris. The treaty was named after 'Polish Minister of War Affairs' General Tadeusz Kasprzycki and 'Commander of the French Army' Maurice Gamelin. Both countries were now fully bound together in the event of conflict.\n\nToday we have asked the French to go one step further and preemptively strike at Germany. [Root.GetLeader] has flown to France seeking to build concensus on the German threat and win support for early retaliatory action."
+ poland.80.d:0 "During the Polish-Soviet war, France sent a military mission of 400 officers to Poland. The efforts of the French delegation yielded strong positive results for the organization and logistics of the fledgling Polish army. Shortly after the war's conclusion, a military pact was signed to contain the dual threats of Germany and the Soviet Union. France was obliged to help Poland economically, but was not required declare war if Poland found itself under attack. But with the threat of German rearmanent and aggression looming, the Kasprzycki-Gamelin Convention was signed on May 19, 1939 in Paris. The treaty was named after 'Polish Minister of War Affairs' General Tadeusz Kasprzycki and 'Commander of the French Army' Maurice Gamelin. Both countries were now fully bound together in the event of conflict.\n\nToday we have asked the French to go one step further and preemptively strike at Germany. [Root.GetLeader] has flown to France seeking to build consensus on the German threat and win support for early retaliatory action."
  poland.80.a:0 "Maybe they will show some backbone this time."
  poland.81.t:0 "Polish-French Relations"
  poland.81.d:0 "During the Polish-Soviet war, France sent a military mission of 400 officers to Poland. The military mission yielded strong positive results for the organization and logistics of newly formed Polish army. Shortly after the war's conclusion, a military pact was signed to contain the dual threats of Germany and the Soviet Union. France was obliged to help Poland economically, but was not required declare war if Poland found itself under attack. But with the threat of German rearmanent and aggression looming, the Kasprzycki-Gamelin Convention was signed on May 19, 1939 in Paris. The treaty was named after 'Polish Minister of War Affairs' General Tadeusz Kasprzycki and 'Commander of the French Army' Maurice Gamelin. Both countries were now fully bound together in the event of conflict.\n\nToday we will honor those commitments."
@@ -1921,7 +1921,7 @@
  poland.108.t:0 "Southern Slovakia is Ours"
  poland.108.d:0 "With Czechoslovakia yielding to Polish demands, our forces have moved to occupy Southern Slovakia which contains many ethnic Hungarians."
  poland.108.a:0 "Rightful Hungarian clay"
- 
+
  POL_Castle_party:0 "Zamek"
  POL_Castle_party_long:0 "Zamek"
  POL_OZN_party:0 "OZN"
@@ -1953,7 +1953,7 @@
  POL_ZWZ_party_long:0 "Związek Walki Zbrojnej"
  POL_GL_party:0 "GL"
  POL_GL_party_long:0 "Gwardia Ludowa"
- 
+
  POL_River_Flotillas:0 "River Flotillas"
  POL_River_Flotillas_desc:0 "An extensive network of small gunboats and armored river barges can help keep our internal waterways safe from enemy crossings."
  POL_River_Flotillas_tt:0 "   Towed & Motorized §HArtillery§!, §HAnti-air§!, §HAnti-tank§!, §HRocket Artillery§!:\n     §HRiver§! & §HMarsh§!: Attack: §G+5%§!\n     §HRiver§! & §HMarsh§!: Defense: §G+5%§!\n     §HRiver§! & §HMarsh§!: Movement: §G+10%§!\n\n"

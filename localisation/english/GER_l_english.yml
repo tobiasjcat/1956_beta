@@ -116,7 +116,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_war_with_spain_desc:0 "Securing Spain will give us a tactical position in the Mediterranean, make it easier for us to secure Gibraltar, and will give us a rapid way to move into Africa."
  GER_foreign_volunteers:0 "Accept Foreign Volunteers"
  GER_support_military_research:0 "Support Military Research"
- GER_support_military_research_desc:0 "Technology will bring us the final victory" 
+ GER_support_military_research_desc:0 "Technology will bring us the final victory"
  GER_foreign_volunteers_desc:0 "Many people of foreign nations agree with our policies and positions, to the point where they are willing to fight for us. While we wouldn't be open to this previously, more manpower is certainly something we could use at this point in the war."
  GER_political_sphere:0 "Open the German Political Sphere"
  GER_political_sphere_desc:0 "After the election of Hitler and the consolidation of power by the NSDAP, now is the time to open the political sphere to change. Either we will continue down the Führer's path, or we will find a new path to tread upon."
@@ -395,8 +395,8 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_bodenreform_projects_idea:0 "Bodenreform Projects"
  GER_bodenreform_projects_idea_steelworks:0 "Bodenreform Projects"
  GER_communist_german_influence:0 "German Communist Influence"
- ger_betray_soviets:0 "German Betrayal"                   
- 
+ ger_betray_soviets:0 "German Betrayal"
+
  erwache.1.t:0 "Appointing Economic Positions"
  erwache.1.d:0 "We have two appointment options for the offices of Reichsbank President and Economic Minister. One of the possible appointees, Hjalmar Schacht, is very good at working with Germany's companies and developing civilain infrastructure, but his lack of loyalty to the NSDAP and distain for military spending make him a worrying choice. Our second possible appointee, Walther Funk, is very loyal to the NSDAP and is a major proponent of military spending. If we are to make any good progress with German recovery, we must choose one of these two men to lead our economy."
  erwache.1.a:0 "Hjalmar Schacht"
@@ -410,7 +410,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  erwache.4.a:0 "Wilhelm II will lead us"
  erwache.4.b:0 "Prince Wilhelm III will lead us"
  erwache.5.t:0 "The German Civil War"
- erwache.5.d:0 "Monarchists led a sucessful coup against the NSDAP, storming the Reichstag and taking over the government. In the ashes of the burned-down Reichstag, former Chancellor Adolf Hitler lays dead, leaving Heinrich Himmler as the new head of government stationed in Munich. Himmler and the remaining Nazi loyalists have started a civil war against our new imperial government, and we must fight to reunify Germany. Who will lead us on our path to the unified Fourth Riech: former Kaiser Wilhelm II or his son, Prince Wilhelm III?"
+ erwache.5.d:0 "Monarchists led a successful coup against the NSDAP, storming the Reichstag and taking over the government. In the ashes of the burned-down Reichstag, former Chancellor Adolf Hitler lays dead, leaving Heinrich Himmler as the new head of government stationed in Munich. Himmler and the remaining Nazi loyalists have started a civil war against our new imperial government, and we must fight to reunify Germany. Who will lead us on our path to the unified Fourth Riech: former Kaiser Wilhelm II or his son, Prince Wilhelm III?"
  erwache.5.a:0 "Wilhelm II will lead us"
  erwache.5.b:0 "Prince Wilhelm III will lead us"
  erwache.6.t:0 "Germany Demands Defensive Occupation"
@@ -421,7 +421,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  erwache.7.d:0 "The Soviet Union has been proposed treaty to end the German-Soviet war in the East. The treaty included terms to cede several western Soviet-occupied territories to the Germans in exchange for peace. These terms are similar to the treaty of Brest-Litovsk, which ended the German-Soviet conflict during the First World War."
  erwache.7.a:0 "Reject the Terms!"
  erwache.7.b:0 "Accept the Terms."
- 
+
  germany.1002.t:0 "First Vienna Award"
  germany.1002.d:0 "The Hungarians were one of the people that suffered worst after the Great War. In the slaughter of the Austro-Hungarian Empire, many Hungarians were stranded on foreign soil though their ancestors had lived there for ages. We could greatly improve our relations with Hungary by awarding them some territories from Czechoslovakia."
  germany.1002.a:0 "Give them Southern Slovakia!"
@@ -429,7 +429,7 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  germany.1002.c:0 "Slovakia deserves to keep it."
  r56_GER_first_vienna_award_tt:0 "§RDepending on your choice, the First Vienna Award will trigger if Hungary doesn't own Southern Slovakia.§!"
  r56_GER_first_vienna_award_II_tt:0 "§RThis choice will trigger the First Vienna Award right after if Hungary doesn't own Southern Slovakia.§!"
- 
+
  erwache_news.1.t:0 "Spain Refuses German Demands!"
  erwache_news.1.d:0 "Spain has officially refused the German demand for a 'defensive occupation' of the country. Spain has now entered a state of war against Germany, rallying its military forces towards the border."
  erwache_news.1.a:0 "We will fight!"
@@ -443,11 +443,11 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  stubborn:0 "Stubborn"
  restoring_monarchist:0 "The Old Kaiser"
  new_monarchist:0 "A New Kaiser"
- 
+
  GER_blohm_und_voss_aviation:0 "Blohm & Voss"
  GER_deschimag:0 "Deschimag"
  GER_vereinigte_stahlwerke:0 "Vereinigte Stahlwerke"
- 
+
  #spicyedits
 
  #reinhard_heydrich:0 "Reinhard Heydrich"
@@ -494,26 +494,26 @@ GER_venezuela_friend_desc:0 "The Venezuelans have already shown sympathy to our 
  r56_kill_hitler.1.a:0 "A coup?"
  r56_kill_hitler.2.t:0 "The German Chancellor Gunned Down!"
  r56_kill_hitler.2.desc:0 "\nWhile he was doing a speech during one of his typical rallies, Adolf Hitler, the Chancellor of Germany has been attacked by a group of hitmen armed with submachine guns. In a matter of seconds, they devastated the tribune with a hail of bullets before fleeing the hall, killing and wounding multiple SS guards in the process."
- r56_kill_hitler.2.a:0 "A coup?" 
+ r56_kill_hitler.2.a:0 "A coup?"
  r56_kill_hitler.3.t:0 "Hitler killed in Martial Artist's Attack!"
  r56_kill_hitler.3.desc:0 "The assistance of last night's rally in Berlin was stunned when an unknown man arrived on stage, inviting the Führer to fight him. Hitler stopped bodyguards before revealing that he was the Kung Führer and that he knew that a Kung Fu master would one day try to challenge him. The mysterious man presented himself as Brandson Lee before attacking the German Chancellor with the wrath of a tiger. The duel lasted multiple minutes. The hits where apparently so quick that it was difficult to follow the action, but suddenly the intruder planted his hand into the Führer's chest. The Führer let out a single gasp before collapsing to the ground. The SS then fired at the assassin, but he managed to dodge multiple bullets and stop others with his bare hands before escaping through a side door, chopping multiple sentries in the process."
  r56_kill_hitler.3.a:0 "A coup?"
  r56_kill_hitler.4.t:0 "Hitler's Plane Crashed!"
  r56_kill_hitler.4.desc:0 "\nAn official report has confirmed that the wreck of the plane which crashed soon after takeoff from Tempelhoff airport is indeed the private plane of the Führer who was on board at the time. It seems that a bomb was smuggled on board by plotting officers as a general mutiny seems to engulf the whole Reich."
- r56_kill_hitler.4.a:0 "A coup?"    
+ r56_kill_hitler.4.a:0 "A coup?"
  r56_kill_hitler.5.t:0 "The Chancellery wrecked by an explosion!"
  r56_kill_hitler.5.desc:0 "Last evening a loud noise and a tremendous blast devastated [GER.getleader]'s desk at the Reich chancellery in Berlin. The bodyguards were powerless and could only see the remaining bits of his uniform and the iron cross shining among the fuming ashes."
  r56_kill_hitler.5.a:0 "A coup?"
  r56_kill_hitler.6.t:0 "Hitler killed by hitman at the Obersatlzberg!"
  r56_kill_hitler.6.desc:0 "\nA surprising communiqué has confirmed the rumors that the German Chancellor [GER.getleader] has been killed while he was resting in his alpine villa. Hit in the head by a single bullet shot from far away, it is clear that the hitman was a very skilled marksman, which would imply some form of military training."
- r56_kill_hitler.6.a:0 "A coup?" 
+ r56_kill_hitler.6.a:0 "A coup?"
 
 
  GER_REUNITED_democratic:0 "German Federal Republic"
  GER_REUNITED_fascism:0 "German Reich"
  GER_REUNITED_neutrality:0 "German Empire"
- GER_REUNITED_communism:0 "German Socialist Republic"  
- 
+ GER_REUNITED_communism:0 "German Socialist Republic"
+
  GER_cede_884_to_HUN:0 "Cede Prekmurje to Hungary"
  GER_cede_102_to_ITA:0 "Cede Ljubljana to Italy"
 
@@ -552,7 +552,7 @@ GER_venezuela_friend_desc:0 "The Venezuelans have already shown sympathy to our 
  r56.ger.11.t:0 "France Rejects our Proposal"
  r56.ger.11.d:0 "[FRA.GetNameDef] has outrageously denied our offer to set aside the differences between us, it is clear that hostile relations with them will continue even with the fascist menace in Europe."
  r56.ger.11.a:0 "Arrogant Fools."
- 
+
  r56.ger.7.t:0 "German Ultimatum"
  r56.ger.7.d:0 "[GER.GetNameDef], evidently completely hostile to our nation, has sent us an strict ultimation demanding our immediate surrender to them to protect us from the 'fascist menace' in Europe.\n\nGermany threatens to 'bring us down no matter what it takes' should we not comply, while these demands are outrageous, we may not be in any position to resist."
  r56.ger.7.a:0 "We must yeild..."
@@ -565,7 +565,7 @@ GER_venezuela_friend_desc:0 "The Venezuelans have already shown sympathy to our 
  r56.ger.9.t:0 "Austria Refuses"
  r56.ger.9.d:0 "[AUS.GetNameDef] has stood their ground and has arrogantly refused our terms for protection from the fascist menace.\n\nThey have proved to be yet another tyrant in Europe and it is important we take them down, no matter what it takes."
  r56.ger.9.a:0 "Then it's war."
- 
+
 #Extra yalta stuff marijn211
  news.339.title:0 "Allied Occupation of Germany."
  news.339.desc:0 "With the second world war in Europe over, the Allies have taken full control over Germany and split it over four occupying nations, the British and French in the west and the Americans and Soviets in the east, how long it will take for these lands to recover and to be denazified remains unknown."

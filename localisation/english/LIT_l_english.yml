@@ -31,7 +31,7 @@
  unify_baltics_lithuania_required_states_tt:0 "Owns all §YLithuanian§! States. (Excludes Memel and Wilno)"
  unify_baltics_latvia_required_states_tt:0 "Owns all §YLatvian§! States."
  unify_baltics_estonia_required_states_tt:0 "Owns all §YEstionian§! States."
- 
+
  #Focuses
  LIT_Aviation_Effort:0 "Expand the [ROOT.GetName] Airforce"
  LIT_Aviation_Effort_desc:0 "The [ROOT.GetAdjective] Air Force, properly built up, can be a potent force capable of laying waste to any aggressor nation against us. We should begin on the construction of air bases and training our officers on the operation of these flying machines."
@@ -292,7 +292,7 @@ LIT_dissolve_the_seimas:0 "Dissolve the Seimas"
 LIT_ensure_german_support:0 "Ensure German Support"
 LIT_invite_karl_gero:0 "Debate on Monarchy"
 LIT_restore_the_monarchy:0 "Restore the Monarchy"
-LIT_royal_adress:0 "Royal Adress"
+LIT_royal_adress:0 "Royal Address"
 LIT_roman_recognition:0 "Roman Recognition"
 LIT_fate_of_smetona:0 "Form a Loyalist Government"
 LIT_redraft_the_twelve_point_proposal:0 "Redraft the Twelve Point Proposal"
@@ -626,7 +626,7 @@ lithuania.27.desc:0 "The First LNP commision has marked a new milestone in Lithu
 lithuania.27.a:0 "Empower The Patriotic Wing"
 lithuania.27.b:0 "Empower The Radical Wing"
 lithuania.31.t:0 "Electrifying Lithuania"
-lithuania.31.desc:0 "Electrification is crucial for economic growth, industrialisation and national security of our country, but forgein monopolists stand in the way of cheap and accessible electricity, funneling money aborad. Money earned by hard working people of Lithuania. We have 2 options available, the first option is to setup several coal powered power plants, this would increase the supply of electricity but would force us to import outragous amount of forgein coal. On the other hand we could attempt to setup a hydroelectric power plant at the confluence of the Nemunas River, such a feat was never attempted in Lithuania and would require our diplomatic service to look for partners abroad"
+lithuania.31.desc:0 "Electrification is crucial for economic growth, industrialisation and national security of our country, but forgein monopolists stand in the way of cheap and accessible electricity, funneling money aborad. Money earned by hard working people of Lithuania. We have 2 options available, the first option is to setup several coal powered power plants, this would increase the supply of electricity but would force us to import an outrageous amount of forgein coal. On the other hand we could attempt to setup a hydroelectric power plant at the confluence of the Nemunas River, such a feat was never attempted in Lithuania and would require our diplomatic service to look for partners abroad"
 lithuania.31.a:0 "What's the point of power without coal?"
 lithuania.31.b:0 "We can't take any risks"
 lithuania.32.t:0 "Financial Issues"

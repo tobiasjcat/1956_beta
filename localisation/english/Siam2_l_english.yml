@@ -161,7 +161,7 @@
   siam.19.b:0 "Withdraw South!"
   SIA_kill_pridi_tooltip:0 "This Will Unlock The Democratic Path"
   SIA_dont_kill_pridi_tooltip:0 "This Will Unlock The Communist Path"
-  
+
   siam.20.t:0 "Pridi Banomyong Killed By The Air Raids"
   siam.20.d:0 "Our air raid over Isan managed to damage two of the rebel training camps, but also what seemed to be their headquarters. This morning, on Radio Seriphaph, Direk Jayanama announced that Pridi Banomyong had been killed by the air raids, and that it was up to him to "Complete the task that this great man will see us accomplish from heaven" The loss of the rebel leader does not seem to have diminished their morale, even worse, it is said that many farmers have decided to join them following the loss of their cultures following the air raids which caused many fires"
   siam.20.a:0 "We Cut One Head, And Two Grow Back!"
@@ -258,7 +258,7 @@
   SIA_loyal_army:0 "Loyal Army"
   SIA_purged_army:0 "Purged The Army"
 
-  
+
 
 
   # Focus
@@ -480,7 +480,7 @@
  SIA_ammunitions_production_desc:0 "Our ammunition production capacity is no longer sufficient, it is imperative to create new factories dedicated to their production so that our troops do not lack them"
  SIA_mechanization_of_agriculture:0 "Mechanization Of Agriculture"
  SIA_mechanization_of_agriculture_desc:0 "Most of our citizens are farmers. It is our duty to help them in their task by facilitating their access to new technologies such as tractors."
- SIA_wellfare_program:0 "Wellfare Program"
+ SIA_wellfare_program:0 "Welfare Program"
  SIA_wellfare_program_desc:0 "The duty of a state and elected representatives is to improve the living conditions of its people as best they can. We will push through reforms to make education and health insurance free of charge, in order to help those most in need"
  SIA_the_war_has_changed:0 "The War Has Changed"
  SIA_the_war_has_changed_desc:0 "In recent years, we have seen the development of many technologies that were still unknown to us during the Great War. A research effort on these new inventions is necessary"
@@ -557,7 +557,7 @@
  SIA_second_siamese_revolution_flag:0 "§RNot Finished Yet§!"
  SIA_phibun_killed_during_revolution:0 "Phibun was killed during the revolution"
  #SIA_phibun_convicted_of_treason:0 "Phibun was convicted of treason and sentenced to death" #unused
- 
+
  #Focus Tooltips
  SIA_buy_ships_tooltip:0 "§GUnlocks £decision_icon_small decisions to buy boats from our allies"
  SIA_closer_to_the_west_tooltip:0 "§GUnlocks £decision_icon_small decisions to join democratic factions"
@@ -570,7 +570,7 @@
  SIA_follow_the_soviet_model_tooltip:0 "§YPridi Banomyong§! gains:\n  §YStaunch Stalinist§!\n  -Factory Output: §G+10.00%§!\n  -Ideology drift defense: §G+15.00%§!"
  SIA_peasant_communism_tooltip:0 "§YPridi Banomyong§! gains:\n  §YAgrarian Marxist§!\n  -Division Attrition: §G-10.00%§!\n  -Out of Supply: §G-50.00%§!"
  SIA_cultural_revolution_tooltip:0 "The country will be renamed to §YThailand§!"
- 
+
  #Questinable
  # Traits
  minister_of_education:0 "Minister Of Education"
@@ -619,8 +619,8 @@
  # Air
  SIA_khun_wimonsorakit:0 "Khun Wimonsorakit"
  SIA_chai_prathipasen:0 "Chai Prathipasen"
- 
- 
+
+
  siam.29.t:0 "Trial Of Phraya Phahonphonphayuhasena"
   siam.29.d:0 "The first member of the Khana Ratsadon to be judged is Phraya Phahonphonphonphayuhasena, the former prime minister accused of having had republican sentiments and of wishing to use his position as head of government to try to abolish the monarchy.\nA crime of this kind would be considered a high treason not only against the king, but against the entire kingdom of Siam, and the death sentence seems to be the logical choice.\nBut we must not forget that he is also a very competent soldier and could very well find himself important for the future in view of the potential conflicts that are approaching..."
   siam.29.a:0 "He Only Deserves Death"
@@ -638,20 +638,18 @@
   siam.32.t:0 "Defeat In Indochina"
   siam.32.d:0 "Having failed to defeat the insurgency in Indochina, it would seem that any hope of seeing these territories under our control again has disappeared. We signed a peace treaty with the four Indochinese nations to end hostilities between our nations, ending several decades of French presence in the region."
   siam.32.a:0 "Our Only Profitable Colony..."
-  
+
    siam.14.t:0 "Constitutional Restoration Of Rama VII"
   siam.14.d:0 "Following a popular referendum in which more than half of the people decided to restore King Rama VII to his throne, he arrived at Bangkok airport two days later, welcomed by Prime Minister Seni Pramoj. A few hours later, his coronation ceremony took place, having sworn to respect the limits imposed by the new Siamese constitution."
   siam.14.a:0 "Long Live The King! Long Live The Constitution!"
-  
+
   SIA_kill_pridi_tooltip:0 "This Will Unlock The Democratic Path"
   SIA_dont_kill_pridi_tooltip:0 "This Will Unlock The Communist Path"
-  
-  
+
+
   SIA_France_war_in_indochina:0 "The War In Indochina"
   SIA_France_restore_order_in_indochina:0 "Restore Order"
   SIA_France_restore_order_in_indochina_desc:0 "A large-scale communist uprising broke out in Indochina, wishing to drive out the French administration. They are well armed and have the support of Siam. It is imperative that we regain control of our colonies"
 
   SIA_revolutionnary_women:0 "Revolutionary Women"
   SIA_revolutionnary_women_desc:0 "The end of capitalism must also mean the end of the marginalization of women. The latter must be brought on an equal footing with men, whether at home, in factories or in the army."
- 
-  
