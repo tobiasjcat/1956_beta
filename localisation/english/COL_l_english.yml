@@ -64,10 +64,10 @@
  colombia.2.a:0 "Let us unite for the greater good."
  colombia.2.b:0 "We want to preserve our independence."
  colombia.3.t:0 "Hermano Bolivariano"
- colombia.3.d:0 "The issued integration request was expected to expire at 18:00 today. Fortunately, we received an official response from the government of [VEN.GetLeader] ten hours before the ultimatum expiration deadline. n\nThe telegram from [VEN.GetNameDef] stated, "The growing influence of [USA.GetNameDef] in South America also concerns the [VEN.GetAdjective] government and its officials. Only a strong, unified state such as Gran Colombia can compete with the sleeping giant in the North".\n\nAfter one century, our [VEN.GetAdjective] brothers have gladly accepted, becoming part of the Gran Colombian nation again."
+ colombia.3.d:0 "The issued integration request was expected to expire at 18
  colombia.3.a:0 "Welcome to Gran Colombia!"
  colombia.4.t:0 "The Invasion of [VEN.GetNameDef]"
- colombia.4.d:0 "The issued integration request was expected to expire at 18:00 today. As we haven't received any official response from the [VEN.GetAdjective] officials, we can assume that their weak government is trying to stall time to mobilize more forces.\n\nOur scouts and recon units report increased activity of the [VEN.GetAdjective] troops on our border. They are preparing their defenses and mobilizing reserves. Even though not all of our soldiers are in position, we shall strike now, as the enemy least expects it.\n\nTo arms, people of [COL.GetNameDef]! The time has come to reclaim the lost territories of Gran Colombia!"
+ colombia.4.d:0 "The issued integration request was expected to expire at 18
  colombia.4.a:0 "Onwards!"
  colombia.6.t:0 "Panama Regained"
  colombia.6.d:0 "We are the country that we know we are"

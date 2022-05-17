@@ -405,7 +405,7 @@ RULE_VOLUNTEERS_NOT_ANARCHISTS_TT:0 "§RSovereign states cannot send Volunteers 
  RULE_MONARCHIST_ORLEANIST_FRA_AI_DESC:0 "The French AI will attempt to restore the French monarchy and place the Orléanist pretender on the throne by going down the relevant path on the focus tree."
  RULE_MONARCHIST_LEGITIMIST_FRA_AI_DESC:0 "The French AI will attempt to restore the French monarchy and place the Legitimist pretender on the throne by going down the relevant path on the focus tree."
  RULE_MONARCHIST_BONAPARTIST_FRA_AI_DESC:0 "The French AI will attempt to restore the French monarchy and place the Bonapartist pretender on the throne by going down the relevant path on the focus tree."
- RULE_ALLOW_RELEASE_NATIONS_KURDISTAN_TOOLTIP:1 "§Y[ROOT.GetName]§! is not allowed to release §Y[KUR.GetName]§!, only countries with no cores on §YKurdish§! territory may release §Y[KUR.GetName]§!."
+ RULE_ALLOW_RELEASE_NATIONS_KURDISTAN_TOOLTIP:1 " 453926423475276674 [ROOT.GetName] 2365704801752021880  is not allowed to release  453926423475276674 [KUR.GetName] 2365704801752021880 , only countries with no cores on  453926423475276674 Kurdish 2365704801752021880  territory may release  453926423475276674 [KUR.GetName] 2365704801752021880 ."
  RULE_ENTENTE_LIT_AI_DESC:0 "Lithuania will attempt to formalize the Baltic Entente and survive against the Soviets."
  RULE_ENTENTE_EST_AI_DESC:0 "Estonia will attempt to formalize the Baltic Entente and survive against the Soviets."
  RULE_ENTENTE_LAT_AI_DESC:0 "Latvia will attempt to formalize the Baltic Entente and survive against the Soviets."
