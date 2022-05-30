@@ -12,6 +12,7 @@ characters={
 			id=-1
 			traits = {
 				great_compromiser
+				canadas_industrial_peacemaker
 				r56_trait_opposed_to_fascism
 				r56_trait_opposed_to_communism
 			}

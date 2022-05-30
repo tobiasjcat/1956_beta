@@ -49,5 +49,12 @@ devoted_communist = {
 			factor = 1
 		}
 	}
-	
+
+canadas_industrial_peacemaker = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
