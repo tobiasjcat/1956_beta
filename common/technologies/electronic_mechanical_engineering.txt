@@ -150,6 +150,10 @@ technologies = {
 			leads_to_tech = improved_decimetric_radar 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = iff1
+			research_cost_coeff = 1
+		}
 		coordination_bonus = 0.01
 		research_cost = 1.25
 		start_year = 1938
@@ -188,6 +192,75 @@ technologies = {
 		}
 	}
 	
+	iff1 = {
+
+		path = {
+			leads_to_tech = iff2
+			research_cost_coeff = 1
+		}
+
+		air_accidents_factor = -0.05
+
+		research_cost = 1
+		start_year = 1938
+
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = GER
+				}
+				factor = 2
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	iff2 = {
+
+		air_accidents_factor = -0.05
+
+		research_cost = 1
+		start_year = 1940
+
+		xp_research_type = air
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+
+		folder = {
+			name = electronics_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = GER
+				}
+				factor = 2
+			}
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
 	improved_decimetric_radar = {
 
 		# radar boost in air/sea combat depends on radar level
@@ -407,7 +480,7 @@ technologies = {
 			computing_tech
 		}
 	}
-	
+
 	computing_machine = {
 
 		# small boost to research speed

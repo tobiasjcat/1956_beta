@@ -43,6 +43,14 @@ spriteTypes = {
 		name = "GFX_rdf6_medium"
 		texturefile = "gfx/interface/technologies/electronics/r56_tech_rdf_06.dds"
 	}
+	SpriteType = {
+		name = "GFX_iff1_medium"
+		texturefile = "gfx/interface/technologies/electronics/r56_tech_iff_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_iff2_medium"
+		texturefile = "gfx/interface/technologies/electronics/r56_tech_iff_01.dds"
+	}
 
 #-> Computing machines <><>
 	SpriteType = {

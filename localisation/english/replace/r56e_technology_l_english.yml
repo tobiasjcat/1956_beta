@@ -192,8 +192,12 @@ l_english:
  rdf5_desc:0 "We will strengthen our counter-insurgency ability by intercepting illegal transmissions from Partisans via nearly exact triangulation." #new
  rdf6:0 "1953 Radio Detection Finding" #new
  rdf6_desc:0 "We can detect them wherever they are. There's no hiding, no running, and certainly no chance they'll succeed." #new
- 
- 
+#-<><><>
+ iff1:0 "Basic IFF"
+ iff1_desc:0 "Being able to tell the difference between our aircraft and our enemy's when we can't see them could reduce friendly fire incidents."
+ iff2:0 "Improved IFF"
+ iff2_desc:0 "Introducing regenerative receivers and automatic gain control systems to out IFF systems will further protect our pilots."
+  
 ###------> Industrial    <><> <><> <><> <><> <><>
  streamlined_line_a:0 "Streamlined Line II"
  streamlined_line_a_desc:0 "The worker will keep their left hand six inches away from the machine at all times. Their foot shall be between the central lever and the red."
